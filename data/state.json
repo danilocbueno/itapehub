@@ -1,25 +1,25 @@
 {
     "sources": {
         "camara": {
-            "last_success": "2026-11-02T23:56:14-03:00",
+            "last_success": "2026-11-03T09:46:59-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Tue, 03 Nov 2026 02:56:14 GMT",
+            "last_modified": "Tue, 03 Nov 2026 12:47:16 GMT",
             "errors": 0,
             "last_error": null
         },
         "correio": {
-            "last_success": "2026-11-02T23:56:14-03:00",
+            "last_success": "2026-11-03T03:55:30-03:00",
             "last_count": 25,
             "etag": null,
             "last_modified": null,
-            "errors": 0,
-            "last_error": null,
+            "errors": 1,
+            "last_error": "Connection refused for URI https://correiodeitapetininga.com.br/sitemap.xml",
             "last_new_at": "2026-11-02T23:56:14-03:00",
-            "last_error_at": "2026-10-31T07:55:01-03:00"
+            "last_error_at": "2026-11-03T09:46:59-03:00"
         },
         "folha": {
-            "last_success": "2026-11-02T23:56:14-03:00",
+            "last_success": "2026-11-03T09:46:59-03:00",
             "last_count": 3,
             "etag": null,
             "last_modified": null,
@@ -27,16 +27,16 @@
             "last_error": null
         },
         "g1": {
-            "last_success": "2026-11-02T23:56:14-03:00",
+            "last_success": "2026-11-03T09:46:59-03:00",
             "last_count": 100,
-            "etag": "\"c718ea14b2c2840bbeda76a6bef1dc2c1ce4c78f\"",
+            "etag": "\"0b1ff007618c86180d65c297b02addc93b876313\"",
             "last_modified": null,
             "errors": 0,
             "last_error": null,
             "last_new_at": "2026-11-02T17:23:08-03:00"
         },
         "jornal": {
-            "last_success": "2026-11-02T23:56:14-03:00",
+            "last_success": "2026-11-03T09:46:59-03:00",
             "last_count": 50,
             "etag": null,
             "last_modified": null,
@@ -46,31 +46,31 @@
             "last_error_at": "2026-11-02T17:23:08-03:00"
         },
         "prefeitura": {
-            "last_success": "2026-11-02T23:56:14-03:00",
-            "last_count": 8,
+            "last_success": "2026-11-03T09:46:59-03:00",
+            "last_count": 7,
             "etag": null,
             "last_modified": null,
             "errors": 0,
             "last_error": null,
-            "last_new_at": "2026-10-29T20:19:51-03:00"
+            "last_new_at": "2026-11-03T09:46:59-03:00"
         },
         "tvsmais": {
-            "last_success": "2026-11-02T23:56:14-03:00",
+            "last_success": "2026-11-03T03:55:30-03:00",
             "last_count": 10,
             "etag": null,
             "last_modified": "Mon, 02 Nov 2026 22:32:06 GMT",
-            "errors": 0,
-            "last_error": null,
+            "errors": 1,
+            "last_error": "Formato: Feed inválido:  is invalid XML, likely due to invalid characters. XML error: Mismatched tag at line 92, column 8",
             "last_new_at": "2026-10-30T19:59:18-03:00",
-            "last_error_at": "2026-11-01T21:46:32-03:00"
+            "last_error_at": "2026-11-03T09:46:59-03:00"
         },
         "xeh": {
-            "last_success": "2026-11-02T17:23:08-03:00",
+            "last_success": "2026-11-03T09:46:59-03:00",
             "last_count": 10,
             "etag": null,
             "last_modified": "Wed, 16 Sep 2026 17:02:20 GMT",
-            "errors": 1,
-            "last_error": "cURL error 28: Failed to connect to xeh.com.br port 443 after 10000 ms: Timeout was reached (see https://curl.se/libcurl/c/libcurl-errors.html) for https://xeh.com.br/feed/",
+            "errors": 0,
+            "last_error": null,
             "last_error_at": "2026-11-02T23:56:14-03:00"
         }
     }

@@ -1,5 +1,29 @@
 [
     {
+        "id": "73830556c9259a6f",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/10990/sesi-de-itapetininga-apresenta-peca-teatral-o-fingidor-entre-os-dias-18-e-21-de-novembro/",
+        "title": "SESI de Itapetininga apresenta peça teatral “O Fingidor” entre os dias 18 e 21 de novembro",
+        "summary": "A apresentação teatral “O Fingidor” de Samir Yazbek será apresentada entre os dias 18 e 21 de novembro no Teatro do SESI de Itapetininga, com entrada gratuita, mas é necessário obter o ingresso pelo site oficial do SESI. Um novo lote será…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/1d268bc7c04bb8c8fe2f1a44ce9ff704.webp",
+        "published_at": "2026-11-03T09:46:59-03:00",
+        "collected_at": "2026-11-03T09:46:59-03:00",
+        "cluster": "73830556c9259a6f",
+        "hidden": false
+    },
+    {
+        "id": "b8729c943919b2ae",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/10989/sabesp-amplia-atendimento-em-itapetininga-com-nova-loja-no-poupatempo/",
+        "title": "Sabesp amplia atendimento em Itapetininga com nova loja no Poupatempo",
+        "summary": "A Sabesp amplia as opções de atendimento presencial em Itapetininga com a abertura de uma loja no Poupatempo, a partir de 3 de novembro. A nova unidade oferece mais comodidade e flexibilidade aos clientes, que passam a contar com duas…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/aed4ec0cbe91e59300f098000ad22d54.webp",
+        "published_at": "2026-11-03T09:46:59-03:00",
+        "collected_at": "2026-11-03T09:46:59-03:00",
+        "cluster": "b8729c943919b2ae",
+        "hidden": false
+    },
+    {
         "id": "79d72f0ad6988478",
         "source": "correio",
         "url": "https://correiodeitapetininga.com.br/noticia/80813/estadio-municipal-de-itapetininga-recebera-amistoso-de-brasil-x-argentina-em-2027",
