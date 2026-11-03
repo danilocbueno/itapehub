@@ -90,3 +90,18 @@ describe('Agrupamento', function () {
             ->and($later->cluster)->toBe($later->id());
     });
 });
+
+describe('Olá Itapetininga', function () {
+    it('está ativa e filtrada por "Itapetininga"', function () {
+        expect(source('ola')->enabled)->toBeTrue()
+            ->and(source('ola')->filter)->toBeTrue();
+    });
+
+    it('mantém só as notícias da cidade', function () {
+        $items = (new RssAdapter)->parse(fixtureContents('ola.xml'), source('ola'));
+        $titles = array_map(fn (Item $item) => $item->title, array_filter($items, fn (Item $item) => (new LocalFilter)->accepts($item, source('ola'))));
+
+        expect($titles)->toContain('Mouhamed Harfouch traz comédia autobiográfica a Itapetininga')
+            ->not->toContain('Marisa Monte volta a São Paulo para despedida da turnê ‘Phonica’');
+    });
+});

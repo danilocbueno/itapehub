@@ -125,8 +125,8 @@ return [
         'type' => 'rss',
         'url' => 'https://olaitapetininga.com.br/feed',
         'homepage' => 'https://olaitapetininga.com.br/',
+        // Mistura agenda de outras cidades (Sorocaba, São Paulo).
         'filter' => true,
-        'enabled' => false,
     ],
 
 ];

@@ -16,7 +16,7 @@ O site mostra só título, um trecho e a foto de capa. Cada notícia leva ao sit
 | TVS+ (SBT) | RSS da busca do site | sim |
 | Câmara Municipal | RSS (Joomla) | não |
 | Xeh | RSS | sim |
-| Olá Itapetininga | RSS (desativada) | sim |
+| Olá Itapetininga | RSS | sim |
 
 Tudo fica em [`config/sources.php`](config/sources.php).
 
