@@ -26,6 +26,9 @@ final class Text
             $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
         }
 
+        // ...e até tags codificadas como texto (&lt;p&gt;), que só aparecem agora.
+        $text = strip_tags($text);
+
         $text = str_replace("\u{00A0}", ' ', $text);
         $text = preg_replace('/\s+/u', ' ', $text) ?? $text;
 

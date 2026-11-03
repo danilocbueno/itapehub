@@ -14,6 +14,10 @@ describe('Text', function () {
         expect(Text::clean('Prefeitura &amp;quot;oficial&amp;quot;'))->toBe('Prefeitura "oficial"');
     });
 
+    it('remove tags que vinham codificadas como texto', function () {
+        expect(Text::clean('Resumo da notícia. &lt;p&gt;Rodapé&lt;/p&gt;'))->toBe('Resumo da notícia. Rodapé');
+    });
+
     it('converte texto ISO-8859-1 para UTF-8', function () {
         expect(Text::clean(mb_convert_encoding('Notícias da região', 'ISO-8859-1', 'UTF-8')))
             ->toBe('Notícias da região');

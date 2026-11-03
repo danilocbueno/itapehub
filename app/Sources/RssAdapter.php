@@ -79,7 +79,9 @@ final class RssAdapter implements SourceAdapter
 
         $text = Text::clean($html);
         // Rodapé padrão de feeds WordPress.
-        $text = preg_replace('/\s*(O post|The post) .{1,300}? (apareceu primeiro em|é de autoria de|appeared first on) .{1,80}$/u', '', $text) ?? $text;
+        $text = preg_replace('/\s*(O post|The post) .{1,300}? (apareceu primeiro em|é de autoria de|appeared first on|first appeared on) .{1,80}$/u', '', $text) ?? $text;
+        // Marca de resumo cortado do WordPress: "[…]".
+        $text = preg_replace('/\s*\[(…|\.\.\.)\]\s*$/u', '', $text) ?? $text;
 
         foreach ($source->ignore as $pattern) {
             $text = preg_replace($pattern, ' ', $text) ?? $text;

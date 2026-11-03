@@ -380,8 +380,10 @@ it('gera a agenda com um card por evento: data, texto da notícia e link', funct
 
     $this->artisan('build')->assertSuccessful();
     $page = built('agenda/index.html');
-    // A feira (27/10) vem antes; o festival (31/10) é o segundo card.
-    $festival = Str::before(explode('<article class="agenda-item', $page)[2] ?? '', '</article>');
+    // O card do festival, localizado pelo link (outros eventos reais dos dados de teste podem vir antes).
+    $at = strpos($page, 'href="https://jornal.test/festival"');
+    $start = strrpos(substr($page, 0, $at), '<article');
+    $festival = substr($page, $start, strpos($page, '</article>', $at) - $start);
 
     expect($page)->toContain('<h1 class="page-title">Agenda</h1>')
         ->toContain('confira na notícia')

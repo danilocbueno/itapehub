@@ -1,6 +1,7 @@
 <?php
 
 use App\Data\Item;
+use App\Pipeline\LocalFilter;
 use App\Sources\HtmlListAdapter;
 use App\Sources\ParseException;
 use App\Sources\RssAdapter;
@@ -85,5 +86,25 @@ describe('Sitemap parcial', function () {
         $body = substr(fixtureContents('correio-sitemap-head.xml'), 0, 5000).'<url><loc>https://correiodeitapetininga.com.br/noticia/1/cor';
 
         expect(fn () => (new SitemapStreamAdapter)->parse($body, source('correio')))->not->toThrow(Exception::class);
+    });
+});
+
+describe('Jornal Panorâmico', function () {
+    it('lê o feed e limpa o rodapé em inglês e o "[…]" do WordPress', function () {
+        $items = (new RssAdapter)->parse(fixtureContents('panoramico.xml'), source('panoramico'));
+        $summaries = implode(' ', array_map(fn (Item $item) => $item->summary.' '.$item->content, $items));
+
+        expect($items)->toHaveCount(10)
+            ->and($summaries)->not->toContain('first appeared on')
+            ->and($summaries)->not->toContain('[…]')
+            ->and($summaries)->not->toContain('[&#8230;]');
+    });
+
+    it('mantém só as notícias de Itapetininga', function () {
+        $items = (new RssAdapter)->parse(fixtureContents('panoramico.xml'), source('panoramico'));
+        $titles = array_map(fn (Item $item) => $item->title, array_filter($items, fn (Item $item) => (new LocalFilter)->accepts($item, source('panoramico'))));
+
+        expect($titles)->toContain('PAT de Itapetininga oferece 266 vagas de emprego nesta terça-feira')
+            ->not->toContain('ICMS dos combustíveis terá novos valores em todo o país a partir de fevereiro de 2027');
     });
 });

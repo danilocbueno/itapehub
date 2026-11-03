@@ -118,6 +118,17 @@ return [
         'filter' => true,
     ],
 
+    'panoramico' => [
+        'name' => 'Jornal Panorâmico',
+        'short' => 'Panorâmico',
+        'color' => '#0369a1',
+        'type' => 'rss',
+        'url' => 'https://jornalpanoramico.com.br/feed/',
+        'homepage' => 'https://jornalpanoramico.com.br/',
+        // Publica também notícias de Sorocaba e nacionais.
+        'filter' => true,
+    ],
+
     'ola' => [
         'name' => 'Olá Itapetininga',
         'short' => 'Olá',

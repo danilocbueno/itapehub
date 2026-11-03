@@ -40,6 +40,7 @@ function fakeSources(array $overrides = []): void
         'www.camaraitapetininga.sp.gov.br/*' => 'camara.xml',
         'xeh.com.br/feed/' => 'xeh.xml',
         'olaitapetininga.com.br/feed' => 'ola.xml',
+        'jornalpanoramico.com.br/feed/' => 'panoramico.xml',
         'api.open-meteo.com/*' => 'open-meteo.json',
         'apiprevmet3.inmet.gov.br/*' => 'inmet.xml',
     ];
