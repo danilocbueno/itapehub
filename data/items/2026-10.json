@@ -60,6 +60,18 @@
         "hidden": false
     },
     {
+        "id": "e6dfa8d7ffb0b0ca",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/dise-prende-quatro-pessoas-e-apreende-adolescente-durante-operacao-contra-trafico-em-itapetininga/",
+        "title": "DISE prende quatro pessoas e apreende adolescente durante operação contra tráfico em Itapetininga",
+        "summary": "Ação foi realizada na Vila Mazzei, nas proximidades de uma escola. Policiais apreenderam 166 porções de maconha, 137 de crack e 49 pinos de cocaína. A Polícia Civil prendeu quatro pessoas e apreendeu um adolescente durante uma operação de…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/10/WhatsApp-Image-2026-10-29-at-20.31.42.jpeg",
+        "published_at": "2026-10-30T11:42:29-03:00",
+        "collected_at": "2026-11-03T14:30:01-03:00",
+        "cluster": "506dfe73d06bdda5",
+        "hidden": false
+    },
+    {
         "id": "e2b48e1e0b802066",
         "source": "correio",
         "url": "https://correiodeitapetininga.com.br/noticia/80810/chuvas-causam-nova-cheia-do-rio-itapetininga-e-estado-reforca-ajuda-humanitaria-as-familias-atingidas",
@@ -105,6 +117,30 @@
         "published_at": "2026-10-29T20:19:51-03:00",
         "collected_at": "2026-10-29T20:19:51-03:00",
         "cluster": "d425c38e099b7e4e",
+        "hidden": false
+    },
+    {
+        "id": "d702193d864b3e68",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/teatro-literario-apresenta-peca-gratuita-na-casa-kennedy-em-itapetininga/",
+        "title": "Teatro Literário apresenta peça gratuita na Casa Kennedy, em Itapetininga",
+        "summary": "O Projeto Teatro Literário apresenta, nesta sexta-feira, 30 de outubro, às 19h30, o espetáculo “Os 7 Novelos Fantasmas”, na Casa Kennedy, localizada na Rua Prudente de Moraes, 716, no Centro de Itapetininga. A entrada é gratuita e a…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/02/Casa-Kennedy_-Credito-Gustavo-de-Moraes-scaled-1-1024x684.jpg",
+        "published_at": "2026-10-29T18:34:34-03:00",
+        "collected_at": "2026-11-03T14:30:01-03:00",
+        "cluster": "d702193d864b3e68",
+        "hidden": false
+    },
+    {
+        "id": "a87a958f1f61f8d6",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/sabesp-cadastra-familias-do-bairro-rio-acima-para-programa-de-saneamento-em-itapetininga/",
+        "title": "Sabesp cadastra famílias do bairro Rio Acima para programa de saneamento em Itapetininga",
+        "summary": "Iniciativa prevê avaliação de instalações sanitárias e possibilidade de adequações sem custo de instalação para moradores elegíveis. Moradores do bairro Rio Acima, na zona rural de Itapetininga, poderão receber visitas de profissionais…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/10/Sem-nome-Site-6-1.png",
+        "published_at": "2026-10-29T18:24:06-03:00",
+        "collected_at": "2026-11-03T14:30:01-03:00",
+        "cluster": "a87a958f1f61f8d6",
         "hidden": false
     },
     {
