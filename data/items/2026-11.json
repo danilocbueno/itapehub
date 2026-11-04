@@ -1,5 +1,17 @@
 [
     {
+        "id": "180a8eb447686d0a",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/senado-aprova-pec-que-preve-mudancas-na-seguranca-publica",
+        "title": "Senado aprova PEC que prevê mudanças na segurança pública",
+        "summary": "O Senado Federal aprovou, na última terça-feira (3), a Proposta de Emenda à Constituição (PEC) 18/2025, conhecida como PEC da Segurança Pública. A votação foi concluída em dois turnos, com 75 votos favoráveis e nenhum contrário na segunda…",
+        "image": null,
+        "published_at": "2026-11-04T00:38:00-03:00",
+        "collected_at": "2026-11-04T03:33:26-03:00",
+        "cluster": "180a8eb447686d0a",
+        "hidden": false
+    },
+    {
         "id": "76a42a5e39bb6659",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11000/sebrae-aqui-itapetininga-promove-oficina-faca-suas-vendas-decolarem/",
