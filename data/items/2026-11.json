@@ -1,5 +1,65 @@
 [
     {
+        "id": "65521cc2bbae428c",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11002/inscricoes-para-o-2-festival-kids-de-atletismo-da-prefeitura-de-itapetininga-em-parceria-com-o-sesi-comecam-na-proxima-segunda-dia-09/",
+        "title": "Inscrições para o 2º Festival Kids de Atletismo da Prefeitura de Itapetininga em parceria com o SESI começam na próxima segunda, dia 09",
+        "summary": "As inscrições para o 2º Festival Kids de Atletismo 2026, organizado pela Prefeitura de Itapetininga, por meio da Secretaria de Esporte, Lazer e Juventude, em parceria com o SESI, começam na próxima segunda, dia 09.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/16b57421472fffa4f0e03f1c7085f26d.webp",
+        "published_at": "2026-11-04T12:28:09-03:00",
+        "collected_at": "2026-11-04T12:28:09-03:00",
+        "cluster": "65521cc2bbae428c",
+        "hidden": false
+    },
+    {
+        "id": "ff7d928b1ae18a8b",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11001/fatec-de-itapetininga-prorroga-inscricoes-ate-o-dia-16-de-novembro-para-o-vestibular-2027/",
+        "title": "Fatec de Itapetininga prorroga inscrições até o dia 16 de novembro para o Vestibular 2027",
+        "summary": "O Centro Paula Souza (CPS) prorrogou as inscrições para os cursos oferecidos em Itapetininga. Os interessados podem realizar a inscrição até o dia 16 de novembro. São cursos superiores gratuitos a partir do primeiro semestre de 2027.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/98f3ac76adffedada37071b54e90faf3.webp",
+        "published_at": "2026-11-04T12:28:09-03:00",
+        "collected_at": "2026-11-04T12:28:09-03:00",
+        "cluster": "ff7d928b1ae18a8b",
+        "hidden": false
+    },
+    {
+        "id": "66c68a8a067214ce",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80821/sebrae-promove-curso-gratuito-de-depilacao-facial-com-linha",
+        "title": "Sebrae promove curso gratuito de depilação facial com linha",
+        "summary": "A Prefeitura de Itapetininga, em parceria com o Sebrae e o Senac, está promovendo um curso gratuito de depilação facial com linha, de 02 a 15 de dezembro, das 1...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80821?v=Banner_043553b7-02cb-4a3a-b46c-567f1abfd752_20261104143950.jpg",
+        "published_at": "2026-11-04T11:34:49-03:00",
+        "collected_at": "2026-11-04T12:28:09-03:00",
+        "cluster": "347f256432c4025c",
+        "hidden": false
+    },
+    {
+        "id": "e29602b380bcc811",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80820/aniversario-de-itapetininga-altera-atendimento-nos-servicos-publicos-municipais",
+        "title": "Aniversário de Itapetininga altera atendimento nos serviços públicos municipais",
+        "summary": "Devido ao feriado em comemoração aos 256 anos de Itapetininga, alguns serviços municipais terão alterações no funcionamento entre quinta-feira, dia 05, e doming...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80820?v=Banner_53648195-372a-4b2a-ad3a-2d7e1869b14b_20261104142547.jpg",
+        "published_at": "2026-11-04T11:21:31-03:00",
+        "collected_at": "2026-11-04T12:28:09-03:00",
+        "cluster": "e29602b380bcc811",
+        "hidden": false
+    },
+    {
+        "id": "51e7964ee2b2ab3a",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80814/itapetininga-celebra-256-anos-com-desfile-civico-nesta-quinta-feira",
+        "title": "Itapetininga celebra 256 anos com desfile cívico nesta quinta-feira",
+        "summary": "Na próxima quinta-feira, dia 05, a partir das 8h, a rua Dr. Virgílio de Rezende receberá o tradicional Desfile Cívico em comemoração aos 256 anos de Itapetining...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80814?v=Banner_28ba1d71-34c8-440e-8603-c040b3c44c7f_20261103131412.jpg",
+        "published_at": "2026-11-04T09:00:00-03:00",
+        "collected_at": "2026-11-04T12:28:09-03:00",
+        "cluster": "ee7439a2043b0058",
+        "hidden": false
+    },
+    {
         "id": "180a8eb447686d0a",
         "source": "jornal",
         "url": "https://www.jornaldeitapetininga.com.br/noticias/senado-aprova-pec-que-preve-mudancas-na-seguranca-publica",
