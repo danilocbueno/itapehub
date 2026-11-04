@@ -1,5 +1,65 @@
 [
     {
+        "id": "48844552e7b67ff9",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80807/asfaltamento-melhora-ligacao-viaria-entre-chapadinha-e-regiao-dos-bancarios",
+        "title": "Asfaltamento melhora ligação viária entre Chapadinha e região dos Bancários",
+        "summary": "O asfaltamento da Rua Padre Luís Carlos da Silva, em Itapetininga, melhorou as condições de circulação e facilitou o deslocamento entre a Chapadinha e a região...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80807?v=Banner_dcd6a983-bec7-4b59-807c-df4ab8849086_20261029143133.jpg",
+        "published_at": "2026-11-04T13:47:00-03:00",
+        "collected_at": "2026-11-04T14:59:58-03:00",
+        "cluster": "48844552e7b67ff9",
+        "hidden": false
+    },
+    {
+        "id": "6fd7c80841c1aeae",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/04/homem-e-preso-suspeito-de-matar-mulher-a-facadas-durante-discussao-em-itapetininga.ghtml",
+        "title": "Homem é preso suspeito de matar mulher a facadas durante discussão em Itapetininga",
+        "summary": "Uma mulher foi morta a facadas na Vila Arruda, em Itapetininga (SP), na madrugada desta quarta-feira (4). O suspeito do crime foi preso. Conforme apurado pelo g1, ela se envolveu em uma discussão com um homem, cujos motivos ainda eram…",
+        "image": "https://s2-g1.glbimg.com/J3J-43OWR3fvLccpQHcyp0RzS6s=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/F/H/C6h83BT4KZW0jaUvFKEg/whatsapp-image-2026-06-16-at-14.42.45.jpeg",
+        "published_at": "2026-11-04T13:36:55-03:00",
+        "collected_at": "2026-11-04T14:59:58-03:00",
+        "cluster": "6fd7c80841c1aeae",
+        "hidden": false
+    },
+    {
+        "id": "ac7ddb962661c2a7",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80824/sabesp-amplia-atendimento-em-itapetininga-com-nova-loja-no-poupatempo",
+        "title": "Sabesp amplia atendimento em Itapetininga com nova loja no Poupatempo",
+        "summary": "A Sabesp ampliou as opções de atendimento presencial em Itapetininga com a abertura de uma loja no Poupatempo, a partir de 3 de novembro. A nova unidade oferece...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80824?v=Banner_9280d7f6-8cae-4f33-b57a-67c748ff1728_20261104164830.jpg",
+        "published_at": "2026-11-04T13:14:00-03:00",
+        "collected_at": "2026-11-04T14:59:58-03:00",
+        "cluster": "b8729c943919b2ae",
+        "hidden": false
+    },
+    {
+        "id": "4b37cae523894d58",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80823/itapetininga-celebra-256-anos-relembre-marcos-historicos-da-cidade-em-fotos-antigas",
+        "title": "Itapetininga celebra 256 anos; relembre marcos históricos da cidade em fotos antigas",
+        "summary": "Aniversário da cidade",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80823?v=Banner_ab00b086-cf48-4071-a5d7-9998226808e0_20261104162259.jpg",
+        "published_at": "2026-11-04T12:56:28-03:00",
+        "collected_at": "2026-11-04T14:59:58-03:00",
+        "cluster": "4b37cae523894d58",
+        "hidden": false
+    },
+    {
+        "id": "ad0d78a080f77167",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80822/com-precos-ate-60-menores-livros-usados-ajudam-a-democratizar-a-leitura-em-itapetininga",
+        "title": "Com preços até 60% menores, livros usados ajudam a democratizar a leitura em Itapetininga",
+        "summary": "Com 10 anos de projeto, o sebo “Viaje Com Os Livros” formou raízes em Itapetininga e têm sido uma base forte na democratização ao acesso e no incentivo à litera...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80822?v=Banner_4a2bbd5e-7b54-443d-8226-b6197b83157c_20261104154250.jpg",
+        "published_at": "2026-11-04T12:37:00-03:00",
+        "collected_at": "2026-11-04T14:59:58-03:00",
+        "cluster": "ad0d78a080f77167",
+        "hidden": false
+    },
+    {
         "id": "65521cc2bbae428c",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11002/inscricoes-para-o-2-festival-kids-de-atletismo-da-prefeitura-de-itapetininga-em-parceria-com-o-sesi-comecam-na-proxima-segunda-dia-09/",
