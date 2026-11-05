@@ -1,5 +1,41 @@
 [
     {
+        "id": "e882b68918865677",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/05/agenda-novembro-itapetininga.ghtml",
+        "title": "Festivais, Mostra de Artes Cênicas, 31ª Facita e mais: confira a programação cultural do fim de semana em Itapetininga e região",
+        "summary": "A região de Itapetininga (SP) conta com diversas atrações culturais neste fim de semana. Boituva comemora o mês da cultura com espetáculo e oficinas criativas. Taquarituba recebe a 31ª edição da tradicional feira agropecuária Facita. Tietê…",
+        "image": "https://s2-g1.glbimg.com/17sEntVOu_ftnrTwed2OohNzSAI=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/F/j/VkImu6Rre5mTWjaEYZFw/mosaico.png",
+        "published_at": "2026-11-05T11:49:15-03:00",
+        "collected_at": "2026-11-05T15:02:26-03:00",
+        "cluster": "e882b68918865677",
+        "hidden": false
+    },
+    {
+        "id": "a2d895c1bc207095",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/256-anos-de-itapetininga-suzano-contribui-para-o-desenvolvimento-economico-e-tecnologico-do-municipio",
+        "title": "256 anos de Itapetininga: Suzano contribui para o desenvolvimento econômico e tecnológico do município",
+        "summary": "Companhia mantém operação florestal na região, além da Central de Monitoramento Florestal e um Centro de Pesquisa em Biotecnologia unindo inovação, ciência e sustentabilidade",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/256-anos-de-itapetininga-suzano-contribui-para-o-desenvolvimento-economico-e-tecnologico-do-municipio-a508fc00ca.jpg",
+        "published_at": "2026-11-05T11:45:17-03:00",
+        "collected_at": "2026-11-05T15:02:26-03:00",
+        "cluster": "a2d895c1bc207095",
+        "hidden": false
+    },
+    {
+        "id": "e3906b60f0b6b4df",
+        "source": "tvsmais",
+        "url": "https://www.tvsmais.com.br/chuva-forte-leva-ao-cancelamento-do-desfile-civico-de-itapetininga/",
+        "title": "Chuva forte leva ao cancelamento do Desfile Cívico de Itapetininga",
+        "summary": "Evento que celebraria os 256 anos do município estava previsto para a manhã desta quinta-feira (5)",
+        "image": "https://www.tvsmais.com.br/wp-content/uploads/2025/10/41165eb7b80a32438fdb7f64ae6375dd.jpeg",
+        "published_at": "2026-11-05T10:56:33-03:00",
+        "collected_at": "2026-11-05T15:02:26-03:00",
+        "cluster": "e3906b60f0b6b4df",
+        "hidden": false
+    },
+    {
         "id": "1499b09401c0b472",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11008/desfile-civico-de-itapetininga-e-cancelado-devido-as-condicoes-climaticas/",
