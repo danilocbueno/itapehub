@@ -132,7 +132,7 @@ it('mostra o cabeçalho de jornal com o nome e o subtítulo, sem a data por exte
         ->toContain('class="masthead"')
         ->toContain('<span class="brand-a">Itapê')
         ->toContain('<span class="brand-b">Hub')
-        ->toContain('Todas as notícias da cidade, num só lugar')
+        ->toContain('Tudo o que acontece na cidade, num só lugar')
         ->not->toContain('masthead-top')
         ->not->toContain('Itapetininga, domingo, 25 de outubro de 2026');
 });

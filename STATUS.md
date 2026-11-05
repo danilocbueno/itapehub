@@ -1,21 +1,21 @@
 # Status do projeto: ItapêHub
 
-*Atualizado em 04/11/2026*
+*Atualizado em 05/11/2026*
 
 Agregador de notícias de Itapetininga-SP. O GitHub Actions coleta as fontes locais várias vezes por dia e publica um site estático no GitHub Pages.
 
 - **No ar:** https://danilocbueno.github.io/itapenews/
 - **Repositório:** danilocbueno/itapenews (público)
-- **Início:** 25/10/2026, com 67 commits até agora (o restante são coletas automáticas)
+- **Início:** 25/10/2026, com 47 commits de código até agora (sem contar as coletas automáticas)
 
 ## Números
 
 | | |
 |---|---|
-| Testes | **178 passando** (528 asserções), sem acesso à rede |
-| Código | ~3.100 linhas em `app/`, ~1.600 em `tests/` |
+| Testes | **185 passando** (572 asserções), sem acesso à rede |
+| Código | ~3.100 linhas em `app/`, ~1.700 em `tests/` |
 | Fontes ativas | 10 |
-| Notícias salvas | 220 (185 em outubro e 35 até 04/11) |
+| Notícias salvas | 250 (185 em outubro e 65 até 05/11) |
 | Temas | 10 (Empregos, Polícia, Trânsito, Clima, Esportes, Saúde, Educação, Política, Cultura, Outras) |
 | Qualidade | `composer check` = Pint + Larastan nível 6 + Pest |
 
@@ -35,8 +35,8 @@ PHP 8.4 · Laravel Zero 13 (binário `itape`) · Blade · Laravel Http (pool e s
 | TVS+ (SBT) | RSS da busca | sim |
 | Câmara Municipal (selo Oficial) | RSS | não |
 | Xeh | RSS | sim |
-| Jornal Panorâmico | RSS | sim (*novo*) |
-| Olá Itapetininga | RSS | sim (*ativada agora*) |
+| Jornal Panorâmico | RSS | sim |
+| Olá Itapetininga | RSS | sim |
 
 Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde 403), PortalR3 (parou de cobrir Itapetininga) e Cidade Itapetininga (fora do ar).
 
@@ -55,15 +55,19 @@ Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde
 - Previsão do tempo (Open-Meteo) e avisos do INMET para a região.
 
 ### Site (`php itape build`)
-- **Home** em estilo de jornal:
+- **Marca ItapêHub:** "Itapê" em negrito e "Hub" em vermelho, sublinhados por uma linha com quatro paradas que termina num anel. O favicon é o terminal dessa linha. Subtítulo: "Tudo o que acontece na cidade, num só lugar".
+- **Cabeçalho da home:** data à esquerda e previsão à direita do nome (no celular, numa linha logo abaixo). O menu fecha com um fio duplo.
+- **Home** em estilo de jornal, sem filtro por fonte:
   - manchete e duas notícias ao lado (desktop), depois grade de 3 colunas;
+  - "Próximos eventos" em 3 colunas, com o link da agenda na linha do título;
+  - o resto do primeiro dia vem com o separador "Hoje", e os dias seguintes com o nome do dia;
   - linha do tempo dos últimos 3 dias.
 - **Linha de assuntos** no topo: Agenda e os temas.
 - **Páginas de tema** com as 60 notícias mais recentes de cada um.
 - **Agenda:** eventos dos próximos 14 dias, extraídos das notícias, com um card por evento. A home também tem o bloco "Próximos eventos".
 - **Resumo do dia** (`/hoje/`): texto pronto para colar no WhatsApp, com as notícias das últimas 24h ordenadas pelo número de veículos.
 - **Arquivo por dia**, página **Fontes** (status de cada coleta), **feed RSS** agregado e página 404.
-- **Tempo:** um dia de cada vez, alternando, com ícones SVG. Avisos do INMET reunidos numa faixa no topo.
+- **Tempo:** um dia de cada vez (hoje, amanhã e depois), alternando, com ícone, máxima e mínima e chance de chuva. Avisos do INMET reunidos numa faixa no topo.
 - Visual: fontes Newsreader e IBM Plex Sans servidas pelo próprio site, paleta papel/tinta/vermelho e modo escuro. Funciona bem no celular.
 - Imagens carregadas direto dos veículos, com `lazy` e `no-referrer`.
 
@@ -80,7 +84,7 @@ Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde
 
 | Arquivo | Testes* |
 |---|---|
-| Feature/BuildCommandTest | 40 |
+| Feature/BuildCommandTest | 47 |
 | Unit/SupportTest | 15 |
 | Unit/AdaptersTest | 13 |
 | Unit/WeatherTest | 13 |
@@ -93,14 +97,16 @@ Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde
 | Unit/ScheduleTest | 4 |
 | Feature/CheckSourcesCommandTest | 3 |
 
-\* Blocos `it()`. Com os datasets, o Pest conta 178 casos.
+\* Blocos `it()`. Com os datasets, o Pest conta 185 casos.
 
 Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrado vira fixture e teste.
 
 ## Em aberto / decisões pendentes
 
-- **Nome e domínio:** "ItapêHub" está em teste. A troca funciona só com a variável `SITE_NAME`. Para destacar o "Hub" em vermelho, como hoje acontece com o "News", é preciso um ajuste pequeno no código. Os domínios itapehub.com.br e itapehub.com estavam livres em 04/11.
-- **GoatCounter:** falta criar a conta e escolher o código, de preferência depois de decidir o nome.
+- **Domínio:** o nome ItapêHub foi decidido. Os domínios itapehub.com.br e itapehub.com estavam livres em 04/11; falta registrar.
+- **Antes do push:** conferir se a variável `SITE_NAME` está definida no GitHub, porque ela vale mais que o nome padrão.
+- **GoatCounter:** falta criar a conta e escolher o código (ex.: `itapehub`).
+- **Testado e descartado:** um bloco "Resumo do dia" na home, com destaques e períodos. Saiu porque repetia as notícias da lista logo abaixo; a página `/hoje/` continua.
 
 ## Backlog
 
@@ -123,7 +129,7 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 
 ## Como trabalhamos
 
-Mudanças em pedaços pequenos, cada uma com testes novos, `composer check` verde e commit próprio. O push só acontece depois da aprovação. A prioridade é não quebrar o que já funciona.
+Mudanças em pedaços pequenos, cada uma com testes novos e `composer check` verde. Cada commit é confirmado antes, e o push só acontece depois da aprovação. A prioridade é não quebrar o que já funciona.
 
 ## Comandos úteis
 

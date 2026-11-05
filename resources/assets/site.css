@@ -764,6 +764,10 @@ td b {
     font-weight: 500;
     font-size: 1.15rem;
     color: var(--accent);
+    text-decoration: none;
+}
+.upcoming-more:hover {
+    text-decoration: underline;
 }
 .upcoming-item {
     display: grid;
