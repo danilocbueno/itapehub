@@ -10,44 +10,53 @@
 @endsection
 
 @section('content')
-  @if ($summary['total'])
-    @include('partials.summary')
-    <h2 class="latest">Últimas</h2>
+  @php($firstDay = array_key_first($days))
+  @if ($firstDay !== null)
+    {{-- Topo da home: no celular, resumo, capa e eventos em sequência; no desktop, a capa à esquerda e o resto numa coluna à direita. --}}
+    <div class="home-top">
+      @if ($summary['total'])
+        @include('partials.summary')
+      @endif
+      <div class="home-main">
+        @if ($summary['total'])
+          <h2 class="latest">Últimas</h2>
+        @endif
+        {{-- Capa: manchete e as duas notícias seguintes --}}
+        <div class="front">
+          @foreach (array_slice($days[$firstDay], 0, 3) as $cluster)
+            @include('partials.card', ['lead' => $loop->first, 'side' => ! $loop->first])
+          @endforeach
+        </div><!-- /front -->
+      </div>
+      @if ($events)
+        <section class="upcoming" aria-label="Próximos eventos">
+          <h2>Próximos eventos</h2>
+          @foreach ($events as $event)
+            @php($item = $event->cluster->primary)
+            @php($image = $event->cluster->image())
+            <a class="upcoming-item{{ $image ? '' : ' noimg' }}" href="{{ $item->url }}" target="_blank" rel="noopener">
+              @if ($image)
+                <span class="upcoming-thumb"><img src="{{ $image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.upcoming-item').classList.add('noimg'); this.parentNode.remove()"></span>
+              @endif
+              <span class="upcoming-text">
+                <span class="upcoming-when">{{ \App\Site\Timeline::agendaDay($event->at->format('Y-m-d'), $now) }}@if ($event->hasTime) · {{ $event->at->format($event->at->minute ? 'G\hi' : 'G\h') }}@endif</span>
+                <span class="upcoming-title">{{ $item->title }}</span>
+              </span>
+            </a>
+          @endforeach
+          <a class="upcoming-more" href="{{ $site['base'] }}/agenda/">Ver agenda completa</a>
+        </section>
+      @endif
+    </div><!-- /home-top -->
   @endif
 
   @forelse ($days as $day => $clusters)
     <section class="day">
-      {{-- O primeiro dia abre com a capa, sem separador; os seguintes têm título. --}}
-      @unless ($loop->first)
-        <h2 data-day="{{ $day }}">{{ \App\Site\Timeline::dayLabel($day, $now) }}</h2>
-      @endunless
+      {{-- O primeiro dia continua a capa, sem separador; os seguintes têm título. --}}
       @if ($loop->first)
-        {{-- Capa: manchete e as duas notícias seguintes ao lado (lado a lado só no desktop) --}}
-        <div class="front">
-          @foreach (array_slice($clusters, 0, 3) as $cluster)
-            @include('partials.card', ['lead' => $loop->first, 'side' => ! $loop->first])
-          @endforeach
-        </div><!-- /front -->
-        @if ($events)
-          <section class="upcoming" aria-label="Próximos eventos">
-            <h2>Próximos eventos</h2>
-            @foreach ($events as $event)
-              @php($item = $event->cluster->primary)
-              @php($image = $event->cluster->image())
-              <a class="upcoming-item{{ $image ? '' : ' noimg' }}" href="{{ $item->url }}" target="_blank" rel="noopener">
-                @if ($image)
-                  <span class="upcoming-thumb"><img src="{{ $image }}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.upcoming-item').classList.add('noimg'); this.parentNode.remove()"></span>
-                @endif
-                <span class="upcoming-text">
-                  <span class="upcoming-when">{{ \App\Site\Timeline::agendaDay($event->at->format('Y-m-d'), $now) }}@if ($event->hasTime) · {{ $event->at->format($event->at->minute ? 'G\hi' : 'G\h') }}@endif</span>
-                  <span class="upcoming-title">{{ $item->title }}</span>
-                </span>
-              </a>
-            @endforeach
-            <a class="upcoming-more" href="{{ $site['base'] }}/agenda/">Ver agenda completa</a>
-          </section>
-        @endif
         @php($clusters = array_slice($clusters, 3))
+      @else
+        <h2 data-day="{{ $day }}">{{ \App\Site\Timeline::dayLabel($day, $now) }}</h2>
       @endif
       <div class="cards">
         @foreach ($clusters as $cluster)

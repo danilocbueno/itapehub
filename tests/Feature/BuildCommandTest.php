@@ -248,6 +248,25 @@ it('mostra o aviso do INMET no início da página, antes do cabeçalho', functio
         ->and(built('fontes/index.html'))->not->toContain('<section class="alerts"');
 });
 
+it('monta o topo da home com resumo, capa e próximos eventos, nessa ordem', function () {
+    $repository = new ItemRepository(config('itape.paths.data').'/items');
+    $item = new Item('jornal', 'https://jornal.test/show', 'Show na Praça', 'O show acontece no dia 31 de outubro, às 20h, na Praça.', publishedAt: CarbonImmutable::parse('2026-10-25 16:30'));
+    $item->cluster = $item->id();
+    $repository->add($item);
+    $repository->save();
+
+    $this->artisan('build')->assertSuccessful();
+    $top = Str::betweenFirst(built('index.html'), '<div class="home-top">', '<!-- /home-top -->');
+    $summary = strpos($top, '<section class="summary"');
+    $main = strpos($top, '<div class="home-main">');
+    $upcoming = strpos($top, '<section class="upcoming"');
+
+    expect($summary)->not->toBeFalse()
+        ->and($main)->toBeGreaterThan($summary)
+        ->and($upcoming)->toBeGreaterThan($main)
+        ->and(Str::betweenFirst($top, '<div class="home-main">', '<!-- /front -->'))->toContain('<div class="front">');
+});
+
 it('monta a capa com a manchete e duas notícias ao lado', function () {
     $this->artisan('build')->assertSuccessful();
     $front = Str::between(built('index.html'), '<div class="front">', '<!-- /front -->');
