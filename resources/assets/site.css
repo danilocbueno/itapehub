@@ -111,13 +111,15 @@ a { color: inherit; }
 .alert strong { display: block; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
 .alert:hover { filter: brightness(1.08); }
 
-/* Linha de data da home: data à esquerda, previsão à direita */
-.dateline {
-  display: flex; justify-content: space-between; align-items: center; gap: 12px;
-  padding: 10px 0 8px; font-size: .8rem; color: var(--muted);
+/* Data e previsão no cabeçalho da home: no celular, numa linha abaixo do nome;
+   no desktop, a data à esquerda e a previsão à direita do nome. */
+.masthead-title:has(.masthead-date) {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 12px;
+  grid-template-areas: "brand brand" "date weather";
 }
-.page-top:has(.dateline) + .masthead .masthead-inner { padding-top: 0; }
-.page-top:has(.dateline) + .masthead .masthead-title { border-top: 3px solid var(--rule); padding-top: 12px; }
+.masthead-brand { grid-area: brand; }
+.masthead-date { grid-area: date; justify-self: start; font-size: .8rem; color: var(--muted); }
+.masthead-weather { grid-area: weather; justify-self: end; font-size: .8rem; }
 
 /* Previsão: um dia de cada vez, alternando (site.js) */
 .weather { display: flex; justify-content: flex-end; color: var(--text); }
@@ -325,7 +327,11 @@ td b { font-family: var(--serif); font-size: 1.05rem; }
 
   /* Aviso em faixa fina */
   .alert strong { display: inline; margin-right: 6px; }
-  .dateline { font-size: .85rem; }
+  .masthead-title:has(.masthead-date) {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); column-gap: 24px;
+    grid-template-areas: "date brand weather";
+  }
+  .masthead-date, .masthead-weather { font-size: .85rem; }
 
   /* Capa: manchete em 2/3, duas notícias empilhadas no terço da direita */
   .front {

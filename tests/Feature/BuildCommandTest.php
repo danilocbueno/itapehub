@@ -180,16 +180,17 @@ it('mostra vários avisos do INMET em uma faixa só', function () {
         ->and($html)->toContain('Chuvas intensas e tempestade na região de Itapetininga até hoje às 23h59.');
 });
 
-it('mostra a data e a previsão numa linha antes do cabeçalho', function () {
+it('mostra a data e a previsão no cabeçalho, ao lado do nome', function () {
     $this->artisan('build')->assertSuccessful();
     $html = built('index.html');
-    $dateline = Str::between($html, '<div class="dateline">', '</section>');
+    $title = Str::betweenFirst($html, '<div class="masthead-title">', '<nav class="topics"');
 
-    expect($dateline)->toContain('<span>Domingo, 25 de outubro</span>')
-        ->toContain('class="weather"')
-        ->and(strpos($html, '<section class="alerts"'))->toBeLessThan(strpos($html, '<div class="dateline">'))
-        ->and(strpos($html, '<div class="dateline">'))->toBeLessThan(strpos($html, '<header class="masthead"'))
-        ->and(built('fontes/index.html'))->not->toContain('class="dateline"');
+    expect($title)->toContain('<span class="masthead-date">Domingo, 25 de outubro</span>')
+        ->toContain('<div class="masthead-weather"><section class="weather"')
+        ->and(strpos($title, '<div class="masthead-brand">'))->toBeLessThan(strpos($title, 'masthead-date'))
+        ->and(strpos($html, '<section class="alerts"'))->toBeLessThan(strpos($html, '<header class="masthead"'))
+        ->and(built('fontes/index.html'))->not->toContain('class="masthead-date"')
+        ->not->toContain('class="masthead-weather"');
 });
 
 it('mostra a condição do tempo e a chuva também para leitores de tela', function () {

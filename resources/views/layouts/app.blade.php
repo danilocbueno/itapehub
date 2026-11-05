@@ -35,8 +35,12 @@
   <header class="masthead">
     <div class="masthead-inner">
       <div class="masthead-title">
-        @include('partials.brand')
-        <p class="tagline">{{ $site['tagline'] }}</p>
+        <div class="masthead-brand">
+          @include('partials.brand')
+          <p class="tagline">{{ $site['tagline'] }}</p>
+        </div>
+        {{-- Data e previsão ao lado do nome (só na home). --}}
+        @yield('masthead-sides')
       </div>
       <nav class="topics" aria-label="Assuntos">
         <a class="topics-agenda" href="{{ $base }}/agenda/"@if (($currentPage ?? null) === 'agenda') aria-current="page"@endif>Agenda</a>

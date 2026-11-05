@@ -2,11 +2,11 @@
 
 @section('top')
   @include('partials.alerts')
-  {{-- Linha de data com a previsão, logo acima do nome. --}}
-  <div class="dateline">
-    <span>{{ \App\Site\Timeline::dateline($now) }}</span>
-    @include('partials.weather')
-  </div>
+@endsection
+
+@section('masthead-sides')
+  <span class="masthead-date">{{ \App\Site\Timeline::dateline($now) }}</span>
+  <div class="masthead-weather">@include('partials.weather')</div>
 @endsection
 
 @section('content')
