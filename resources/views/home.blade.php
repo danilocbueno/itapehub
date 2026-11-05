@@ -10,6 +10,11 @@
 @endsection
 
 @section('content')
+  @if ($summary['total'])
+    @include('partials.summary')
+    <h2 class="latest">Últimas</h2>
+  @endif
+
   @forelse ($days as $day => $clusters)
     <section class="day">
       {{-- O primeiro dia abre com a capa, sem separador; os seguintes têm título. --}}

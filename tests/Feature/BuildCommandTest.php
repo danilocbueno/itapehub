@@ -18,6 +18,14 @@ function built(string $path): string
     return file_get_contents(config('itape.paths.build').'/'.$path);
 }
 
+/**
+ * Página sem o resumo do dia, que repete notícias que também estão nos cards.
+ */
+function withoutSummary(string $html): string
+{
+    return preg_replace('~<section class="summary".*?</section>~s', '', $html);
+}
+
 it('gera home, arquivo, fontes, 404 e feed', function () {
     $this->artisan('build')->assertSuccessful();
 
@@ -53,7 +61,7 @@ it('junta a mesma notícia de fontes diferentes em um card', function () {
     $repository->save();
 
     $this->artisan('build')->assertSuccessful();
-    $html = built('index.html');
+    $html = withoutSummary(built('index.html'));
 
     expect($html)->toContain('Também em:')
         ->toContain('href="https://correio.test/rio"')
@@ -158,6 +166,38 @@ it('mostra a previsão um dia de cada vez, começando por hoje', function () {
         ->and(substr_count($weather, 'class="wx-icon wx-'))->toBeGreaterThanOrEqual(3)
         ->and($weather)->toContain('wx-sun')
         ->toContain('wx-rain');
+});
+
+it('mostra o resumo do dia na home, com imagem em cada notícia e sem botões de compartilhar', function () {
+    $repository = new ItemRepository(config('itape.paths.data').'/items');
+    $item = new Item('jornal', 'https://jornal.test/hoje', 'Notícia de hoje com foto', image: 'https://jornal.test/foto.jpg', publishedAt: CarbonImmutable::parse('2026-10-25 16:30'));
+    $item->cluster = $item->id();
+    $repository->add($item);
+    $repository->save();
+
+    $this->artisan('build')->assertSuccessful();
+    $html = built('index.html');
+    $summary = Str::betweenFirst($html, '<section class="summary"', '</section>');
+
+    expect($summary)->toContain('Resumo do dia')
+        ->toContain('atualizado 17h00')
+        ->toContain('class="summary-num">1</span>')
+        ->toContain('Notícia de hoje com foto')
+        ->toContain('<span class="summary-thumb"><img src="https://jornal.test/foto.jpg"')
+        ->not->toContain('wa.me')
+        ->not->toContain('data-copy')
+        ->not->toContain('0h</span>')
+        ->and(strpos($html, '<section class="summary"'))->toBeLessThan(strpos($html, '<div class="front">'))
+        ->and($html)->toContain('<h2 class="latest">Últimas</h2>');
+});
+
+it('não mostra o resumo do dia quando ainda não há notícias de hoje', function () {
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-11-20 08:00', 'America/Sao_Paulo'));
+
+    $this->artisan('build')->assertSuccessful();
+
+    expect(built('index.html'))->not->toContain('class="summary"')
+        ->not->toContain('class="latest"');
 });
 
 it('mostra o aviso do INMET como faixa com rótulo', function () {
@@ -344,8 +384,8 @@ it('mostra o tema no card com link para a página do tema', function () {
     $this->artisan('build')->assertSuccessful();
     $card = fn (string $html, string $url) => Str::before(Str::afterLast(Str::before($html, 'href="'.$url.'"'), '<article'), '</article>');
 
-    expect($card(built('index.html'), 'https://jornal.test/acidente'))->toContain('<a class="kicker-theme" href="/tema/transito/">Trânsito</a>')
-        ->and($card(built('index.html'), 'https://jornal.test/cpfl'))->not->toContain('kicker-theme')
+    expect($card(withoutSummary(built('index.html')), 'https://jornal.test/acidente'))->toContain('<a class="kicker-theme" href="/tema/transito/">Trânsito</a>')
+        ->and($card(withoutSummary(built('index.html')), 'https://jornal.test/cpfl'))->not->toContain('kicker-theme')
         ->and($card(built('tema/transito/index.html'), 'https://jornal.test/acidente'))->not->toContain('kicker-theme');
 });
 

@@ -74,3 +74,47 @@ it('avisa quando não há notícias nas últimas 24 horas', function () {
     expect($text)->toContain('Nenhuma notícia nas últimas 24 horas.')
         ->toEndWith('Leia tudo em: https://x.test/');
 });
+
+describe('Resumo do dia na home', function () {
+    it('usa só as notícias de hoje, desde a meia-noite', function () {
+        $summary = Digest::today([
+            clusterOf('Hoje cedo', '2026-10-30 07:00'),
+            clusterOf('Ontem à noite', '2026-10-29 22:00'),
+        ], $this->now);
+
+        expect($summary['total'])->toBe(1)
+            ->and($summary['highlights'][0]->primary->title)->toBe('Hoje cedo');
+    });
+
+    it('destaca as três mais repercutidas e agrupa o resto por período, o mais recente primeiro', function () {
+        $summary = Digest::today([
+            clusterOf('Em três fontes', '2026-10-30 09:00', ['tvsmais', 'g1', 'correio']),
+            clusterOf('Em duas fontes', '2026-10-30 12:00', ['correio', 'jornal']),
+            clusterOf('Mais recente', '2026-10-30 17:30'),
+            clusterOf('Da tarde', '2026-10-30 14:00'),
+            clusterOf('Da manhã', '2026-10-30 08:00'),
+            clusterOf('Da madrugada', '2026-10-30 03:00'),
+        ], $this->now);
+
+        expect(array_map(fn (Cluster $c) => $c->primary->title, $summary['highlights']))->toBe(['Em três fontes', 'Em duas fontes', 'Mais recente'])
+            ->and(array_column($summary['periods'], 'label'))->toBe(['Tarde', 'Manhã', 'Madrugada'])
+            ->and($summary['periods'][0]['clusters'][0]->primary->title)->toBe('Da tarde')
+            ->and($summary['total'])->toBe(6);
+    });
+
+    it('não cria períodos quando todas as notícias cabem nos destaques', function () {
+        $summary = Digest::today([clusterOf('Única', '2026-10-30 10:00')], $this->now);
+
+        expect($summary['periods'])->toBe([]);
+    });
+
+    it('classifica o período pela hora', function (string $time, string $label) {
+        expect(Digest::period(CarbonImmutable::parse("2026-10-30 {$time}")))->toBe($label);
+    })->with([
+        ['05:59', 'Madrugada'],
+        ['06:00', 'Manhã'],
+        ['12:00', 'Tarde'],
+        ['18:00', 'Noite'],
+        ['23:59', 'Noite'],
+    ]);
+});
