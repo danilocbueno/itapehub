@@ -143,8 +143,8 @@ a { color: inherit; }
 
 /* Resumo do dia: destaques numerados e o resto do dia por período */
 .summary { margin: 18px 0 0; padding: 14px 16px 8px; background: var(--surface); border-top: 3px solid var(--rule); }
-.summary-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
-.summary h2 { margin: 0; font-style: italic; font-weight: 500; font-size: 1.6rem; line-height: 1; white-space: nowrap; }
+.summary-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.summary h2 { margin: 0; font-style: italic; font-weight: 500; font-size: 1.6rem; line-height: 1; }
 .summary-meta { font-size: .75rem; color: var(--muted); white-space: nowrap; }
 .summary-label { margin: 14px 0 0; font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .summary-list { list-style: none; margin: 6px 0 0; padding: 0; }
@@ -181,7 +181,7 @@ a { color: inherit; }
 /* No celular a capa continua a lista: o último card dela mantém o fio. */
 .front > .card:last-child { border-bottom: 1px solid var(--line); }
 /* ...mas, se vier o bloco de eventos, o título dele já separa (sem linha dupla). */
-.home-main:has(+ .upcoming) .front > .card:last-child { border-bottom: 0; }
+.front:has(+ .upcoming) > .card:last-child { border-bottom: 0; }
 .card[hidden] { display: none; }
 .card-body { grid-column: 1; grid-row: 1; min-width: 0; }
 .thumb { grid-column: 2; grid-row: 1; width: 96px; height: 72px; overflow: hidden; background: var(--line); align-self: start; }
@@ -311,6 +311,13 @@ td b { font-family: var(--serif); font-size: 1.05rem; }
 .upcoming-title { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; }
 .upcoming-item:nth-last-child(2) { border-bottom: 0; }
 .upcoming-more { display: inline-block; margin-top: 10px; font-size: .85rem; }
+@media (min-width: 1024px) {
+  .upcoming { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; column-gap: 28px; align-items: start; }
+  .upcoming h2 { grid-column: 1 / -1; }
+  .upcoming-item { grid-template-columns: minmax(0, 1fr); gap: 8px; border-bottom: 0; padding: 4px 0; }
+  .upcoming-thumb { width: 100%; height: auto; aspect-ratio: 16 / 10; }
+  .upcoming-more { margin-top: 4px; align-self: center; }
+}
 
 /* Resumo do dia */
 .digest { display: grid; gap: 8px; margin: 4px 0 22px; padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
@@ -352,29 +359,25 @@ td b { font-family: var(--serif); font-size: 1.05rem; }
   .alert strong { display: inline; margin-right: 6px; }
   .dateline { font-size: .85rem; }
 
-  /* Topo: capa à esquerda; resumo do dia e próximos eventos numa coluna à direita */
-  .home-top {
-    display: grid; grid-template-columns: minmax(0, 1fr) 340px; column-gap: 40px; align-items: start;
-    grid-template-areas: "main summary" "main upcoming"; grid-template-rows: auto 1fr;
+  /* Capa: manchete em 2/3, duas notícias empilhadas no terço da direita */
+  .front {
+    display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); column-gap: 32px;
     padding-bottom: 6px; margin-bottom: 6px; border-bottom: 1px solid var(--line);
   }
-  .home-main { grid-area: main; }
-  .home-top > .summary { grid-area: summary; margin-top: 22px; }
-  .home-top > .upcoming { grid-area: upcoming; margin: 26px 0 0; }
-  .home-top > .upcoming h2 { padding-bottom: 8px; border-bottom: 1px solid var(--rule); font-size: 1.3rem; }
-  .home-main .latest { margin-top: 22px; }
-
-  /* Capa: manchete na largura toda, as duas seguintes lado a lado embaixo */
-  .front { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; }
-  .front .card.lead { grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr); gap: 6px 0; }
-  .front .lead .thumb { grid-row: 1; grid-column: 1; aspect-ratio: 16 / 8; }
+  .front:has(+ .upcoming) { border-bottom: 0; }
+  .front .card.lead {
+    grid-column: 1; grid-row: 1 / span 2; grid-template-columns: minmax(0, 1fr);
+    gap: 6px 0; border-bottom: 0;
+  }
+  .front .lead .thumb { grid-row: 1; grid-column: 1; aspect-ratio: 16 / 9; }
   .front .lead .card-body { grid-row: 2; grid-column: 1; }
   .front .lead h3 { font-size: 2.5rem; line-height: 1.05; }
-  .front .card.side { grid-template-columns: minmax(0, 1fr); gap: 8px 0; align-content: start; }
+  .front .card.side { grid-column: 2; grid-template-columns: minmax(0, 1fr); }
   .front .side .thumb { grid-row: 1; grid-column: 1; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   .front .side .card-body { grid-row: 2; grid-column: 1; }
   .front .side h3 { font-size: 1.35rem; }
-  .front > .card.side { border-bottom: 0; }
+  .front .side + .side .thumb { display: none; }
+  .front .side:last-child { border-bottom: 0; }
 
   /* Demais notícias em grade de 3 colunas; sem foto, o resumo ocupa o lugar dela */
   .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; }
