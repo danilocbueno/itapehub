@@ -1,4 +1,4 @@
-# ItapeNews
+# ItapêHub
 
 Agregador de notícias de Itapetininga-SP. De hora em hora, coleta os veículos da cidade, junta as notícias repetidas e publica um site estático leve, feito para o celular, com previsão do tempo e alertas do INMET.
 
@@ -80,7 +80,7 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/` e **nunca acessam a
 1. Crie um repositório **público** no GitHub e envie o código (`main`). Em repositório público, os minutos do Actions são ilimitados. Em um privado, o GitHub Pages exige plano pago.
 2. Em **Settings → Pages**, escolha **Source: GitHub Actions**.
 3. (Opcional) Em **Settings → Secrets and variables → Actions → Variables**, configure:
-   - `SITE_NAME`: nome do site (padrão: ItapeNews)
+   - `SITE_NAME`: nome do site (padrão: ItapêHub)
    - `SITE_TAGLINE`: frase de descrição
    - `GOATCOUNTER_CODE`: código do [GoatCounter](https://www.goatcounter.com/) (ex.: `itapenews` para `itapenews.goatcounter.com`)
    - `SITE_CONTACT`: e-mail exibido em `/fontes/` para pedidos de remoção

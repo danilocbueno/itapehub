@@ -58,10 +58,31 @@ a { color: inherit; }
   padding: 4px 0 10px; text-align: center;
 }
 .brand {
+  display: inline-flex; align-items: flex-start;
   font-weight: 700; font-size: clamp(2.6rem, 11vw, 3.6rem); line-height: 1;
   letter-spacing: -0.025em; text-decoration: none;
 }
-.brand em { font-style: italic; font-weight: 500; color: var(--accent); }
+/* Logo: linha fina com paradas sob a primeira parte, vermelha sob a segunda, terminando num anel. */
+.brand-a, .brand-b { position: relative; display: block; }
+.brand-b { font-weight: 500; color: var(--accent); }
+.brand-line {
+  position: absolute; left: .02em; right: 0; top: .83em;
+  height: max(1px, .03em); background: currentColor;
+}
+.brand-b .brand-line { left: 0; height: max(1.5px, .04em); }
+.brand-line i {
+  position: absolute; top: 50%; width: max(3px, .09em); height: max(3px, .09em);
+  border-radius: 50%; background: currentColor; transform: translate(-50%, -50%);
+}
+.brand-line i:nth-child(1) { left: 4%; }
+.brand-line i:nth-child(2) { left: 46%; }
+.brand-line i:nth-child(3) { left: 72%; }
+.brand-line i:nth-child(4) { left: 88%; }
+.brand-b .brand-line::after {
+  content: ""; position: absolute; right: -.08em; top: 50%; box-sizing: border-box;
+  width: .18em; height: .18em; border: max(1.5px, .05em) solid var(--accent); border-radius: 50%;
+  background: var(--bg); transform: translateY(-50%);
+}
 .tagline {
   margin: 6px 0 0; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
 }

@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title', $site['name'].' · '.$site['tagline'])</title>
   <meta name="description" content="@yield('description', $site['tagline'])">
-  <meta name="theme-color" content="#0f6b5c">
+  <meta name="theme-color" content="#b42318">
   <link rel="canonical" href="{{ $site['url'] }}@yield('path', '/')">
   <link rel="alternate" type="application/rss+xml" title="{{ $site['name'] }}" href="{{ $base }}/feed.xml">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f6b5c'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EI%3C/text%3E%3C/svg%3E">
+  {{-- Favicon: o terminal da linha do logo (uma parada e o anel). --}}
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23f3eee4'/%3E%3Cpath d='M0 50H52' stroke='%23b42318' stroke-width='11'/%3E%3Ccircle cx='22' cy='50' r='9' fill='%231a1915'/%3E%3Ccircle cx='64' cy='50' r='18' fill='%23f3eee4' stroke='%23b42318' stroke-width='11'/%3E%3C/svg%3E">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="{{ $site['name'] }}">
@@ -28,14 +29,13 @@
   @endif
 </head>
 <body>
-  @php($brand = preg_match('/^(.+?)(News)$/u', $site['name'], $parts) ? e($parts[1]).'<em>'.e($parts[2]).'</em>' : e($site['name']))
   @hasSection('top')
     <div class="page-top">@yield('top')</div>
   @endif
   <header class="masthead">
     <div class="masthead-inner">
       <div class="masthead-title">
-        <a class="brand" href="{{ $base }}/">{!! $brand !!}</a>
+        @include('partials.brand')
         <p class="tagline">{{ $site['tagline'] }}</p>
       </div>
       <nav class="topics" aria-label="Assuntos">

@@ -54,7 +54,7 @@ it('monta o texto no formato do WhatsApp com um link só para o site', function 
     ], $this->now, 'https://danilocbueno.github.io/itapenews', fn (string $key) => ['tvsmais' => 'TVS+', 'g1' => 'g1', 'prefeitura' => 'Prefeitura'][$key]);
 
     expect($text)->toBe(
-        "*ItapeNews · sexta, 30/10*\n"
+        "*ItapêHub · sexta, 30/10*\n"
         ."As principais notícias de Itapetininga nas últimas 24 horas\n\n"
         ."• Colisão interdita rodovia em Itapetininga (TVS+, g1)\n"
         ."• PAT tem 266 vagas de emprego (Prefeitura)\n\n"

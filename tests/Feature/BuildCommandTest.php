@@ -82,10 +82,27 @@ it('mostra o cabeçalho de jornal com o nome e o subtítulo, sem a linha de data
 
     expect(built('index.html'))
         ->toContain('class="masthead"')
-        ->toContain('Itape<em>News</em>')
+        ->toContain('<span class="brand-a">Itapê')
+        ->toContain('<span class="brand-b">Hub')
         ->toContain('Todas as notícias da cidade, num só lugar')
         ->not->toContain('masthead-top')
         ->not->toContain('Itapetininga, domingo, 25 de outubro de 2026');
+});
+
+it('desenha a linha do logo com quatro paradas e o anel no fim', function () {
+    $this->artisan('build')->assertSuccessful();
+    $brand = Str::between(built('index.html'), '<a class="brand"', '</a>');
+
+    expect(substr_count(Str::between($brand, 'brand-a', 'brand-b'), '<i></i>'))->toBe(4)
+        ->and($brand)->toContain('<span class="brand-b">Hub<span class="brand-line" aria-hidden="true"></span>');
+});
+
+it('usa o terminal da linha como favicon', function () {
+    $this->artisan('build')->assertSuccessful();
+    $icon = Str::between(built('index.html'), '<link rel="icon" href="', '">');
+
+    expect(rawurldecode($icon))->toContain("<circle cx='64' cy='50' r='18'")
+        ->toContain("stroke='#b42318'");
 });
 
 it('usa o nome configurado no cabeçalho, sem destacar parte dele', function () {
@@ -352,11 +369,11 @@ it('gera a página do resumo do dia com o texto pronto para o WhatsApp', functio
     $page = built('hoje/index.html');
     $text = html_entity_decode(Str::between($page, '<textarea', '</textarea>'));
 
-    expect($text)->toContain('*ItapeNews · domingo, 25/10*')
+    expect($text)->toContain('*ItapêHub · domingo, 25/10*')
         ->toContain('• ')
         ->toContain('Leia tudo em: http://localhost:8000/')
         ->and($page)->toContain('data-copy="digest-text"')
-        ->toContain('href="https://wa.me/?text=%2AItapeNews');
+        ->toContain('href="https://wa.me/?text=%2AItap%C3%AAHub');
 });
 
 it('leva ao resumo do dia pelo rodapé de todas as páginas', function () {

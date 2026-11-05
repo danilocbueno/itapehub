@@ -1,4 +1,4 @@
-# Status do projeto: ItapeNews
+# Status do projeto: ItapêHub
 
 *Atualizado em 04/11/2026*
 
