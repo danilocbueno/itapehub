@@ -36,10 +36,42 @@ it('mostra notícias, tempo e alerta na home, sem filtro por fonte', function ()
         ->toContain('class="alerts"')
         ->not->toContain('data-source=')
         ->not->toContain('class="filters"')
-        ->not->toContain('<h2 data-day="2026-10-25">')
         ->toContain('<h2 data-day="2026-10-24">Ontem</h2>')
         ->toContain('referrerpolicy="no-referrer"')
         ->toContain('https://wa.me/?text=');
+});
+
+it('separa o resto do primeiro dia dos próximos eventos com o nome do dia', function () {
+    $repository = new ItemRepository(config('itape.paths.data').'/items');
+    $item = new Item('jornal', 'https://jornal.test/show', 'Show na Praça', 'O show acontece no dia 31 de outubro, às 20h, na Praça.', publishedAt: CarbonImmutable::parse('2026-10-25 16:30'));
+    $item->cluster = $item->id();
+    $repository->add($item);
+    $repository->save();
+
+    $this->artisan('build')->assertSuccessful();
+    $html = built('index.html');
+    $header = strpos($html, '<h2 data-day="2026-10-25">Hoje</h2>');
+
+    expect(strpos($html, '<section class="upcoming"'))->not->toBeFalse()
+        ->and($header)->toBeGreaterThan(strpos($html, '</section>', strpos($html, '<section class="upcoming"')))
+        ->and($header)->toBeLessThan(strpos($html, '<div class="cards">'))
+        ->and(substr_count($html, '<h2 data-day="2026-10-25">'))->toBe(1);
+});
+
+it('não põe separador no primeiro dia quando não há próximos eventos', function () {
+    config(['itape.paths.data' => $this->tmp.'/sem-eventos']);
+    $repository = new ItemRepository(config('itape.paths.data').'/items');
+    foreach (range(1, 5) as $n) {
+        $item = new Item('jornal', "https://jornal.test/{$n}", "Notícia número {$n} da cidade", publishedAt: CarbonImmutable::parse("2026-10-25 1{$n}:00"));
+        $item->cluster = $item->id();
+        $repository->add($item);
+    }
+    $repository->save();
+
+    $this->artisan('build')->assertSuccessful();
+
+    expect(built('index.html'))->not->toContain('<section class="upcoming"')
+        ->not->toContain('<h2 data-day="2026-10-25">');
 });
 
 it('junta a mesma notícia de fontes diferentes em um card', function () {

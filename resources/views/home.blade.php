@@ -43,6 +43,10 @@
           </section>
         @endif
         @php($clusters = array_slice($clusters, 3))
+        {{-- Depois dos eventos, o resto do primeiro dia ganha o separador com o nome do dia. --}}
+        @if ($events && $clusters)
+          <h2 data-day="{{ $day }}">{{ \App\Site\Timeline::dayLabel($day, $now) }}</h2>
+        @endif
       @endif
       <div class="cards">
         @foreach ($clusters as $cluster)
