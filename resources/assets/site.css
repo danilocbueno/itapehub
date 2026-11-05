@@ -127,7 +127,6 @@ a { color: inherit; }
 .weather-slide[hidden] { display: none; }
 .weather-slide.is-active { animation: weather-in .4s ease; }
 .weather-slide b { font-weight: 600; }
-.weather-slide .temp { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; line-height: 1; }
 .weather-slide .muted { color: var(--muted); }
 .wx { display: inline-flex; align-items: center; gap: 3px; }
 .wx-icon { flex: none; vertical-align: middle; }

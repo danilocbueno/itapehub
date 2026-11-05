@@ -137,7 +137,7 @@ it('não mostra na previsão dias que já passaram', function () {
 it('mostra a previsão um dia de cada vez, começando por hoje', function () {
     JsonFile::write(config('itape.paths.data').'/weather.json', [
         'fetched_at' => '2026-10-25T16:00:00-03:00',
-        'current' => ['temperature' => 26.2, 'code' => 1, 'time' => '2026-10-25T16:00'],
+        'current' => ['temperature' => 22.7, 'code' => 95, 'time' => '2026-10-25T16:00'],
         'daily' => [
             ['date' => '2026-10-25', 'max' => 26, 'min' => 16, 'rain' => 0, 'rain_probability' => 86, 'code' => 1],
             ['date' => '2026-10-26', 'max' => 27, 'min' => 16, 'rain' => 4, 'rain_probability' => 88, 'code' => 53],
@@ -154,10 +154,28 @@ it('mostra a previsão um dia de cada vez, começando por hoje', function () {
         ->and($slides[0][1])->toBe(' is-active')
         ->and($slides[0][2])->toBe('')
         ->and($slides[1][2])->toBe(' hidden')
-        ->and($weather)->toContain('26°<span class="visually-hidden"> agora</span>')
         ->and(substr_count($weather, 'class="wx-icon wx-'))->toBeGreaterThanOrEqual(3)
         ->and($weather)->toContain('wx-sun')
         ->toContain('wx-rain');
+});
+
+it('mostra hoje com máxima e mínima, como os outros dias, sem a temperatura atual', function () {
+    JsonFile::write(config('itape.paths.data').'/weather.json', [
+        'fetched_at' => '2026-10-25T16:00:00-03:00',
+        'current' => ['temperature' => 22.7, 'code' => 95, 'time' => '2026-10-25T16:00'],
+        'daily' => [
+            ['date' => '2026-10-25', 'max' => 26, 'min' => 16, 'rain' => 0, 'rain_probability' => 86, 'code' => 1],
+        ],
+    ]);
+
+    $this->artisan('build')->assertSuccessful();
+    $today = Str::betweenFirst(built('index.html'), '<div class="weather-slide is-active">', '</div>');
+
+    expect($today)->toContain('26° / 16°')
+        ->toContain('wx-sun')
+        ->not->toContain('23°')
+        ->not->toContain('agora')
+        ->not->toContain('wx-storm');
 });
 
 it('mostra o aviso do INMET como faixa com rótulo', function () {
