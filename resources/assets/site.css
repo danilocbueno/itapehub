@@ -267,7 +267,10 @@ td b { font-family: var(--serif); font-size: 1.05rem; }
 
 /* Próximos eventos na home */
 .upcoming { margin: 4px 0 22px; }
-.upcoming h2 { margin: 0 0 6px; font-style: italic; font-weight: 500; font-size: 1.15rem; }
+/* Título com o fio e, no fim da linha, o link para a agenda. */
+.upcoming-head { display: flex; align-items: center; gap: 14px; margin: 0 0 6px; }
+.upcoming-head h2 { flex: 1; margin: 0; font-style: italic; font-weight: 500; font-size: 1.15rem; }
+.upcoming-more { flex: none; font-size: .85rem; color: var(--accent); }
 .upcoming-item {
   display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; align-items: start;
   padding: 10px 0; border-bottom: 1px solid var(--line); text-decoration: none;
@@ -278,14 +281,13 @@ td b { font-family: var(--serif); font-size: 1.05rem; }
 .upcoming-item:hover .upcoming-title { text-decoration: underline; }
 .upcoming-when { font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); }
 .upcoming-title { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; line-height: 1.25; }
-.upcoming-item:nth-last-child(2) { border-bottom: 0; }
-.upcoming-more { display: inline-block; margin-top: 10px; font-size: .85rem; }
+.upcoming-item:last-child { border-bottom: 0; }
 @media (min-width: 1024px) {
-  .upcoming { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; column-gap: 28px; align-items: start; }
-  .upcoming h2 { grid-column: 1 / -1; }
+  /* Três colunas, alinhadas com a grade de notícias. */
+  .upcoming { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; align-items: start; }
+  .upcoming-head { grid-column: 1 / -1; }
   .upcoming-item { grid-template-columns: minmax(0, 1fr); gap: 8px; border-bottom: 0; padding: 4px 0; }
   .upcoming-thumb { width: 100%; height: auto; aspect-ratio: 16 / 10; }
-  .upcoming-more { margin-top: 4px; align-self: center; }
 }
 
 /* Resumo do dia */

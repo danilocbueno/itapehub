@@ -25,7 +25,10 @@
         </div><!-- /front -->
         @if ($events)
           <section class="upcoming" aria-label="Próximos eventos">
-            <h2>Próximos eventos</h2>
+            <div class="upcoming-head">
+              <h2>Próximos eventos</h2>
+              <a class="upcoming-more" href="{{ $site['base'] }}/agenda/">Ver agenda completa</a>
+            </div>
             @foreach ($events as $event)
               @php($item = $event->cluster->primary)
               @php($image = $event->cluster->image())
@@ -39,7 +42,6 @@
                 </span>
               </a>
             @endforeach
-            <a class="upcoming-more" href="{{ $site['base'] }}/agenda/">Ver agenda completa</a>
           </section>
         @endif
         @php($clusters = array_slice($clusters, 3))

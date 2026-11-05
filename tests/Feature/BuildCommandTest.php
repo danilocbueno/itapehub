@@ -58,6 +58,21 @@ it('separa o resto do primeiro dia dos próximos eventos com o nome do dia', fun
         ->and(substr_count($html, '<h2 data-day="2026-10-25">'))->toBe(1);
 });
 
+it('põe o link da agenda na linha do título dos próximos eventos', function () {
+    $repository = new ItemRepository(config('itape.paths.data').'/items');
+    $item = new Item('jornal', 'https://jornal.test/show', 'Show na Praça', 'O show acontece no dia 31 de outubro, às 20h, na Praça.', publishedAt: CarbonImmutable::parse('2026-10-25 16:30'));
+    $item->cluster = $item->id();
+    $repository->add($item);
+    $repository->save();
+
+    $this->artisan('build')->assertSuccessful();
+    $head = Str::betweenFirst(built('index.html'), '<div class="upcoming-head">', '</div>');
+
+    expect($head)->toContain('<h2>Próximos eventos</h2>')
+        ->toContain('<a class="upcoming-more" href="/agenda/">Ver agenda completa</a>')
+        ->and(substr_count(built('index.html'), 'class="upcoming-more"'))->toBe(1);
+});
+
 it('não põe separador no primeiro dia quando não há próximos eventos', function () {
     config(['itape.paths.data' => $this->tmp.'/sem-eventos']);
     $repository = new ItemRepository(config('itape.paths.data').'/items');
