@@ -117,6 +117,14 @@ final class Timeline
         return mb_strtolower(self::WEEKDAYS[$date->dayOfWeek]).', '.$date->format('d/m');
     }
 
+    /**
+     * "Domingo, 25 de outubro" (linha de data da home).
+     */
+    public static function dateline(CarbonImmutable $date): string
+    {
+        return self::WEEKDAYS[$date->dayOfWeek].', '.$date->day.' de '.self::MONTHS[$date->month];
+    }
+
     public static function longDate(CarbonImmutable $date): string
     {
         return mb_strtolower(self::WEEKDAYS[$date->dayOfWeek]).', '.$date->day.' de '.self::MONTHS[$date->month].' de '.$date->year;

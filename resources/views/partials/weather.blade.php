@@ -11,14 +11,13 @@
       @php($code = $today && isset($current['code']) ? $current['code'] : $day['code'])
       <div class="weather-slide{{ $loop->first ? ' is-active' : '' }}"{{ $loop->first ? '' : ' hidden' }}>
         <b>{{ Timeline::shortDay($day['date'], $now) }}</b>
-        <span class="wx">{!! WeatherIcon::forCode($code) !!}</span>
+        <span class="wx" title="{{ WeatherCode::label($code) }}">{!! WeatherIcon::forCode($code) !!}<span class="visually-hidden">{{ mb_strtolower(WeatherCode::label($code)) }}</span></span>
         @if ($today && isset($current['temperature']))
-          <span class="temp">{{ round($current['temperature']) }}° agora</span>
+          <span class="temp">{{ round($current['temperature']) }}°<span class="visually-hidden"> agora</span></span>
         @endif
-        <span>{{ mb_strtolower(WeatherCode::label($code)) }}</span>
-        <span class="wx">{!! WeatherIcon::svg('temp') !!}{{ round($day['max'] ?? 0) }}° / {{ round($day['min'] ?? 0) }}°</span>
+        <span class="wx">{{ round($day['max'] ?? 0) }}° / {{ round($day['min'] ?? 0) }}°</span>
         @if ($day['rain_probability'] !== null)
-          <span class="wx small">{!! WeatherIcon::svg('drop') !!}chuva {{ $day['rain_probability'] }}%</span>
+          <span class="wx muted">{!! WeatherIcon::svg('drop') !!}<span class="visually-hidden">chuva </span>{{ $day['rain_probability'] }}%</span>
         @endif
       </div>
     @endforeach

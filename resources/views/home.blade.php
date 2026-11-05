@@ -2,24 +2,14 @@
 
 @section('top')
   @include('partials.alerts')
+  {{-- Linha de data com a previsão, logo acima do nome. --}}
+  <div class="dateline">
+    <span>{{ \App\Site\Timeline::dateline($now) }}</span>
+    @include('partials.weather')
+  </div>
 @endsection
 
 @section('content')
-  <div class="topbar">
-  @if (count($activeSources) > 1)
-    <div class="filters" role="toolbar" aria-label="Filtrar por fonte">
-      <button class="chip" type="button" data-source="all" aria-pressed="true">Todas</button>
-      @foreach ($sources as $key => $source)
-        @if (in_array($key, $activeSources, true))
-          <button class="chip" type="button" data-source="{{ $key }}" aria-pressed="false">{{ $source->short }}</button>
-        @endif
-      @endforeach
-    </div>
-  @endif
-
-  @include('partials.weather')
-  </div><!-- /topbar -->
-
   @forelse ($days as $day => $clusters)
     <section class="day">
       {{-- O primeiro dia abre com a capa, sem separador; os seguintes têm título. --}}

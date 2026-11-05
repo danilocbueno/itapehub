@@ -26,7 +26,7 @@ it('gera home, arquivo, fontes, 404 e feed', function () {
     }
 });
 
-it('mostra notícias, tempo, alerta e filtros na home', function () {
+it('mostra notícias, tempo e alerta na home, sem filtro por fonte', function () {
     $this->artisan('build')->assertSuccessful();
     $html = built('index.html');
 
@@ -34,7 +34,8 @@ it('mostra notícias, tempo, alerta e filtros na home', function () {
         ->toContain('Chuva passa de 110 mm em Itapetininga e deixa desabrigados')
         ->toContain('class="weather"')
         ->toContain('class="alerts"')
-        ->toContain('data-source="g1"')
+        ->not->toContain('data-source=')
+        ->not->toContain('class="filters"')
         ->not->toContain('<h2 data-day="2026-10-25">')
         ->toContain('<h2 data-day="2026-10-24">Ontem</h2>')
         ->toContain('referrerpolicy="no-referrer"')
@@ -77,7 +78,7 @@ it('mostra a situação das fontes', function () {
         ->toContain('<span class="ok">OK</span>');
 });
 
-it('mostra o cabeçalho de jornal com o nome e o subtítulo, sem a linha de data', function () {
+it('mostra o cabeçalho de jornal com o nome e o subtítulo, sem a data por extenso com o ano', function () {
     $this->artisan('build')->assertSuccessful();
 
     expect(built('index.html'))
@@ -153,7 +154,7 @@ it('mostra a previsão um dia de cada vez, começando por hoje', function () {
         ->and($slides[0][1])->toBe(' is-active')
         ->and($slides[0][2])->toBe('')
         ->and($slides[1][2])->toBe(' hidden')
-        ->and($weather)->toContain('26° agora')
+        ->and($weather)->toContain('26°<span class="visually-hidden"> agora</span>')
         ->and(substr_count($weather, 'class="wx-icon wx-'))->toBeGreaterThanOrEqual(3)
         ->and($weather)->toContain('wx-sun')
         ->toContain('wx-rain');
@@ -179,14 +180,24 @@ it('mostra vários avisos do INMET em uma faixa só', function () {
         ->and($html)->toContain('Chuvas intensas e tempestade na região de Itapetininga até hoje às 23h59.');
 });
 
-it('agrupa filtros e previsão abaixo do cabeçalho', function () {
+it('mostra a data e a previsão numa linha antes do cabeçalho', function () {
     $this->artisan('build')->assertSuccessful();
-    $topbar = Str::between(built('index.html'), '<div class="topbar">', '<!-- /topbar -->');
+    $html = built('index.html');
+    $dateline = Str::between($html, '<div class="dateline">', '</section>');
 
-    expect($topbar)
-        ->toContain('class="filters"')
+    expect($dateline)->toContain('<span>Domingo, 25 de outubro</span>')
         ->toContain('class="weather"')
-        ->not->toContain('class="alerts"');
+        ->and(strpos($html, '<section class="alerts"'))->toBeLessThan(strpos($html, '<div class="dateline">'))
+        ->and(strpos($html, '<div class="dateline">'))->toBeLessThan(strpos($html, '<header class="masthead"'))
+        ->and(built('fontes/index.html'))->not->toContain('class="dateline"');
+});
+
+it('mostra a condição do tempo e a chuva também para leitores de tela', function () {
+    $this->artisan('build')->assertSuccessful();
+    $weather = Str::between(built('index.html'), 'class="weather"', '</section>');
+
+    expect($weather)->toContain('<span class="visually-hidden">chuva </span>')
+        ->toMatch('~<span class="wx" title="[^"]+">.*?<span class="visually-hidden">[a-zç ]+</span></span>~s');
 });
 
 it('mostra o aviso do INMET no início da página, antes do cabeçalho', function () {

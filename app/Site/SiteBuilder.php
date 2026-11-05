@@ -54,7 +54,6 @@ final class SiteBuilder
             'days' => Timeline::byDay($home),
             'weather' => JsonFile::read($dataPath.'/weather.json'),
             'alerts' => JsonFile::read($dataPath.'/alerts.json')['alerts'] ?? [],
-            'activeSources' => $this->sourcesIn($home),
             'events' => array_slice($events, 0, 3),
         ]);
         $pages++;
@@ -141,25 +140,6 @@ final class SiteBuilder
         $min = (int) config('itape.home.min_clusters');
 
         return count($recent) >= $min ? $recent : array_slice($clusters, 0, $min);
-    }
-
-    /**
-     * Chaves das fontes presentes nos clusters (para os filtros da home).
-     *
-     * @param  list<Cluster>  $clusters
-     * @return list<string>
-     */
-    private function sourcesIn(array $clusters): array
-    {
-        $keys = [];
-
-        foreach ($clusters as $cluster) {
-            foreach ($cluster->sources() as $key) {
-                $keys[$key] = true;
-            }
-        }
-
-        return array_keys($keys);
     }
 
     /**

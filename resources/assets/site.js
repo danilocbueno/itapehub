@@ -68,30 +68,4 @@
       }
     });
   });
-
-  // Filtro por fonte.
-  var chips = document.querySelectorAll('.chip[data-source]');
-  if (!chips.length) return;
-
-  function apply(source) {
-    chips.forEach(function (chip) {
-      chip.setAttribute('aria-pressed', String(chip.getAttribute('data-source') === source));
-    });
-    document.querySelectorAll('.card').forEach(function (card) {
-      var list = (card.getAttribute('data-sources') || '').split(' ');
-      card.hidden = source !== 'all' && list.indexOf(source) === -1;
-    });
-    document.querySelectorAll('.day').forEach(function (day) {
-      day.hidden = !day.querySelector('.card:not([hidden])');
-    });
-    try { localStorage.setItem('itape-filter', source); } catch (e) { /* modo privado */ }
-  }
-
-  chips.forEach(function (chip) {
-    chip.addEventListener('click', function () { apply(chip.getAttribute('data-source')); });
-  });
-
-  var saved = 'all';
-  try { saved = localStorage.getItem('itape-filter') || 'all'; } catch (e) { /* modo privado */ }
-  if (saved !== 'all' && document.querySelector('.chip[data-source="' + saved + '"]')) apply(saved);
 })();
