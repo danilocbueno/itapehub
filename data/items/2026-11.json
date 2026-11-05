@@ -1,5 +1,53 @@
 [
     {
+        "id": "1499b09401c0b472",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11008/desfile-civico-de-itapetininga-e-cancelado-devido-as-condicoes-climaticas/",
+        "title": "Desfile Cívico de Itapetininga é cancelado devido às condições climáticas",
+        "summary": "O Desfile Cívico em comemoração aos 256 anos de Itapetininga, que seria realizado nesta quinta-feira, 05 de novembro, a partir das 8h, na rua Dr. Virgílio de Rezende, foi cancelado devido às condições climáticas de chuvas intensas.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/88cb9aa37289096ce33979d1ce3bcb95.webp",
+        "published_at": "2026-11-05T10:10:56-03:00",
+        "collected_at": "2026-11-05T10:10:56-03:00",
+        "cluster": "7d0ca5f073ebc5ef",
+        "hidden": false
+    },
+    {
+        "id": "1d30c4ab995fb86e",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80829/desfile-civico-de-aniversario-de-itapetininga-e-cancelado",
+        "title": "Desfile Cívico de aniversário de Itapetininga é cancelado",
+        "summary": "O Desfile Cívico em comemoração aos 256 anos de Itapetininga, previsto para esta quinta-feira, dia 5 de novembro, foi cancelado devido à previsão de chuvas inte...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80829?v=Banner_1d6cd718-fde2-4ede-82bb-9f8e0bfaf412_20261105121406.jpg",
+        "published_at": "2026-11-05T09:00:00-03:00",
+        "collected_at": "2026-11-05T10:10:56-03:00",
+        "cluster": "7d0ca5f073ebc5ef",
+        "hidden": false
+    },
+    {
+        "id": "7d0ca5f073ebc5ef",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/05/desfile-civico-de-itapetininga-e-cancelado-devido-as-condicoes-climaticas.ghtml",
+        "title": "Desfile cívico de Itapetininga é cancelado devido às condições climáticas",
+        "summary": "O desfile cívico de Itapetininga (SP), programado para a manhã desta quinta-feira (5), foi cancelado devido às condições climáticas adversas na cidade. O evento integrava os festejos dos 256 anos do município. O desfile estava previsto…",
+        "image": "https://s2-g1.glbimg.com/2H03IFTeHeoCG9XF3lW4K3tFQq4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/u/5/JWyxBsS0msMaGBVgotvQ/e9d3cefe6ca699266d55f4f1d93b40f6-1-.jpg",
+        "published_at": "2026-11-05T08:04:07-03:00",
+        "collected_at": "2026-11-05T10:10:56-03:00",
+        "cluster": "7d0ca5f073ebc5ef",
+        "hidden": false
+    },
+    {
+        "id": "fe15582a5adb8dae",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/05/made-in-itape-itapetininga-completa-256-anos-com-produtos-que-conquistam-o-brasil-e-o-mundo.ghtml",
+        "title": "'Made in Itapê': Itapetininga completa 256 anos com produtos que conquistam o Brasil e o mundo",
+        "summary": "Em uma década, o Produto Interno Bruto (PIB) do município alcançou R$ 8 bilhões, um salto de 123%, mais que dobrando a riqueza local, segundo dados consolidados pelo Instituto Brasileiro de Geografia e Estatística (IBGE). Vista aérea de…",
+        "image": "https://s2-g1.glbimg.com/PEBVh0TVhkj-xXDUq6CHfWblxxc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/W/J/AipFxqRniTsri6qwjmBw/61306f7a788fea31200d1b7ff51508d6-1-.jpeg",
+        "published_at": "2026-11-05T07:33:25-03:00",
+        "collected_at": "2026-11-05T10:10:56-03:00",
+        "cluster": "fe15582a5adb8dae",
+        "hidden": false
+    },
+    {
         "id": "19ff67552dd5aa41",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11006/voleibol-futsal-e-badminton-movimentam-os-ginasios-de-itapetininga-neste-fim-de-semana/",
