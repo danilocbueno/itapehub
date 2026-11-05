@@ -89,11 +89,16 @@ a { color: inherit; }
 
 /* Linha de assuntos (temas), em todas as páginas */
 .topics {
-  display: flex; gap: 18px; padding: 9px 0; border-bottom: 1px solid var(--rule);
+  display: flex; gap: 18px; padding: 9px 0;
   overflow-x: auto; scrollbar-width: none; white-space: nowrap;
   font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
 }
 .topics::-webkit-scrollbar { display: none; }
+/* Fecha o cabeçalho com o fio duplo do rodapé, invertido: o fino em cima e o grosso embaixo. */
+.masthead-inner::after {
+  content: ""; display: block; height: 2px;
+  border-top: 1px solid var(--rule); border-bottom: 3px solid var(--rule);
+}
 /* Centraliza quando cabe; quando não cabe, rola sem cortar o início. */
 .topics a:first-child { margin-left: auto; }
 .topics a:last-child { margin-right: auto; }
@@ -270,7 +275,7 @@ td b { font-family: var(--serif); font-size: 1.05rem; }
 /* Título com o fio e, no fim da linha, o link para a agenda. */
 .upcoming-head { display: flex; align-items: center; gap: 14px; margin: 0 0 6px; }
 .upcoming-head h2 { flex: 1; margin: 0; font-style: italic; font-weight: 500; font-size: 1.15rem; }
-.upcoming-more { flex: none; font-size: .85rem; color: var(--accent); }
+.upcoming-more { flex: none; font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.15rem; color: var(--accent); }
 .upcoming-item {
   display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 12px; align-items: start;
   padding: 10px 0; border-bottom: 1px solid var(--line); text-decoration: none;
