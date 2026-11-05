@@ -55,7 +55,6 @@ final class SiteBuilder
             'weather' => JsonFile::read($dataPath.'/weather.json'),
             'alerts' => JsonFile::read($dataPath.'/alerts.json')['alerts'] ?? [],
             'events' => array_slice($events, 0, 3),
-            'summary' => Digest::today($clusters, $now),
         ]);
         $pages++;
 
