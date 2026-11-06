@@ -49,9 +49,14 @@ final class SiteBuilder
         $this->files->cleanDirectory($buildPath);
         $pages = 0;
 
+        // A capa pega as três notícias mais recentes, mesmo que venham de dias diferentes.
+        $front = array_slice($home, 0, 3);
+
         $this->write($buildPath.'/index.html', 'home', [
             ...$shared,
-            'days' => Timeline::byDay($home),
+            'front' => $front,
+            'frontDay' => isset($front[0]) ? $front[0]->date()->format('Y-m-d') : null,
+            'days' => Timeline::byDay(array_slice($home, 3)),
             'weather' => JsonFile::read($dataPath.'/weather.json'),
             'alerts' => JsonFile::read($dataPath.'/alerts.json')['alerts'] ?? [],
             'events' => array_slice($events, 0, 3),

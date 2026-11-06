@@ -274,6 +274,35 @@ it('mostra o aviso do INMET no início da página, antes do cabeçalho', functio
         ->and(built('fontes/index.html'))->not->toContain('<section class="alerts"');
 });
 
+it('completa a capa com notícias do dia anterior quando hoje há menos de três', function () {
+    config(['itape.paths.data' => $this->tmp.'/capa']);
+    $repository = new ItemRepository(config('itape.paths.data').'/items');
+    foreach ([
+        ['https://jornal.test/hoje', 'Única notícia de hoje', '2026-10-25 09:00'],
+        ['https://jornal.test/ontem-1', 'Primeira de ontem', '2026-10-24 20:00'],
+        ['https://jornal.test/ontem-2', 'Segunda de ontem', '2026-10-24 18:00'],
+        ['https://jornal.test/ontem-3', 'Terceira de ontem', '2026-10-24 15:00'],
+    ] as [$url, $title, $date]) {
+        $item = new Item('jornal', $url, $title, publishedAt: CarbonImmutable::parse($date));
+        $item->cluster = $item->id();
+        $repository->add($item);
+    }
+    $repository->save();
+
+    $this->artisan('build')->assertSuccessful();
+    $html = built('index.html');
+    $front = Str::betweenFirst($html, '<div class="front">', '<!-- /front -->');
+
+    expect(substr_count($front, '<article class="card'))->toBe(3)
+        ->and($front)->toContain('Única notícia de hoje')
+        ->toContain('Primeira de ontem')
+        ->toContain('Segunda de ontem')
+        ->not->toContain('Terceira de ontem')
+        ->and(Str::after($html, '<!-- /front -->'))->toContain('<h2 data-day="2026-10-24">Ontem</h2>')
+        ->toContain('Terceira de ontem')
+        ->and($html)->not->toContain('<h2 data-day="2026-10-25">');
+});
+
 it('monta a capa com a manchete e duas notícias ao lado', function () {
     $this->artisan('build')->assertSuccessful();
     $front = Str::between(built('index.html'), '<div class="front">', '<!-- /front -->');
