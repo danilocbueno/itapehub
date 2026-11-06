@@ -1,5 +1,17 @@
 [
     {
+        "id": "d446f15b91cff3f8",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80832/corrida-interdita-vias-proximas-ao-ginasio-municipal-neste-domingo-em-itapetininga",
+        "title": "Corrida interdita vias próximas ao Ginásio Municipal neste domingo em Itapetininga",
+        "summary": "Ruas e avenidas próximas ao Ginásio Municipal “Ayrton Senna da Silva”, em Itapetininga, serão interditadas neste domingo, dia 8 de novembro, das 6h às 10h, para...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80832?v=Banner_c0c26cfb-7207-42e2-a9f9-e4a982068c66_20261106172319.jpg",
+        "published_at": "2026-11-06T14:21:00-03:00",
+        "collected_at": "2026-11-06T20:10:21-03:00",
+        "cluster": "d446f15b91cff3f8",
+        "hidden": false
+    },
+    {
         "id": "23f7474ef0d56ef6",
         "source": "jornal",
         "url": "https://www.jornaldeitapetininga.com.br/noticias/ruas-serao-interditadas-neste-domingo-8-durante-a-corrida-em-itapetininga",
