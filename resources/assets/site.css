@@ -528,28 +528,70 @@ a {
     flex: 1;
     border-top: 1px solid var(--rule);
 }
-.months ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+/* Arquivo: um calendário por mês, os dias com notícias viram links */
+.calendar {
+    table-layout: fixed;
+    font-size: 0.9rem;
 }
-.months li a {
-    display: block;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--line);
-    font-family: var(--serif);
-    font-size: 1.05rem;
+.calendar th,
+.calendar td {
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.calendar th {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rule);
+}
+.calendar td {
+    height: 52px;
+}
+.cal-day a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    height: 100%;
     text-decoration: none;
 }
-.months li a:hover {
-    text-decoration: underline;
+.cal-day a:hover,
+.cal-day a:focus-visible {
+    background: var(--accent-soft);
 }
-.months li small {
-    font-family: var(--sans);
-    font-size: 0.75rem;
+.cal-num {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    line-height: 1;
+}
+.cal-day .cal-num {
+    font-weight: 600;
+}
+.cal-count {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+}
+.cal-empty .cal-num {
     color: var(--muted);
+}
+.cal-today .cal-num {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+@media (min-width: 1024px) {
+    .months {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 48px;
+        align-items: start;
+    }
+    .calendar td {
+        height: 60px;
+    }
 }
 .table-wrap {
     overflow-x: auto;

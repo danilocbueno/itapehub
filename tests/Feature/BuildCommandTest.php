@@ -379,12 +379,17 @@ it('mostra na página de fontes o erro de uma fonte que falhou', function () {
         ->toContain('HTTP 503');
 });
 
-it('lista os dias do arquivo agrupados por mês', function () {
+it('mostra o arquivo como um calendário por mês, com link nos dias que têm notícias', function () {
     $this->artisan('build')->assertSuccessful();
+    $page = built('arquivo/index.html');
+    $october = Str::betweenFirst($page, '<table class="calendar">', '</table>');
 
-    expect(built('arquivo/index.html'))
-        ->toContain('Outubro de 2026')
-        ->toContain('href="/arquivo/2026/10/25/"');
+    expect($page)->toContain('Outubro de 2026')
+        ->and($october)->toContain('<th scope="col">Dom</th>')
+        ->toContain('<th scope="col">Sáb</th>')
+        ->toMatch('~<td class="cal-day cal-today">\\s*<a href="/arquivo/2026/10/25/" aria-label="25: \\d+ notícias?">~')
+        ->toContain('<td class="cal-empty"><span class="cal-num">1</span></td>')
+        ->toContain('<td class="cal-out"></td>');
 });
 
 it('gera uma página para cada tema', function () {
