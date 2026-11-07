@@ -40,4 +40,18 @@ return [
         'Chefe do Poder Executivo' => 'Prefeitura',
     ],
 
+    /*
+    | Vereadoras (pelo nome curto). As demais pessoas da lista acima são
+    | vereadores. Usado para o texto dizer "a vereadora" ou "o vereador".
+    */
+    'vereadoras' => [
+        'Catarina Motta',
+        'Christiane Almeida',
+        'Cristiane Cardena',
+        'Denise Castro',
+        'Júlia Nery',
+        'Júlia Machado',
+        'Marina Nalesso',
+    ],
+
 ];

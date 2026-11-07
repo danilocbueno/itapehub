@@ -1,5 +1,7 @@
 <?php
 
+use App\Camara\SessionRepository;
+use App\Camara\SiscamParser;
 use App\Data\Item;
 use App\Pipeline\Clusterer;
 use App\Storage\ItemRepository;
@@ -629,6 +631,24 @@ it('não esconde a página quando não há dados', function () {
  */
 function sessionNewsFile(string $writtenBy = 'gemini:gemini-3.8-flash'): void
 {
+    $story = [
+        'titulo' => 'Câmara aprova urgência para regras de eventos',
+        'linha_fina' => 'Na sessão de 24 de outubro, a Câmara aprovou a urgência de dois projetos e 11 pedidos.',
+        'lide' => 'A Câmara de Itapetininga aprovou no sábado (24) a urgência de dois projetos da Prefeitura.',
+        'blocos' => [['intertitulo' => 'Estradas rurais', 'paragrafos' => ['O vereador Miguel Arcanjo pediu manutenção das estradas do Viracopos.']]],
+        'fechamento' => '18 dos 19 vereadores estiveram presentes.',
+        'omitidos' => [['documento' => 'Correspondências Recebidas Nº 340/2026', 'motivo' => 'Denúncia anônima.']],
+    ];
+    $list = [
+        'titulo' => 'Vereadores fazem 21 pedidos na sessão de 24 de outubro',
+        'linha_fina' => 'Resumo da 53ª Sessão Ordinária de 2026.',
+        'resumo' => ['A Câmara aprovou a urgência de dois projetos da Prefeitura.'],
+        'secoes' => [['tema' => 'Ruas e estradas', 'itens' => ['Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).']]],
+        'tambem' => ['Presença: 18 vereadores.'],
+        'omitidos' => [],
+    ];
+    $gemini = str_starts_with($writtenBy, 'gemini');
+
     JsonFile::write(config('itape.paths.data').'/camara/noticias/1608.json', [
         'session' => 1608,
         'title' => '53ª Sessão Ordinária de 2026',
@@ -637,15 +657,20 @@ function sessionNewsFile(string $writtenBy = 'gemini:gemini-3.8-flash'): void
         'url' => 'https://itapetininga.siscam.com.br/Sessoes/Sessao/1608',
         'written_by' => $writtenBy,
         'written_at' => '2026-10-25T08:00:00-03:00',
-        'article' => [
-            'titulo' => 'Câmara aprova urgência para regras de eventos',
-            'linha_fina' => 'Na sessão de 24 de outubro, a Câmara aprovou a urgência de dois projetos e 11 pedidos.',
-            'resumo' => ['A Câmara aprovou a urgência de dois projetos da Prefeitura.'],
-            'secoes' => [['tema' => 'Ruas e estradas', 'itens' => ['Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).']]],
-            'tambem' => ['Presença: 18 dos 19 vereadores.'],
-            'omitidos' => [['documento' => 'Correspondências Recebidas Nº 340/2026', 'motivo' => 'Denúncia anônima.']],
-        ],
+        'format' => $gemini ? 'texto' : 'lista',
+        'article' => $gemini ? $story : $list,
     ]);
+}
+
+/**
+ * Dados da sessão como o coletor grava (para a lista completa de documentos).
+ */
+function sessionDataFile(): void
+{
+    $parser = new SiscamParser('https://itapetininga.siscam.com.br');
+    $session = $parser->session(1608, fixtureContents('siscam-sessao.html'));
+    $session->agenda = $parser->agenda(fixtureContents('siscam-roteiro.html'));
+    (new SessionRepository(config('itape.paths.data').'/camara/sessoes'))->save($session);
 }
 
 it('publica a notícia da sessão da Câmara numa página própria', function () {
@@ -656,10 +681,12 @@ it('publica a notícia da sessão da Câmara numa página própria', function ()
 
     expect($page)->toContain('<h1 class="page-title">Câmara aprova urgência para regras de eventos</h1>')
         ->toContain('Sessão da Câmara · sábado, 24 de outubro de 2026')
-        ->toContain('<h2>Ruas e estradas</h2>')
-        ->toContain('Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).')
+        ->toContain('<p class="session-lede">A Câmara de Itapetininga aprovou no sábado (24) a urgência de dois projetos da Prefeitura.</p>')
+        ->toContain('<h2>Estradas rurais</h2>')
+        ->toContain('<p>O vereador Miguel Arcanjo pediu manutenção das estradas do Viracopos.</p>')
+        ->toContain('<p>18 dos 19 vereadores estiveram presentes.</p>')
         ->toContain('<img src="/assets/camara.avif" alt="Plenário da Câmara Municipal de Itapetininga"')
-        ->toContain('Resumo escrito com inteligência artificial (Gemini)')
+        ->toContain('Notícia escrita com inteligência artificial (Gemini)')
         ->toContain('href="https://itapetininga.siscam.com.br/Sessoes/Sessao/1608"')
         // O que o modelo deixou de fora por ser sensível não vai para a página.
         ->not->toContain('Denúncia anônima');
@@ -672,7 +699,38 @@ it('avisa quando a notícia da sessão foi montada sem IA', function () {
 
     expect(built('camara/53a-sessao-ordinaria-de-2026/index.html'))
         ->toContain('Resumo montado automaticamente a partir dos documentos oficiais')
-        ->not->toContain('inteligência artificial');
+        ->toContain('<h2 id="em-resumo">Em resumo</h2>')
+        ->toContain('<li>Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).</li>')
+        ->not->toContain('inteligência artificial')
+        ->not->toContain('class="session-lede"');
+});
+
+it('lista abaixo da notícia todos os documentos e votações da sessão, com o link oficial', function () {
+    sessionNewsFile();
+    sessionDataFile();
+
+    $this->artisan('build')->assertSuccessful();
+    $docs = Str::betweenFirst(built('camara/53a-sessao-ordinaria-de-2026/index.html'), '<details class="session-docs">', '</details>');
+
+    expect($docs)->toContain('Todos os documentos da sessão (26)')
+        ->toContain('<h3>Votações</h3>')
+        ->toContain('href="https://itapetininga.siscam.com.br/Documentos/Documento/122768" target="_blank" rel="noopener">Projeto de Lei Complementar Nº 14/2026 - Executivo</a>')
+        ->toContain('Aprovado · socilitando regime de urgência · a favor: 17')
+        ->toContain('<h3>Indicações</h3>')
+        ->toContain('href="https://itapetininga.siscam.com.br/Documentos/Documento/122889" target="_blank" rel="noopener">Requerimento Nº 701/2026</a>')
+        // Nomes curtos também na lista oficial.
+        ->toContain('<span class="session-docs-author">(Itamar Martins)</span>')
+        // Correspondências e respostas ficam de fora da lista.
+        ->not->toContain('anônimo')
+        ->not->toContain('Resposta Nº 1');
+});
+
+it('publica a notícia mesmo sem os dados da sessão, sem a lista de documentos', function () {
+    sessionNewsFile();
+
+    $this->artisan('build')->assertSuccessful();
+
+    expect(built('camara/53a-sessao-ordinaria-de-2026/index.html'))->not->toContain('session-docs"');
 });
 
 it('põe a notícia da sessão na linha do tempo, no tema Política, abrindo na mesma aba', function () {

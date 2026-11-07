@@ -10,7 +10,7 @@ use RuntimeException;
 
 /**
  * Escreve a notícia da sessão com o Gemini (API Interactions), seguindo as
- * regras de resources/prompts/camara-sessao.md e o esquema de Article.
+ * regras de resources/prompts/camara-sessao.md e o esquema de Story.
  * Em sobrecarga ou tempo esgotado, tenta de novo e depois o modelo seguinte.
  */
 final class GeminiWriter
@@ -32,9 +32,10 @@ final class GeminiWriter
 
     /**
      * @param  Session  $session  já com os nomes curtos
+     * @param  array<string, string>  $councilors  nome curto => "vereador" ou "vereadora"
      * @return array{model: string, data: array<mixed>} a resposta, ainda sem conferir, e o modelo que respondeu
      */
-    public function write(Session $session): array
+    public function write(Session $session, array $councilors = []): array
     {
         $errors = [];
 
@@ -43,7 +44,7 @@ final class GeminiWriter
 
             for ($attempt = 1; $attempt <= $attempts; $attempt++) {
                 try {
-                    return ['model' => $model, 'data' => $this->ask($model, $session)];
+                    return ['model' => $model, 'data' => $this->ask($model, $session, $councilors)];
                 } catch (TemporaryFailure $e) {
                     $errors[] = "{$model}: {$e->getMessage()}";
 
@@ -63,10 +64,16 @@ final class GeminiWriter
     }
 
     /**
+     * @param  array<string, string>  $councilors
      * @return array<mixed>
      */
-    private function ask(string $model, Session $session): array
+    private function ask(string $model, Session $session, array $councilors): array
     {
+        $input = [
+            'vereadores' => array_map(fn (string $name, string $role) => ['nome' => $name, 'cargo' => $role], array_keys($councilors), $councilors),
+            'sessao' => $session->toArray(),
+        ];
+
         try {
             $response = Http::timeout((int) config('itape.camara.gemini.timeout'))
                 ->withHeaders([
@@ -76,11 +83,11 @@ final class GeminiWriter
                 ->post((string) config('itape.camara.gemini.url'), [
                     'model' => $model,
                     'system_instruction' => (string) file_get_contents(resource_path('prompts/camara-sessao.md')),
-                    'input' => "Dados da sessão (JSON):\n".json_encode($session->toArray(), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR),
+                    'input' => "Dados da sessão (JSON):\n".json_encode($input, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR),
                     'response_format' => [
                         'type' => 'text',
                         'mime_type' => 'application/json',
-                        'schema' => Article::schema(),
+                        'schema' => Story::schema(),
                     ],
                     'generation_config' => [
                         'thinking_level' => (string) config('itape.camara.gemini.thinking_level'),

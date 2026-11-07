@@ -39,11 +39,14 @@ final class SessionNews
     }
 
     /**
-     * @return list<array{slug: string, item: Item, news: array<string, mixed>}> mais recentes primeiro
+     * @return list<array{slug: string, item: Item, news: array<string, mixed>, session: Session|null}> mais recentes primeiro
      */
     public static function load(string $directory, string $siteUrl): array
     {
         $all = [];
+        // Os documentos da sessão (com nomes curtos) vão para a lista completa no fim da página.
+        $sessions = new SessionRepository(dirname($directory).'/sessoes');
+        $names = Names::fromConfig();
 
         foreach (glob($directory.'/*.json') ?: [] as $file) {
             $news = json_decode((string) file_get_contents($file), true);
@@ -55,9 +58,12 @@ final class SessionNews
             $slug = Str::slug((string) $news['title']);
             $time = preg_match('~^\d{1,2}:\d{2}$~', (string) ($news['closed_at'] ?? '')) ? $news['closed_at'] : '21:00';
 
+            $session = $sessions->find((int) ($news['session'] ?? 0));
+
             $all[] = [
                 'slug' => $slug,
                 'news' => $news,
+                'session' => $session !== null ? $names->apply($session) : null,
                 'item' => new Item(
                     source: self::SOURCE,
                     url: rtrim($siteUrl, '/').'/camara/'.$slug.'/',

@@ -4,6 +4,7 @@ use App\Camara\Article;
 use App\Camara\Names;
 use App\Camara\Session;
 use App\Camara\SiscamParser;
+use App\Camara\Story;
 use App\Camara\TemplateWriter;
 
 function camaraSession(): Session
@@ -113,4 +114,57 @@ describe('Notícia pelo modelo fixo (sem IA)', function () {
 
         expect(Article::fromArray($article->toArray(), Names::fromConfig()->known())->titulo)->toBe($article->titulo);
     });
+});
+
+function validStory(array $overrides = []): array
+{
+    return array_replace([
+        'titulo' => 'Câmara aprova urgência para regras de eventos',
+        'linha_fina' => 'Vereadores também pediram reparos em estradas rurais.',
+        'lide' => 'A Câmara aprovou na sessão de quinta-feira (29) a urgência de dois projetos da Prefeitura.',
+        'blocos' => [['intertitulo' => 'Estradas', 'paragrafos' => ['O vereador Miguel Arcanjo pediu manutenção das estradas do Viracopos.']]],
+        'fechamento' => '18 dos 19 vereadores estiveram presentes.',
+        'omitidos' => [],
+    ], $overrides);
+}
+
+describe('Notícia em texto corrido (Gemini)', function () {
+    it('dá o cargo de cada vereador no gênero certo', function () {
+        $councilors = Names::fromConfig()->councilors();
+
+        expect($councilors['Marina Nalesso'])->toBe('vereadora')
+            ->and($councilors['Miguel Arcanjo'])->toBe('vereador')
+            ->and($councilors)->not->toHaveKey('Prefeitura');
+    });
+
+    it('aceita lide, blocos e fechamento', function () {
+        $story = Story::fromArray(validStory(), Names::fromConfig()->councilors());
+
+        expect($story->lide)->toStartWith('A Câmara aprovou')
+            ->and($story->toArray()['blocos'][0]['intertitulo'])->toBe('Estradas');
+    });
+
+    it('aceita bloco sem intertítulo e vereadora no início da frase', function () {
+        $story = Story::fromArray(validStory([
+            'blocos' => [['intertitulo' => '', 'paragrafos' => ['Vereadora Marina Nalesso pediu informações ao hospital.']]],
+        ]), Names::fromConfig()->councilors());
+
+        expect($story->blocos[0]['intertitulo'])->toBe('');
+    });
+
+    it('recusa vereador que não está na lista', function () {
+        Story::fromArray(validStory(['lide' => 'O vereador João Inventado pediu asfalto.']), Names::fromConfig()->councilors());
+    })->throws(InvalidArgumentException::class, 'Vereador desconhecido no texto: João Inventado');
+
+    it('recusa cargo no gênero errado', function () {
+        Story::fromArray(validStory(['fechamento' => 'O vereador Marina Nalesso não falou.']), Names::fromConfig()->councilors());
+    })->throws(InvalidArgumentException::class, 'Cargo no gênero errado no texto: vereador Marina Nalesso');
+
+    it('recusa notícia sem lide ou sem blocos', function (array $overrides) {
+        Story::fromArray(validStory($overrides));
+    })->with([
+        'sem lide' => [['lide' => '']],
+        'sem blocos' => [['blocos' => []]],
+        'bloco sem parágrafo' => [['blocos' => [['intertitulo' => 'X', 'paragrafos' => []]]]],
+    ])->throws(InvalidArgumentException::class);
 });

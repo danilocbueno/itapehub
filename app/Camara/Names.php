@@ -10,12 +10,13 @@ final class Names
 {
     /**
      * @param  array<string, string>  $short  nome no SisCam => nome curto
+     * @param  list<string>  $women  nomes curtos das vereadoras
      */
-    public function __construct(private array $short) {}
+    public function __construct(private array $short, private array $women = []) {}
 
     public static function fromConfig(): self
     {
-        return new self((array) config('camara.vereadores'));
+        return new self((array) config('camara.vereadores'), (array) config('camara.vereadoras'));
     }
 
     public function short(string $name): string
@@ -43,6 +44,24 @@ final class Names
     public function known(): array
     {
         return array_values(array_unique($this->short));
+    }
+
+    /**
+     * Cargo de cada vereador pelo nome curto ("vereadora" ou "vereador"); a Prefeitura não entra.
+     *
+     * @return array<string, string>
+     */
+    public function councilors(): array
+    {
+        $councilors = [];
+
+        foreach ($this->known() as $name) {
+            if ($name !== 'Prefeitura') {
+                $councilors[$name] = in_array($name, $this->women, true) ? 'vereadora' : 'vereador';
+            }
+        }
+
+        return $councilors;
     }
 
     /**

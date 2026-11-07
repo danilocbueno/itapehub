@@ -115,6 +115,7 @@ final class SiteBuilder
                 ...$shared,
                 'slug' => $news['slug'],
                 'news' => $news['news'],
+                'session' => $news['session'],
                 'date' => $news['item']->date(),
             ]);
             $pages++;

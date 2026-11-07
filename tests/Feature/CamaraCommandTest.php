@@ -51,14 +51,17 @@ function geminiCalls(): int
     return Http::recorded(fn ($request) => str_contains($request->url(), 'generativelanguage'))->count();
 }
 
-function geminiArticle(string $author = 'Miguel Arcanjo'): array
+function geminiArticle(string $councilor = 'o vereador Miguel Arcanjo'): array
 {
     return [
-        'titulo' => 'Vereadores pedem reparos em estradas rurais e urgência para regras de feiras',
-        'linha_fina' => 'Na sessão de 29 de outubro, a Câmara aprovou 11 pedidos e a urgência de dois projetos da Prefeitura.',
-        'resumo' => ['A Câmara aprovou a urgência de dois projetos da Prefeitura.'],
-        'secoes' => [['tema' => 'Ruas e estradas', 'itens' => ["Manutenção das estradas rurais do Viracopos ({$author})."]]],
-        'tambem' => ['Presença: 18 dos 19 vereadores.'],
+        'titulo' => 'Câmara aprova urgência para regras de feiras e cobra estradas rurais',
+        'linha_fina' => 'Vereadores também pediram reparos na iluminação da Marginal do Chá.',
+        'lide' => 'A Câmara de Itapetininga aprovou na sessão de quinta-feira (29) a urgência de dois projetos da Prefeitura.',
+        'blocos' => [
+            ['intertitulo' => 'Estradas rurais', 'paragrafos' => ["Na zona rural, {$councilor} pediu manutenção das estradas do Viracopos."]],
+            ['intertitulo' => '', 'paragrafos' => ['A vereadora Marina Nalesso pediu informações ao Hospital Léo Orsi.']],
+        ],
+        'fechamento' => '18 dos 19 vereadores estiveram presentes.',
         'omitidos' => [['documento' => 'Correspondências Recebidas Nº 340/2026', 'motivo' => 'Denúncia anônima.']],
     ];
 }
@@ -124,7 +127,9 @@ it('escreve a notícia pelo Gemini com as regras do prompt e o esquema da respos
 
     expect($news['written_by'])->toBe('gemini:gemini-3.8-flash')
         ->and($news['closed_at'])->toBe('20:13')
-        ->and($news['article']['titulo'])->toBe('Vereadores pedem reparos em estradas rurais e urgência para regras de feiras')
+        ->and($news['format'])->toBe('texto')
+        ->and($news['article']['titulo'])->toBe('Câmara aprova urgência para regras de feiras e cobra estradas rurais')
+        ->and($news['article']['blocos'][0]['intertitulo'])->toBe('Estradas rurais')
         ->and($news['article']['omitidos'][0]['documento'])->toBe('Correspondências Recebidas Nº 340/2026');
 
     Http::assertSent(function ($request) {
@@ -136,6 +141,11 @@ it('escreve a notícia pelo Gemini com as regras do prompt e o esquema da respos
             && $body['model'] === 'gemini-3.8-flash'
             && $body['store'] === false
             && str_contains($body['system_instruction'], 'Respeite a fase de cada votação')
+            && str_contains($body['system_instruction'], 'O que é proibido inventar')
+            && $body['response_format']['schema']['required'] === ['titulo', 'linha_fina', 'lide', 'blocos', 'fechamento', 'omitidos']
+            // A lista de vereadores vai com o cargo no gênero certo.
+            && str_contains($body['input'], '{"nome":"Marina Nalesso","cargo":"vereadora"}')
+            && str_contains($body['input'], '{"nome":"Miguel Arcanjo","cargo":"vereador"}')
             && $body['response_format']['mime_type'] === 'application/json'
             // Os nomes já vão curtos para o modelo.
             && str_contains($body['input'], 'Miguel Arcanjo')
@@ -143,15 +153,41 @@ it('escreve a notícia pelo Gemini com as regras do prompt e o esquema da respos
     });
 });
 
-it('usa o modelo fixo quando o Gemini atribui um pedido a quem não é vereador', function () {
+it('usa o modelo fixo quando o Gemini chama de vereador quem não está na lista', function () {
     config(['itape.camara.gemini.key' => 'chave-teste']);
-    fakeSiscam(['generativelanguage.googleapis.com/*' => geminiResponse(geminiArticle('Vereador Inventado'))]);
+    fakeSiscam(['generativelanguage.googleapis.com/*' => geminiResponse(geminiArticle('o vereador Fulano Inventado'))]);
 
     $this->artisan('camara')
-        ->expectsOutputToContain('Autor desconhecido no texto: Vereador Inventado')
+        ->expectsOutputToContain('Vereador desconhecido no texto: Fulano Inventado')
+        ->assertSuccessful();
+
+    expect(camaraNews(1608)['written_by'])->toBe('modelo')
+        ->and(camaraNews(1608)['format'])->toBe('lista');
+});
+
+it('usa o modelo fixo quando o Gemini erra o gênero do cargo', function () {
+    config(['itape.camara.gemini.key' => 'chave-teste']);
+    fakeSiscam(['generativelanguage.googleapis.com/*' => geminiResponse(geminiArticle('a vereadora Miguel Arcanjo'))]);
+
+    $this->artisan('camara')
+        ->expectsOutputToContain('Cargo no gênero errado no texto: vereadora Miguel Arcanjo')
         ->assertSuccessful();
 
     expect(camaraNews(1608)['written_by'])->toBe('modelo');
+});
+
+it('reescreve em texto corrido uma notícia antiga do Gemini em lista', function () {
+    config(['itape.camara.gemini.key' => 'chave-teste']);
+    JsonFile::write(config('itape.paths.data').'/camara/noticias/1608.json', [
+        'session' => 1608, 'title' => '53ª Sessão Ordinária de 2026', 'date' => '2026-10-29',
+        'written_by' => 'gemini:gemini-3.8-flash', 'article' => ['titulo' => 'Antiga em lista'],
+    ]);
+    fakeSiscam(['generativelanguage.googleapis.com/*' => geminiResponse(geminiArticle())]);
+
+    $this->artisan('camara')->assertSuccessful();
+
+    expect(camaraNews(1608)['format'])->toBe('texto')
+        ->and(camaraNews(1608)['article']['titulo'])->toBe('Câmara aprova urgência para regras de feiras e cobra estradas rurais');
 });
 
 it('usa o modelo fixo quando o Gemini está fora do ar ou sem cota', function () {

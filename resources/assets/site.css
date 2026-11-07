@@ -568,6 +568,56 @@ a {
     font-size: 0.85rem;
     color: var(--muted);
 }
+
+/* Texto corrido da notícia (Gemini): parágrafos de jornal, lide em destaque */
+.session-story p {
+    margin: 0 0 14px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+.session-story .session-lede {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    line-height: 1.45;
+}
+
+/* Todos os documentos da sessão, recolhidos, com links para o SisCam */
+.session-docs {
+    margin-top: 28px;
+    border-top: 3px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+}
+.session-docs summary {
+    padding: 12px 0;
+    cursor: pointer;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.session-docs h3 {
+    margin: 18px 0 6px;
+    font-size: 0.72rem;
+    font-family: var(--sans);
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.session-docs ul {
+    margin: 0 0 14px;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 6px;
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+.session-docs a {
+    font-weight: 600;
+}
+.session-docs-author {
+    color: var(--muted);
+}
 .pager {
     display: flex;
     justify-content: space-between;

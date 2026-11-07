@@ -47,8 +47,8 @@ final class NewsDesk
                 $attempts++;
 
                 try {
-                    $answer = $this->gemini->write($short);
-                    $article = Article::fromArray($answer['data'], $this->names->known());
+                    $answer = $this->gemini->write($short, $this->names->councilors());
+                    $article = Story::fromArray($answer['data'], $this->names->councilors());
                     $by = 'gemini:'.$answer['model'];
                 } catch (Throwable $e) {
                     $error = $e->getMessage();
@@ -71,6 +71,8 @@ final class NewsDesk
                 'url' => $session->url,
                 'written_by' => $by,
                 'written_at' => $now->toIso8601String(),
+                // "texto" (Gemini, texto corrido) ou "lista" (modelo fixo).
+                'format' => $article !== null ? Story::FORMAT : 'lista',
                 'gemini_attempts' => $article === null ? $attempts : null,
                 'gemini_error' => $error,
                 'article' => ($article ?? $this->template->write($short))->toArray(),
@@ -91,7 +93,8 @@ final class NewsDesk
     }
 
     /**
-     * Sem notícia, ou do modelo fixo com o Gemini disponível e tentativas sobrando.
+     * Sem notícia, ou ainda não em texto corrido (do modelo fixo, ou do formato
+     * antigo em lista) com o Gemini disponível e tentativas sobrando.
      *
      * @param  array<string, mixed>|null  $existing
      */
@@ -102,7 +105,7 @@ final class NewsDesk
         }
 
         return $this->gemini !== null
-            && ! str_starts_with((string) ($existing['written_by'] ?? ''), 'gemini')
+            && ($existing['format'] ?? null) !== Story::FORMAT
             && (int) ($existing['gemini_attempts'] ?? 0) < (int) config('itape.camara.gemini.max_attempts');
     }
 
