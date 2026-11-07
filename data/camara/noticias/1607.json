@@ -2,64 +2,32 @@
     "session": 1607,
     "title": "52ª Sessão Ordinária de 2026",
     "date": "2026-10-26",
+    "closed_at": "20:21",
     "url": "https://itapetininga.siscam.com.br/Sessoes/Sessao/1607",
-    "written_by": "gemini:gemini-3.8-flash",
-    "written_at": "2026-11-07T10:10:40-03:00",
+    "written_by": "gemini:gemini-3.5-flash-lite",
+    "written_at": "2026-11-07T10:55:16-03:00",
+    "format": "texto",
     "article": {
-        "titulo": "Câmara cobra melhorias no transporte da saúde e ações contra enchentes",
-        "linha_fina": "Na sessão de 26 de outubro, a Câmara aprovou 15 pedidos, incluindo transporte de pacientes e limpeza de ribeirões em áreas de risco.",
-        "resumo": [
-            "A Câmara aprovou o envio de pedidos para oferecer lanche e ônibus com banheiro a pacientes que viajam para atendimento médico.",
-            "Vereadores cobraram do governo estadual a limpeza do fundo dos Ribeirões do Chá e dos Cavalos para evitar enchentes.",
-            "Foi solicitada a implantação de uma Sala Lilás no Instituto Médico Legal para acolhimento de mulheres vítimas de violência.",
-            "A pauta incluiu ainda pedidos para a construção de escola no Jardim Santa Inês e mutirão de castração de animais em três bairros."
-        ],
-        "secoes": [
+        "titulo": "Câmara aprova pedidos por ônibus com banheiro e lanche para saúde",
+        "linha_fina": "Vereadores também votaram solicitações de limpeza de ribeirões, melhorias em estradas e criação de Sala Lilás no IML na sessão de segunda (26).",
+        "lide": "Os pacientes que viajam para tratamento médico em outras cidades foram o foco dos pedidos aprovados na Câmara Municipal de Itapetininga na sessão de segunda-feira (26). O vereador Miguel Arcanjo apresentou solicitações para a oferta de kit lanche e ônibus com banheiro durante esses deslocamentos.",
+        "blocos": [
             {
-                "tema": "Saúde e acolhimento",
-                "itens": [
-                    "Implantação de kit lanche e oferta de ônibus com banheiro para pacientes que viajam para tratamento médico fora da cidade (Miguel Arcanjo).",
-                    "Criação de uma Sala Lilás no Instituto Médico Legal de Itapetininga para o acolhimento humanizado de mulheres vítimas de violência (Júlia Machado).",
-                    "Realização de mutirão de castração gratuita de animais com o Castramóvel na Estância 4 Irmãos, na Vila Célia e no Mato Seco (Catarina Motta)."
+                "intertitulo": "Saúde e Acolhimento",
+                "paragrafos": [
+                    "Além dos pedidos de melhorias no transporte de pacientes, a Câmara aprovou o requerimento da vereadora Júlia Machado para a implantação de uma Sala Lilás no Instituto Médico Legal (IML), voltada ao acolhimento humanizado de mulheres vítimas de violência. A vereadora Denise Castro também teve aprovado um pedido de estudos para a construção de uma escola municipal para atender o Jardim Santa Inês e bairros circunvizinhos.",
+                    "Ainda nos pedidos aprovados, a vereadora Catarina Motta solicitou a realização de um mutirão de castração gratuita com o Castra Móvel nos bairros Estância 4 Irmãos, Vila Céia e Mato Seco."
                 ]
             },
             {
-                "tema": "Prevenção de enchentes e meio ambiente",
-                "itens": [
-                    "Limpeza emergencial do fundo dos Ribeirões do Chá e dos Cavalos e implantação de sistema de alerta e sirenes em áreas de risco (Catarina Motta, Christiane Almeida).",
-                    "Vistoria e retirada de sedimentos do Ribeirão dos Cavalos com equipamento adequado pela SP Águas (Christiane Almeida).",
-                    "Limpeza do córrego, drenagem e poda de árvores perto da ponte da Rua Santino de Almeida Leme (Bispo André).",
-                    "Informações sobre o funcionamento e a cobertura territorial da coleta seletiva no município e manutenção da Praça Pet com instalação de bebedouros (Júlia Machado).",
-                    "Instalação de lixeiras ecológicas na Rua José Alves Meira, no Distrito do Tupy (Bispo André)."
-                ]
-            },
-            {
-                "tema": "Ruas e estradas",
-                "itens": [
-                    "Reparos no pavimento asfáltico da Estrada Municipal José Correa de Moraes, no Bairro Chapadinha, manutenção com cascalho nas vias rurais do Bairro Viracopos e roçagem na Avenida Nisshinbo do Brasil (Marina Nalesso).",
-                    "Conserto da Estrada das Orquídeas, no bairro Jurumirim (Eduardo Prando).",
-                    "Substituição de tubulação de água na Rua Pastor Leonildo Brizola, no Bairro do Porto, e conserto de bueiro na Vila Aurora (Ricardo Conegundes).",
-                    "Operação tapa-buracos na Rua Professor Augusto Graco Silveira, na Vila Judith, e serviços de manutenção na Vila Santana, Jardim Santa Inês, Vila Piedade e Jardim Deyse (Denise Castro).",
-                    "Limpeza e aplicação de cascalho na Rua Luiz Carlos Gomes, na Vila Popular Mato Seco (Francisco Roberto).",
-                    "Instalação de postes, iluminação pública e rede elétrica na Rua José Alves Meira, no Distrito do Tupy (Bispo André)."
-                ]
-            },
-            {
-                "tema": "Educação, lazer e gestão",
-                "itens": [
-                    "Construção de uma escola municipal no Jardim Santa Inês e informações sobre a obra de quadra com grama sintética, playground e academia ao ar livre junto à unidade de saúde Veranice Costa Tatino (Denise Castro).",
-                    "Criação de área de lazer com parquinho na Vila Mazzei e ampliação do cemitério do Distrito do Gramadinho (Miguel Arcanjo).",
-                    "Identificação de todos os veículos da frota municipal com o brasão oficial da cidade (Marina Nalesso)."
+                "intertitulo": "Meio Ambiente e Infraestrutura",
+                "paragrafos": [
+                    "Na área ambiental, os parlamentares aprovaram uma moção das vereadoras Catarina Motta e Christiane Almeida que apela ao Governo do Estado e à SP Águas por ações emergenciais de limpeza nos ribeirões do Chá e dos Cavalos, além da instalação de sirenes em áreas de risco. A vereadora Christiane Almeida também apresentou requerimento cobrando vistorias e desassoreamento no Ribeirão dos Cavalos.",
+                    "Para a infraestrutura, foram aprovados pedidos de reparos na estrada das Orquídeas, no bairro Jurumirim, feitos pelo vereador Eduardo Prando, e na Estrada Municipal José Correa de Moraes, no bairro Chapadinha, solicitados pela vereadora Marina Nalesso. O vereador Bispo André pediu melhorias de iluminação e drenagem em ruas do Distrito do Tupy e de outras localidades."
                 ]
             }
         ],
-        "tambem": [
-            "Começaram a tramitar dois projetos da Prefeitura: um sobre licença para feiras e eventos eventuais e outro alterando o plano de carreira da Guarda Civil Municipal.",
-            "Entraram em tramitação projetos para concessão de títulos de cidadão itapetiningano a Claudia da Costa Parenti, Anderson Doniseti de Araújo e Aulo Rafael de Luna Pedrosa Fernandes.",
-            "Foi apresentada moção de congratulações ao empresário Fábio Augusto de Morais e lidas oito respostas da Prefeitura a requerimentos anteriores.",
-            "A Comissão Municipal do Programa de Erradicação do Trabalho Infantil convidou profissionais para seminário no Auditório Municipal Alcides Rossi.",
-            "A sessão durou das 19h às 20h21 e registrou a presença de 18 dos 19 vereadores; Matheus Ribeiro estava em licença médica."
-        ],
+        "fechamento": "A sessão ordinária teve a presença de 18 dos 19 vereadores e foi encerrada às 20h21.",
         "omitidos": []
     }
 }
