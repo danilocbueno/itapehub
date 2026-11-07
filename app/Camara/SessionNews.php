@@ -16,6 +16,11 @@ final class SessionNews
     public const SOURCE = 'camara-sessoes';
 
     /**
+     * Foto do plenário, usada no card e no topo da página (copiada para build/assets).
+     */
+    public const IMAGE = 'assets/camara.avif';
+
+    /**
      * "Fonte" usada no chapéu do card. Não é coletada nem aparece em /fontes/.
      */
     public static function source(): Source
@@ -58,6 +63,7 @@ final class SessionNews
                     url: rtrim($siteUrl, '/').'/camara/'.$slug.'/',
                     title: (string) $news['article']['titulo'],
                     summary: (string) ($news['article']['linha_fina'] ?? ''),
+                    image: rtrim($siteUrl, '/').'/'.self::IMAGE,
                     publishedAt: CarbonImmutable::parse($news['date'].' '.$time, 'America/Sao_Paulo'),
                 ),
             ];

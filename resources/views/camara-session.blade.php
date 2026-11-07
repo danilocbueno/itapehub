@@ -10,6 +10,9 @@
     <p class="session-kicker">Sessão da Câmara · {{ \App\Site\Timeline::longDate($date) }}</p>
     <h1 class="page-title">{{ $article['titulo'] }}</h1>
     <p class="page-lead">{{ $article['linha_fina'] }}</p>
+    <figure class="session-photo">
+      <img src="{{ $site['base'] }}/{{ \App\Camara\SessionNews::IMAGE }}" alt="Plenário da Câmara Municipal de Itapetininga" width="2048" height="1152">
+    </figure>
 
     <section aria-labelledby="em-resumo">
       <h2 id="em-resumo">Em resumo</h2>

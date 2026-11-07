@@ -658,6 +658,7 @@ it('publica a notícia da sessão da Câmara numa página própria', function ()
         ->toContain('Sessão da Câmara · sábado, 24 de outubro de 2026')
         ->toContain('<h2>Ruas e estradas</h2>')
         ->toContain('Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).')
+        ->toContain('<img src="/assets/camara.avif" alt="Plenário da Câmara Municipal de Itapetininga"')
         ->toContain('Resumo escrito com inteligência artificial (Gemini)')
         ->toContain('href="https://itapetininga.siscam.com.br/Sessoes/Sessao/1608"')
         // O que o modelo deixou de fora por ser sensível não vai para a página.
@@ -679,14 +680,22 @@ it('põe a notícia da sessão na linha do tempo, no tema Política, abrindo na 
 
     $this->artisan('build')->assertSuccessful();
     $link = 'href="http://localhost:8000/camara/53a-sessao-ordinaria-de-2026/"';
-    $card = fn (string $html) => Str::before(Str::afterLast(Str::before($html, $link), '<article'), '</article>');
+    // O card inteiro que contém o link (a foto vem antes do chapéu).
+    $card = function (string $html) use ($link): string {
+        $at = (int) strpos($html, $link);
+        $start = (int) strrpos(substr($html, 0, $at), '<article');
+
+        return substr($html, $start, (int) strpos($html, '</article>', $at) - $start);
+    };
 
     expect(built('index.html'))->toContain($link.'>Câmara aprova urgência para regras de eventos</a>')
         ->and($card(built('index.html')))->toContain('<span class="kicker-source">Sessão da Câmara</span>')
         ->toContain('href="/tema/politica/">Política</a>')
+        ->toContain('<img src="http://localhost:8000/assets/camara.avif"')
         ->not->toContain('class="official"')
         ->and(built('tema/politica/index.html'))->toContain($link)
         ->and(built('feed.xml'))->toContain('http://localhost:8000/camara/53a-sessao-ordinaria-de-2026/')
         // Não é uma fonte coletada: não aparece na página de fontes.
-        ->and(built('fontes/index.html'))->not->toContain('Sessões da Câmara');
+        ->and(built('fontes/index.html'))->not->toContain('Sessões da Câmara')
+        ->and(config('itape.paths.build').'/assets/camara.avif')->toBeFile();
 });

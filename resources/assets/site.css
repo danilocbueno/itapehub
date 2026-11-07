@@ -506,8 +506,26 @@ a {
 }
 
 /* Notícia de uma sessão da Câmara (escrita pelo site) */
-.session-news {
-    max-width: 70ch;
+/* Foto do plenário no topo da notícia (a mesma do card) */
+.session-photo {
+    margin: 18px 0 8px;
+}
+.session-photo img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: var(--line);
+}
+/* No desktop, mais baixa (21:9) para o texto começar mais cedo */
+@media (min-width: 1024px) {
+    .session-photo img {
+        aspect-ratio: 21 / 9;
+        /* Corta embaixo (cadeiras) e mantém a placa "Poder Legislativo". */
+        object-position: 50% 0;
+    }
 }
 .session-kicker {
     margin: 26px 0 0;
