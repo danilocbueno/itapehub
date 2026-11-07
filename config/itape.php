@@ -76,6 +76,13 @@ return [
         'url' => 'https://api.open-meteo.com/v1/forecast',
     ],
 
+    'camara' => [
+        // Sistema de sessões da Câmara (SisCam): pauta, presença e votações.
+        'url' => 'https://itapetininga.siscam.com.br',
+        // Sessões mais antigas que isso não são buscadas nem atualizadas.
+        'days' => 14,
+    ],
+
     'alerts' => [
         'url' => 'https://apiprevmet3.inmet.gov.br/avisos/rss',
         // Nome da mesorregião do IBGE usada nos avisos do INMET.
