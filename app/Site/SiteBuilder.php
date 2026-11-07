@@ -2,6 +2,7 @@
 
 namespace App\Site;
 
+use App\Camara\SessionCover;
 use App\Camara\SessionNews;
 use App\Data\Source;
 use App\Storage\ItemRepository;
@@ -31,6 +32,15 @@ final class SiteBuilder
         $sources = Source::all();
         // Notícias das sessões da Câmara, escritas pelo ItapêHub: entram na linha do tempo como as outras.
         $sessionNews = SessionNews::load($dataPath.'/camara/noticias', (string) config('itape.site.url'));
+        // Capa de cada sessão (número, tipo e dados), usada no card no lugar da foto simples.
+        $sessionCovers = [];
+
+        foreach ($sessionNews as $news) {
+            $sessionCovers[$news['item']->url] = [
+                'cover' => SessionCover::from((string) $news['news']['title'], $news['session']),
+                'date' => $news['item']->date(),
+            ];
+        }
 
         $clusters = Timeline::clusters([...$items->all(), ...array_column($sessionNews, 'item')]);
         $days = Timeline::byDay($clusters);
@@ -40,6 +50,7 @@ final class SiteBuilder
         $shared = [
             'site' => config('itape.site'),
             'sources' => [...$sources, SessionNews::SOURCE => SessionNews::source()],
+            'sessionCovers' => $sessionCovers,
             'now' => $now,
             'problems' => $this->problems($sources, $state, $now),
             'themes' => Themes::all(),
@@ -117,6 +128,7 @@ final class SiteBuilder
                 'news' => $news['news'],
                 'session' => $news['session'],
                 'date' => $news['item']->date(),
+                'cover' => $sessionCovers[$news['item']->url]['cover'],
             ]);
             $pages++;
         }

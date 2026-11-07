@@ -685,11 +685,17 @@ it('publica a notícia da sessão da Câmara numa página própria', function ()
         ->toContain('<h2>Estradas rurais</h2>')
         ->toContain('<p>O vereador Miguel Arcanjo pediu manutenção das estradas do Viracopos.</p>')
         ->toContain('<p>18 dos 19 vereadores estiveram presentes.</p>')
-        ->toContain('<img src="/assets/camara.avif" alt="Plenário da Câmara Municipal de Itapetininga"')
-        ->toContain('Notícia escrita com inteligência artificial (Gemini)')
+        ->toContain('<div class="session-cover is-large">')
+        ->toContain('<span class="session-cover-number">53ª</span>')
+        ->toContain('<span class="session-cover-kind">Sessão Ordinária</span>')
+        ->toContain('<img src="/assets/camara.avif"')
+        ->toContain('Plenário da Câmara Municipal de Itapetininga')
+        ->toContain('O texto a seguir foi gerado automaticamente com inteligência artificial a partir dos documentos oficiais e pode conter erros.')
         ->toContain('href="https://itapetininga.siscam.com.br/Sessoes/Sessao/1608"')
         // O que o modelo deixou de fora por ser sensível não vai para a página.
-        ->not->toContain('Denúncia anônima');
+        ->not->toContain('Denúncia anônima')
+        // O aviso de que o texto é automático vem antes do texto.
+        ->and(strpos($page, '<p class="session-note">'))->toBeLessThan(strpos($page, '<p class="session-lede">'));
 });
 
 it('avisa quando a notícia da sessão foi montada sem IA', function () {
@@ -698,7 +704,7 @@ it('avisa quando a notícia da sessão foi montada sem IA', function () {
     $this->artisan('build')->assertSuccessful();
 
     expect(built('camara/53a-sessao-ordinaria-de-2026/index.html'))
-        ->toContain('Resumo montado automaticamente a partir dos documentos oficiais')
+        ->toContain('O texto a seguir foi montado automaticamente a partir dos documentos oficiais e pode conter erros.')
         ->toContain('<h2 id="em-resumo">Em resumo</h2>')
         ->toContain('<li>Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).</li>')
         ->not->toContain('inteligência artificial')
@@ -712,7 +718,9 @@ it('lista abaixo da notícia todos os documentos e votações da sessão, com o 
     $this->artisan('build')->assertSuccessful();
     $docs = Str::betweenFirst(built('camara/53a-sessao-ordinaria-de-2026/index.html'), '<details class="session-docs">', '</details>');
 
-    expect($docs)->toContain('Todos os documentos da sessão (26)')
+    expect(built('camara/53a-sessao-ordinaria-de-2026/index.html'))
+        ->toContain('<span class="session-cover-stats">21 pedidos · 2 urgências aprovadas · 18 de 19 vereadores · 1h13 de sessão</span>')
+        ->and($docs)->toContain('Todos os documentos da sessão (26)')
         ->toContain('<h3>Votações</h3>')
         ->toContain('href="https://itapetininga.siscam.com.br/Documentos/Documento/122768" target="_blank" rel="noopener">Projeto de Lei Complementar Nº 14/2026 - Executivo</a>')
         ->toContain('Aprovado · socilitando regime de urgência · a favor: 17')
@@ -750,6 +758,8 @@ it('põe a notícia da sessão na linha do tempo, no tema Política, abrindo na 
         ->and($card(built('index.html')))->toContain('<span class="kicker-source">Sessão da Câmara</span>')
         ->toContain('href="/tema/politica/">Política</a>')
         ->toContain('<img src="http://localhost:8000/assets/camara.avif"')
+        ->toContain('<span class="session-cover-number">53ª</span>')
+        ->not->toContain('session-cover-stats')
         ->not->toContain('class="official"')
         ->and(built('tema/politica/index.html'))->toContain($link)
         ->and(built('feed.xml'))->toContain('http://localhost:8000/camara/53a-sessao-ordinaria-de-2026/')

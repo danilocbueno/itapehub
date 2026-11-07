@@ -11,8 +11,18 @@
     <h1 class="page-title">{{ $article['titulo'] }}</h1>
     <p class="page-lead">{{ $article['linha_fina'] }}</p>
     <figure class="session-photo">
-      <img src="{{ $site['base'] }}/{{ \App\Camara\SessionNews::IMAGE }}" alt="Plenário da Câmara Municipal de Itapetininga" width="2048" height="1152">
+      @include('partials.session-cover', ['photo' => $site['base'].'/'.\App\Camara\SessionNews::IMAGE, 'large' => true])
+      <figcaption class="visually-hidden">Plenário da Câmara Municipal de Itapetininga</figcaption>
     </figure>
+
+    <p class="session-note">
+      @if (str_starts_with($news['written_by'], 'gemini'))
+        O texto a seguir foi gerado automaticamente com inteligência artificial a partir dos documentos oficiais e pode conter erros.
+      @else
+        O texto a seguir foi montado automaticamente a partir dos documentos oficiais e pode conter erros.
+      @endif
+      Confira a sessão completa no <a href="{{ $news['url'] }}" target="_blank" rel="noopener">site da Câmara</a>.
+    </p>
 
     @if (isset($article['lide']))
       {{-- Texto corrido (Gemini): lide, blocos e fechamento. --}}
@@ -97,13 +107,5 @@
       </details>
     @endif
 
-    <p class="session-note">
-      @if (str_starts_with($news['written_by'], 'gemini'))
-        Notícia escrita com inteligência artificial (Gemini) a partir dos documentos oficiais da {{ $news['title'] }}.
-      @else
-        Resumo montado automaticamente a partir dos documentos oficiais da {{ $news['title'] }}.
-      @endif
-      Confira a sessão completa no <a href="{{ $news['url'] }}" target="_blank" rel="noopener">sistema da Câmara (SisCam)</a>.
-    </p>
   </article>
 @endsection

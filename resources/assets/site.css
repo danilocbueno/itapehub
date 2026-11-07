@@ -510,21 +510,153 @@ a {
 .session-photo {
     margin: 18px 0 8px;
 }
-.session-photo img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.session-photo .session-cover {
     aspect-ratio: 16 / 9;
-    object-fit: cover;
-    background: var(--line);
 }
 /* No desktop, mais baixa (21:9) para o texto começar mais cedo */
 @media (min-width: 1024px) {
-    .session-photo img {
+    .session-photo .session-cover {
         aspect-ratio: 21 / 9;
-        /* Corta embaixo (cadeiras) e mantém a placa "Poder Legislativo". */
-        object-position: 50% 0;
+    }
+}
+
+/* Capa da sessão: foto do plenário escurecida com o número em destaque.
+   Fica sempre escura (nos dois temas); os tamanhos acompanham a largura. */
+.session-cover {
+    position: relative;
+    container-type: inline-size;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #15130f;
+    color: #f3eee4;
+}
+.session-cover img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantém a placa "Poder Legislativo" quando a foto é cortada. */
+    object-position: 50% 0;
+    filter: grayscale(0.35);
+}
+.session-cover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgb(21 19 15 / 88%) 0%, rgb(21 19 15 / 62%) 55%, rgb(21 19 15 / 30%) 100%);
+}
+.session-cover-text {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.4cqi;
+    padding: 0 5cqi 5cqi;
+}
+.session-cover-kind {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: clamp(8px, 3.2cqi, 15px);
+    line-height: 1.2;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f0786c;
+}
+.session-cover-number {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: min(28cqi, 140px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+.session-cover-line {
+    position: relative;
+    width: min(42cqi, 260px);
+    height: max(8px, 2.6cqi);
+}
+.session-cover-line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+    background: linear-gradient(90deg, #f3eee4 70%, #f0786c 70%);
+}
+.session-cover-line i {
+    position: absolute;
+    top: 50%;
+    width: max(4px, 1.3cqi);
+    height: max(4px, 1.3cqi);
+    border-radius: 50%;
+    background: #f3eee4;
+    transform: translate(-50%, -50%);
+}
+.session-cover-line i:nth-child(1) {
+    left: 3%;
+}
+.session-cover-line i:nth-child(2) {
+    left: 34%;
+}
+.session-cover-line i:nth-child(3) {
+    left: 58%;
+}
+.session-cover-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    box-sizing: border-box;
+    width: max(8px, 2.6cqi);
+    height: max(8px, 2.6cqi);
+    border: max(2px, 0.6cqi) solid #f0786c;
+    border-radius: 50%;
+    background: #15130f;
+    transform: translateY(-50%);
+}
+.session-cover-date {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(10px, 4.2cqi, 24px);
+    line-height: 1.2;
+}
+.session-cover-stats {
+    margin-top: 0.6cqi;
+    font-family: var(--sans);
+    font-size: clamp(11px, 1.6cqi, 15px);
+    line-height: 1.4;
+    color: #cfc6b6;
+}
+/* Capa estreita (página no celular): número menor para tudo caber na altura. */
+@container (max-width: 479px) {
+    .session-cover-number {
+        font-size: 22cqi;
+    }
+    .session-cover-text {
+        gap: 1cqi;
+    }
+    .session-cover-stats {
+        font-size: 10px;
+    }
+}
+/* Miniatura pequena (celular): só o número. */
+@container (max-width: 179px) {
+    .session-cover-kind,
+    .session-cover-line,
+    .session-cover-date {
+        display: none;
+    }
+    .session-cover-number {
+        font-size: 40cqi;
+    }
+    .session-cover-text {
+        padding: 0 8cqi 8cqi;
     }
 }
 .session-kicker {
@@ -562,10 +694,11 @@ a {
     line-height: 1.5;
 }
 .session-note {
-    margin-top: 32px;
-    padding-top: 12px;
-    border-top: 1px solid var(--line);
+    margin: 0 0 22px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
     font-size: 0.85rem;
+    line-height: 1.5;
     color: var(--muted);
 }
 

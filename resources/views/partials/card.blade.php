@@ -12,7 +12,12 @@
 <article class="card{{ $lead ? ' lead' : '' }}{{ $side ? ' side' : '' }}{{ $image ? '' : ' noimg' }}">
   @if ($image)
     <a class="thumb" href="{{ $item->url }}"{!! $target !!} tabindex="-1" aria-hidden="true">
-      <img src="{{ $image }}" alt="" loading="{{ $lead ? 'eager' : 'lazy' }}" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.card').classList.add('noimg'); this.parentNode.remove()">
+      @if (isset($sessionCovers[$item->url]))
+        {{-- Notícia de sessão da Câmara: capa com o número da sessão. --}}
+        @include('partials.session-cover', ['cover' => $sessionCovers[$item->url]['cover'], 'date' => $sessionCovers[$item->url]['date'], 'photo' => $image])
+      @else
+        <img src="{{ $image }}" alt="" loading="{{ $lead ? 'eager' : 'lazy' }}" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.card').classList.add('noimg'); this.parentNode.remove()">
+      @endif
     </a>
   @endif
   <div class="card-body">

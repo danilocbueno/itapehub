@@ -3,6 +3,7 @@
 use App\Camara\Article;
 use App\Camara\Names;
 use App\Camara\Session;
+use App\Camara\SessionCover;
 use App\Camara\SiscamParser;
 use App\Camara\Story;
 use App\Camara\TemplateWriter;
@@ -167,4 +168,24 @@ describe('Notícia em texto corrido (Gemini)', function () {
         'sem blocos' => [['blocos' => []]],
         'bloco sem parágrafo' => [['blocos' => [['intertitulo' => 'X', 'paragrafos' => []]]]],
     ])->throws(InvalidArgumentException::class);
+});
+
+describe('Capa da notícia da sessão', function () {
+    it('tira o número e o tipo da sessão do título', function (string $title, string $number, string $kind) {
+        $cover = SessionCover::from($title, null);
+
+        expect($cover->number)->toBe($number)
+            ->and($cover->kind)->toBe($kind)
+            ->and($cover->stats)->toBe([]);
+    })->with([
+        ['53ª Sessão Ordinária de 2026', '53ª', 'Sessão Ordinária'],
+        ['12ª Sessão Extraordinária de 2026', '12ª', 'Sessão Extraordinária'],
+        ['Sessão Solene', '', 'Sessão Solene'],
+    ]);
+
+    it('resume a sessão em números: pedidos, urgências, presença e duração', function () {
+        $cover = SessionCover::from('53ª Sessão Ordinária de 2026', camaraSession());
+
+        expect($cover->stats)->toBe(['21 pedidos', '2 urgências aprovadas', '18 de 19 vereadores', '1h13 de sessão']);
+    });
 });
