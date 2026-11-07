@@ -81,6 +81,22 @@ return [
         'url' => 'https://itapetininga.siscam.com.br',
         // Sessões mais antigas que isso não são buscadas nem atualizadas.
         'days' => 14,
+        // Texto da notícia pelo Gemini (API Interactions). Sem chave, usa o modelo fixo.
+        'gemini' => [
+            'key' => env('GEMINI_API_KEY') ?: null,
+            // Em ordem: se o primeiro estiver sobrecarregado, tenta o seguinte (ambos com cota gratuita).
+            'models' => [env('GEMINI_MODEL') ?: 'gemini-3.8-flash', 'gemini-3.5-flash-lite'],
+            'url' => 'https://generativelanguage.googleapis.com/v1beta/interactions',
+            'revision' => '2026-05-20',
+            'thinking_level' => 'high',
+            // Com raciocínio alto, a resposta pode levar minutos.
+            'timeout' => 300,
+            // Novas tentativas por modelo em caso de sobrecarga (429, 5xx) ou tempo esgotado.
+            'retries' => 1,
+            'retry_seconds' => 15,
+            // Execuções em que uma notícia feita pelo modelo fixo volta a tentar o Gemini.
+            'max_attempts' => 6,
+        ],
     ],
 
     'alerts' => [

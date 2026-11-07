@@ -85,6 +85,9 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/` e **nunca acessam a
    - `GOATCOUNTER_CODE`: código do [GoatCounter](https://www.goatcounter.com/) (ex.: `itapenews` para `itapenews.goatcounter.com`)
    - `SITE_CONTACT`: e-mail exibido em `/fontes/` para pedidos de remoção
    - `SITE_DOMAIN`: domínio próprio (ex.: `itapehoje.com.br`). Configure também o DNS e o campo *Custom domain* em Settings → Pages.
+
+   Em **Secrets** (não em Variables):
+   - `GEMINI_API_KEY`: chave da API do Gemini ([Google AI Studio](https://aistudio.google.com/)), usada para escrever a notícia de cada sessão da Câmara. Sem ela, ou se o Gemini falhar, a notícia é montada por um modelo fixo, sem IA. As regras do texto ficam em `resources/prompts/camara-sessao.md` e os nomes curtos dos vereadores em `config/camara.php`.
 4. Rode o workflow **Coletar e publicar** manualmente em **Actions** na primeira vez. Depois ele roda sozinho nos horários agendados e a cada push na `main` (só publica se os testes passarem).
 
 Observações:

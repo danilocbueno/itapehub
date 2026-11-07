@@ -108,6 +108,28 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 - **GoatCounter:** falta criar a conta e escolher o código (ex.: `itapehub`).
 - **Testado e descartado:** um bloco "Resumo do dia" na home, com destaques e períodos. Saiu porque repetia as notícias da lista logo abaixo; a página `/hoje/` continua.
 
+## Notícias das sessões da Câmara (em andamento)
+
+- **Feito:** `php itape camara` coleta as sessões do SisCam (presença, votações com a fase, roteiro com autor e texto de cada documento) e escreve uma notícia por sessão encerrada.
+  - O texto vem do **Gemini** (`gemini-3.8-flash`, com reserva `gemini-3.5-flash-lite`, cota gratuita), seguindo as regras de `resources/prompts/camara-sessao.md`, e é conferido antes de salvar.
+  - Se o Gemini faltar ou falhar, entra um **modelo fixo sem IA**, e o Gemini é tentado de novo nas próximas execuções (até 6 vezes).
+  - Nomes curtos dos vereadores em `config/camara.php` (revisar).
+- **Falta:** página de cada notícia no site, card na home e no tema Política, e o comando no workflow com o secret `GEMINI_API_KEY`.
+- **Depois (opcional):** transcrição do vídeo da sessão (YouTube da Câmara) para incluir o que foi debatido na tribuna.
+
+### Outras APIs gratuitas de LLM (pesquisadas em 07/11/2026)
+
+Para uma eventual reserva entre o Gemini e o modelo fixo. Cada pedido nosso tem ~10–15 mil tokens de entrada e 2–4 mil de saída; são ~10 pedidos por mês.
+
+| Serviço | Cota gratuita | Serve? |
+|---|---|---|
+| Gemini (atual) | Flash e Flash-Lite gratuitos; limites por projeto no AI Studio; no plano gratuito o Google pode usar o conteúdo para melhorar os produtos. | Sim. Às vezes responde 503 por sobrecarga (já tratado com nova tentativa e modelo reserva). |
+| Cloudflare Workers AI | 10.000 neurons/dia (renova 00:00 UTC) ≈ 310 mil tokens de entrada ou 200 mil de saída por dia no Mistral Small 3.1 24B. Conta Cloudflare e token de API. | Sim, melhor candidato a reserva. |
+| OpenRouter (modelos `:free`) | 20 pedidos/min; 50/dia (1.000/dia após comprar 10 créditos alguma vez). Modelos gratuitos mudam com o tempo. | Sim, mas instável. |
+| Groq | Plano Developer: 30 pedidos/min, 1.000/dia, 8 mil tokens/min, 200 mil/dia. | Não: um pedido nosso passa de 8 mil tokens. |
+| Mistral (Experiment) | Gratuito, sem cartão, limites por organização no console; números oficiais não confirmados. | Provavelmente. |
+| GitHub Models | Desativado em 30/07/2026. | Não. |
+
 ## Backlog
 
 **Próximos candidatos**

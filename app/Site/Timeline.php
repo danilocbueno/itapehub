@@ -125,6 +125,14 @@ final class Timeline
         return self::WEEKDAYS[$date->dayOfWeek].', '.$date->day.' de '.self::MONTHS[$date->month];
     }
 
+    /**
+     * "outubro".
+     */
+    public static function monthName(CarbonImmutable $date): string
+    {
+        return self::MONTHS[$date->month];
+    }
+
     public static function longDate(CarbonImmutable $date): string
     {
         return mb_strtolower(self::WEEKDAYS[$date->dayOfWeek]).', '.$date->day.' de '.self::MONTHS[$date->month].' de '.$date->year;
