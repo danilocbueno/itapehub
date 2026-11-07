@@ -2,6 +2,7 @@
 
 namespace App\Site;
 
+use App\Camara\SessionNews;
 use App\Data\Item;
 use App\Support\Text;
 
@@ -27,6 +28,11 @@ final class Themes
      */
     public static function for(Item $item): array
     {
+        // As notícias das sessões da Câmara são sempre de política.
+        if ($item->source === SessionNews::SOURCE) {
+            return ['politica'];
+        }
+
         $fromTitle = self::match(Text::fold($item->title));
         $fromSummary = self::match(Text::fold($item->summary));
         $themes = array_values(array_unique([...$fromTitle, ...$fromSummary]));

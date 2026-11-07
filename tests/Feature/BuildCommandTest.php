@@ -623,3 +623,70 @@ it('não esconde a página quando não há dados', function () {
 
     expect(built('index.html'))->toContain('Nenhuma notícia coletada ainda.');
 });
+
+/**
+ * Notícia de sessão da Câmara já escrita (como o comando `camara` grava).
+ */
+function sessionNewsFile(string $writtenBy = 'gemini:gemini-3.8-flash'): void
+{
+    JsonFile::write(config('itape.paths.data').'/camara/noticias/1608.json', [
+        'session' => 1608,
+        'title' => '53ª Sessão Ordinária de 2026',
+        'date' => '2026-10-24',
+        'closed_at' => '20:13',
+        'url' => 'https://itapetininga.siscam.com.br/Sessoes/Sessao/1608',
+        'written_by' => $writtenBy,
+        'written_at' => '2026-10-25T08:00:00-03:00',
+        'article' => [
+            'titulo' => 'Câmara aprova urgência para regras de eventos',
+            'linha_fina' => 'Na sessão de 24 de outubro, a Câmara aprovou a urgência de dois projetos e 11 pedidos.',
+            'resumo' => ['A Câmara aprovou a urgência de dois projetos da Prefeitura.'],
+            'secoes' => [['tema' => 'Ruas e estradas', 'itens' => ['Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).']]],
+            'tambem' => ['Presença: 18 dos 19 vereadores.'],
+            'omitidos' => [['documento' => 'Correspondências Recebidas Nº 340/2026', 'motivo' => 'Denúncia anônima.']],
+        ],
+    ]);
+}
+
+it('publica a notícia da sessão da Câmara numa página própria', function () {
+    sessionNewsFile();
+
+    $this->artisan('build')->assertSuccessful();
+    $page = built('camara/53a-sessao-ordinaria-de-2026/index.html');
+
+    expect($page)->toContain('<h1 class="page-title">Câmara aprova urgência para regras de eventos</h1>')
+        ->toContain('Sessão da Câmara · sábado, 24 de outubro de 2026')
+        ->toContain('<h2>Ruas e estradas</h2>')
+        ->toContain('Manutenção das estradas rurais do Viracopos (Miguel Arcanjo).')
+        ->toContain('Resumo escrito com inteligência artificial (Gemini)')
+        ->toContain('href="https://itapetininga.siscam.com.br/Sessoes/Sessao/1608"')
+        // O que o modelo deixou de fora por ser sensível não vai para a página.
+        ->not->toContain('Denúncia anônima');
+});
+
+it('avisa quando a notícia da sessão foi montada sem IA', function () {
+    sessionNewsFile('modelo');
+
+    $this->artisan('build')->assertSuccessful();
+
+    expect(built('camara/53a-sessao-ordinaria-de-2026/index.html'))
+        ->toContain('Resumo montado automaticamente a partir dos documentos oficiais')
+        ->not->toContain('inteligência artificial');
+});
+
+it('põe a notícia da sessão na linha do tempo, no tema Política, abrindo na mesma aba', function () {
+    sessionNewsFile();
+
+    $this->artisan('build')->assertSuccessful();
+    $link = 'href="http://localhost:8000/camara/53a-sessao-ordinaria-de-2026/"';
+    $card = fn (string $html) => Str::before(Str::afterLast(Str::before($html, $link), '<article'), '</article>');
+
+    expect(built('index.html'))->toContain($link.'>Câmara aprova urgência para regras de eventos</a>')
+        ->and($card(built('index.html')))->toContain('<span class="kicker-source">Sessão da Câmara</span>')
+        ->toContain('href="/tema/politica/">Política</a>')
+        ->not->toContain('class="official"')
+        ->and(built('tema/politica/index.html'))->toContain($link)
+        ->and(built('feed.xml'))->toContain('http://localhost:8000/camara/53a-sessao-ordinaria-de-2026/')
+        // Não é uma fonte coletada: não aparece na página de fontes.
+        ->and(built('fontes/index.html'))->not->toContain('Sessões da Câmara');
+});

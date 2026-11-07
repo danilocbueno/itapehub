@@ -6,10 +6,12 @@
     $lead = $lead ?? false;
     $side = $side ?? false;
     $theme = \App\Site\Themes::primary($item);
+    // Notícias escritas pelo próprio site (sessões da Câmara) abrem na mesma aba.
+    $target = str_starts_with($item->url, rtrim($site['url'], '/').'/') ? '' : ' target="_blank" rel="noopener"';
 @endphp
 <article class="card{{ $lead ? ' lead' : '' }}{{ $side ? ' side' : '' }}{{ $image ? '' : ' noimg' }}">
   @if ($image)
-    <a class="thumb" href="{{ $item->url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+    <a class="thumb" href="{{ $item->url }}"{!! $target !!} tabindex="-1" aria-hidden="true">
       <img src="{{ $image }}" alt="" loading="{{ $lead ? 'eager' : 'lazy' }}" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.card').classList.add('noimg'); this.parentNode.remove()">
     </a>
   @endif
@@ -27,7 +29,7 @@
         <span class="official">oficial</span>
       @endif
     </div>
-    <h3><a href="{{ $item->url }}" target="_blank" rel="noopener">{{ $item->title }}</a></h3>
+    <h3><a href="{{ $item->url }}"{!! $target !!}>{{ $item->title }}</a></h3>
     @if ($item->summary !== '')
       <p>{{ $item->summary }}</p>
     @endif

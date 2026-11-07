@@ -89,10 +89,12 @@ return [
             'url' => 'https://generativelanguage.googleapis.com/v1beta/interactions',
             'revision' => '2026-05-20',
             'thinking_level' => 'high',
-            // Com raciocínio alto, a resposta pode levar minutos.
-            'timeout' => 300,
-            // Novas tentativas por modelo em caso de sobrecarga (429, 5xx) ou tempo esgotado.
-            'retries' => 1,
+            // Com raciocínio alto, a resposta pode levar minutos. Pior caso por sessão:
+            // modelos × (1 + retries) × timeout = 6 min, dentro dos 8 min do passo no workflow.
+            'timeout' => 180,
+            // Novas tentativas no mesmo modelo dentro da execução. Zero: a coleta roda de hora
+            // em hora, e a execução seguinte já tenta de novo (até max_attempts).
+            'retries' => 0,
             'retry_seconds' => 15,
             // Execuções em que uma notícia feita pelo modelo fixo volta a tentar o Gemini.
             'max_attempts' => 6,

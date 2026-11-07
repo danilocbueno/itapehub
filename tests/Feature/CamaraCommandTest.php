@@ -123,6 +123,7 @@ it('escreve a notícia pelo Gemini com as regras do prompt e o esquema da respos
     $news = camaraNews(1608);
 
     expect($news['written_by'])->toBe('gemini:gemini-3.8-flash')
+        ->and($news['closed_at'])->toBe('20:13')
         ->and($news['article']['titulo'])->toBe('Vereadores pedem reparos em estradas rurais e urgência para regras de feiras')
         ->and($news['article']['omitidos'][0]['documento'])->toBe('Correspondências Recebidas Nº 340/2026');
 
@@ -175,8 +176,8 @@ it('não escreve de novo a notícia de uma sessão que já tem uma', function ()
     expect(geminiCalls())->toBe(4);
 });
 
-it('tenta de novo o mesmo modelo depois de uma sobrecarga passageira', function () {
-    config(['itape.camara.gemini.key' => 'chave-teste']);
+it('tenta de novo o mesmo modelo quando há novas tentativas configuradas', function () {
+    config(['itape.camara.gemini.key' => 'chave-teste', 'itape.camara.gemini.retries' => 1]);
     fakeSiscam(['generativelanguage.googleapis.com/*' => Http::sequence()
         ->push(['error' => ['message' => 'high demand']], 503)
         ->pushResponse(geminiResponse(geminiArticle())())
@@ -189,7 +190,7 @@ it('tenta de novo o mesmo modelo depois de uma sobrecarga passageira', function 
     Sleep::assertSleptTimes(1);
 });
 
-it('passa para o modelo reserva quando o principal continua sobrecarregado', function () {
+it('passa direto para o modelo reserva quando o principal está sobrecarregado', function () {
     config(['itape.camara.gemini.key' => 'chave-teste']);
     fakeSiscam(['generativelanguage.googleapis.com/*' => fn ($request) => $request['model'] === 'gemini-3.8-flash'
         ? Http::response(['error' => ['message' => 'high demand']], 503)
@@ -199,6 +200,8 @@ it('passa para o modelo reserva quando o principal continua sobrecarregado', fun
     $this->artisan('camara')->assertSuccessful();
 
     expect(camaraNews(1608)['written_by'])->toBe('gemini:gemini-3.5-flash-lite');
+    // Sem novas tentativas no mesmo modelo: não espera entre as chamadas.
+    Sleep::assertNeverSlept();
 });
 
 it('troca a notícia do modelo fixo pela do Gemini quando ele volta a responder', function () {

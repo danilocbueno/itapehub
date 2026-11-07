@@ -32,7 +32,7 @@ jobs:
     needs: tests
     if: ${{ !cancelled() && (needs.tests.result == 'success' || needs.tests.result == 'skipped') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -73,6 +73,15 @@ jobs:
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
 
+      # Sessões da Câmara (SisCam) e a notícia de cada uma (Gemini, ou modelo fixo sem a chave).
+      # Se travar ou falhar, o site é publicado mesmo assim; a próxima execução tenta de novo.
+      - name: Notícias da Câmara
+        run: php itape camara
+        timeout-minutes: 8
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
       - name: Salvar estado da coleta
         if: ${{ !cancelled() }}
         uses: actions/cache/save@v4
@@ -85,7 +94,7 @@ jobs:
 
       - name: Commit das notícias novas
         run: |
-          if [ -n "$(git status --porcelain data/items)" ]; then
+          if [ -n "$(git status --porcelain data/items data/camara)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data

@@ -67,6 +67,7 @@ final class NewsDesk
                 'session' => $session->id,
                 'title' => $session->title,
                 'date' => $session->date,
+                'closed_at' => $session->closedAt,
                 'url' => $session->url,
                 'written_by' => $by,
                 'written_at' => $now->toIso8601String(),

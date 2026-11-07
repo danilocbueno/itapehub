@@ -108,7 +108,6 @@ a {
 }
 .brand-b .brand-line {
     left: 0;
-    height: max(1.5px, 0.04em);
 }
 .brand-line i {
     position: absolute;
@@ -503,6 +502,52 @@ a {
 .page-lead {
     margin: 0 0 18px;
     max-width: 70ch;
+    color: var(--muted);
+}
+
+/* Notícia de uma sessão da Câmara (escrita pelo site) */
+.session-news {
+    max-width: 70ch;
+}
+.session-kicker {
+    margin: 26px 0 0;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.session-kicker + .page-title {
+    margin-top: 6px;
+}
+.session-news h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 26px 0 8px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.session-news h2::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid var(--rule);
+}
+.session-news ul {
+    margin: 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 8px;
+}
+.session-news li {
+    line-height: 1.5;
+}
+.session-note {
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
     color: var(--muted);
 }
 .pager {

@@ -2,6 +2,7 @@
 
 namespace App\Site;
 
+use App\Camara\SessionNews;
 use App\Data\Source;
 use App\Storage\ItemRepository;
 use App\Storage\JsonFile;
@@ -28,15 +29,17 @@ final class SiteBuilder
         $items = new ItemRepository($dataPath.'/items');
         $state = new StateRepository($dataPath.'/state.json');
         $sources = Source::all();
+        // Notícias das sessões da Câmara, escritas pelo ItapêHub: entram na linha do tempo como as outras.
+        $sessionNews = SessionNews::load($dataPath.'/camara/noticias', (string) config('itape.site.url'));
 
-        $clusters = Timeline::clusters($items->all());
+        $clusters = Timeline::clusters([...$items->all(), ...array_column($sessionNews, 'item')]);
         $days = Timeline::byDay($clusters);
         $home = $this->homeClusters($clusters, $now);
         $events = Events::upcoming($clusters, $now, (int) config('itape.agenda.days'));
 
         $shared = [
             'site' => config('itape.site'),
-            'sources' => $sources,
+            'sources' => [...$sources, SessionNews::SOURCE => SessionNews::source()],
             'now' => $now,
             'problems' => $this->problems($sources, $state, $now),
             'themes' => Themes::all(),
@@ -107,8 +110,19 @@ final class SiteBuilder
         $pages++;
 
         $this->write($buildPath.'/arquivo/index.html', 'archive-index', [...$shared, 'months' => $months]);
+        foreach ($sessionNews as $news) {
+            $this->write($buildPath.'/camara/'.$news['slug'].'/index.html', 'camara-session', [
+                ...$shared,
+                'slug' => $news['slug'],
+                'news' => $news['news'],
+                'date' => $news['item']->date(),
+            ]);
+            $pages++;
+        }
+
         $this->write($buildPath.'/fontes/index.html', 'sources', [
             ...$shared,
+            'sources' => $sources,
             'state' => $state->sources(),
             'counts' => array_count_values(array_map(fn ($item) => $item->source, array_filter($items->all(), fn ($item) => ! $item->hidden))),
         ]);
