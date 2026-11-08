@@ -17,7 +17,9 @@ return [
     'site' => [
         'name' => env('SITE_NAME') ?: 'ItapêHub',
         'tagline' => env('SITE_TAGLINE') ?: 'Tudo o que acontece na cidade, num só lugar',
-        'url' => rtrim((string) (env('SITE_URL') ?: 'http://localhost:8000'), '/'),
+        // Com domínio próprio, o endereço é sempre https://domínio (o configure-pages
+        // devolve http:// enquanto o "Enforce HTTPS" do GitHub Pages não está ligado).
+        'url' => env('SITE_DOMAIN') ? 'https://'.env('SITE_DOMAIN') : rtrim((string) (env('SITE_URL') ?: 'http://localhost:8000'), '/'),
         'base' => rtrim((string) env('SITE_BASE'), '/'),
         'domain' => env('SITE_DOMAIN') ?: null,
         'contact' => env('SITE_CONTACT') ?: null,
