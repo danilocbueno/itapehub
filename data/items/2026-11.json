@@ -1,5 +1,77 @@
 [
     {
+        "id": "b47bb229d166f687",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/atleta-de-itapetininga-disputa-campeonato-brasileiro-juvenil-de-natacao-no-rio-de-janeiro/",
+        "title": "Atleta de Itapetininga disputa Campeonato Brasileiro Juvenil de Natação no Rio de Janeiro",
+        "summary": "O nadador itapetiningano Estevão Gomes Vaz vai representar o Sesi Votorantim no Campeonato Brasileiro Interclubes Juvenil de Natação de Verão – Troféu Carlos Campos Sobrinho, que será realizado entre os dias 10 e 14 de novembro, no Rio de…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/Sem-nome-Site-8.png",
+        "published_at": "2026-11-08T11:10:09-03:00",
+        "collected_at": "2026-11-08T13:41:16-03:00",
+        "cluster": "b47bb229d166f687",
+        "hidden": false
+    },
+    {
+        "id": "0877309dcd38eaa7",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/sesi-de-itapetininga-recebe-peca-teatral-o-fingidor-entre-os-dias-18-e-21-de-novembro/",
+        "title": "SESI de Itapetininga recebe peça teatral “O Fingidor” entre os dias 18 e 21 de novembro",
+        "summary": "O Teatro do SESI de Itapetininga recebe, entre os dias 18 e 21 de novembro, a peça teatral “O Fingidor”, escrita e dirigida por Samir Yazbek. As apresentações serão realizadas das 20h às 21h30, com entrada gratuita. Para assistir ao…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_42149bbe-b8b5-4a52-9be6-5d554957862f.png",
+        "published_at": "2026-11-08T11:01:24-03:00",
+        "collected_at": "2026-11-08T13:41:16-03:00",
+        "cluster": "0877309dcd38eaa7",
+        "hidden": false
+    },
+    {
+        "id": "21f54f66a9b0764d",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/inscricoes-para-o-2o-festival-kids-de-atletismo-de-itapetininga-comecam-nesta-segunda-feira/",
+        "title": "Inscrições para o 2º Festival Kids de Atletismo de Itapetininga começam nesta segunda-feira",
+        "summary": "As inscrições para o 2º Festival Kids de Atletismo 2026, promovido pela Prefeitura de Itapetininga, em parceria com o SESI, começam nesta segunda-feira, 09 de novembro e seguem até o dia 13 de novembro. A participação é gratuita e é…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_healthy-lifestyle-running-outdoorst-1024x584.jpg",
+        "published_at": "2026-11-08T10:53:09-03:00",
+        "collected_at": "2026-11-08T13:41:16-03:00",
+        "cluster": "21f54f66a9b0764d",
+        "hidden": false
+    },
+    {
+        "id": "bfb4f2b16947f050",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/fatec-de-itapetininga-prorroga-inscricoes-para-o-vestibular-2027-ate-16-de-novembro/",
+        "title": "Fatec de Itapetininga prorroga inscrições para o Vestibular 2027 até 16 de novembro",
+        "summary": "O Centro Paula Souza (CPS) prorrogou até o dia 16 de novembro de 2026 o prazo de inscrições para o Vestibular 2027 da Faculdade de Tecnologia (Fatec) de Itapetininga. São oferecidas vagas em seis cursos superiores gratuitos, com início das…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2025/02/original_Periodo-de-inscricoes-para-vestibular-da-Fatec-entra-na-reta-final-1.jpg",
+        "published_at": "2026-11-08T10:43:13-03:00",
+        "collected_at": "2026-11-08T13:41:16-03:00",
+        "cluster": "bfb4f2b16947f050",
+        "hidden": false
+    },
+    {
+        "id": "29f2f04c90168478",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/pat-de-itapetininga-oferece-298-vagas-de-emprego-nesta-segunda-feira/",
+        "title": "PAT de Itapetininga oferece 298 vagas de emprego nesta segunda-feira",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga disponibiliza 298 vagas de emprego nesta segunda-feira, 09 de novembro. As oportunidades estão distribuídas entre candidatos sem experiência, profissionais com experiência, jovens…",
+        "image": "https://assets.mktnaweb.com/accounts/2021/11/12/171464/pictures/7090/original_PAT%2004%20OCT.png?1793816229",
+        "published_at": "2026-11-08T10:34:15-03:00",
+        "collected_at": "2026-11-08T13:41:16-03:00",
+        "cluster": "29f2f04c90168478",
+        "hidden": false
+    },
+    {
+        "id": "d67ef899fefdbe29",
+        "source": "tvsmais",
+        "url": "https://www.tvsmais.com.br/mais-de-26-mil-estudantes-fazem-o-enem-em-sorocaba-jundiai-e-itapetininga/",
+        "title": "Mais de 26 mil estudantes fazem o Enem em Sorocaba, Jundiaí e Itapetininga",
+        "summary": "Primeiro dia de provas será neste domingo, com questões de linguagens, ciências humanas e redação",
+        "image": "https://www.tvsmais.com.br/wp-content/uploads/2026/11/imagem-capa-Site-26.jpg",
+        "published_at": "2026-11-08T10:10:00-03:00",
+        "collected_at": "2026-11-08T13:41:16-03:00",
+        "cluster": "d67ef899fefdbe29",
+        "hidden": false
+    },
+    {
         "id": "69d68032649bf242",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/07/enem-2026-mais-de-64-mil-candidatos-fazem-a-prova-neste-domingo-em-itapetininga-e-tatui.ghtml",
