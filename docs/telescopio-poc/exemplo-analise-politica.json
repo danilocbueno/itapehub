@@ -1,0 +1,78 @@
+{
+    "titulo": "Especialistas debatem cenário político pós-eleições no Telescópio",
+    "linha_fina": "Convidados analisaram os resultados eleitorais, a participação dos jovens e os desafios da democracia durante o programa de segunda-feira (26).",
+    "lide": "Em entrevista ao programa Telescópio, da TV Itapê, na segunda-feira (26), convidados debateram os desdobramentos do cenário político e eleitoral. O advogado Jean Nunes, o assessor parlamentar Edinho Madero, a estudante Helena Lagoeiro e o professor Cassiano Terra discutiram a representatividade regional e a polarização.",
+    "blocos": [
+        {
+            "intertitulo": "Representatividade Regional",
+            "paragrafos": [
+                "Durante o programa, o advogado Jean Nunes afirmou que o processo eleitoral recente deixou a região sudoeste do estado sem deputado estadual e federal eleito.",
+                "O assessor parlamentar Edinho Madero concordou com a avaliação, destacando que a falta de representatividade na Assembleia Legislativa prejudica a cobrança de recursos para os municípios da região."
+            ]
+        },
+        {
+            "intertitulo": "Participação Jovem",
+            "paragrafos": [
+                "A estudante Helena Lagoeiro destacou o engajamento dos jovens nas discussões políticas e a importância de manter o respeito e o diálogo diante de opiniões divergentes nas redes sociais.",
+                "Segundo a estudante, a pluralidade de ideias é fundamental para o exercício da cidadania e para o fortalecimento do processo democrático."
+            ]
+        },
+        {
+            "intertitulo": "Polarização Política",
+            "paragrafos": [
+                "O professor Cassiano Terra pontuou que a radicalização do discurso político reflete sintomas dos tempos atuais e criticou a influência das grandes empresas de tecnologia na formação de bolhas de informação.",
+                "Os participantes também discutiram a necessidade de fiscalização pública e de um debate democrático mais construtivo para a sociedade."
+            ]
+        }
+    ],
+    "fechamento": "O programa Telescópio é exibido de segunda a sexta-feira, ao meio-dia, pela TV Itapê (Canal 8).",
+    "participantes": [
+        {
+            "nome": "Fábio Miranda",
+            "papel": "apresentador"
+        },
+        {
+            "nome": "Jean Nunes",
+            "papel": "advogado"
+        },
+        {
+            "nome": "Edinho Madero",
+            "papel": "assessor parlamentar"
+        },
+        {
+            "nome": "Helena Lagoeiro",
+            "papel": "estudante"
+        },
+        {
+            "nome": "Cassiano Terra",
+            "papel": "professor"
+        }
+    ],
+    "momentos": [
+        {
+            "inicio": "07:42",
+            "assunto": "Abertura do programa e apresentação dos convidados"
+        },
+        {
+            "inicio": "08:07",
+            "assunto": "Início da discussão sobre o cenário político e eleições"
+        },
+        {
+            "inicio": "13:01",
+            "assunto": "Participação da estudante Helena Lagoeiro sobre os jovens na política"
+        },
+        {
+            "inicio": "14:28",
+            "assunto": "Debate sobre a representatividade da região sudoeste no legislativo"
+        },
+        {
+            "inicio": "39:27",
+            "assunto": "Entrada do professor Cassiano Terra na bancada"
+        },
+        {
+            "inicio": "40:20",
+            "assunto": "Discussão sobre polarização política e redes sociais"
+        }
+    ],
+    "omitidos": []
+}

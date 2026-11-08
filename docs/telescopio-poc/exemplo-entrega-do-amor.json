@@ -1,0 +1,67 @@
+{
+    "titulo": "Ação voluntária leva doações a hospital em Itapetininga",
+    "linha_fina": "Projeto social atua há cerca de 20 anos arrecadando e entregando presentes em datas festivas.",
+    "lide": "Em entrevista ao programa Telescópio, da TV Itapê, na quinta-feira (6), a voluntária Denise Matarazzo apresentou o trabalho da ação social Entrega de Amor. O projeto atua há cerca de 20 anos levando donativos e presentes a pacientes de um hospital em Itapetininga durante datas comemorativas.",
+    "blocos": [
+        {
+            "intertitulo": "Origem e Atuação",
+            "paragrafos": [
+                "Segundo Denise Matarazzo, a iniciativa voluntária surgiu a partir da antiga Pastoral da Saúde, ligada à Igreja Nossa Senhora das Estrelas, com visitas a pacientes de um hospital. Com o encerramento da pastoral, o grupo de voluntários decidiu dar continuidade às atividades de forma independente.",
+                "Atualmente, o projeto conta com um grupo fixo de voluntárias e o apoio de doadores da comunidade para realizar as entregas beneficentes."
+            ]
+        },
+        {
+            "intertitulo": "Campanhas e Doações",
+            "paragrafos": [
+                "De acordo com a convidada, as arrecadações ocorrem principalmente para o Dia das Crianças e o Natal. No Dia das Crianças, os donativos atendem ao público infantil com brinquedos e itens variados, enquanto no Natal são arrecadados produtos de uso pessoal, como sabonetes e toalhas de banho, destinados aos pacientes internados.",
+                "As doações podem ser feitas de forma financeira por meio dos dados exibidos no vídeo ou por meio de doações de itens novos e usados em bom estado."
+            ]
+        }
+    ],
+    "fechamento": "Os interessados em colaborar com a ação social podem conferir as formas de doação e os contatos exibidos ao longo da transmissão do programa.",
+    "participantes": [
+        {
+            "nome": "Henrique Alves",
+            "papel": "apresentador"
+        },
+        {
+            "nome": "Guilherme Alves",
+            "papel": "apresentador"
+        },
+        {
+            "nome": "Denise Matarazzo",
+            "papel": "convidada"
+        }
+    ],
+    "momentos": [
+        {
+            "inicio": "00:15",
+            "assunto": "Abertura do programa"
+        },
+        {
+            "inicio": "01:42",
+            "assunto": "Origem da ação Entrega de Amor"
+        },
+        {
+            "inicio": "05:10",
+            "assunto": "Funcionamento das arrecadações"
+        },
+        {
+            "inicio": "11:00",
+            "assunto": "Exibição de fotos da equipe e ações"
+        },
+        {
+            "inicio": "21:32",
+            "assunto": "Divulgação de dados para doação e chave Pix"
+        },
+        {
+            "inicio": "37:10",
+            "assunto": "Encerramento e agradecimentos"
+        }
+    ],
+    "omitidos": [
+        "02:32 - Menção ao falecimento da mãe da convidada no dia de uma entrega.",
+        "13:12 - Relato sobre o falecimento da mãe e da voluntária Rita Fink.",
+        "19:53 - Comentários sobre falecimentos de pessoas ligadas ao projeto em anos anteriores."
+    ]
+}

@@ -108,14 +108,69 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 - **GoatCounter:** falta criar a conta e escolher o código (ex.: `itapehub`).
 - **Testado e descartado:** um bloco "Resumo do dia" na home, com destaques e períodos. Saiu porque repetia as notícias da lista logo abaixo; a página `/hoje/` continua.
 
-## Notícias das sessões da Câmara (em andamento)
+## Notícias das sessões da Câmara (no ar)
 
-- **Feito:** `php itape camara` coleta as sessões do SisCam (presença, votações com a fase, roteiro com autor e texto de cada documento) e escreve uma notícia por sessão encerrada.
-  - O texto vem do **Gemini** (`gemini-3.8-flash`, com reserva `gemini-3.5-flash-lite`, cota gratuita), seguindo as regras de `resources/prompts/camara-sessao.md`, e é conferido antes de salvar.
+- `php itape camara` coleta as sessões do SisCam (presença, votações com a fase, roteiro com autor e texto de cada documento) e escreve uma notícia por sessão encerrada.
+  - O texto vem do **Gemini** (`gemini-3.8-flash`, com reserva `gemini-3.5-flash-lite`, cota gratuita), seguindo as regras de `resources/prompts/camara-sessao.md`. Antes de salvar, o código confere os tamanhos e os nomes e o gênero dos vereadores.
   - Se o Gemini faltar ou falhar, entra um **modelo fixo sem IA**, e o Gemini é tentado de novo nas próximas execuções (até 6 vezes).
   - Nomes curtos dos vereadores em `config/camara.php` (revisar).
-- **Falta:** página de cada notícia no site, card na home e no tema Política, e o comando no workflow com o secret `GEMINI_API_KEY`.
+- Página `/camara/<slug>/`:
+  - capa gerada com o número da sessão;
+  - aviso de texto automático no começo;
+  - lista completa dos documentos com link para o SisCam.
+- A notícia também vira card na linha do tempo e no tema Política. O passo roda no workflow com o secret `GEMINI_API_KEY`.
 - **Depois (opcional):** transcrição do vídeo da sessão (YouTube da Câmara) para incluir o que foi debatido na tribuna.
+
+## Notícias de programas em vídeo (planejado, prova de conceito feita em 08/11/2026)
+
+Ideia: quando um programa local publicar um episódio novo no YouTube, o ItapêHub escreve uma notícia sobre ele com o Gemini. Começa pelo **Telescópio, da TV Itapê** ([canal](https://www.youtube.com/@tvitape2/videos), id `UCmRTpHDXWhSMOgGXZ-aZMYw`). Depois, PopFM e Rádio Difusora.
+
+**O que descobrimos**
+- O Telescópio hoje é um **programa de entrevista ao vivo** (38 min a 1h30), com título no padrão `Telescópio - DD/MM/AAAA - Tema`.
+  - A antiga playlist "Telescópio – Agenda Cultural" parou em 02/07/2026.
+  - O canal também publica **cortes** curtos ("TELESCÓPIO com…", 10 a 60 s), que devem ser ignorados.
+- As **lives não aparecem no RSS do YouTube** (nem no feed do canal, nem no de uploads).
+- O **Gemini aceita a URL do YouTube direto** (`{"type":"video","uri":"https://www.youtube.com/watch?v=ID"}`): não é preciso baixar o áudio nem transcrever.
+  - Só vídeos públicos.
+  - Na cota gratuita, até 8 h de vídeo do YouTube por dia.
+
+**Decisões**
+- Detecção pela aba "Ao vivo" do canal (`/@tvitape2/streams`, lendo o `ytInitialData` da página), filtrando pelo padrão do título e por uma duração mínima. A YouTube Data API fica de reserva.
+- **Se o Gemini falhar, não publica nada** e tenta de novo na próxima execução. Não há modelo fixo nem card de reserva.
+- A página da notícia incorpora o vídeo do YouTube e dá crédito à TV Itapê. O Danilo avisa a emissora.
+- A página traz o aviso de texto gerado por IA no começo e os "momentos" com link para o minuto do vídeo (`&t=`).
+
+**Prova de conceito** (`docs/telescopio-poc/`: `poc.php`, `prompt.md` e dois exemplos de saída)
+- Rodar na raiz do projeto: `set -a; . ./.env; set +a; php docs/telescopio-poc/poc.php [videoId] [título] [AAAA-MM-DD] [modelo] [agentic|static]`.
+- Resultados:
+
+  | Modelo | Resultado |
+  |---|---|
+  | `gemini-3.5-flash-lite`, modo `static` | Funcionou. Entrega do Amor (38 min): 45 s, ~210 mil tokens. Análise Política (1h29): 65 a 76 s, ~490 mil tokens. |
+  | `gemini-3.8-flash` (agentic e static) | Falhou 5 vezes (erro `INTERNAL` ou alta demanda). O 3.6 Flash também estava com alta demanda. |
+  | Vídeo curto da documentação | Funcionou no Flash Lite. O caminho está certo; o problema é a carga ou o tamanho do vídeo no 3.8. |
+
+- Ajustes no prompt depois da primeira rodada:
+  - proibir chave Pix, conta, telefone, e-mail e @ de rede social (erro de transcrição pode mandar dinheiro para a pessoa errada);
+  - cobrir o programa inteiro;
+  - texto concreto, com a posição de cada convidado;
+  - nome de pessoa só quando estiver no título ou escrito na tela.
+
+**Problemas observados (tratar na implementação)**
+1. O modelo errou o dia da semana ("quinta-feira (6)" para 06/11, que é sexta). O código deve calcular o dia e mandar pronto no input.
+2. Em programa longo, os "momentos" pararam nos 40 de 89 minutos. Validar que os momentos estão dentro da duração e chegam perto do fim; senão, rejeitar e tentar de novo.
+3. Nomes ouvidos no áudio podem vir com a grafia errada ("Helena Lagoeiro", "Edinho Madero", "Cassiano Terra": conferir no vídeo).
+
+**Plano de implementação (em partes, com testes)**
+1. `config/programas.php`: canal, padrão do título, duração mínima, nome no chapéu ("TV Itapê · Telescópio") e prompt de cada programa.
+2. Detecção: `php itape programas` lê a aba "Ao vivo" e grava os episódios novos em `data/programas/<programa>/<videoId>.json`.
+3. Escrita:
+   - Gemini, com o Flash Lite como modelo principal para vídeo e o 3.8 Flash de reserva;
+   - prompt em `resources/prompts/programa-video.md`;
+   - validação (tamanhos, momentos, dia da semana vindo do código);
+   - novas tentativas nas execuções seguintes.
+4. Site: página `/programas/<programa>/<slug>/` com o vídeo incorporado, o texto e os momentos, card com a miniatura do YouTube e classificação de tema pelo texto.
+5. Workflow: passo no `collect.yml`, como o da Câmara.
 
 ### Outras APIs gratuitas de LLM (pesquisadas em 07/11/2026)
 
