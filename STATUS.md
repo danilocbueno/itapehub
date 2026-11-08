@@ -121,7 +121,31 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 - A notícia também vira card na linha do tempo e no tema Política. O passo roda no workflow com o secret `GEMINI_API_KEY`.
 - **Depois (opcional):** transcrição do vídeo da sessão (YouTube da Câmara) para incluir o que foi debatido na tribuna.
 
-## Notícias de programas em vídeo (planejado, prova de conceito feita em 08/11/2026)
+## Notícias de programas em vídeo (implementado em 08/11/2026)
+
+**Como funciona:**
+- `php itape programas` roda de hora em hora no workflow.
+- Lê a aba "Ao vivo" de cada programa em `config/programas.php` e grava os episódios dos últimos 7 dias em `data/programas/<programa>/<videoId>.json`. Programas:
+  - **Telescópio** (TV Itapê): entrevista, 1h a 1h40;
+  - **Jornal do Meio-Dia** (Rádio Super Difusora): cerca de 1h;
+  - **Manhã da Pop** (Pop FM): 3h a 3h40, às vezes em duas partes.
+- Nas rádios o vídeo vai com 0,2 quadro por segundo (`fps`): a imagem é só o estúdio, e só assim um programa de 3h30 cabe numa chamada (cerca de 490 mil tokens).
+- É escrito um episódio por execução, somando todos os programas: um vídeo longo já passa do limite gratuito de 250 mil tokens por minuto. Recusa por cota (429) não conta como tentativa.
+- A notícia é escrita com o Gemini (`gemini-3.5-flash-lite`, reserva `gemini-3.8-flash`), seguindo `resources/prompts/programa-video.md`.
+- Antes de publicar, confere:
+  - tamanhos;
+  - momentos dentro do vídeo, sem intervalo maior que 30 minutos (os dos últimos 3 minutos, encerramento e chamadas, são descartados);
+  - nenhum telefone, e-mail, @ ou site no texto;
+  - dia da semana certo.
+- Se falhar, não publica nada e tenta de novo (até 6 execuções).
+- Página `/programas/<programa>/<slug>/`, com o vídeo incorporado, o aviso de IA, o texto, os momentos e os participantes. Card na linha do tempo com a miniatura do YouTube.
+
+**Decisões do Danilo:**
+- **Páginas lidas:** a aba "Ao vivo" de cada canal e, no Telescópio, também a aba "Vídeos". Alguns episódios saem como vídeo comum, sem live: os de 05 e 06/11. A busca do canal não é usada.
+- **Sem episódios antigos:** o recurso começa com os episódios de 09/11/2026 em diante (`since` em `config/itape.php`). Nesta primeira semana o Danilo acompanha a qualidade dos textos.
+- **Os três programas são diários (dias úteis):** cerca de 5h45 de vídeo por dia, dentro do limite gratuito de 8 horas de vídeo do YouTube por dia. A folga cobre refazer o Telescópio ou o Jornal, mas não a Pop no mesmo dia; nesse caso o episódio fica para o dia seguinte.
+
+### Planejamento e prova de conceito
 
 Ideia: quando um programa local publicar um episódio novo no YouTube, o ItapêHub escreve uma notícia sobre ele com o Gemini. Começa pelo **Telescópio, da TV Itapê** ([canal](https://www.youtube.com/@tvitape2/videos), id `UCmRTpHDXWhSMOgGXZ-aZMYw`). Depois, PopFM e Rádio Difusora.
 

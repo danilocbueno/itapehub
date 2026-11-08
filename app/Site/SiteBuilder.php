@@ -5,6 +5,8 @@ namespace App\Site;
 use App\Camara\SessionCover;
 use App\Camara\SessionNews;
 use App\Data\Source;
+use App\Programas\Program;
+use App\Programas\ProgramNews;
 use App\Storage\ItemRepository;
 use App\Storage\JsonFile;
 use App\Storage\StateRepository;
@@ -42,14 +44,22 @@ final class SiteBuilder
             ];
         }
 
-        $clusters = Timeline::clusters([...$items->all(), ...array_column($sessionNews, 'item')]);
+        // Notícias dos programas em vídeo (episódios já escritos pelo Gemini).
+        $programs = Program::all();
+        $programNews = ProgramNews::load($dataPath.'/programas', (string) config('itape.site.url'), $programs);
+
+        $clusters = Timeline::clusters([...$items->all(), ...array_column($sessionNews, 'item'), ...array_column($programNews, 'item')]);
         $days = Timeline::byDay($clusters);
         $home = $this->homeClusters($clusters, $now);
         $events = Events::upcoming($clusters, $now, (int) config('itape.agenda.days'));
 
         $shared = [
             'site' => config('itape.site'),
-            'sources' => [...$sources, SessionNews::SOURCE => SessionNews::source()],
+            'sources' => [
+                ...$sources,
+                SessionNews::SOURCE => SessionNews::source(),
+                ...array_combine(array_map(fn (Program $p) => $p->sourceKey(), $programs), array_map(fn (Program $p) => $p->source(), $programs)),
+            ],
             'sessionCovers' => $sessionCovers,
             'now' => $now,
             'problems' => $this->problems($sources, $state, $now),
@@ -129,6 +139,17 @@ final class SiteBuilder
                 'session' => $news['session'],
                 'date' => $news['item']->date(),
                 'cover' => $sessionCovers[$news['item']->url]['cover'],
+            ]);
+            $pages++;
+        }
+
+        foreach ($programNews as $news) {
+            $this->write($buildPath.'/programas/'.$news['program']->key.'/'.$news['slug'].'/index.html', 'program-episode', [
+                ...$shared,
+                'program' => $news['program'],
+                'slug' => $news['slug'],
+                'episode' => $news['episode'],
+                'date' => CarbonImmutable::parse((string) $news['episode']['date'], $now->getTimezone()),
             ]);
             $pages++;
         }

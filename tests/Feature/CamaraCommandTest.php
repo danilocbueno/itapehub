@@ -29,28 +29,6 @@ function camaraNews(int $id): ?array
     return JsonFile::read(config('itape.paths.data').'/camara/noticias/'.$id.'.json');
 }
 
-/**
- * Resposta da API Interactions com o texto JSON da notícia.
- *
- * @param  array<string, mixed>  $article
- */
-function geminiResponse(array $article): Closure
-{
-    return fn () => Http::response([
-        'id' => 'v1_teste',
-        'status' => 'completed',
-        'steps' => [
-            ['type' => 'thought', 'signature' => 'x'],
-            ['type' => 'model_output', 'content' => [['type' => 'text', 'text' => json_encode($article, JSON_UNESCAPED_UNICODE)]]],
-        ],
-    ]);
-}
-
-function geminiCalls(): int
-{
-    return Http::recorded(fn ($request) => str_contains($request->url(), 'generativelanguage'))->count();
-}
-
 function geminiArticle(string $councilor = 'o vereador Miguel Arcanjo'): array
 {
     return [

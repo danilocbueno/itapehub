@@ -103,6 +103,29 @@ return [
         ],
     ],
 
+    // Notícias dos programas em vídeo (config/programas.php). Usa a mesma chave do Gemini.
+    // Se o Gemini falhar, nada é publicado: o episódio é tentado de novo nas próximas execuções.
+    'programas' => [
+        // Só episódios transmitidos nos últimos N dias viram notícia.
+        'days' => 7,
+        // E nunca antes desta data (início do recurso: sem notícias de episódios antigos).
+        'since' => '2026-11-09',
+        // Episódios escritos por execução (cada um leva de 1 a 2 minutos; a coleta roda de hora em hora).
+        'per_run' => 1,
+        // Execuções com falha antes de desistir de um episódio.
+        'max_attempts' => 6,
+        // O Flash Lite processou os vídeos longos na prova de conceito; o 3.8 Flash falhou.
+        'models' => ['gemini-3.5-flash-lite', 'gemini-3.8-flash'],
+        'thinking_level' => 'high',
+        // Pior caso por execução: per_run × modelos × timeout = 8 min; o passo no workflow tem 10.
+        'timeout' => 240,
+        // Intervalo máximo entre dois momentos (o modelo resumiu 70 minutos de debate num só).
+        'max_gap_minutes' => 30,
+        // Momentos nos últimos minutos do vídeo são descartados: encerramento e chamadas
+        // de outros programas (o modelo usava a chamada final para "cobrir" o vídeo).
+        'ending_minutes' => 3,
+    ],
+
     'alerts' => [
         'url' => 'https://apiprevmet3.inmet.gov.br/avisos/rss',
         // Nome da mesorregião do IBGE usada nos avisos do INMET.

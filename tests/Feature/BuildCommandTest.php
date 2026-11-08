@@ -4,6 +4,7 @@ use App\Camara\SessionRepository;
 use App\Camara\SiscamParser;
 use App\Data\Item;
 use App\Pipeline\Clusterer;
+use App\Programas\VideoStory;
 use App\Storage\ItemRepository;
 use App\Storage\JsonFile;
 use Carbon\CarbonImmutable;
@@ -766,4 +767,55 @@ it('põe a notícia da sessão na linha do tempo, no tema Política, abrindo na 
         // Não é uma fonte coletada: não aparece na página de fontes.
         ->and(built('fontes/index.html'))->not->toContain('Sessões da Câmara')
         ->and(config('itape.paths.build').'/assets/camara.avif')->toBeFile();
+});
+
+it('publica a notícia do episódio com vídeo, momentos e card', function () {
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-11-04 18:00', 'America/Sao_Paulo'));
+    $dir = config('itape.paths.data').'/programas/telescopio';
+    $episode = [
+        'program' => 'telescopio',
+        'video' => 'FTQML3B-wI4',
+        'title' => 'Telescópio - 03/11/2026 - Direito dos Animais',
+        'topic' => 'Direito dos Animais',
+        'date' => '2026-11-03',
+        'seconds' => 5436,
+    ];
+    JsonFile::write($dir.'/FTQML3B-wI4.json', [
+        ...$episode,
+        'written_by' => 'gemini:gemini-3.5-flash-lite',
+        'article' => VideoStory::check(videoArticle(), 5436, CarbonImmutable::parse('2026-11-03', 'America/Sao_Paulo')),
+    ]);
+    // Episódio ainda sem notícia: não aparece.
+    JsonFile::write($dir.'/Lf_ZIAQo0yM.json', [...$episode, 'video' => 'Lf_ZIAQo0yM', 'date' => '2026-11-04', 'topic' => 'Geopolítica', 'attempts' => 1]);
+
+    $this->artisan('build')->assertSuccessful();
+    $page = built('programas/telescopio/2026-11-03-direito-dos-animais/index.html');
+
+    expect($page)->toContain('Protetores de animais pedem castração gratuita em Itapetininga')
+        ->toContain('TV Itapê · Telescópio · terça, 3 de novembro de 2026')
+        ->toContain('youtube-nocookie.com/embed/FTQML3B-wI4')
+        ->toContain('https://www.youtube.com/watch?v=FTQML3B-wI4&amp;t=3900s')
+        ->toContain('gerado automaticamente com inteligência artificial a partir do vídeo')
+        ->toContain('Apresentador · Ana Souza (protetora de animais)')
+        ->and(built('index.html'))->toContain('TV Itapê · Telescópio')
+        ->toContain('/programas/telescopio/2026-11-03-direito-dos-animais/')
+        ->toContain('https://i.ytimg.com/vi/FTQML3B-wI4/hqdefault.jpg')
+        ->and(is_dir(config('itape.paths.build').'/programas/telescopio/2026-11-04-geopolitica'))->toBeFalse();
+});
+
+it('usa só a data no endereço de programas sem tema e o id do vídeo na segunda parte do dia', function () {
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-11-04 18:00', 'America/Sao_Paulo'));
+    $article = VideoStory::check(videoArticle(), 5436, CarbonImmutable::parse('2026-11-03', 'America/Sao_Paulo'));
+
+    foreach (['AAA111' => 'MANHÃ DA POP  -  03/11/2026', 'BBB222' => 'MANHÃ DA POP  -  03/11/2026 ll'] as $video => $title) {
+        JsonFile::write(config('itape.paths.data')."/programas/manha-da-pop/{$video}.json", [
+            'program' => 'manha-da-pop', 'video' => $video, 'title' => $title, 'topic' => '',
+            'date' => '2026-11-03', 'seconds' => 5436, 'article' => $article,
+        ]);
+    }
+
+    $this->artisan('build')->assertSuccessful();
+
+    expect(built('programas/manha-da-pop/2026-11-03/index.html'))->toContain('Pop FM · Manhã da Pop')
+        ->and(built('programas/manha-da-pop/2026-11-03-bbb222/index.html'))->toContain('youtube-nocookie.com/embed/BBB222');
 });
