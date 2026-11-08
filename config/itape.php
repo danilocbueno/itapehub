@@ -35,7 +35,7 @@ return [
         'concurrency' => 8,
         // Vários sites (ex.: Xeh) recusam clientes que não parecem navegadores.
         'user_agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
-            .'(KHTML, like Gecko) Chrome/130.0 Safari/537.36 ItapeNews/1.0 (+'.(env('SITE_URL') ?: 'https://github.com').')',
+            .'(KHTML, like Gecko) Chrome/130.0 Safari/537.36 ItapeHub/1.0 (+'.(env('SITE_URL') ?: 'https://github.com').')',
     ],
 
     'pipeline' => [
