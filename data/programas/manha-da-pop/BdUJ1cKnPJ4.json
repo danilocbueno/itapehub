@@ -6,6 +6,87 @@
     "date": "2026-11-09",
     "seconds": 13425,
     "found_at": "2026-11-09T17:46:00-03:00",
-    "attempts": 1,
-    "error": "Intervalo de 67 minutos sem momentos antes de 1:40:08."
+    "attempts": 2,
+    "article": {
+        "titulo": "Chuvas fortes provocam alagamentos e crateras em cidades da região",
+        "linha_fina": "Temporais do fim de semana afetaram municípios como Itapeva, Boituva e Chavantes, causando danos e transtornos aos moradores.",
+        "lide": "No programa Manhã da Pop, da Pop FM, desta segunda-feira (9), o apresentador Newton destacou os prejuízos e transtornos causados pelas fortes chuvas que atingiram cidades da região durante o fim de semana.",
+        "blocos": [
+            {
+                "intertitulo": "Região Afetada",
+                "paragrafos": [
+                    "Segundo as informações divulgadas no programa, municípios como Itapeva, Boituva e Chavantes registraram ocorrências graves devido aos temporais dos últimos dias.",
+                    "Em Itapeva, uma cratera se abriu em frente à prefeitura. Em Chavantes, o nível elevado do Rio Paranapanema quase encobriu a tradicional Ponte Pênsil."
+                ]
+            },
+            {
+                "intertitulo": "Alagamentos",
+                "paragrafos": [
+                    "Em Sorocaba, vias marginais ficaram submersas com o alto volume de água. Já em Boituva, ruas foram tomadas pela água da chuva, com registros de queda de árvores e destelhamentos de imóveis."
+                ]
+            },
+            {
+                "intertitulo": "Tribunal do Povo",
+                "paragrafos": [
+                    "Durante o programa, ouvintes participaram enviando relatos e imagens sobre problemas de infraestrutura e falta de manutenção em pontos de Itapetininga e região.",
+                    "A atração abriu espaço para manifestações da comunidade sobre serviços públicos, infraestrutura urbana e demandas locais."
+                ]
+            }
+        ],
+        "fechamento": "Para participar com relatos, sugestões ou dúvidas, os ouvintes podem entrar em contato com a emissora por meio dos canais oficiais divulgados durante a transmissão.",
+        "participantes": [
+            {
+                "nome": "Newton",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Daniel Almeida",
+                "papel": "comentarista de mercado financeiro"
+            },
+            {
+                "nome": "Fábio Rabbit",
+                "papel": "convidado"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "11:50",
+                "segundos": 710,
+                "assunto": "Previsão do tempo e chuvas na região"
+            },
+            {
+                "inicio": "16:59",
+                "segundos": 1019,
+                "assunto": "Ventania e estragos em Itapeva e região"
+            },
+            {
+                "inicio": "17:54",
+                "segundos": 1074,
+                "assunto": "Rio Paranapanema na Ponte Pênsil em Chavantes"
+            },
+            {
+                "inicio": "19:04",
+                "segundos": 1144,
+                "assunto": "Alagamentos em Sorocaba"
+            },
+            {
+                "inicio": "20:54",
+                "segundos": 1254,
+                "assunto": "Chuva forte causa alagamentos e estragos em Boituva"
+            },
+            {
+                "inicio": "21:39",
+                "segundos": 1299,
+                "assunto": "Cratera em frente à prefeitura de Itapeva"
+            },
+            {
+                "inicio": "33:05",
+                "segundos": 1985,
+                "assunto": "Momento financeiro com Daniel Almeida"
+            }
+        ],
+        "omitidos": []
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite",
+    "written_at": "2026-11-09T19:56:47-03:00"
 }
