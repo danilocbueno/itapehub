@@ -1,0 +1,11 @@
+{
+    "program": "telescopio",
+    "video": "LWsN7j6bcRw",
+    "title": "Telescópio - 09/11/2026 - Rafael Pexe e Marcos Amorim",
+    "topic": "Rafael Pexe e Marcos Amorim",
+    "date": "2026-11-09",
+    "seconds": 4414,
+    "found_at": "2026-11-09T17:46:00-03:00",
+    "attempts": 1,
+    "error": "gemini-3.5-flash-lite: HTTP 403: The caller does not have permission | gemini-3.8-flash: HTTP 403: The caller does not have permission"
+}

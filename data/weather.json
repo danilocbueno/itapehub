@@ -1,33 +1,33 @@
 {
-    "fetched_at": "2026-11-09T10:52:34-03:00",
+    "fetched_at": "2026-11-09T17:45:39-03:00",
     "current": {
-        "temperature": 19,
-        "code": 3,
-        "time": "2026-11-09T10:45"
+        "temperature": 17.4,
+        "code": 0,
+        "time": "2026-11-09T17:45"
     },
     "daily": [
         {
             "date": "2026-11-09",
-            "max": 20.1,
-            "min": 12.3,
-            "rain": 0,
-            "rain_probability": 14,
-            "code": 3
+            "max": 20.4,
+            "min": 12.7,
+            "rain": 0.1,
+            "rain_probability": 8,
+            "code": 51
         },
         {
             "date": "2026-11-10",
-            "max": 21.4,
-            "min": 11.8,
-            "rain": 0.3,
+            "max": 23,
+            "min": 12.3,
+            "rain": 0.6,
             "rain_probability": 16,
             "code": 51
         },
         {
             "date": "2026-11-11",
-            "max": 25.6,
-            "min": 14.9,
-            "rain": 2,
-            "rain_probability": 51,
+            "max": 26.2,
+            "min": 14.2,
+            "rain": 2.2,
+            "rain_probability": 46,
             "code": 53
         }
     ]
