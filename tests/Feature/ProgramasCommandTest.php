@@ -154,6 +154,7 @@ it('escolhe o episódio mais novo entre todos os programas', function () {
     ]);
     JsonFile::write(config('itape.paths.data').'/programas/outro/XYZ.json', [
         'program' => 'outro', 'video' => 'XYZ', 'title' => 'Telescópio - 05/11/2026 - X', 'topic' => 'X', 'date' => '2026-11-05', 'seconds' => 5436,
+        'found_at' => '2026-11-08T17:00:00-03:00',
     ]);
 
     $this->artisan('programas')->expectsOutputToContain('Notícia do Outro (XYZ)')->assertSuccessful();
@@ -190,4 +191,33 @@ it('segue com a outra página se uma das abas falhar', function () {
         ->expectsOutputToContain('2 novos')
         ->expectsOutputToContain('YouTube respondeu HTTP 503 (https://www.youtube.com/@tvitape2/videos)')
         ->assertSuccessful();
+});
+
+it('espera o vídeo ficar disponível sem gastar tentativa nem a vez dos outros (403)', function () {
+    config(['itape.programas.per_run' => 1]);
+    // A gravação de 04/11 ainda está sendo processada; a de 03/11 já pode ser lida.
+    fakeYoutube(fn ($request) => str_contains($request->body(), 'Lf_ZIAQo0yM')
+        ? Http::response(['error' => ['message' => 'The caller does not have permission', 'code' => 'permission_denied']], 403)
+        : geminiResponse(videoArticle())());
+
+    $this->artisan('programas')->expectsOutputToContain('vídeo ainda não disponível')->assertSuccessful();
+
+    expect(episode('Lf_ZIAQo0yM'))->not->toHaveKey('article')
+        ->and(episode('Lf_ZIAQo0yM')['attempts'])->toBe(0)
+        ->and(episode('Lf_ZIAQo0yM')['error'])->toContain('HTTP 403')
+        ->and(episode('FTQML3B-wI4'))->toHaveKey('article');
+});
+
+it('desiste do episódio que continua indisponível três dias depois de encontrado', function () {
+    config(['itape.camara.gemini.key' => null]);
+    fakeYoutube();
+    $this->artisan('programas')->assertSuccessful();
+
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-11-11 19:00', 'America/Sao_Paulo'));
+    config(['itape.camara.gemini.key' => 'chave-de-teste']);
+    fakeYoutube();
+    $this->artisan('programas')->assertSuccessful();
+
+    expect(geminiCalls())->toBe(0)
+        ->and(episode('Lf_ZIAQo0yM'))->not->toHaveKey('article');
 });

@@ -13,7 +13,7 @@ use RuntimeException;
  * Escreve a notícia de um episódio com o Gemini, que assiste ao próprio vídeo
  * pelo link do YouTube (sem baixar áudio nem transcrever). Tenta os modelos em
  * ordem; se todos falharem, lança a exceção com os erros (RateLimited se algum
- * deles recusou por cota).
+ * deles recusou por cota, NotReady se o vídeo ainda não estava disponível).
  */
 final class VideoWriter
 {
@@ -40,6 +40,7 @@ final class VideoWriter
     {
         $errors = [];
         $limited = false;
+        $notReady = false;
 
         foreach ($this->models as $model) {
             try {
@@ -47,10 +48,17 @@ final class VideoWriter
             } catch (RuntimeException $e) {
                 $errors[] = "{$model}: {$e->getMessage()}";
                 $limited = $limited || $e instanceof RateLimited;
+                $notReady = $notReady || $e instanceof NotReady;
             }
         }
 
-        throw $limited ? new RateLimited(implode(' | ', $errors)) : new RuntimeException(implode(' | ', $errors));
+        $message = implode(' | ', $errors);
+
+        throw match (true) {
+            $limited => new RateLimited($message),
+            $notReady => new NotReady($message),
+            default => new RuntimeException($message),
+        };
     }
 
     /**
@@ -95,6 +103,10 @@ final class VideoWriter
 
         if ($response->status() === 429) {
             throw new RateLimited($this->describe($response));
+        }
+
+        if ($response->status() === 403) {
+            throw new NotReady($this->describe($response));
         }
 
         if (! $response->successful()) {

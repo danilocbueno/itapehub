@@ -141,6 +141,11 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 - Se falhar, não publica nada e tenta de novo (até 6 execuções).
 - Página `/programas/<programa>/<slug>/`, com o vídeo incorporado, o aviso de IA, o texto, os momentos e os participantes. Card na linha do tempo com a miniatura do YouTube.
 
+**Descoberto em 09/11/2026 (primeiro dia):**
+- **Atraso das gravações:** depois que uma live termina, o YouTube processa a gravação por cerca de 12 horas (de madrugada). Até lá, o Gemini responde 403 ("The caller does not have permission"), mesmo com o vídeo público. O 403 é tratado como "ainda não disponível": não conta como tentativa, e o episódio é deixado de lado se continuar assim 3 dias depois de encontrado (`give_up_days`). As notícias dos programas saem no dia seguinte.
+- **Horários do GitHub:** o GitHub não roda o workflow de hora em hora. As execuções agendadas saem só 4 ou 5 vezes por dia, a cada 5 ou 6 horas. O Danilo decidiu que tudo bem as notícias saírem no dia seguinte e em horários variados. Se um dia isso importar, dá para disparar o workflow de hora em hora por um Worker do Cloudflare (Cron Trigger chamando a API do GitHub).
+- **Recorte de vídeo:** os campos `start_offset` e `end_offset` não funcionam com links do YouTube. O Gemini recebe a página do YouTube ("confirme que você não é um robô") em vez do vídeo.
+
 **Decisões do Danilo:**
 - **Páginas lidas:** a aba "Ao vivo" de cada canal e, no Telescópio, também a aba "Vídeos". Alguns episódios saem como vídeo comum, sem live: os de 05 e 06/11. A busca do canal não é usada.
 - **Sem episódios antigos:** o recurso começa com os episódios de 09/11/2026 em diante (`since` em `config/itape.php`). Nesta primeira semana o Danilo acompanha a qualidade dos textos.

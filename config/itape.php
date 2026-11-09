@@ -114,6 +114,9 @@ return [
         'per_run' => 1,
         // Execuções com falha antes de desistir de um episódio.
         'max_attempts' => 6,
+        // Dias depois de encontrado em que o episódio ainda é tentado. Depois que a live
+        // termina, o Gemini leva umas 12 horas para conseguir ler o vídeo (403 até lá).
+        'give_up_days' => 3,
         // O Flash Lite processou os vídeos longos na prova de conceito; o 3.8 Flash falhou.
         'models' => ['gemini-3.5-flash-lite', 'gemini-3.8-flash'],
         'thinking_level' => 'high',

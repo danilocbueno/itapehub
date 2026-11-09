@@ -13,7 +13,9 @@ use Throwable;
  * Se o Gemini falhar ou o texto não passar na conferência, nada é publicado: o
  * erro fica gravado e o episódio volta a ser tentado nas execuções seguintes
  * (até max_attempts). Recusa por cota (429) não conta como tentativa e encerra
- * a execução.
+ * a execução. Vídeo ainda não disponível (403: a gravação da live ainda está
+ * sendo processada) também não conta, nem ocupa a vez de outro episódio; depois
+ * de give_up_days sem conseguir, o episódio é deixado de lado.
  */
 final class ProgramDesk
 {
@@ -29,10 +31,11 @@ final class ProgramDesk
     public function write(array $programs, CarbonImmutable $now): array
     {
         $done = [];
+        $written = 0;
         $limit = (int) config('itape.programas.per_run');
 
-        foreach ($this->pending($programs) as [$program, $episode]) {
-            if (count($done) >= $limit) {
+        foreach ($this->pending($programs, $now) as [$program, $episode]) {
+            if ($written >= $limit) {
                 break;
             }
 
@@ -41,6 +44,7 @@ final class ProgramDesk
             $episode['attempts'] = $attempts + 1;
             $this->episodes->save($episode);
             $limited = false;
+            $tried = true;
 
             try {
                 $answer = $this->writer->write($program, $episode);
@@ -49,6 +53,10 @@ final class ProgramDesk
                 $episode['written_by'] = 'gemini:'.$answer['model'];
                 $episode['written_at'] = $now->toIso8601String();
                 unset($episode['error']);
+            } catch (NotReady $e) {
+                $episode['attempts'] = $attempts;
+                $episode['error'] = 'vídeo ainda não disponível para o Gemini: '.mb_strimwidth($e->getMessage(), 0, 300, '…');
+                $tried = false;
             } catch (RateLimited $e) {
                 $episode['attempts'] = $attempts;
                 $episode['error'] = mb_strimwidth($e->getMessage(), 0, 400, '…');
@@ -58,6 +66,7 @@ final class ProgramDesk
             }
 
             $this->episodes->save($episode);
+            $written += $tried ? 1 : 0;
             $done[] = [
                 'program' => $program->name,
                 'video' => (string) $episode['video'],
@@ -74,19 +83,23 @@ final class ProgramDesk
     }
 
     /**
-     * Episódios sem notícia e com tentativas sobrando, do mais novo para o mais antigo.
+     * Episódios sem notícia, com tentativas sobrando e encontrados há menos de
+     * give_up_days, do mais novo para o mais antigo.
      *
      * @param  array<string, Program>  $programs
      * @return list<array{0: Program, 1: array<string, mixed>}>
      */
-    private function pending(array $programs): array
+    private function pending(array $programs, CarbonImmutable $now): array
     {
         $max = (int) config('itape.programas.max_attempts');
+        $oldest = $now->subDays((int) config('itape.programas.give_up_days'));
         $pending = [];
 
         foreach ($programs as $program) {
             foreach ($this->episodes->all($program->key) as $episode) {
-                if (! isset($episode['article']) && (int) ($episode['attempts'] ?? 0) < $max) {
+                $found = CarbonImmutable::parse((string) ($episode['found_at'] ?? $episode['date']));
+
+                if (! isset($episode['article']) && (int) ($episode['attempts'] ?? 0) < $max && $found->gte($oldest)) {
                     $pending[] = [$program, $episode];
                 }
             }
