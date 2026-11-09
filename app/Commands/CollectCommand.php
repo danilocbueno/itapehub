@@ -2,6 +2,7 @@
 
 namespace App\Commands;
 
+use App\Cinema\CinemaService;
 use App\Data\Source;
 use App\Pipeline\Collector;
 use App\Pipeline\TitleRepairer;
@@ -15,12 +16,12 @@ class CollectCommand extends Command
 {
     protected $signature = 'collect
         {--source=* : Coletar só estas fontes (chaves de config/sources.php)}
-        {--skip-weather : Não atualizar previsão do tempo e alertas}
-        {--force-weather : Ignorar o cache da previsão e dos alertas}';
+        {--skip-weather : Não atualizar previsão do tempo, alertas e cinema}
+        {--force-weather : Ignorar o cache da previsão, dos alertas e do cinema}';
 
     protected $description = 'Coleta as fontes de notícias, a previsão do tempo e os alertas do INMET';
 
-    public function handle(Collector $collector, TitleRepairer $repairer, WeatherService $weather): int
+    public function handle(Collector $collector, TitleRepairer $repairer, WeatherService $weather, CinemaService $cinema): int
     {
         $now = CarbonImmutable::now();
         $dataPath = config('itape.paths.data');
@@ -64,6 +65,7 @@ class CollectCommand extends Command
             $force = (bool) $this->option('force-weather');
             $this->line('Tempo: '.$weather->refreshWeather($dataPath.'/weather.json', $now, $force));
             $this->line('Alertas INMET: '.$weather->refreshAlerts($dataPath.'/alerts.json', $now, $force));
+            $this->line('Cinema: '.$cinema->refresh($dataPath.'/cinema.json', $now, $force));
         }
 
         // Falha de uma fonte não deve derrubar a publicação; só falha se todas falharem.

@@ -819,3 +819,35 @@ it('usa só a data no endereço de programas sem tema e o id do vídeo na segund
     expect(built('programas/manha-da-pop/2026-11-03/index.html'))->toContain('Pop FM · Manhã da Pop')
         ->and(built('programas/manha-da-pop/2026-11-03-bbb222/index.html'))->toContain('youtube-nocookie.com/embed/BBB222');
 });
+
+it('gera a página do cinema e o bloco "Hoje no cinema" na Agenda', function () {
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-11-09 18:00', 'America/Sao_Paulo'));
+    $this->artisan('collect', ['--force-weather' => true])->assertSuccessful();
+    $this->artisan('build')->assertSuccessful();
+
+    $page = built('cinema/index.html');
+    $agenda = built('agenda/index.html');
+
+    expect(JsonFile::read(config('itape.paths.data').'/cinema.json')['days'])->toHaveCount(7)
+        ->and($page)->toContain('Os Farofeiros 3')
+        ->toContain('Hoje, segunda, 9 de novembro de 2026')
+        ->toContain('Sala 1 · Nacional · 2D')
+        // 14:50 e 17:05 já começaram às 18h.
+        ->toContain('class="cinema-time is-past"')
+        ->toContain('https://www.grupocine.com.br/venda/')
+        ->and($agenda)->toContain('Hoje no cinema')
+        ->toContain('/cinema/">Programação completa')
+        ->toContain('data-slides')
+        ->toContain('https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg')
+        // Sem link no menu: a página do cinema é aberta pelo bloco da Agenda.
+        ->and(built('index.html'))->not->toContain('/cinema/"');
+});
+
+it('avisa quando não há programação do cinema', function () {
+    // A coleta do beforeEach já trouxe a programação: aqui o cinema falhou desde sempre.
+    unlink(config('itape.paths.data').'/cinema.json');
+    $this->artisan('build')->assertSuccessful();
+
+    expect(built('cinema/index.html'))->toContain('Programação indisponível no momento')
+        ->and(built('agenda/index.html'))->not->toContain('no cinema</h2>');
+});

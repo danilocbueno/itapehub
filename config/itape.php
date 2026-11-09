@@ -126,6 +126,16 @@ return [
         'ending_minutes' => 3,
     ],
 
+    // Programação do cinema da cidade (página /cinema/ e bloco "Hoje no cinema" na Agenda).
+    'cinema' => [
+        'name' => 'Grupo Cine Itapetininga',
+        'url' => 'https://www.grupocine.com.br/itapetininga/programacao',
+        // A programação muda pouco durante o dia.
+        'ttl_minutes' => 180,
+        // Dias guardados e mostrados na página.
+        'days' => 7,
+    ],
+
     'alerts' => [
         'url' => 'https://apiprevmet3.inmet.gov.br/avisos/rss',
         // Nome da mesorregião do IBGE usada nos avisos do INMET.

@@ -54,6 +54,27 @@
     }, 4000);
   });
 
+  // Slides do cinema na Agenda: as setas rolam a faixa uma "página" por vez e
+  // somem quando tudo cabe na tela (no celular, rola com o dedo).
+  document.querySelectorAll('[data-slides]').forEach(function (track) {
+    var buttons = track.parentNode.querySelectorAll('[data-slide]');
+    var update = function () {
+      var max = track.scrollWidth - track.clientWidth;
+      buttons.forEach(function (button) {
+        button.hidden = max <= 4;
+        button.disabled = button.getAttribute('data-slide') === '-1' ? track.scrollLeft <= 4 : track.scrollLeft >= max - 4;
+      });
+    };
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        track.scrollBy({ left: +button.getAttribute('data-slide') * track.clientWidth * 0.9, behavior: 'smooth' });
+      });
+    });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+
   // Copiar o resumo do dia.
   document.querySelectorAll('[data-copy]').forEach(function (button) {
     button.addEventListener('click', function () {

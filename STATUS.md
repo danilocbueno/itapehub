@@ -62,9 +62,10 @@ Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde
   - "Próximos eventos" em 3 colunas, com o link da agenda na linha do título;
   - o resto do primeiro dia vem com o separador "Hoje", e os dias seguintes com o nome do dia;
   - linha do tempo dos últimos 3 dias.
-- **Linha de assuntos** no topo: Agenda e os temas.
+- **Linha de assuntos** no topo: Agenda, Cinema e os temas.
 - **Páginas de tema** com as 60 notícias mais recentes de cada um.
-- **Agenda:** eventos dos próximos 14 dias, extraídos das notícias, com um card por evento. A home também tem o bloco "Próximos eventos".
+- **Agenda:** eventos dos próximos 14 dias, extraídos das notícias, com um card por evento. A home também tem o bloco "Próximos eventos". No topo, o bloco **"Hoje no cinema"** mostra as sessões que ainda vão começar (ou as de amanhã, se as de hoje já acabaram).
+- **Cinema** (`/cinema/`): programação do Grupo Cine Itapetininga nos próximos 7 dias, com pôster, classificação, gênero, duração, sala e horários. Cada horário leva à compra no site do cinema, e as sessões que já começaram aparecem riscadas. A programação é lida da página do cinema na coleta, a cada 3 horas, e guardada em `data/cinema.json`. O cinema não tem RSS; o `robots.txt` dele permite uso de referência e proíbe o treino de IA, e o conteúdo não passa por IA.
 - **Resumo do dia** (`/hoje/`): texto pronto para colar no WhatsApp, com as notícias das últimas 24h ordenadas pelo número de veículos.
 - **Arquivo por dia**, página **Fontes** (status de cada coleta), **feed RSS** agregado e página 404.
 - **Tempo:** um dia de cada vez (hoje, amanhã e depois), alternando, com ícone, máxima e mínima e chance de chuva. Avisos do INMET reunidos numa faixa no topo.

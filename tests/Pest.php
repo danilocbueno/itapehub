@@ -43,6 +43,7 @@ function fakeSources(array $overrides = []): void
         'jornalpanoramico.com.br/feed/' => 'panoramico.xml',
         'api.open-meteo.com/*' => 'open-meteo.json',
         'apiprevmet3.inmet.gov.br/*' => 'inmet.xml',
+        'www.grupocine.com.br/*' => 'grupocine-programacao.html',
     ];
 
     // Closures criam uma resposta nova por requisição (o stream é consumido).

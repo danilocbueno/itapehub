@@ -4,6 +4,7 @@ namespace App\Site;
 
 use App\Camara\SessionCover;
 use App\Camara\SessionNews;
+use App\Cinema\Showtimes;
 use App\Data\Source;
 use App\Programas\Program;
 use App\Programas\ProgramNews;
@@ -119,8 +120,19 @@ final class SiteBuilder
             $months[substr($day, 0, 7)][$day] = count($dayClusters);
         }
 
-        $this->write($buildPath.'/agenda/index.html', 'agenda', [...$shared, 'events' => $events]);
-        $pages++;
+        // Programação do cinema (data/cinema.json, atualizada na coleta).
+        $cinema = JsonFile::read($dataPath.'/cinema.json');
+        $cinemaDays = Showtimes::upcoming($cinema, $now);
+        $cinemaInfo = ['name' => $cinema['name'] ?? (string) config('itape.cinema.name'), 'url' => $cinema['url'] ?? (string) config('itape.cinema.url')];
+
+        $this->write($buildPath.'/agenda/index.html', 'agenda', [
+            ...$shared,
+            'events' => $events,
+            'cinema' => $cinemaInfo,
+            'cinemaNext' => Showtimes::next($cinemaDays),
+        ]);
+        $this->write($buildPath.'/cinema/index.html', 'cinema', [...$shared, 'cinema' => $cinemaInfo, 'days' => $cinemaDays]);
+        $pages += 2;
 
         $digest = Digest::select($clusters, $now);
         $this->write($buildPath.'/hoje/index.html', 'today', [

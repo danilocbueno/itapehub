@@ -62,6 +62,7 @@ jobs:
             data/state.json
             data/weather.json
             data/alerts.json
+            data/cinema.json
           key: collect-state-${{ github.run_id }}
           restore-keys: collect-state-
 
@@ -98,6 +99,7 @@ jobs:
             data/state.json
             data/weather.json
             data/alerts.json
+            data/cinema.json
           key: collect-state-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Commit das notícias novas
