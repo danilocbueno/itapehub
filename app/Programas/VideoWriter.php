@@ -11,16 +11,18 @@ use RuntimeException;
 
 /**
  * Escreve a notícia de um episódio com o Gemini, que assiste ao próprio vídeo
- * pelo link do YouTube (sem baixar áudio nem transcrever). Tenta os modelos em
- * ordem; se todos falharem, lança a exceção com os erros (RateLimited se algum
- * deles recusou por cota, NotReady se o vídeo ainda não estava disponível).
+ * pelo link do YouTube (sem baixar áudio nem transcrever). Tenta os modos em
+ * ordem (modelo + processamento: "agentic", que lê a transcrição e navega pelo
+ * vídeo, e "static", quadro a quadro); se todos falharem, lança a exceção com os
+ * erros (RateLimited se algum recusou por cota, NotReady se o vídeo ainda não
+ * estava disponível).
  */
 final class VideoWriter
 {
     /**
-     * @param  list<string>  $models  em ordem de preferência
+     * @param  list<array{model: string, processing: string}>  $modes  em ordem de preferência
      */
-    public function __construct(private string $apiKey, private array $models) {}
+    public function __construct(private string $apiKey, private array $modes) {}
 
     /**
      * Só existe com a chave configurada (GEMINI_API_KEY).
@@ -29,12 +31,12 @@ final class VideoWriter
     {
         $key = (string) config('itape.camara.gemini.key');
 
-        return $key === '' ? null : new self($key, (array) config('itape.programas.models'));
+        return $key === '' ? null : new self($key, array_values((array) config('itape.programas.modes')));
     }
 
     /**
      * @param  array<string, mixed>  $episode
-     * @return array{model: string, data: array<mixed>} a resposta, ainda sem conferir
+     * @return array{model: string, data: array<mixed>} a resposta, ainda sem conferir, e o modo que respondeu ("gemini-3.5-flash-lite agentic")
      */
     public function write(Program $program, array $episode): array
     {
@@ -42,11 +44,13 @@ final class VideoWriter
         $limited = false;
         $notReady = false;
 
-        foreach ($this->models as $model) {
+        foreach ($this->modes as $mode) {
+            $label = "{$mode['model']} {$mode['processing']}";
+
             try {
-                return ['model' => $model, 'data' => $this->ask($model, $program, $episode)];
+                return ['model' => $label, 'data' => $this->ask($mode['model'], $mode['processing'], $program, $episode)];
             } catch (RuntimeException $e) {
-                $errors[] = "{$model}: {$e->getMessage()}";
+                $errors[] = "{$label}: {$e->getMessage()}";
                 $limited = $limited || $e instanceof RateLimited;
                 $notReady = $notReady || $e instanceof NotReady;
             }
@@ -65,7 +69,7 @@ final class VideoWriter
      * @param  array<string, mixed>  $episode
      * @return array<mixed>
      */
-    private function ask(string $model, Program $program, array $episode): array
+    private function ask(string $model, string $processing, Program $program, array $episode): array
     {
         $input = VideoStory::input(
             $program,
@@ -84,7 +88,7 @@ final class VideoWriter
                     'model' => $model,
                     'system_instruction' => (string) file_get_contents(resource_path('prompts/programa-video.md')),
                     'input' => [
-                        $this->video($program, (string) $episode['video']),
+                        $this->video($program, (string) $episode['video'], $processing),
                         ['type' => 'text', 'text' => "Dados do episódio (JSON):\n".json_encode($input, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR)],
                     ],
                     'response_format' => [
@@ -135,16 +139,19 @@ final class VideoWriter
     }
 
     /**
-     * O vídeo pelo link do YouTube. Com "fps" no programa, menos quadros por segundo:
-     * nas rádios a imagem é só o estúdio, e um programa de 3h30 só cabe assim.
+     * O vídeo pelo link do YouTube. No modo "static", com "fps" no programa, menos
+     * quadros por segundo: nas rádios a imagem é só o estúdio, e um programa de
+     * 3h30 só cabe assim. O "agentic" escolhe sozinho o que ler (e não aceita fps).
      *
      * @return array<string, mixed>
      */
-    private function video(Program $program, string $id): array
+    private function video(Program $program, string $id, string $processing): array
     {
         $video = ['type' => 'video', 'uri' => 'https://www.youtube.com/watch?v='.$id];
 
-        if ($program->fps !== null) {
+        if ($processing === 'agentic') {
+            $video['processing'] = 'agentic';
+        } elseif ($program->fps !== null) {
             $video['processing'] = ['type' => 'static', 'fps' => $program->fps];
         }
 

@@ -110,17 +110,23 @@ return [
         'days' => 7,
         // E nunca antes desta data (início do recurso: sem notícias de episódios antigos).
         'since' => '2026-11-09',
-        // Episódios escritos por execução (cada um leva de 1 a 2 minutos; a coleta roda de hora em hora).
+        // Episódios escritos por execução (cada um leva de 1 a 2 minutos).
         'per_run' => 1,
         // Execuções com falha antes de desistir de um episódio.
         'max_attempts' => 6,
         // Dias depois de encontrado em que o episódio ainda é tentado. Depois que a live
         // termina, o Gemini leva umas 12 horas para conseguir ler o vídeo (403 até lá).
         'give_up_days' => 3,
-        // O Flash Lite processou os vídeos longos na prova de conceito; o 3.8 Flash falhou.
-        'models' => ['gemini-3.5-flash-lite', 'gemini-3.8-flash'],
+        // Modos tentados em ordem. O agentic (lê a transcrição e navega pelo vídeo) gastou
+        // 80 a 88% menos tokens e cobriu os programas longos inteiros, mas às vezes dá erro
+        // interno; aí vai o static (quadro a quadro). O 3.8 Flash nunca leu um vídeo nos
+        // testes e levou 10 minutos para falhar: fica de fora.
+        'modes' => [
+            ['model' => 'gemini-3.5-flash-lite', 'processing' => 'agentic'],
+            ['model' => 'gemini-3.5-flash-lite', 'processing' => 'static'],
+        ],
         'thinking_level' => 'high',
-        // Pior caso por execução: per_run × modelos × timeout = 8 min; o passo no workflow tem 10.
+        // Pior caso por execução: per_run × modos × timeout = 8 min; o passo no workflow tem 10.
         'timeout' => 240,
     ],
 

@@ -58,9 +58,10 @@ it('escreve a notícia com o Gemini a partir do link do vídeo', function () {
     $request = Http::recorded(fn ($r) => str_contains($r->url(), 'generativelanguage') && str_contains($r->body(), 'FTQML3B-wI4'))->first()[0];
 
     expect($episode['article']['titulo'])->toBe('Protetores de animais pedem castração gratuita em Itapetininga')
-        ->and($episode['written_by'])->toBe('gemini:gemini-3.5-flash-lite')
+        ->and($episode['written_by'])->toBe('gemini:gemini-3.5-flash-lite agentic')
         ->and($episode['article']['momentos'][3]['segundos'])->toBe(3900)
-        ->and($request['input'][0])->toBe(['type' => 'video', 'uri' => 'https://www.youtube.com/watch?v=FTQML3B-wI4'])
+        // Primeiro o modo agentic, que lê a transcrição e navega pelo vídeo.
+        ->and($request['input'][0])->toBe(['type' => 'video', 'uri' => 'https://www.youtube.com/watch?v=FTQML3B-wI4', 'processing' => 'agentic'])
         ->and($request['input'][1]['text'])->toContain('terça-feira, 3 de novembro de 2026')->toContain('1:30:36')
         ->and(episode('Lf_ZIAQo0yM'))->toHaveKey('article');
 });
@@ -74,8 +75,8 @@ it('não publica nada quando o Gemini falha e tenta de novo depois', function ()
 
     expect(episode('Lf_ZIAQo0yM'))->not->toHaveKey('article')
         ->and(episode('Lf_ZIAQo0yM')['attempts'])->toBe(1)
-        ->and(episode('Lf_ZIAQo0yM')['error'])->toContain('gemini-3.5-flash-lite: HTTP 503')->toContain('gemini-3.8-flash: HTTP 503')
-        // Os dois modelos, nos dois episódios.
+        ->and(episode('Lf_ZIAQo0yM')['error'])->toContain('gemini-3.5-flash-lite agentic: HTTP 503')->toContain('gemini-3.5-flash-lite static: HTTP 503')
+        // Os dois modos, nos dois episódios.
         ->and(geminiCalls())->toBe(4);
 
     $this->artisan('programas')->assertSuccessful();
@@ -122,14 +123,18 @@ it('segue em frente se o YouTube estiver fora do ar', function () {
         ->assertSuccessful();
 });
 
-it('manda menos quadros por segundo quando o programa pede', function () {
+it('tenta o modo static, com menos quadros por segundo, quando o agentic falha', function () {
     config(['programas.telescopio.fps' => 0.2, 'itape.programas.per_run' => 1]);
-    fakeYoutube();
+    // O agentic às vezes dá erro interno; o static responde.
+    fakeYoutube(fn ($request) => str_contains($request->body(), '"processing":"agentic"')
+        ? Http::response(['error' => ['message' => 'Internal error encountered.']], 500)
+        : geminiResponse(videoArticle())());
 
     $this->artisan('programas')->assertSuccessful();
-    $request = Http::recorded(fn ($r) => str_contains($r->url(), 'generativelanguage'))->first()[0];
+    $requests = Http::recorded(fn ($r) => str_contains($r->url(), 'generativelanguage'))->map(fn ($pair) => $pair[0]['input'][0]['processing'] ?? null)->values()->all();
 
-    expect($request['input'][0]['processing'])->toBe(['type' => 'static', 'fps' => 0.2]);
+    expect($requests)->toBe(['agentic', ['type' => 'static', 'fps' => 0.2]])
+        ->and(episode('Lf_ZIAQo0yM')['written_by'])->toBe('gemini:gemini-3.5-flash-lite static');
 });
 
 it('não gasta tentativa quando a cota do Gemini acaba e para a execução', function () {

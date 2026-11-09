@@ -132,7 +132,11 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
   - **Manhã da Pop** (Pop FM): 3h a 3h40, às vezes em duas partes.
 - Nas rádios o vídeo vai com 0,2 quadro por segundo (`fps`): a imagem é só o estúdio, e só assim um programa de 3h30 cabe numa chamada (cerca de 490 mil tokens).
 - É escrito um episódio por execução, somando todos os programas: um vídeo longo já passa do limite gratuito de 250 mil tokens por minuto. Recusa por cota (429) não conta como tentativa.
-- A notícia é escrita com o Gemini (`gemini-3.5-flash-lite`, reserva `gemini-3.8-flash`), seguindo `resources/prompts/programa-video.md`.
+- A notícia é escrita com o Gemini (`gemini-3.5-flash-lite`), seguindo `resources/prompts/programa-video.md`, em dois modos:
+  - **agentic** primeiro: lê a transcrição e navega pelo vídeo. Nos testes de 09/11, gastou 80 a 88% menos tokens (Pop de 3h43: 88 mil, contra 490 mil) e cobriu os programas longos inteiros;
+  - **static** (quadro a quadro) como reserva, porque o agentic às vezes dá erro interno.
+  - O `gemini-3.8-flash` saiu: nunca leu um vídeo nos testes e levou 10 minutos para falhar.
+- **Transcrição:** as legendas automáticas do YouTube existem, mas o download e o painel "Mostrar transcrição" exigem um token anti-robô gerado pelo navegador. Contornar isso fere os termos do YouTube, então não usamos.
 - Antes de publicar, confere:
   - tamanhos;
   - momentos (onde cada assunto do texto é dito no vídeo, para o leitor conferir) com minutos válidos e dentro do vídeo, mostrados em ordem de tempo;
