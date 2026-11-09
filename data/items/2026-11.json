@@ -1,5 +1,41 @@
 [
     {
+        "id": "92a5f1aa9bd8ae4c",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/bauru-marilia/noticia/2026/11/09/concurso-da-pm-com-2-mil-vagas-para-soldado-tem-provas-no-interior-de-sp-veja-cidades.ghtml",
+        "title": "Concurso da PM com 2 mil vagas para soldado tem provas no interior de SP; veja cidades",
+        "summary": "A Polícia Militar do Estado de São Paulo abriu nesta segunda-feira (9) as inscrições para o concurso público que oferece 2 mil vagas para o cargo de aluno-soldado de 2ª classe. A seleção é aberta para homens e mulheres e conta com…",
+        "image": "https://s2-g1.glbimg.com/LBzDsldjV81Be902b6pALXXHKzw=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/Z/D/O9AfAtTp2rWVoVg3xubA/55321104932-4cf9605a64-k.jpg",
+        "published_at": "2026-11-09T19:19:17-03:00",
+        "collected_at": "2026-11-09T19:40:11-03:00",
+        "cluster": "92a5f1aa9bd8ae4c",
+        "hidden": false
+    },
+    {
+        "id": "55857b052b8f14b3",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/rodovias-da-regiao-de-itapetininga-tem-trechos-em-obras-nesta-semana-veja-os-locais/",
+        "title": "Rodovias da região de Itapetininga têm trechos em obras nesta semana; veja os locais",
+        "summary": "Motoristas que passam pelas rodovias da região de Itapetininga devem ficar atentos às obras programadas entre os dias 9 e 15 de novembro. Os serviços serão realizados nas rodovias SP-127, SP-258 e SP-270 e incluem recuperação de pavimento…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/99733e8abc82abb165b348d077bf884c-1024x704.webp",
+        "published_at": "2026-11-09T17:56:51-03:00",
+        "collected_at": "2026-11-09T19:40:11-03:00",
+        "cluster": "cb8efa74680d230d",
+        "hidden": false
+    },
+    {
+        "id": "da3ba62ce75099e2",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/uscs-abre-vestibular-de-medicina-exclusivo-para-profissionais-formados-na-area-da-saude-em-itapetininga/",
+        "title": "USCS abre vestibular de Medicina exclusivo para profissionais formados na área da Saúde em Itapetininga",
+        "summary": "A Universidade Municipal de São Caetano do Sul (USCS) abriu inscrições para o vestibular de Medicina destinado exclusivamente a profissionais com diploma de graduação na área da Saúde. São oferecidas seis vagas, todas para o campus de…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_Campus-Itapetininga-_-credito-Ana-Paula-Lazari.jpeg",
+        "published_at": "2026-11-09T17:49:24-03:00",
+        "collected_at": "2026-11-09T19:40:11-03:00",
+        "cluster": "281cfe7f9d6e003a",
+        "hidden": false
+    },
+    {
         "id": "281cfe7f9d6e003a",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11015/uscs-itapetininga-abre-vestibular-de-medicina-exclusivo-para-profissionais-com-diploma-na-area-da-saude/",

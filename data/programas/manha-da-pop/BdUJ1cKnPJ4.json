@@ -5,5 +5,7 @@
     "topic": "",
     "date": "2026-11-09",
     "seconds": 13425,
-    "found_at": "2026-11-09T17:46:00-03:00"
+    "found_at": "2026-11-09T17:46:00-03:00",
+    "attempts": 1,
+    "error": "Intervalo de 67 minutos sem momentos antes de 1:40:08."
 }

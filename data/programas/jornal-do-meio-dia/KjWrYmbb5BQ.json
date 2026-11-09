@@ -5,5 +5,7 @@
     "topic": "",
     "date": "2026-11-09",
     "seconds": 3538,
-    "found_at": "2026-11-09T17:46:00-03:00"
+    "found_at": "2026-11-09T17:46:00-03:00",
+    "attempts": 0,
+    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite: HTTP 403: The caller does not have permission | gemini-3.8-flash: HTTP 403: The caller does not have permission"
 }
