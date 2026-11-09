@@ -135,7 +135,7 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 - A notícia é escrita com o Gemini (`gemini-3.5-flash-lite`, reserva `gemini-3.8-flash`), seguindo `resources/prompts/programa-video.md`.
 - Antes de publicar, confere:
   - tamanhos;
-  - momentos dentro do vídeo, sem intervalo maior que 30 minutos (os dos últimos 3 minutos, encerramento e chamadas, são descartados);
+  - momentos (onde cada assunto do texto é dito no vídeo, para o leitor conferir) com minutos válidos e dentro do vídeo, mostrados em ordem de tempo;
   - nenhum telefone, e-mail, @ ou site no texto;
   - dia da semana certo.
 - Se falhar, não publica nada e tenta de novo (até 6 execuções).

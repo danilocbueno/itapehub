@@ -122,11 +122,6 @@ return [
         'thinking_level' => 'high',
         // Pior caso por execução: per_run × modelos × timeout = 8 min; o passo no workflow tem 10.
         'timeout' => 240,
-        // Intervalo máximo entre dois momentos (o modelo resumiu 70 minutos de debate num só).
-        'max_gap_minutes' => 30,
-        // Momentos nos últimos minutos do vídeo são descartados: encerramento e chamadas
-        // de outros programas (o modelo usava a chamada final para "cobrir" o vídeo).
-        'ending_minutes' => 3,
     ],
 
     // Programação do cinema da cidade (página /cinema/ e bloco "Hoje no cinema" na Agenda).

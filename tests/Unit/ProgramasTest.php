@@ -85,22 +85,19 @@ it('recusa o dia da semana errado', function () {
     checkArticle(videoArticle(['lide' => 'No programa de quinta-feira (3), protetores pediram castração.']));
 })->throws(InvalidArgumentException::class, 'Dia da semana errado');
 
-it('recusa momentos fora do vídeo ou fora de ordem', function (array $moments) {
+it('recusa momentos depois do fim do vídeo, inválidos ou ausentes', function (array $moments) {
     checkArticle(videoArticle(['momentos' => $moments]));
 })->throws(InvalidArgumentException::class)->with([
-    'depois do fim' => [[['inicio' => '01:00', 'assunto' => 'a'], ['inicio' => '30:00', 'assunto' => 'b'], ['inicio' => '1:00:00', 'assunto' => 'c'], ['inicio' => '1:30:30', 'assunto' => 'd']]],
-    'fora de ordem' => [[['inicio' => '01:00', 'assunto' => 'a'], ['inicio' => '25:00', 'assunto' => 'b'], ['inicio' => '20:00', 'assunto' => 'c']]],
-    'poucos' => [[['inicio' => '01:00', 'assunto' => 'a'], ['inicio' => '50:00', 'assunto' => 'b']]],
+    'depois do fim' => [[['inicio' => '01:00', 'assunto' => 'a'], ['inicio' => '1:30:30', 'assunto' => 'b']]],
+    'inválido' => [[['inicio' => 'meia hora', 'assunto' => 'a']]],
+    'nenhum' => [[]],
 ]);
 
-it('descarta os momentos do encerramento (chamadas de outros programas)', function () {
-    $article = checkArticle(videoArticle(['momentos' => [...videoArticle()['momentos'], ['inicio' => '1:28:30', 'assunto' => 'Chamada do próximo programa']]]));
-
-    expect(array_column($article['momentos'], 'inicio'))->toBe(['01:30', '15:00', '40:00', '1:05:00']);
-});
-
-it('recusa um trecho longo sem momentos (debate resumido num só, chamada no fim)', function () {
-    checkArticle(videoArticle(['momentos' => [
-        ['inicio' => '10:24', 'assunto' => 'Abertura'], ['inicio' => '29:18', 'assunto' => 'Debate'], ['inicio' => '1:10:00', 'assunto' => 'Encerramento do debate'],
+it('aceita momentos com intervalos longos e mostra em ordem de tempo', function () {
+    // Os momentos seguem a ordem do texto (pirâmide invertida), não a do vídeo.
+    $article = checkArticle(videoArticle(['momentos' => [
+        ['inicio' => '1:28:30', 'assunto' => 'Anúncio no fim'], ['inicio' => '05:00', 'assunto' => 'Abertura'],
     ]]));
-})->throws(InvalidArgumentException::class, 'Intervalo de 40 minutos sem momentos antes de 1:10:00');
+
+    expect(array_column($article['momentos'], 'inicio'))->toBe(['05:00', '1:28:30']);
+});

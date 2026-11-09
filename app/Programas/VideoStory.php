@@ -9,7 +9,7 @@ use InvalidArgumentException;
 /**
  * A notícia de um episódio escrita pelo Gemini (regras em
  * resources/prompts/programa-video.md), conferida antes de publicar:
- * tamanhos, "momentos" dentro do vídeo e sem grandes intervalos, nenhum dado de
+ * tamanhos, "momentos" dentro do vídeo, nenhum dado de
  * contato ou pagamento no texto e o dia da semana certo.
  */
 final class VideoStory
@@ -162,21 +162,18 @@ final class VideoStory
     }
 
     /**
-     * Momentos em ordem e dentro do vídeo. Os dos últimos minutos são descartados
-     * (encerramento e chamadas de outros programas, que o modelo insiste em pôr), e
-     * não pode haver um intervalo grande sem momentos (trecho longo resumido num só).
+     * Momentos: onde cada assunto da notícia é dito no vídeo, para o leitor
+     * conferir. Minutos válidos e dentro do vídeo; mostrados em ordem de tempo.
      *
      * @return list<array{inicio: string, segundos: int, assunto: string}>
      */
     private static function moments(mixed $moments, int $duration): array
     {
-        if (! is_array($moments)) {
-            throw new InvalidArgumentException('A notícia precisa ter momentos.');
+        if (! is_array($moments) || count($moments) < 1 || count($moments) > 12) {
+            throw new InvalidArgumentException('A notícia precisa ter de um a doze momentos.');
         }
 
         $result = [];
-        $previous = 0;
-        $ending = $duration - (int) config('itape.programas.ending_minutes') * 60;
 
         foreach ($moments as $moment) {
             $start = trim((string) ($moment['inicio'] ?? ''));
@@ -187,25 +184,14 @@ final class VideoStory
                 throw new InvalidArgumentException("Momento inválido: {$start}");
             }
 
-            if ($seconds > $duration || $seconds < $previous) {
-                throw new InvalidArgumentException("Momento fora do vídeo ou fora de ordem: {$start}");
-            }
-
-            if ($seconds >= $ending) {
-                continue;
-            }
-
-            if ($seconds - $previous > (int) config('itape.programas.max_gap_minutes') * 60) {
-                throw new InvalidArgumentException(sprintf('Intervalo de %d minutos sem momentos antes de %s.', intdiv($seconds - $previous, 60), $start));
+            if ($seconds > $duration) {
+                throw new InvalidArgumentException("Momento depois do fim do vídeo: {$start}");
             }
 
             $result[] = ['inicio' => $start, 'segundos' => $seconds, 'assunto' => $subject];
-            $previous = $seconds;
         }
 
-        if (count($result) < 3 || count($result) > 12) {
-            throw new InvalidArgumentException('A notícia precisa ter de três a doze momentos.');
-        }
+        usort($result, fn (array $a, array $b) => $a['segundos'] <=> $b['segundos']);
 
         return $result;
     }

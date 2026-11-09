@@ -19,7 +19,7 @@ Esta é a regra mais importante. A notícia só pode conter o que foi dito ou mo
 
 ## Regras de conteúdo
 
-7. **O programa inteiro.** Assista do começo ao fim. A notícia e os `momentos` precisam cobrir as partes importantes de todo o vídeo, inclusive o fim, não só os primeiros minutos.
+7. **O programa inteiro.** Assista do começo ao fim: os assuntos importantes podem estar em qualquer parte do vídeo, inclusive no fim, não só nos primeiros minutos.
 8. **Concreto, não genérico.** Frases como "os convidados debateram o cenário político" ou "especialistas discutiram o tema" não informam nada. Diga **o que** cada pessoa afirmou, defendeu, anunciou ou criticou: a ideia central, um exemplo ou dado que ela citou. Em debates, cada convidado com espaço relevante deve ter sua posição registrada, atribuída a ele.
 9. **Foque no que interessa ao morador**: serviços, eventos (data, local, como participar), projetos, problemas e decisões da cidade e da região, anúncios. Conversa de bastidor, piadas e cumprimentos ficam de fora.
 10. **Neutralidade.** Sem adjetivos, sem opinião, sem tom de elogio ou crítica. Em temas políticos, apresente as posições como posições de quem falou, sem concluir quem tem razão e sem inventar consenso ("todos concordaram") que não tenha sido dito.
@@ -42,7 +42,7 @@ Notícia de jornal em texto corrido, pirâmide invertida: o mais importante prim
 - **blocos**: de dois a quatro blocos, um por assunto. Cada bloco tem um **intertitulo** curto (duas a quatro palavras, ou vazio) e de um a três **paragrafos**.
 - **fechamento**: um parágrafo curto com o serviço (como participar, onde, quando), se tiver sido dito. Se não houver, deixe vazio.
 - **participantes**: cada pessoa que fala no programa, com `nome` (vazio se não tiver certeza) e `papel` ("apresentador", "presidente da associação X"…).
-- **momentos**: de quatro a dez momentos principais, em ordem, com `inicio` no formato "MM:SS" ou "H:MM:SS" (o instante do vídeo em que o assunto começa) e `assunto` (uma frase curta). Os minutos precisam ser reais (confira no vídeo) e estar dentro da `duracao`. Cubra o conteúdo do programa até o fim da última conversa: um debate ou entrevista longa vira vários momentos, um para cada assunto que surge (no máximo cerca de 20 minutos entre um momento e o seguinte). Chamadas de outros programas, vinhetas e encerramento não são momentos, e os momentos não citam os assuntos que foram para `omitidos`.
+- **momentos**: servem para o leitor conferir a notícia no vídeo. Para cada assunto citado no texto (cada fala, anúncio ou informação importante), o instante do vídeo em que ele é dito: `inicio` no formato "MM:SS" ou "H:MM:SS" e `assunto` (uma frase curta que repete o assunto do texto). De um a dez momentos. Só assuntos que estão na notícia: nada de vinhetas, chamadas de outros programas, encerramento ou assuntos que foram para `omitidos`. Os minutos precisam ser reais (confira no vídeo) e estar dentro da `duracao`.
 - **omitidos**: o que ficou de fora pela regra de assuntos sensíveis, com o minuto e o motivo.
 
 Responda somente com o JSON, sem texto antes ou depois.
