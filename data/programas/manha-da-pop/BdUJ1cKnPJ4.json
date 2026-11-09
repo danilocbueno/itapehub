@@ -6,5 +6,6 @@
     "date": "2026-11-09",
     "seconds": 13425,
     "found_at": "2026-11-09T17:46:00-03:00",
-    "attempts": 0
+    "attempts": 1,
+    "error": "Momento depois do fim do vídeo: 10:10:00"
 }
