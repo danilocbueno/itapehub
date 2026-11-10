@@ -6,6 +6,80 @@
     "date": "2026-11-09",
     "seconds": 4414,
     "found_at": "2026-11-09T17:46:00-03:00",
-    "attempts": 1,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 2,
+    "article": {
+        "titulo": "Livro de empreendedorismo e estragos na fachada do Centro Cultural",
+        "linha_fina": "Programa Telescópio aborda lançamento literário em Itapetininga e alerta da Defesa Civil sobre prédio histórico.",
+        "lide": "No programa de segunda-feira (9), do programa Telescópio, da TV Itapê, o escritor Rafael Pexe anunciou o lançamento de seu novo livro, enquanto a Defesa Civil detalhou os estragos em prédio histórico.",
+        "blocos": [
+            {
+                "intertitulo": "Lançamento literário",
+                "paragrafos": [
+                    "O contador e escritor Rafael Pexe apresentou no programa o livro O Jogo do Empreendedor. Segundo o autor, a obra aborda o intraempreendedorismo e propõe reflexões práticas para quem deseja abrir ou gerenciar um negócio.",
+                    "O lançamento oficial do livro será na sexta-feira (13), às 20h, no auditório da Paz Church, localizado na Rua Benedita Silva Rosa, na Vila Carolina."
+                ]
+            },
+            {
+                "intertitulo": "Prédio histórico",
+                "paragrafos": [
+                    "A vice-coordenadora da Defesa Civil, Catarina Nanini, comentou sobre o desprendimento de reboco ocorrido na fachada do Centro Cultural Histórico, localizado no Largo dos Amores. De acordo com a representante, o município acumula mais de 600 milímetros de chuva desde setembro, o que encharca as estruturas antigas de barro.",
+                    "Ela destacou que o prédio é antigo e que a Defesa Civil isolou a área para evitar acidentes, aguardando avaliações mais detalhadas da estrutura."
+                ]
+            },
+            {
+                "intertitulo": "Tarifa Social",
+                "paragrafos": [
+                    "O consultor de relacionamento da CPFL Santa Cruz, Marcos Amorim, explicou as regras de benefícios e descontos na conta de energia elétrica para clientes cadastrados em programas sociais do governo federal com renda de até um salário mínimo.",
+                    "O representante informou que a campanha Vale Bônus oferece facilidades no pagamento e descontos para consumidores que se enquadram nos critérios estabelecidos."
+                ]
+            }
+        ],
+        "fechamento": "O lançamento do livro O Jogo do Empreendedor ocorre no dia 13 de novembro, às 20h, no auditório da Paz Church, na Vila Carolina.",
+        "participantes": [
+            {
+                "nome": "Fábio Miranda",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Rafael Pexe",
+                "papel": "contador e escritor"
+            },
+            {
+                "nome": "Catarina Nanini",
+                "papel": "vice-coordenadora da Defesa Civil"
+            },
+            {
+                "nome": "Marcos Amorim",
+                "papel": "consultor de relacionamento da CPFL Santa Cruz"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "05:33",
+                "segundos": 333,
+                "assunto": "Apresentação do livro O Jogo do Empreendedor"
+            },
+            {
+                "inicio": "07:57",
+                "segundos": 477,
+                "assunto": "Entrevista sobre os estragos no prédio histórico do Centro Cultural"
+            },
+            {
+                "inicio": "16:59",
+                "segundos": 1019,
+                "assunto": "Detalhes sobre o evento de lançamento do livro"
+            },
+            {
+                "inicio": "53:39",
+                "segundos": 3219,
+                "assunto": "Orientações sobre benefícios tarifários da CPFL"
+            }
+        ],
+        "omitidos": [
+            "01:05 - Anúncios publicitários de patrocinadores do programa",
+            "72:37 - Notas de falecimento e informações sobre velórios na cidade"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-10T04:25:38-03:00"
 }
