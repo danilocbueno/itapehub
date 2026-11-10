@@ -1,5 +1,5 @@
 {
-    "fetched_at": "2026-11-10T04:25:25-03:00",
+    "fetched_at": "2026-11-10T10:27:18-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
@@ -350,23 +350,23 @@
             ]
         },
         {
-            "date": "2026-11-12",
+            "date": "2026-11-18",
             "films": [
                 {
-                    "title": "Velozes e Furiosos (25º Aniversário)",
-                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
                     "tag": "Pré-Venda",
-                    "rating": "14",
-                    "genre": "Ação",
-                    "minutes": 101,
+                    "rating": "",
+                    "genre": "Aventura",
+                    "minutes": 158,
                     "sessions": [
                         {
-                            "info": "Sala 4 · Dublado · 2D",
+                            "info": "Sala 1 · Dublado · 2D",
                             "times": [
                                 {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWQzYjJiNjY3YTljOTgwZTY5YWU5YmJiYzVhMTI"
+                                    "time": "20:40",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xOC0xMS8xMWYxYzgwN2RiMzY4M2EzODBlNjlhZTliYmJjNWExMg"
                                 }
                             ]
                         }
@@ -375,23 +375,27 @@
             ]
         },
         {
-            "date": "2026-11-13",
+            "date": "2026-11-19",
             "films": [
                 {
-                    "title": "Velozes e Furiosos (25º Aniversário)",
-                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
                     "tag": "Pré-Venda",
-                    "rating": "14",
-                    "genre": "Ação",
-                    "minutes": 101,
+                    "rating": "",
+                    "genre": "Aventura",
+                    "minutes": 158,
                     "sessions": [
                         {
-                            "info": "Sala 4 · Dublado · 2D",
+                            "info": "Sala 1 · Dublado · 2D",
                             "times": [
                                 {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTMtMTEvMTFmMWQzYjJiYzVmZTc3NzgwZTY5YWU5YmJiYzVhMTI"
+                                    "time": "17:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xOS0xMS8xMWYxYzgwN2RiMzY4M2JkODBlNjlhZTliYmJjNWExMg"
+                                },
+                                {
+                                    "time": "20:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xOS0xMS8xMWYxYzgwN2RiMzY4M2Q3ODBlNjlhZTliYmJjNWExMg"
                                 }
                             ]
                         }
@@ -400,23 +404,27 @@
             ]
         },
         {
-            "date": "2026-11-14",
+            "date": "2026-11-20",
             "films": [
                 {
-                    "title": "Velozes e Furiosos (25º Aniversário)",
-                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
                     "tag": "Pré-Venda",
-                    "rating": "14",
-                    "genre": "Ação",
-                    "minutes": 101,
+                    "rating": "",
+                    "genre": "Aventura",
+                    "minutes": 158,
                     "sessions": [
                         {
-                            "info": "Sala 4 · Dublado · 2D",
+                            "info": "Sala 1 · Dublado · 2D",
                             "times": [
                                 {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTQtMTEvMTFmMWQzYjJiYzVmZTc4MzgwZTY5YWU5YmJiYzVhMTI"
+                                    "time": "17:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yMC0xMS8xMWYxYzgwN2RiMzY4M2YxODBlNjlhZTliYmJjNWExMg"
+                                },
+                                {
+                                    "time": "20:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yMC0xMS8xMWYxYzgwN2RiMzY4NDBiODBlNjlhZTliYmJjNWExMg"
                                 }
                             ]
                         }
@@ -425,23 +433,27 @@
             ]
         },
         {
-            "date": "2026-11-15",
+            "date": "2026-11-21",
             "films": [
                 {
-                    "title": "Velozes e Furiosos (25º Aniversário)",
-                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
                     "tag": "Pré-Venda",
-                    "rating": "14",
-                    "genre": "Ação",
-                    "minutes": 101,
+                    "rating": "",
+                    "genre": "Aventura",
+                    "minutes": 158,
                     "sessions": [
                         {
-                            "info": "Sala 4 · Dublado · 2D",
+                            "info": "Sala 1 · Dublado · 2D",
                             "times": [
                                 {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTUtMTEvMTFmMWQzYjJiYzVmZTc4ZDgwZTY5YWU5YmJiYzVhMTI"
+                                    "time": "17:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yMS0xMS8xMWYxYzgwN2RiMzY4NDI1ODBlNjlhZTliYmJjNWExMg"
+                                },
+                                {
+                                    "time": "20:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yMS0xMS8xMWYxYzgwN2RiMzY4NDM3ODBlNjlhZTliYmJjNWExMg"
                                 }
                             ]
                         }
@@ -450,23 +462,27 @@
             ]
         },
         {
-            "date": "2026-11-16",
+            "date": "2026-11-22",
             "films": [
                 {
-                    "title": "Velozes e Furiosos (25º Aniversário)",
-                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
                     "tag": "Pré-Venda",
-                    "rating": "14",
-                    "genre": "Ação",
-                    "minutes": 101,
+                    "rating": "",
+                    "genre": "Aventura",
+                    "minutes": 158,
                     "sessions": [
                         {
-                            "info": "Sala 4 · Dublado · 2D",
+                            "info": "Sala 1 · Dublado · 2D",
                             "times": [
                                 {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWQzYjJiYzVmZTc5YjgwZTY5YWU5YmJiYzVhMTI"
+                                    "time": "17:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yMi0xMS8xMWYxYzgwN2RiMzY4NDQ5ODBlNjlhZTliYmJjNWExMg"
+                                },
+                                {
+                                    "time": "20:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yMi0xMS8xMWYxYzgwN2RiMzY4NDViODBlNjlhZTliYmJjNWExMg"
                                 }
                             ]
                         }

@@ -1,5 +1,29 @@
 [
     {
+        "id": "f6b9b1671c693399",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11016/samu-realiza-simulado-de-atendimento-no-dia-17-de-novembro-no-recinto-de-exposicoes-acacio-de-moraes-terra-em-itapetininga/",
+        "title": "SAMU realiza simulado de atendimento no dia 17 de novembro no Recinto de Exposições “Acácio de Moraes Terra”, em Itapetininga",
+        "summary": "O SAMU 192 realiza um “Simulado de Atendimento a Incidentes com Múltiplas Vítimas” no dia 17 de novembro, das 09h às 11h, no Recinto de Exposições “Acácio de Moraes Terra”.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/9132bf1e18feddfdec570adbf20f4afe.webp",
+        "published_at": "2026-11-10T10:27:18-03:00",
+        "collected_at": "2026-11-10T10:27:18-03:00",
+        "cluster": "f6b9b1671c693399",
+        "hidden": false
+    },
+    {
+        "id": "7cbe71332cc483dc",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/10/homem-acusado-de-matar-esposa-enforcada-com-cabo-vai-a-juri-popular-nesta-terca-feira-em-itapetininga.ghtml",
+        "title": "Homem acusado de matar esposa enforcada com cabo vai a júri popular nesta terça-feira em Itapetininga",
+        "summary": "O caso corre sob segredo de Justiça e, por isso, o tribunal não informou detalhes sobre quais crimes o acusado responde. O julgamento de Emerson Vitoriano Pereira acontecerá a partir das 13h, no fórum de Itapetininga. Emerson confessou ter…",
+        "image": "https://s2-g1.glbimg.com/7obXXzpawuFi6vkta_XD-BrGJaE=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/s/4/Fpf7TETuS9pcRN2TIelw/feminicidioitape.jpg",
+        "published_at": "2026-11-10T09:27:42-03:00",
+        "collected_at": "2026-11-10T10:27:18-03:00",
+        "cluster": "7cbe71332cc483dc",
+        "hidden": false
+    },
+    {
         "id": "0f50e1b1ca0ab132",
         "source": "ola",
         "url": "https://olaitapetininga.com.br/entretenimento/teatro/natalia-lage-e-emilio-orciollo-chegam-a-itapetininga-com-espetaculo-inspirado-em-fernando-pessoa/",
