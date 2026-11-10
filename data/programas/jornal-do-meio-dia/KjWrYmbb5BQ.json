@@ -1,10 +1,72 @@
 {
-  "program": "jornal-do-meio-dia",
-  "video": "KjWrYmbb5BQ",
-  "title": "Jornal do Meio-Dia - AO VIVO 🔴 - Rádio Super Difusora 94,5 FM - 09/11/2026",
-  "topic": "",
-  "date": "2026-11-09",
-  "seconds": 3538,
-  "found_at": "2026-11-09T17:46:00-03:00",
-  "attempts": 0
+    "program": "jornal-do-meio-dia",
+    "video": "KjWrYmbb5BQ",
+    "title": "Jornal do Meio-Dia - AO VIVO 🔴 - Rádio Super Difusora 94,5 FM - 09/11/2026",
+    "topic": "",
+    "date": "2026-11-09",
+    "seconds": 3538,
+    "found_at": "2026-11-09T17:46:00-03:00",
+    "attempts": 1,
+    "article": {
+        "titulo": "Prédio histórico do Centro Cultural tem queda de reboco na praça",
+        "linha_fina": "Imóvel centenário na Praça Largo dos Amores foi interditado preventivamente pela Defesa Civil nesta segunda-feira (9).",
+        "lide": "No programa Jornal do Meio-Dia, da Rádio Super Difusora, no programa de segunda-feira (9), os apresentadores noticiaram que parte do reboco do prédio histórico do Centro Cultural Brasilio Aires de Aguirre desabou pela manhã. O local foi interditado preventivamente por órgãos competentes após o incidente.",
+        "blocos": [
+            {
+                "intertitulo": "Queda de Reboco",
+                "paragrafos": [
+                    "Segundo a reportagem do programa de segunda-feira (9), o prédio centenário que abriga o museu e a escola de música na Praça Largo dos Amores registrou a queda de reboco na fachada nesta manhã.",
+                    "De acordo com as informações divulgadas, o local foi interditado preventivamente e equipes técnicas da prefeitura e da Defesa Civil devem avaliar as condições do imóvel."
+                ]
+            },
+            {
+                "intertitulo": "Café com Tour",
+                "paragrafos": [
+                    "A presidente do conselho municipal de turismo afirmou que estão abertas as inscrições para o evento Café com Tour, voltado a empresários e profissionais de diferentes setores da economia local.",
+                    "O encontro está marcado para a segunda-feira (16), às 8h, no Hotel Íporã, com o objetivo de promover o networking e o desenvolvimento do turismo regional."
+                ]
+            },
+            {
+                "intertitulo": "Esportes e Serviços",
+                "paragrafos": [
+                    "Segundo o jornal da emissora, foram abertas as inscrições para o segundo Festival Kids de Atletismo, que será realizado no dia 28 de novembro no Sesi para crianças de 1 a 15 anos.",
+                    "Além disso, produtores rurais têm até o dia 31 de dezembro para realizar a vacinação de fêmeas bovinas e bubalinas contra a brucelose."
+                ]
+            }
+        ],
+        "fechamento": "Para participar do Café com Tour, os interessados devem preencher o formulário disponível no Instagram oficial do Contur e realizar o pagamento da taxa informada no vídeo.",
+        "participantes": [
+            {
+                "nome": "",
+                "papel": "presidente do conselho municipal de turismo"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "08:18",
+                "segundos": 498,
+                "assunto": "Abertura de inscrições para o evento Café com Tour"
+            },
+            {
+                "inicio": "19:06",
+                "segundos": 1146,
+                "assunto": "Inscrições abertas para o segundo Festival Kids de Atletismo"
+            },
+            {
+                "inicio": "31:05",
+                "segundos": 1865,
+                "assunto": "Queda de reboco no prédio histórico do Centro Cultural"
+            },
+            {
+                "inicio": "34:26",
+                "segundos": 2066,
+                "assunto": "Prazo para vacinação contra brucelose em fêmeas bovinas e bubalinas"
+            }
+        ],
+        "omitidos": [
+            "04:22 - Noticiário policial sobre prisão por tráfico de drogas, omitido por tratar de ocorrência policial e acusação contra pessoa identificada."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-10T20:24:16-03:00"
 }
