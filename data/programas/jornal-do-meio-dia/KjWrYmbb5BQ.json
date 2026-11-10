@@ -1,71 +1,10 @@
 {
-    "program": "jornal-do-meio-dia",
-    "video": "KjWrYmbb5BQ",
-    "title": "Jornal do Meio-Dia - AO VIVO 🔴 - Rádio Super Difusora 94,5 FM - 09/11/2026",
-    "topic": "",
-    "date": "2026-11-09",
-    "seconds": 3538,
-    "found_at": "2026-11-09T17:46:00-03:00",
-    "attempts": 1,
-    "article": {
-        "titulo": "Prédio do Centro Cultural de Itapetininga tem fachada desabada",
-        "linha_fina": "Imóvel centenário que abriga museu e escola de música foi interditado preventivamente nesta segunda-feira (9).",
-        "lide": "No programa de segunda-feira (9), do Jornal do Meio-Dia, da Rádio Super Difusora, foi noticiado o desabamento de parte da fachada do prédio centenário do Centro Cultural Brasilio Ayres de Aguirre, na Praça Largo dos Amores, em Itapetininga. O imóvel, que abriga o museu e a escola de música municipal, foi interditado preventivamente após o incidente desta manhã.",
-        "blocos": [
-            {
-                "intertitulo": "Fachada Desabada",
-                "paragrafos": [
-                    "O desabamento ocorreu por volta das 9h na fachada do prédio histórico. Pedaços de reboco caíram na calçada e trincas foram identificadas na estrutura.",
-                    "Segundo relatos do comerciante José Benedito Alves, o barulho do desabamento foi incomum e equipes da Guarda Civil, Defesa Civil, Polícia Militar e Corpo de Bombeiros isolaram o local."
-                ]
-            },
-            {
-                "intertitulo": "Café com Tour",
-                "paragrafos": [
-                    "A Prefeitura de Itapetininga, por meio do Conselho Municipal de Turismo (Comtur), está com inscrições abertas para o evento Café com Tour, marcado para a próxima segunda-feira (16), a partir das 8h, no Hotel Iporã.",
-                    "De acordo com a presidente do Comtur, Ana Oliveira, a iniciativa busca aproximar empreendedores e profissionais para fortalecer o desenvolvimento do turismo local e regional."
-                ]
-            },
-            {
-                "intertitulo": "Festival de Atletismo",
-                "paragrafos": [
-                    "Estão abertas até sexta-feira (13) as inscrições presenciais para o segundo Festival Kids de Atletismo de Itapetininga, que será realizado no dia 28 de novembro no Sesi.",
-                    "O evento é gratuito para crianças e adolescentes de 1 a 15 anos, com provas de corrida, salto e distância divididas por faixa etária."
-                ]
-            }
-        ],
-        "fechamento": "Mais informações sobre as inscrições e os dados de contato estão disponíveis no vídeo do programa.",
-        "participantes": [
-            {
-                "nome": "Ana Oliveira",
-                "papel": "presidente do Conselho Municipal de Turismo"
-            },
-            {
-                "nome": "José Benedito Alves",
-                "papel": "comerciante"
-            }
-        ],
-        "momentos": [
-            {
-                "inicio": "07:34",
-                "segundos": 454,
-                "assunto": "Abertura das inscrições para o Café com Tour"
-            },
-            {
-                "inicio": "19:18",
-                "segundos": 1158,
-                "assunto": "Inscrições para o Festival Kids de Atletismo"
-            },
-            {
-                "inicio": "30:51",
-                "segundos": 1851,
-                "assunto": "Desabamento de parte da fachada do Centro Cultural"
-            }
-        ],
-        "omitidos": [
-            "42:42 - Prisão de mulher com maconha em penitenciária, por se tratar de denúncia criminal e assunto policial sensível."
-        ]
-    },
-    "written_by": "gemini:gemini-3.5-flash-lite static",
-    "written_at": "2026-11-10T10:27:40-03:00"
+  "program": "jornal-do-meio-dia",
+  "video": "KjWrYmbb5BQ",
+  "title": "Jornal do Meio-Dia - AO VIVO 🔴 - Rádio Super Difusora 94,5 FM - 09/11/2026",
+  "topic": "",
+  "date": "2026-11-09",
+  "seconds": 3538,
+  "found_at": "2026-11-09T17:46:00-03:00",
+  "attempts": 0
 }

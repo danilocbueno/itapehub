@@ -1,64 +1,10 @@
 {
-    "program": "manha-da-pop",
-    "video": "BdUJ1cKnPJ4",
-    "title": "MANHÃ DA POP  -  09/11/2026",
-    "topic": "",
-    "date": "2026-11-09",
-    "seconds": 13425,
-    "found_at": "2026-11-09T17:46:00-03:00",
-    "attempts": 2,
-    "article": {
-        "titulo": "Queda de parede da antiga prefeitura de Itapetininga",
-        "linha_fina": "Fachada do Centro Cultural desabou após temporais e área foi interditada no programa de segunda-feira (9).",
-        "lide": "No programa Manhã da Pop, da Pop FM, de segunda-feira (9), o apresentador informou que parte da fachada da antiga prefeitura de Itapetininga desabou após os temporais do fim de semana. A área no entorno do Centro Cultural foi interditada pela Guarda Civil Municipal e pelo Corpo de Bombeiros.",
-        "blocos": [
-            {
-                "intertitulo": "Prédio histórico",
-                "paragrafos": [
-                    "Segundo o programa, ouvintes relataram o estado de conservação do prédio da antiga prefeitura, localizado no Largo dos Amores, que apresentava rachaduras.",
-                    "Com a queda de parte da estrutura da parede da frente, a praça foi parcialmente interditada para evitar riscos aos pedestres na região central."
-                ]
-            },
-            {
-                "intertitulo": "Falta de energia",
-                "paragrafos": [
-                    "Além dos danos ao patrimônio histórico, os temporais provocaram quedas de estruturas e falta prolongada de energia elétrica em bairros de Itapetininga e em municípios da região, como São Miguel Arcanjo e Quadra.",
-                    "Moradores enviaram relatos sobre dificuldades no atendimento e na comunicação com a concessionária durante o período sem luz."
-                ]
-            }
-        ],
-        "fechamento": "Os canais de contato e envio de mensagens para a emissora constam na transmissão em vídeo.",
-        "participantes": [
-            {
-                "nome": "",
-                "papel": "apresentador"
-            },
-            {
-                "nome": "",
-                "papel": "comentador"
-            }
-        ],
-        "momentos": [
-            {
-                "inicio": "23:00",
-                "segundos": 1380,
-                "assunto": "Queda de energia e ventanias em Itapetininga"
-            },
-            {
-                "inicio": "01:36:30",
-                "segundos": 5790,
-                "assunto": "Queda de parede do Centro Cultural em Itapetininga"
-            },
-            {
-                "inicio": "02:04:00",
-                "segundos": 7440,
-                "assunto": "Falta de energia em São Miguel Arcanjo"
-            }
-        ],
-        "omitidos": [
-            "00:47:00 - Investigação e prisão de ex-presidente estrangeiro e crise bancária."
-        ]
-    },
-    "written_by": "gemini:gemini-3.5-flash-lite agentic",
-    "written_at": "2026-11-10T00:35:34-03:00"
+  "program": "manha-da-pop",
+  "video": "BdUJ1cKnPJ4",
+  "title": "MANHÃ DA POP  -  09/11/2026",
+  "topic": "",
+  "date": "2026-11-09",
+  "seconds": 13425,
+  "found_at": "2026-11-09T17:46:00-03:00",
+  "attempts": 0
 }

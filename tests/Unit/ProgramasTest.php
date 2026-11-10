@@ -85,11 +85,22 @@ it('recusa o dia da semana errado', function () {
     checkArticle(videoArticle(['lide' => 'No programa de quinta-feira (3), protetores pediram castração.']));
 })->throws(InvalidArgumentException::class, 'Dia da semana errado');
 
-it('recusa momentos depois do fim do vídeo, inválidos ou ausentes', function (array $moments) {
+it('descarta só o momento inválido ou depois do fim do vídeo', function () {
+    $article = checkArticle(videoArticle(['momentos' => [
+        ['inicio' => '01:00', 'assunto' => 'a'],
+        ['inicio' => '10:10:00', 'assunto' => 'depois do fim'],
+        ['inicio' => 'meia hora', 'assunto' => 'inválido'],
+        ['inicio' => '02:00', 'assunto' => ''],
+    ]]));
+
+    expect($article['momentos'])->toBe([['inicio' => '01:00', 'segundos' => 60, 'assunto' => 'a']]);
+});
+
+it('recusa a notícia sem nenhum momento válido', function (array $moments) {
     checkArticle(videoArticle(['momentos' => $moments]));
-})->throws(InvalidArgumentException::class)->with([
-    'depois do fim' => [[['inicio' => '01:00', 'assunto' => 'a'], ['inicio' => '1:30:30', 'assunto' => 'b']]],
-    'inválido' => [[['inicio' => 'meia hora', 'assunto' => 'a']]],
+})->throws(InvalidArgumentException::class, 'momentos válidos')->with([
+    'só depois do fim' => [[['inicio' => '10:10:00', 'assunto' => 'a']]],
+    'só inválido' => [[['inicio' => 'meia hora', 'assunto' => 'a']]],
     'nenhum' => [[]],
 ]);
 

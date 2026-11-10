@@ -163,32 +163,28 @@ final class VideoStory
 
     /**
      * Momentos: onde cada assunto da notícia é dito no vídeo, para o leitor
-     * conferir. Minutos válidos e dentro do vídeo; mostrados em ordem de tempo.
+     * conferir. Um momento com minuto inválido ou depois do fim do vídeo (o
+     * modelo às vezes erra o formato, "10:10:00" num vídeo de 3h) é descartado
+     * sozinho; a notícia só é recusada se não sobrar nenhum. Em ordem de tempo.
      *
      * @return list<array{inicio: string, segundos: int, assunto: string}>
      */
     private static function moments(mixed $moments, int $duration): array
     {
-        if (! is_array($moments) || count($moments) < 1 || count($moments) > 12) {
-            throw new InvalidArgumentException('A notícia precisa ter de um a doze momentos.');
-        }
-
         $result = [];
 
-        foreach ($moments as $moment) {
+        foreach (is_array($moments) ? $moments : [] as $moment) {
             $start = trim((string) ($moment['inicio'] ?? ''));
             $seconds = ChannelParser::seconds($start);
             $subject = trim((string) ($moment['assunto'] ?? ''));
 
-            if ($seconds === null || $subject === '') {
-                throw new InvalidArgumentException("Momento inválido: {$start}");
+            if ($seconds !== null && $seconds <= $duration && $subject !== '') {
+                $result[] = ['inicio' => $start, 'segundos' => $seconds, 'assunto' => $subject];
             }
+        }
 
-            if ($seconds > $duration) {
-                throw new InvalidArgumentException("Momento depois do fim do vídeo: {$start}");
-            }
-
-            $result[] = ['inicio' => $start, 'segundos' => $seconds, 'assunto' => $subject];
+        if ($result === [] || count($result) > 12) {
+            throw new InvalidArgumentException('A notícia precisa ter de um a doze momentos válidos.');
         }
 
         usort($result, fn (array $a, array $b) => $a['segundos'] <=> $b['segundos']);
