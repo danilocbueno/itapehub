@@ -1,10 +1,85 @@
 {
-  "program": "telescopio",
-  "video": "LWsN7j6bcRw",
-  "title": "Telescópio - 09/11/2026 - Rafael Pexe e Marcos Amorim",
-  "topic": "Rafael Pexe e Marcos Amorim",
-  "date": "2026-11-09",
-  "seconds": 4414,
-  "found_at": "2026-11-09T17:46:00-03:00",
-  "attempts": 0
+    "program": "telescopio",
+    "video": "LWsN7j6bcRw",
+    "title": "Telescópio - 09/11/2026 - Rafael Pexe e Marcos Amorim",
+    "topic": "Rafael Pexe e Marcos Amorim",
+    "date": "2026-11-09",
+    "seconds": 4414,
+    "found_at": "2026-11-09T17:46:00-03:00",
+    "attempts": 1,
+    "article": {
+        "titulo": "Chuva danifica fachada do Centro Cultural de Itapetininga",
+        "linha_fina": "Defesa Civil isolou a área do prédio histórico nesta segunda-feira (9). CPFL também apresentou campanha de descontos na conta de luz.",
+        "lide": "No programa Telescópio, da TV Itapê, de segunda-feira (9), a vice-coordenadora da Defesa Civil, Catarina Nanini, relatou danos na fachada do Centro Cultural devido às chuvas. O programa também destacou o lançamento do livro de Rafael Pexe e novos benefícios da CPFL Santa Cruz.",
+        "blocos": [
+            {
+                "intertitulo": "Centro Cultural",
+                "paragrafos": [
+                    "Parte da fachada do Centro Cultural de Itapetininga sofreu desabamento de reboco devido às fortes chuvas registradas desde setembro, que somam mais de 600 milímetros. A informação foi dada pela vice-coordenadora da Defesa Civil, Catarina Nanini, em entrevista ao programa Telescópio, da TV Itapê, no programa de segunda-feira (9).",
+                    "Segundo a Defesa Civil, o prédio histórico construído no século XVIII apresenta infiltrações e falta de conservação, o que provocou o desprendimento do reboco. A área foi isolada para garantir a segurança dos pedestres."
+                ]
+            },
+            {
+                "intertitulo": "Campanha da CPFL",
+                "paragrafos": [
+                    "O consultor de relacionamento da CPFL Santa Cruz, Marcos Amorim, apresentou a campanha Vale Bônus, válida até 19 de janeiro de 2027. Clientes residenciais cadastrados em programas sociais do governo federal podem receber descontos na conta de energia.",
+                    "Além disso, clientes podem acumular pontos pagando faturas por meios digitais para trocar por produtos em lojas credenciadas. Amorim também destacou o atendimento conjunto com a Defesa Civil em ocorrências de quedas de árvores na rede elétrica causadas pelas chuvas na região."
+                ]
+            },
+            {
+                "intertitulo": "Lançamento de Livro",
+                "paragrafos": [
+                    "O escritor e contador Rafael Pexe anunciou o lançamento de seu livro \"O Jogo do Empreendedor\". O evento será realizado na próxima sexta-feira (13), às 20h, no Auditório da Paz Church.",
+                    "A obra aborda conceitos de intraempreendedorismo e o desenvolvimento de competências para negócios, com entrada aberta ao público."
+                ]
+            }
+        ],
+        "fechamento": "O lançamento do livro acontece no Auditório da Paz Church, na Rua Benedita Silva Rosa, 2400, Vila Carolina, com entrada franca.",
+        "participantes": [
+            {
+                "nome": "Fábio Miranda",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Catarina Nanini",
+                "papel": "vice-coordenadora da Defesa Civil"
+            },
+            {
+                "nome": "Rafael Pexe",
+                "papel": "escritor e contador"
+            },
+            {
+                "nome": "Marcos Amorim",
+                "papel": "consultor de relacionamento da CPFL Santa Cruz"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "07:57",
+                "segundos": 477,
+                "assunto": "Desabamento de reboco no Centro Cultural"
+            },
+            {
+                "inicio": "08:32",
+                "segundos": 512,
+                "assunto": "Entrevista sobre a Defesa Civil e chuvas"
+            },
+            {
+                "inicio": "16:59",
+                "segundos": 1019,
+                "assunto": "Divulgação do livro O Jogo do Empreendedor"
+            },
+            {
+                "inicio": "53:40",
+                "segundos": 3220,
+                "assunto": "Entrevista sobre a campanha Vale Bônus da CPFL"
+            }
+        ],
+        "omitidos": [
+            "13:54 - Leitura de notícias nacionais e internacionais sobre eleições nos Estados Unidos e mudanças climáticas, por não terem ligação com a cidade.",
+            "72:37 - Anúncios de falecimentos de moradores, por tratarem de assunto sensível (morte de pessoas identificadas)."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-10T15:02:35-03:00"
 }
