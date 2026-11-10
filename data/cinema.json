@@ -1,5 +1,5 @@
 {
-    "fetched_at": "2026-11-10T10:27:18-03:00",
+    "fetched_at": "2026-11-10T14:52:17-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
@@ -18,10 +18,6 @@
                         {
                             "info": "Sala 1 · Nacional · 2D",
                             "times": [
-                                {
-                                    "time": "14:50",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTAtMTEvMTFmMWRiOTJlZWQxMGY4ZDgwZTY5YWU5YmJiYzVhMTI"
-                                },
                                 {
                                     "time": "17:05",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTAtMTEvMTFmMWRiOTJlZWQxMGZkOTgwZTY5YWU5YmJiYzVhMTI"
@@ -118,10 +114,6 @@
                         {
                             "info": "Sala 4 · Nacional · 2D",
                             "times": [
-                                {
-                                    "time": "14:10",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hcy1kZXotdmFudGFnZW5zLWRlLW1vcnJlci1kZXBvaXMtZGUtdm9jZS9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTEwLTExLzExZjFkYjkyZWVkMTBmN2Q4MGU2OWFlOWJiYmM1YTEy"
-                                },
                                 {
                                     "time": "19:00",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hcy1kZXotdmFudGFnZW5zLWRlLW1vcnJlci1kZXBvaXMtZGUtdm9jZS9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTEwLTExLzExZjFkYjkyZWVkMTEwMDc4MGU2OWFlOWJiYmM1YTEy"
