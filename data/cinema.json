@@ -1,131 +1,8 @@
 {
-    "fetched_at": "2026-11-09T17:45:39-03:00",
+    "fetched_at": "2026-11-10T00:35:18-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
-        {
-            "date": "2026-11-09",
-            "films": [
-                {
-                    "title": "Os Farofeiros 3",
-                    "url": "https://www.grupocine.com.br/filme/16672/os-farofeiros-3",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "12",
-                    "genre": "Comédia",
-                    "minutes": 103,
-                    "sessions": [
-                        {
-                            "info": "Sala 1 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "19:20",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDktMTEvMTFmMWRiOTJlZWQxMGYxMzgwZTY5YWU5YmJiYzVhMTI"
-                                },
-                                {
-                                    "time": "21:35",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDktMTEvMTFmMWRiOTJlZWQxMGY2MzgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Godzilla Minus Zero",
-                    "url": "https://www.grupocine.com.br/filme/17569/godzilla-minus-zero",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17569_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "16",
-                    "genre": "Ficção-científica, Drama, Aventura, Ação",
-                    "minutes": 135,
-                    "sessions": [
-                        {
-                            "info": "Sala 4 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "O Gatola da Cartola",
-                    "url": "https://www.grupocine.com.br/filme/16773/o-gatola-da-cartola",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16773_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "6",
-                    "genre": "Animação",
-                    "minutes": 81,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWdhdG9sYS1kYS1jYXJ0b2xhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTA5LTExLzExZjFkYjkyZWVkMTBlZjk4MGU2OWFlOWJiYmM1YTEy"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "As Dez Vantagens de Morrer Depois de Você",
-                    "url": "https://www.grupocine.com.br/filme/14907/as-dez-vantagens-de-morrer-depois-de-voce",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/14907_medio.jpg",
-                    "tag": "",
-                    "rating": "14",
-                    "genre": "Drama",
-                    "minutes": 102,
-                    "sessions": [
-                        {
-                            "info": "Sala 4 · Nacional · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "O Bosque Selvagem",
-                    "url": "https://www.grupocine.com.br/filme/17397/o-bosque-selvagem",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17397_medio.jpg",
-                    "tag": "",
-                    "rating": "14",
-                    "genre": "Fantasia, Família, Aventura, Animação",
-                    "minutes": 130,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "18:40",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWJvc3F1ZS1zZWx2YWdlbS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wOS0xMS8xMWYxZGI5MmVlZDEwZWRkODBlNjlhZTliYmJjNWExMg"
-                                },
-                                {
-                                    "time": "21:20",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWJvc3F1ZS1zZWx2YWdlbS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wOS0xMS8xMWYxZGI5MmVlZDEwZjNiODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Cara-De-Barro",
-                    "url": "https://www.grupocine.com.br/filme/16891/cara-de-barro",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16891_medio.jpg",
-                    "tag": "",
-                    "rating": "18",
-                    "genre": "Terror, Aventura, Ação",
-                    "minutes": 108,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "21:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9jYXJhLWRlLWJhcnJvLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTA5LTExLzExZjFkYjkyZWVkMTBmNDk4MGU2OWFlOWJiYmM1YTEy"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "date": "2026-11-10",
             "films": [
@@ -204,6 +81,26 @@
                                 {
                                     "time": "19:00",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWdhdG9sYS1kYS1jYXJ0b2xhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTEwLTExLzExZjFkYjkyZWVkMTEwMTc4MGU2OWFlOWJiYmM1YTEy"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Klara e o Sol",
+                    "url": "https://www.grupocine.com.br/filme/17448/klara-e-o-sol",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17448_medio.jpg",
+                    "tag": "Estreia",
+                    "rating": "12",
+                    "genre": "Drama",
+                    "minutes": 117,
+                    "sessions": [
+                        {
+                            "info": "Sala 3 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "16:15",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9rbGFyYS1lLW8tc29sLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTEwLTExLzExZjFkYzgxNjI3OTNjYTA4MGU2OWFlOWJiYmM1YTEy"
                                 }
                             ]
                         }
@@ -357,6 +254,26 @@
                                 {
                                     "time": "19:00",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWdhdG9sYS1kYS1jYXJ0b2xhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTExLTExLzExZjFkYjkyZWVkMTExMzU4MGU2OWFlOWJiYmM1YTEy"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Klara e o Sol",
+                    "url": "https://www.grupocine.com.br/filme/17448/klara-e-o-sol",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17448_medio.jpg",
+                    "tag": "Estreia",
+                    "rating": "12",
+                    "genre": "Drama",
+                    "minutes": 117,
+                    "sessions": [
+                        {
+                            "info": "Sala 3 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "16:15",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9rbGFyYS1lLW8tc29sLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTExLTExLzExZjFkYzgxNjI3OTNjYjA4MGU2OWFlOWJiYmM1YTEy"
                                 }
                             ]
                         }
@@ -525,6 +442,31 @@
                                 {
                                     "time": "19:00",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTUtMTEvMTFmMWQzYjJiYzVmZTc4ZDgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "date": "2026-11-16",
+            "films": [
+                {
+                    "title": "Velozes e Furiosos (25º Aniversário)",
+                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
+                    "tag": "Pré-Venda",
+                    "rating": "14",
+                    "genre": "Ação",
+                    "minutes": 101,
+                    "sessions": [
+                        {
+                            "info": "Sala 4 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "19:00",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWQzYjJiYzVmZTc5YjgwZTY5YWU5YmJiYzVhMTI"
                                 }
                             ]
                         }
