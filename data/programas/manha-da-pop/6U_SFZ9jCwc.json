@@ -1,75 +1,10 @@
 {
-    "program": "manha-da-pop",
-    "video": "6U_SFZ9jCwc",
-    "title": "MANHÃ DA POP  -  10/11/2026",
-    "topic": "",
-    "date": "2026-11-10",
-    "seconds": 12856,
-    "found_at": "2026-11-10T14:52:32-03:00",
-    "attempts": 1,
-    "article": {
-        "titulo": "Debate sobre prédios históricos marca Tribunal do Povo em Itapetininga",
-        "linha_fina": "Participantes do programa Manhã da Pop discutiram problemas de infraestrutura e conservação de patrimônios na cidade.",
-        "lide": "No programa Manhã da Pop, da Pop FM, transmitido no programa de terça-feira (10), o quadro Tribunal do Povo debateu a situação de prédios históricos e problemas de infraestrutura em Itapetininga. Os convidados apontaram falhas na conservação do patrimônio municipal e cobraram medidas de zeladoria urbana.",
-        "blocos": [
-            {
-                "intertitulo": "Patrimônio Histórico",
-                "paragrafos": [
-                    "Durante o debate no programa de terça-feira (10), o participante Dr. Fábio Coelho criticou a falta de conservação de imóveis antigos no município. Segundo ele, edifícios de relevância histórica enfrentam deterioração e ausência de reformas adequadas.",
-                    "O convidado Dr. Darcy também apontou problemas na manutenção de espaços públicos em Itapetininga, afirmando que a população sofre com a falta de zeladoria e investimentos em áreas culturais da cidade."
-                ]
-            },
-            {
-                "intertitulo": "Previsão e Economia",
-                "paragrafos": [
-                    "A edição desta terça-feira (10) trouxe a previsão do tempo para Itapetininga e região, indicando dia de sol com muitas nuvens, sem previsão de chuvas, e temperaturas variando entre 12°C e 23°C.",
-                    "No boletim do mercado financeiro, o analista Daniel Almeida comentou as variações recentes do dólar, do euro e da bolsa de valores, além de repercutir propostas de mudanças tributárias e taxas sobre investimentos."
-                ]
-            }
-        ],
-        "fechamento": "O programa Manhã da Pop é transmitido de segunda a sexta-feira pela Pop FM, trazendo informações locais e regionais.",
-        "participantes": [
-            {
-                "nome": "Milton Júnior",
-                "papel": "apresentador"
-            },
-            {
-                "nome": "Daniel Almeida",
-                "papel": "analista de mercado financeiro"
-            },
-            {
-                "nome": "Fábio Coelho",
-                "papel": "convidado do Tribunal do Povo"
-            },
-            {
-                "nome": "Darcy",
-                "papel": "convidado do Tribunal do Povo"
-            }
-        ],
-        "momentos": [
-            {
-                "inicio": "06:55",
-                "segundos": 415,
-                "assunto": "Previsão do tempo para Itapetininga e região"
-            },
-            {
-                "inicio": "08:41",
-                "segundos": 521,
-                "assunto": "Abertura do programa Manhã da Pop na Pop FM"
-            },
-            {
-                "inicio": "18:25",
-                "segundos": 1105,
-                "assunto": "Análise do mercado financeiro com Daniel Almeida"
-            },
-            {
-                "inicio": "45:00",
-                "segundos": 2700,
-                "assunto": "Início do quadro Tribunal do Povo com debate sobre prédios históricos"
-            }
-        ],
-        "omitidos": []
-    },
-    "written_by": "gemini:gemini-3.5-flash-lite static",
-    "written_at": "2026-11-10T14:52:32-03:00"
+  "program": "manha-da-pop",
+  "video": "6U_SFZ9jCwc",
+  "title": "MANHÃ DA POP  -  10/11/2026",
+  "topic": "",
+  "date": "2026-11-10",
+  "seconds": 12856,
+  "found_at": "2026-11-10T14:52:32-03:00",
+  "attempts": 0
 }
