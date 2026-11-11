@@ -6,6 +6,6 @@
     "date": "2026-11-10",
     "seconds": 4324,
     "found_at": "2026-11-10T14:52:32-03:00",
-    "attempts": 2,
+    "attempts": 3,
     "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
 }
