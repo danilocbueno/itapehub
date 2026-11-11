@@ -12,8 +12,8 @@ use Throwable;
  *
  * Se o Gemini falhar ou o texto não passar na conferência, nada é publicado: o
  * erro fica gravado e o episódio volta a ser tentado nas execuções seguintes
- * (até max_attempts). Recusa por cota (429) não conta como tentativa e encerra
- * a execução. Vídeo ainda não disponível (403: a gravação da live ainda está
+ * (até max_attempts). Recusa por cota (429) ou por sobrecarga do Gemini (503)
+ * não conta como tentativa e encerra a execução. Vídeo ainda não disponível (403: a gravação da live ainda está
  * sendo processada) também não conta, nem ocupa a vez de outro episódio; depois
  * de give_up_days sem conseguir, o episódio é deixado de lado.
  */

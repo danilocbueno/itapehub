@@ -14,7 +14,7 @@ use RuntimeException;
  * pelo link do YouTube (sem baixar áudio nem transcrever). Tenta os modos em
  * ordem (modelo + processamento: "agentic", que lê a transcrição e navega pelo
  * vídeo, e "static", quadro a quadro); se todos falharem, lança a exceção com os
- * erros (RateLimited se algum recusou por cota, NotReady se o vídeo ainda não
+ * erros (RateLimited se algum recusou por cota ou sobrecarga, NotReady se o vídeo ainda não
  * estava disponível).
  */
 final class VideoWriter
@@ -105,7 +105,8 @@ final class VideoWriter
             throw new TemporaryFailure('sem resposta ('.mb_strimwidth($e->getMessage(), 0, 80, '…').')', previous: $e);
         }
 
-        if ($response->status() === 429) {
+        // Cota (429) ou modelo sobrecarregado (503): recusa do Google, não do vídeo.
+        if (in_array($response->status(), [429, 503], true)) {
             throw new RateLimited($this->describe($response));
         }
 

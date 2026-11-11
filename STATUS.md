@@ -129,12 +129,13 @@ Os testes usam cópias reais das fontes em `tests/Fixtures/`. Cada bug encontrad
 - Lê a aba "Ao vivo" de cada programa em `config/programas.php` e grava os episódios dos últimos 7 dias em `data/programas/<programa>/<videoId>.json`. Programas:
   - **Telescópio** (TV Itapê): entrevista, 1h a 1h40;
   - **Jornal do Meio-Dia** (Rádio Super Difusora): cerca de 1h;
-  - **Manhã da Pop** (Pop FM): 3h a 3h40, às vezes em duas partes.
+  - **Manhã da Pop** (Pop FM): 3h a 3h40, às vezes em duas partes. **Pausada** desde 11/11 (`paused` em `config/programas.php`): no flash-lite, as notícias de 09 e 10/11 saíram rasas (dois assuntos vagos em 3h43). Os dois episódios ficam na fila.
 - Nas rádios o vídeo vai com 0,2 quadro por segundo (`fps`): a imagem é só o estúdio, e só assim um programa de 3h30 cabe numa chamada (cerca de 490 mil tokens).
-- É escrito um episódio por execução, somando todos os programas: um vídeo longo já passa do limite gratuito de 250 mil tokens por minuto. Recusa por cota (429) não conta como tentativa.
+- É escrito um episódio por execução, somando todos os programas: um vídeo longo já passa do limite gratuito de 250 mil tokens por minuto. Recusa por cota (429) ou por sobrecarga do Gemini (503) não conta como tentativa e encerra a execução.
 - A notícia é escrita com o Gemini (`gemini-3.5-flash-lite`), seguindo `resources/prompts/programa-video.md`, em dois modos:
   - **agentic** primeiro: lê a transcrição e navega pelo vídeo. Nos testes de 09/11, gastou 80 a 88% menos tokens (Pop de 3h43: 88 mil, contra 490 mil) e cobriu os programas longos inteiros;
   - **static** (quadro a quadro) como reserva, porque o agentic às vezes dá erro interno.
+  - O `gemini-3.5-flash` (sem "lite", hoje servido como 3.6) ainda não foi testado com a Pop: em 10 e 11/11 ficou com alta demanda (503), e a conta gratuita dá só 20 requisições por dia. Serve para teste ou reserva, não para o dia a dia.
   - O `gemini-3.8-flash` saiu: nunca leu um vídeo nos testes e levou 10 minutos para falhar.
 - **Transcrição:** as legendas automáticas do YouTube existem, mas o download e o painel "Mostrar transcrição" exigem um token anti-robô gerado pelo navegador. Contornar isso fere os termos do YouTube, então não usamos.
 - Antes de publicar, confere:

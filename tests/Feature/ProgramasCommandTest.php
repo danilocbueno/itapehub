@@ -67,7 +67,7 @@ it('escreve a notícia com o Gemini a partir do link do vídeo', function () {
 });
 
 it('não publica nada quando o Gemini falha e tenta de novo depois', function () {
-    fakeYoutube(fn () => Http::response(['error' => ['message' => 'high demand']], 503));
+    fakeYoutube(fn () => Http::response(['error' => ['message' => 'Internal error']], 500));
 
     $this->artisan('programas')
         ->expectsOutputToContain('sem notícia (tenta de novo depois)')
@@ -75,7 +75,7 @@ it('não publica nada quando o Gemini falha e tenta de novo depois', function ()
 
     expect(episode('Lf_ZIAQo0yM'))->not->toHaveKey('article')
         ->and(episode('Lf_ZIAQo0yM')['attempts'])->toBe(1)
-        ->and(episode('Lf_ZIAQo0yM')['error'])->toContain('gemini-3.5-flash-lite agentic: HTTP 503')->toContain('gemini-3.5-flash-lite static: HTTP 503')
+        ->and(episode('Lf_ZIAQo0yM')['error'])->toContain('gemini-3.5-flash-lite agentic: HTTP 500')->toContain('gemini-3.5-flash-lite static: HTTP 500')
         // Os dois modos, nos dois episódios.
         ->and(geminiCalls())->toBe(4);
 
@@ -148,6 +148,27 @@ it('não gasta tentativa quando a cota do Gemini acaba e para a execução', fun
         // Parou no primeiro episódio: os dois modelos, uma vez.
         ->and(geminiCalls())->toBe(2)
         ->and(episode('FTQML3B-wI4'))->not->toHaveKey('error');
+});
+
+it('não gasta tentativa quando o Gemini está sobrecarregado e para a execução', function () {
+    fakeYoutube(fn () => Http::response(['error' => ['message' => 'high demand']], 503));
+
+    $this->artisan('programas')->assertSuccessful();
+
+    expect(episode('Lf_ZIAQo0yM'))->not->toHaveKey('article')
+        ->and(episode('Lf_ZIAQo0yM')['attempts'])->toBe(0)
+        ->and(episode('Lf_ZIAQo0yM')['error'])->toContain('HTTP 503')
+        ->and(geminiCalls())->toBe(2);
+});
+
+it('não procura nem escreve episódios de programa pausado', function () {
+    config(['programas.telescopio.paused' => true]);
+    fakeYoutube();
+
+    $this->artisan('programas')->assertSuccessful();
+
+    Http::assertNothingSent();
+    expect(episode('Lf_ZIAQo0yM'))->toBeNull();
 });
 
 it('escolhe o episódio mais novo entre todos os programas', function () {

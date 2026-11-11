@@ -16,6 +16,8 @@
 |   programas) é ignorado;
 | - min_minutes: duração mínima (descarta cortes curtos e lives não iniciadas);
 | - start: horário de início do programa, usado na data e hora do card;
+| - paused: true para de procurar episódios e escrever notícias (as já
+|   publicadas continuam no site);
 | - fps: quadros por segundo enviados ao Gemini (padrão: 1). Nas rádios a imagem
 |   é só o estúdio; com 0.2, um programa de 3h30 cabe numa chamada (~490 mil tokens).
 |
@@ -56,5 +58,7 @@ return [
         'start' => '08:00',
         'color' => '#c2410c',
         'fps' => 0.2,
+        // Pausado em 11/11/2026: no flash-lite, as notícias de 3h40 de programa saíram rasas.
+        'paused' => true,
     ],
 ];

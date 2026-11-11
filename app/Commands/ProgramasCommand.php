@@ -27,7 +27,8 @@ class ProgramasCommand extends Command
             $this->line('Programas: sem GEMINI_API_KEY, os episódios ficam guardados sem notícia.');
         }
 
-        $programs = Program::all();
+        // Pausado: não procura episódios novos nem escreve (as notícias já publicadas continuam no site).
+        $programs = array_filter(Program::all(), fn (Program $program) => ! $program->paused);
 
         foreach ($programs as $program) {
             try {

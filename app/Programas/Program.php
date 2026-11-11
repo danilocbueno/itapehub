@@ -23,6 +23,7 @@ final class Program
         public string $start,
         public string $color = '#64748b',
         public ?float $fps = null,
+        public bool $paused = false,
     ) {}
 
     /**
@@ -43,6 +44,7 @@ final class Program
                 start: $p['start'],
                 color: $p['color'] ?? '#64748b',
                 fps: isset($p['fps']) ? (float) $p['fps'] : null,
+                paused: (bool) ($p['paused'] ?? false),
             );
         }
 
