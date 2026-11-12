@@ -1,5 +1,41 @@
 [
     {
+        "id": "be0918414ea0036c",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11026/novembro-azul-unidades-de-saude-de-itapetininga-terao-horario-estendido-para-atendimento-a-populacao-masculina/",
+        "title": "Novembro Azul: Unidades de Saúde de Itapetininga terão horário estendido para atendimento à população masculina",
+        "summary": "Durante o mês de novembro, a Secretaria Municipal de Saúde de Itapetininga promoverá ações especiais em alusão à Campanha Novembro Azul 2026, com atividades voltadas à promoção da saúde, prevenção de doenças e incentivo ao autocuidado da…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/1efde9462fef9daefcf129ed6c7c6b14.webp",
+        "published_at": "2026-11-12T10:45:08-03:00",
+        "collected_at": "2026-11-12T10:45:08-03:00",
+        "cluster": "be0918414ea0036c",
+        "hidden": false
+    },
+    {
+        "id": "a8b8dcc975bf2a5b",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/sorocaba-jundiai/tem-mais-pet/noticia/2026/11/12/associados-ao-azar-gatos-pretos-ainda-sofrem-preconceito-protetora-alerta-para-adocao-responsavel.ghtml",
+        "title": "Associados ao azar, gatos pretos ainda sofrem preconceito; protetora alerta para adoção responsável",
+        "summary": "Embora façam parte do imaginário popular há séculos, essas crenças ainda preocupam protetores e ativistas da causa animal em Itapetininga (SP), que alertam para os riscos de preconceito, abandono e maus-tratos contra os felinos…",
+        "image": "https://s2-g1.glbimg.com/IHWTFWRJ1J47UwH40cpgikSpoRc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/6/Q/MfCvDeT7q0Ab54t5JDrQ/whatsapp-image-2026-11-11-at-16.58.28.jpeg",
+        "published_at": "2026-11-12T09:13:37-03:00",
+        "collected_at": "2026-11-12T10:45:08-03:00",
+        "cluster": "a8b8dcc975bf2a5b",
+        "hidden": false
+    },
+    {
+        "id": "cac3e6eb167f62f9",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/12/chuva-em-40-dias-em-itapetininga-supera-volume-esperado-para-todo-o-verao-precisamos-nos-preparar-alerta-meteorologista.ghtml",
+        "title": "Chuva em 40 dias em Itapetininga supera volume esperado para todo o verão: 'Precisamos nos preparar', alerta meteorologista",
+        "summary": "💧 Para dimensionar o volume, é preciso entender como a chuva é medida: cada milímetro de precipitação equivale a um litro de água acumulado em um metro quadrado. Isso significa que, no período, foram registrados 600 litros de água por…",
+        "image": "https://s2-g1.glbimg.com/f9jpU4mrkL3XpGjJl1fnqD7EzrI=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/K/Z/vwTn3XRuakvT4z8RZAdw/whatsapp-image-2026-09-24-at-16.05.58.jpeg",
+        "published_at": "2026-11-12T07:26:51-03:00",
+        "collected_at": "2026-11-12T10:45:08-03:00",
+        "cluster": "cac3e6eb167f62f9",
+        "hidden": false
+    },
+    {
         "id": "561f76da308fa05a",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11025/prefeitura-de-itapetininga-informa-as-ruas-que-serao-interditadas-para-a-4-corrida-e-caminhada-da-super-difusora-no-proximo-domingo-dia-15/",
