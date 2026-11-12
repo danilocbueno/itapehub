@@ -1,5 +1,113 @@
 [
     {
+        "id": "74a35ee9edf1a336",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11029/secretaria-de-cultura-e-turismo-divulga-agenda-cultural-em-itapetininga/",
+        "title": "Secretaria de Cultura e Turismo divulga Agenda Cultural em Itapetininga",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Cultura e Turismo, divulga a Agenda Cultural para os próximos dias.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/e3593fec37c707350ed5c1e245283489.webp",
+        "published_at": "2026-11-12T15:20:35-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "74a35ee9edf1a336",
+        "hidden": false
+    },
+    {
+        "id": "c8552e6b1c8ac19b",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11028/pat-de-itapetininga-tem-282-vagas-de-emprego-nesta-sexta-feira-13-de-novembro/",
+        "title": "PAT de Itapetininga tem 282 vagas de emprego nesta sexta-feira, 13 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta sexta-feira, dia 13 de novembro, 282 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/9955db17b2899b3512881de34f32a4a9.webp",
+        "published_at": "2026-11-12T15:20:35-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "c8552e6b1c8ac19b",
+        "hidden": false
+    },
+    {
+        "id": "baf5c7ebc5aa2525",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11027/projeto-semente-e-lancado-na-associacao-novo-tempo-e-fortalece-oportunidades-de-trabalho-renda-e-empreendedorismo-em-itapetininga/",
+        "title": "Projeto Semente é lançado na Associação Novo Tempo e fortalece oportunidades de trabalho, renda e empreendedorismo em Itapetininga",
+        "summary": "Iniciativa reúne famílias em uma proposta de desenvolvimento pessoal e profissional, com encontros, capacitações e consultorias individuais para incentivar a autonomia e a geração de renda.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/4baa0fc7982d9857173c7801411da8a8.webp",
+        "published_at": "2026-11-12T15:20:35-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "baf5c7ebc5aa2525",
+        "hidden": false
+    },
+    {
+        "id": "daf2411d8bc3f119",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80855/itapetininga-fecha-setembro-com-188-vagas-de-emprego",
+        "title": "Itapetininga fecha setembro com 188 vagas de emprego",
+        "summary": "Após dois meses consecutivos com saldo negativo na geração de empregos formais, Itapetininga voltou a registrar mais contratações do que desligamentos. Em setem...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80855?v=Banner_8d25286a-8baf-4d86-829a-ebc6c5ba0448_20261112165245.jpg",
+        "published_at": "2026-11-12T14:08:00-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "daf2411d8bc3f119",
+        "hidden": false
+    },
+    {
+        "id": "0d8acf82900ec486",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80856/gcm-aplicou-cerca-de-2-mil-multas-de-transito-em-itapetininga-neste-ano",
+        "title": "GCM aplicou cerca de 2 mil multas de trânsito em Itapetininga neste ano",
+        "summary": "A Guarda Civil Municipal (GCM) de Itapetininga aplicou 2.232 multas de trânsito entre janeiro e setembro deste ano. O número representa uma média de pouco mais...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80856?v=Banner_e378b8c5-b782-4e5e-8c13-5789e710463c_20261112170901.jpg",
+        "published_at": "2026-11-12T13:30:00-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "0d8acf82900ec486",
+        "hidden": false
+    },
+    {
+        "id": "ab38b5e944e253ab",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80854/cartinhas-de-natal-dos-correios-ja-podem-ser-adotadas-na-cidade",
+        "title": "Cartinhas de Natal dos Correios já podem ser adotadas na cidade",
+        "summary": "A campanha Papai Noel dos Correios, que promove a adoção de cartas de crianças em todo o Brasil, está recebendo cartinhas das crianças de Itapetininga até o dia...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80854?v=Banner_d6890027-6593-4fa4-982b-760913899e85_20261112161158.jpg",
+        "published_at": "2026-11-12T13:09:32-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "ab38b5e944e253ab",
+        "hidden": false
+    },
+    {
+        "id": "26738966df86e42d",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80851/unidades-de-saude-de-itapetininga-ampliam-horario-de-atendimento-durante-o-novembro-azul",
+        "title": "Unidades de saúde de Itapetininga ampliam horário de atendimento durante o Novembro Azul",
+        "summary": "Durante o mês de novembro, a Secretaria Municipal de Saúde de Itapetininga promoverá ações especiais em alusão à Campanha Novembro Azul 2026, com atividades vol...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80851?v=Banner_36d362e2-b6bc-4f68-a548-7234fac7e8e3_20261112134036.jpg",
+        "published_at": "2026-11-12T11:30:00-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "be0918414ea0036c",
+        "hidden": false
+    },
+    {
+        "id": "a818c137d20b7634",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80853/projeto-de-brincadeiras-com-bolhas-de-sabao-chega-a-itapetininga",
+        "title": "Projeto de brincadeiras com bolhas de sabão chega a Itapetininga",
+        "summary": "O Bolha Terapia, um projeto itinerante de brincadeiras com bolhas de sabão chega a Itapetininga no domingo, dia 15, das 14h às 18h, na Praça Peixoto Gomide. O e...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80853?v=Banner_9d809474-9330-4577-bbbc-092597272074_20261112140432.jpg",
+        "published_at": "2026-11-12T10:59:00-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "a818c137d20b7634",
+        "hidden": false
+    },
+    {
+        "id": "fd2141290bd71dab",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80852/itapetiningues-e-marca-registrada-da-cidade",
+        "title": "Itapetininguês é marca registrada da cidade",
+        "summary": "No Correio há 20 anos",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80852?v=Banner_b285382b-a36b-492e-9ffc-a9be1cae5997_20261112135006.jpg",
+        "published_at": "2026-11-12T10:48:59-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "fd2141290bd71dab",
+        "hidden": false
+    },
+    {
         "id": "be0918414ea0036c",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11026/novembro-azul-unidades-de-saude-de-itapetininga-terao-horario-estendido-para-atendimento-a-populacao-masculina/",
@@ -9,6 +117,18 @@
         "published_at": "2026-11-12T10:45:08-03:00",
         "collected_at": "2026-11-12T10:45:08-03:00",
         "cluster": "be0918414ea0036c",
+        "hidden": false
+    },
+    {
+        "id": "d7321738d09c3047",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80850/corrida-e-caminhada-super-difusora-altera-o-transito-em-diferentes-vias-de-itapetininga",
+        "title": "Corrida e Caminhada Super Difusora altera o trânsito em diferentes vias de Itapetininga",
+        "summary": "A realização da 4ª Corrida e Caminhada Super Difusora, no próximo domingo, dia 15, vai provocar interdições e alterações no trânsito em diferentes vias de Itape...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80850?v=Banner_027de1f3-58e3-4ecb-9ff2-c8f83ecd7693_20261112132301.jpg",
+        "published_at": "2026-11-12T10:20:00-03:00",
+        "collected_at": "2026-11-12T15:20:35-03:00",
+        "cluster": "d7321738d09c3047",
         "hidden": false
     },
     {
