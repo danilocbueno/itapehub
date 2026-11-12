@@ -6,6 +6,92 @@
     "date": "2026-11-11",
     "seconds": 5819,
     "found_at": "2026-11-11T14:55:08-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "Especialista explica como meditação ajuda a reduzir ansiedade em Itapê",
+        "linha_fina": "Programa Telescópio abordou técnicas de respiração, autoconhecimento e novidades sobre serviços na cidade na quarta-feira (11).",
+        "lide": "No programa Telescópio, da TV Itapê, desta quarta-feira (11), a psicanalista e professora de yoga Aline Fogaça Cardoso destacou como a meditação e o controle da respiração ajudam a reduzir a ansiedade. A convidada explicou que a prática diária em silêncio auxilia no autoconhecimento e na superação de padrões automáticos do ego. A edição também apresentou informações sobre serviços e prazos educacionais na cidade.",
+        "blocos": [
+            {
+                "intertitulo": "Meditação e Paz Interior",
+                "paragrafos": [
+                    "Durante a entrevista, Aline Fogaça Cardoso afirmou que a meditação funciona como uma limpeza mental, comparando o hábito aos cuidados diários de higiene pessoal. Segundo ela, a mente humana produz milhares de pensamentos diários, em sua maioria negativos, o que alimenta o ego, a ansiedade e a comparação excessiva nas redes sociais.",
+                    "A especialista ressaltou que a busca constante por bens materiais e status gera infelicidade, enquanto a conexão com a alma e com a essência traz plenitude. Ela apontou que o despertar da consciência permite que o indivíduo deixe de agir no piloto automático e passe a lidar melhor com os desafios diários."
+                ]
+            },
+            {
+                "intertitulo": "Técnicas de Respiração",
+                "paragrafos": [
+                    "Para acalmar o sistema nervoso e ativar o córtex pré-frontal, Aline apresentou exercícios de respiração consciente, como a respiração em quatro tempos. De acordo com a professora, pausar, respirar fundo e esvaziar o abdômen ajudam a evitar reações impulsivas e a promover a estabilidade emocional.",
+                    "Ela pontuou que dedicar poucos minutos diários ao silêncio e à apreciação do momento presente eleva a frequência vibracional e afasta sentimentos de medo e culpa. A prática, segundo a convidada, pode ser realizada em qualquer lugar e serve como ferramenta acessível para o bem-estar."
+                ]
+            },
+            {
+                "intertitulo": "Serviços e Prazos",
+                "paragrafos": [
+                    "O programa apresentou ainda informações úteis para os moradores de Itapetininga, destacando que as inscrições para o vestibular da Fatec foram prorrogadas até o dia 16 de novembro, com a prova marcada para 13 de dezembro no site oficial.",
+                    "Além disso, foi anunciado que o Samu realizará, no dia 17 de novembro, das 9h às 11h, um simulado de atendimento a incidentes com múltiplas vítimas no recinto de exposições, com o objetivo de preparar as equipes de emergência locais."
+                ]
+            }
+        ],
+        "fechamento": "Detalhes e orientações sobre os cursos e treinamentos mencionados durante a transmissão podem ser conferidos na íntegra no vídeo do programa.",
+        "participantes": [
+            {
+                "nome": "Aline Fogaça Cardoso",
+                "papel": "psicanalista e professora de yoga e meditação"
+            },
+            {
+                "nome": "Henrique",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Fábio",
+                "papel": "apresentador"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "11:00",
+                "segundos": 660,
+                "assunto": "Abertura do programa e apresentação da convidada Aline Fogaça Cardoso"
+            },
+            {
+                "inicio": "13:30",
+                "segundos": 810,
+                "assunto": "Divulgação do simulado de atendimento do Samu"
+            },
+            {
+                "inicio": "14:00",
+                "segundos": 840,
+                "assunto": "Prorrogação das inscrições do vestibular da Fatec"
+            },
+            {
+                "inicio": "16:20",
+                "segundos": 980,
+                "assunto": "Discussão sobre ansiedade, ego e o despertar da consciência"
+            },
+            {
+                "inicio": "43:00",
+                "segundos": 2580,
+                "assunto": "Demonstração prática de exercícios de respiração"
+            },
+            {
+                "inicio": "53:40",
+                "segundos": 3220,
+                "assunto": "Explicação sobre frequência vibracional e emoções"
+            },
+            {
+                "inicio": "81:00",
+                "segundos": 4860,
+                "assunto": "Apreciação do momento presente e gratidão diária"
+            }
+        ],
+        "omitidos": [
+            "0:12:10 - Notícia sobre condenação por feminicídio em Itapetininga, omitida por tratar de assunto sensível (crime e processo judicial).",
+            "0:51:50 - Segunda menção ao caso de feminicídio e debates correlatos, omitidos por tratar de assunto sensível.",
+            "0:94:30 - Anúncios de falecimentos e sepultamentos na cidade, omitidos por tratarem de assunto sensível envolvendo morte de pessoas identificadas."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-12T04:18:48-03:00"
 }
