@@ -6,6 +6,72 @@
     "date": "2026-11-10",
     "seconds": 4324,
     "found_at": "2026-11-10T14:52:32-03:00",
-    "attempts": 3,
-    "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+    "attempts": 4,
+    "article": {
+        "titulo": "Projeto de dança em Itapetininga promove aula experimental de Zouk",
+        "linha_fina": "Iniciativa Bora Dançar a Dois busca incentivar a prática da dança de salão na cidade com aulas para iniciantes.",
+        "lide": "No programa Telescópio, da TV Itapê, de terça-feira (10), os dançarinos Jéssica Pereira e Rafael Bergo anunciaram o lançamento do projeto Bora Dançar a Dois. A iniciativa em Itapetininga promove aulas de Zouk para iniciantes, com uma aula experimental gratuita nesta terça-feira.",
+        "blocos": [
+            {
+                "intertitulo": "Iniciativa na cidade",
+                "paragrafos": [
+                    "Os convidados explicaram que o projeto visa aproximar a população da dança de salão, combatendo o sedentarismo e estimulando o bem-estar social. Segundo Rafael Bergo, a dança é uma atividade que promove conexões e melhora a qualidade de vida.",
+                    "Jéssica Pereira destacou que a iniciativa é voltada para todos os níveis, especialmente para quem está começando do zero, oferecendo um ambiente acolhedor e terapêutico."
+                ]
+            },
+            {
+                "intertitulo": "Aulas de Zouk",
+                "paragrafos": [
+                    "As atividades acontecem no EAI Cultural, localizado na cidade. A aula experimental gratuita ocorre nesta terça-feira, das 19h às 21h, sem necessidade de ter par prévio para participar."
+                ]
+            }
+        ],
+        "fechamento": "Mais informações sobre a programação e os horários das turmas podem ser conferidas no vídeo da transmissão.",
+        "participantes": [
+            {
+                "nome": "Fábio Miranda",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Jéssica Pereira",
+                "papel": "dançarina"
+            },
+            {
+                "nome": "Rafael Bergo",
+                "papel": "dançarino"
+            },
+            {
+                "nome": "Stephany Victória",
+                "papel": "comentarista"
+            },
+            {
+                "nome": "Henrique Alves",
+                "papel": "repórter"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "06:19",
+                "segundos": 379,
+                "assunto": "Apresentação dos convidados Jéssica Pereira e Rafael Bergo"
+            },
+            {
+                "inicio": "18:47",
+                "segundos": 1127,
+                "assunto": "Histórico dos convidados com a dança"
+            },
+            {
+                "inicio": "46:53",
+                "segundos": 2813,
+                "assunto": "Divulgação da nova turma de Zouk em Itapetininga"
+            }
+        ],
+        "omitidos": [
+            "08:21 - Notícia sobre júri popular de feminicídio por envolver assunto sensível",
+            "13:54 - Desabamento de fachada de prédio histórico por envolver ocorrência de danos estruturais",
+            "70:59 - Comunicados de falecimento por envolver morte de pessoas identificadas"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-11T21:46:01-03:00"
 }
