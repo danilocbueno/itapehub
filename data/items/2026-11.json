@@ -1,5 +1,41 @@
 [
     {
+        "id": "55c11aa36d889517",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11030/sindicato-rural-de-itapetininga-sistema-faespsenar-sp-e-entidades-parceiras-promovem-em-25-de-novembro-capacitacao-para-o-controle-de-javalis-diante-do-aumento-dos-prejuizos-no-campo/",
+        "title": "Sindicato Rural de Itapetininga, Sistema FAESP/SENAR-SP e entidades parceiras promovem, em 25 de novembro, capacitação para o controle de javalis diante do aumento dos prejuízos no campo",
+        "summary": "Diante dos crescentes prejuízos econômicos e ambientais provocados pela proliferação de javalis nas propriedades rurais de Itapetininga e região, o Sindicato Rural de Itapetininga, em parceria com o Sistema FAESP/SENAR-SP e entidades…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/c130a424304832a3d36959038cfa9bf1.webp",
+        "published_at": "2026-11-12T21:26:26-03:00",
+        "collected_at": "2026-11-12T21:26:26-03:00",
+        "cluster": "55c11aa36d889517",
+        "hidden": false
+    },
+    {
+        "id": "5ff730bcbbd83201",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/pat-de-itapetininga-oferece-282-vagas-de-emprego-nesta-sexta-feira/",
+        "title": "PAT de Itapetininga oferece 282 vagas de emprego nesta sexta-feira",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga (SP) oferece 282 vagas de emprego nesta sexta-feira, 13 de novembro. As oportunidades são destinadas a candidatos com e sem experiência, jovens aprendizes, estudantes e moradores…",
+        "image": "https://assets.mktnaweb.com/accounts/2021/11/12/171464/pictures/7134/original_pat%2012%20nov.png?1794504903",
+        "published_at": "2026-11-12T19:08:19-03:00",
+        "collected_at": "2026-11-12T21:26:26-03:00",
+        "cluster": "c8552e6b1c8ac19b",
+        "hidden": false
+    },
+    {
+        "id": "b7c7e39483c3679c",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/12/temporal-provoca-alagamentos-derruba-arvores-e-muro-e-cancela-feira-na-regiao-de-itapetininga-video.ghtml",
+        "title": "Temporal provoca alagamentos, derruba árvores e muro e cancela feira na região de Itapetininga; vídeo",
+        "summary": "Em Buri, o temporal provocou alagamentos em ruas das zonas urbana e rural e os ventos levantaram a cobertura de barracas montadas para a realização da Feira da Lua, prevista para a noite desta quinta-feira. Imagens feitas por moradores…",
+        "image": "https://s2-g1.glbimg.com/h9TDLxlcY2xp5f2AnV0vtRQYdF8=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/c/M/6Z7KI9Q9ucOY3yblurcw/whatsapp-image-2026-11-12-at-18.24.17.jpg",
+        "published_at": "2026-11-12T18:29:59-03:00",
+        "collected_at": "2026-11-12T21:26:26-03:00",
+        "cluster": "b7c7e39483c3679c",
+        "hidden": false
+    },
+    {
         "id": "74a35ee9edf1a336",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11029/secretaria-de-cultura-e-turismo-divulga-agenda-cultural-em-itapetininga/",

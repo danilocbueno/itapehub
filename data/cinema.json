@@ -1,5 +1,5 @@
 {
-    "fetched_at": "2026-11-12T15:20:35-03:00",
+    "fetched_at": "2026-11-12T21:26:26-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
@@ -17,20 +17,7 @@
                     "sessions": [
                         {
                             "info": "Sala 1 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "16:10",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWRkM2Y4N2M4NjBlOTgwZTY5YWU5YmJiYzVhMTI"
-                                },
-                                {
-                                    "time": "18:45",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWRkM2Y4N2M4NjEzOTgwZTY5YWU5YmJiYzVhMTI"
-                                },
-                                {
-                                    "time": "21:20",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWRkM2Y4N2M4NjFhMzgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },
@@ -45,21 +32,11 @@
                     "sessions": [
                         {
                             "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": [
-                                {
-                                    "time": "16:35",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9jb21vLXJvdWJhci11bS1iYW5jby1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xMi0xMS8xMWYxZGQzZjg3Yzg2MTExODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
+                            "times": []
                         },
                         {
                             "info": "Sala 3 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "21:25",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9jb21vLXJvdWJhci11bS1iYW5jby1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xMi0xMS8xMWYxZGQzZjg3Yzg2MWJkODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },
@@ -75,10 +52,6 @@
                         {
                             "info": "Sala 5 · Dublado · 2D · PREMIUM",
                             "times": [
-                                {
-                                    "time": "19:05",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lYmVuZXplci1lLW9zLWZhbnRhc21hcy1kby1uYXRhbC1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xMi0xMS8xMWYxZGQzZjg3Yzg2MTZkODBlNjlhZTliYmJjNWExMg"
-                                },
                                 {
                                     "time": "21:30",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lYmVuZXplci1lLW9zLWZhbnRhc21hcy1kby1uYXRhbC1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xMi0xMS8xMWYxZGQzZjg3Yzg2MWNiODBlNjlhZTliYmJjNWExMg"
@@ -98,12 +71,7 @@
                     "sessions": [
                         {
                             "info": "Sala 3 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "19:10",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS92ZWxvemVzLWUtZnVyaW9zb3MtMjUtYW5pdmVyc2FyaW8tZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWRkM2Y4N2M4NjE3YjgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },
@@ -118,16 +86,7 @@
                     "sessions": [
                         {
                             "info": "Sala 2 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "16:50",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWRkM2Y4N2M4NjExZjgwZTY5YWU5YmJiYzVhMTI"
-                                },
-                                {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTItMTEvMTFmMWRkM2Y4N2M4NjE1MzgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },
@@ -142,12 +101,7 @@
                     "sessions": [
                         {
                             "info": "Sala 3 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "16:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWdhdG9sYS1kYS1jYXJ0b2xhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTEyLTExLzExZjFkZDNmODdjODYxMDM4MGU2OWFlOWJiYmM1YTEy"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },
@@ -162,12 +116,7 @@
                     "sessions": [
                         {
                             "info": "Sala 2 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "21:15",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9nb2R6aWxsYS1taW51cy16ZXJvLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTEyLTExLzExZjFkZDNmODdjODYxODk4MGU2OWFlOWJiYmM1YTEy"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 }
