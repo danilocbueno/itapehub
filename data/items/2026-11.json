@@ -1,5 +1,53 @@
 [
     {
+        "id": "e0ae8d6abdb0f9eb",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11033/itapetininga-realiza-campanha-casa-em-dia-com-regularizacao-de-pendencias-da-cdhu-e-renegociacao-de-financiamento-sem-entrada-para-mutuarios-nos-dias-16-e-17-de-novembro/",
+        "title": "Itapetininga realiza Campanha “Casa em Dia” com regularização de pendências da CDHU e renegociação de financiamento sem entrada para mutuários nos dias 16 e 17 de novembro",
+        "summary": "Campanha facilita a regularização de contratos habitacionais e oferece alternativas de pagamento mais adequadas à renda familiar; iniciativa também contempla quem está com as prestações em dia.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/6e7a4dfe6dd3e54f56d01dc7816dd861.webp",
+        "published_at": "2026-11-13T10:05:31-03:00",
+        "collected_at": "2026-11-13T10:05:31-03:00",
+        "cluster": "03e748db63ae205f",
+        "hidden": false
+    },
+    {
+        "id": "ecc088dd2d041629",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11032/teatro-literario-a-formiguinha-e-a-neve-sera-apresentado-nesta-sexta-dia-13-na-biblioteca-municipal-de-itapetininga/",
+        "title": "Teatro Literário “A Formiguinha e a Neve” será apresentado nesta sexta, dia 13, na Biblioteca Municipal de Itapetininga",
+        "summary": "Em uma manhã de inverno, uma pequena formiguinha sai em busca de alimento, mas acaba surpreendida por um floco de neve que prende seu pezinho. Sem conseguir se libertar, ela inicia uma jornada em busca de ajuda, encontrando diferentes…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/beaf083da145b8be99544fd4311610ae.webp",
+        "published_at": "2026-11-13T10:05:31-03:00",
+        "collected_at": "2026-11-13T10:05:31-03:00",
+        "cluster": "ecc088dd2d041629",
+        "hidden": false
+    },
+    {
+        "id": "4706d1810e45aeff",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11031/2-festival-de-artes-marciais-de-itapetininga-sera-realizado-neste-sabado-dia-14-no-ginasio-de-esportes-do-casi/",
+        "title": "2º Festival de Artes Marciais de Itapetininga será realizado neste sábado, dia 14, no Ginásio de Esportes do CASI",
+        "summary": "O 2º Festival de Artes Marciais de Itapetininga, promovido pela Prefeitura de Itapetininga, por meio da Secretaria de Esporte, Lazer e Juventude com apoio do CASI – Clube Atlético Sorocabana de Itapetininga será realizado neste sábado, dia…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/513f367bc8608e7c09b800df0d83d29a.webp",
+        "published_at": "2026-11-13T10:05:31-03:00",
+        "collected_at": "2026-11-13T10:05:31-03:00",
+        "cluster": "4706d1810e45aeff",
+        "hidden": false
+    },
+    {
+        "id": "06c60abac0f7f680",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/cdhu-promove-campanha-para-regularizacao-de-dividas-em-itapetininga",
+        "title": "CDHU promove campanha para regularização de dívidas em Itapetininga",
+        "summary": "Moradores de Itapetininga que possuem imóveis financiados pela Companhia de Desenvolvimento Habitacional e Urbano (CDHU) terão a oportunidade de renegociar seus contratos habitacionais nos dias 16 e 17 de novembro. A ação faz parte da…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/cdhu-promove-campanha-para-regularizacao-de-dividas-em-itapetininga-a21d453b70.png",
+        "published_at": "2026-11-13T09:21:00-03:00",
+        "collected_at": "2026-11-13T10:05:31-03:00",
+        "cluster": "03e748db63ae205f",
+        "hidden": false
+    },
+    {
         "id": "55c11aa36d889517",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11030/sindicato-rural-de-itapetininga-sistema-faespsenar-sp-e-entidades-parceiras-promovem-em-25-de-novembro-capacitacao-para-o-controle-de-javalis-diante-do-aumento-dos-prejuizos-no-campo/",
