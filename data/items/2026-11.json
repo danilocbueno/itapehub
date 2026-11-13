@@ -1,5 +1,53 @@
 [
     {
+        "id": "b7718bf1656dcce3",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/caravana-da-coca-cola-passara-por-itapetininga-em-dezembro",
+        "title": "Caravana da Coca-Cola passará por Itapetininga em dezembro",
+        "summary": "Itapetininga receberá a tradicional Caravana de Natal da Coca-Cola no dia 3 de dezembro. O desfile está previsto para começar às 19h, com saída do Supermercado Cofesa Max. A atração conta com caminhões decorados e iluminados, música e…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/caravana-da-coca-cola-passara-por-itapetininga-em-dezembro-858a8d312b.png",
+        "published_at": "2026-11-13T18:34:56-03:00",
+        "collected_at": "2026-11-13T20:36:02-03:00",
+        "cluster": "b7718bf1656dcce3",
+        "hidden": false
+    },
+    {
+        "id": "c3c6c3ebd56b4e3b",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/grupo-muffato-anuncia-primeiro-max-atacadista-em-itapetininga",
+        "title": "Grupo Muffato anuncia primeiro MAX Atacadista em Itapetininga",
+        "summary": "O Grupo Muffato amplia sua presença no interior paulista com a primeira loja do Max Atacadista em Itapetininga (Avenida Dr. Cyro Albuquerque, esquina com a Rua Maria do Bom Sucesso Proença de Moraes), no Jd. Marabá. Será uma loja moderna…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/max-atacadista-anuncia-primeira-loja-em-itapetininga-ba0dedfa1c.png",
+        "published_at": "2026-11-13T17:09:17-03:00",
+        "collected_at": "2026-11-13T20:36:02-03:00",
+        "cluster": "c3c6c3ebd56b4e3b",
+        "hidden": false
+    },
+    {
+        "id": "7b0b7e2cf275abb6",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80858/cdhu-realiza-campanha-para-renegociacao-de-financiamentos-habitacionais-em-itapetininga",
+        "title": "CDHU realiza campanha para renegociação de financiamentos habitacionais em Itapetininga",
+        "summary": "A Companhia de Desenvolvimento Habitacional e Urbano (CDHU), vinculada à Secretaria de Desenvolvimento Urbano e Habitação do Estado de São Paulo, promove a camp...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80858?v=Banner_2a6492c2-796f-47a0-92c0-14b3a9465f8b_20261113175651.jpg",
+        "published_at": "2026-11-13T15:03:00-03:00",
+        "collected_at": "2026-11-13T20:36:02-03:00",
+        "cluster": "03e748db63ae205f",
+        "hidden": false
+    },
+    {
+        "id": "9067853684ea6ba6",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80859/max-atacadista-anuncia-construcao-de-nova-loja-em-itapetininga",
+        "title": "Max Atacadista anuncia construção de nova loja em Itapetininga",
+        "summary": "O Grupo Muffato anunciou na quinta-feira, dia 12, a instalação de uma unidade do Max Atacadista em Itapetininga. Será a primeira loja do grupo na cidade. O empr...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80859?v=Banner_e60ca099-6fff-4c18-b60c-5d79b17de4d6_20261113180526.jpg",
+        "published_at": "2026-11-13T15:00:00-03:00",
+        "collected_at": "2026-11-13T20:36:02-03:00",
+        "cluster": "4cc128b93218635b",
+        "hidden": false
+    },
+    {
         "id": "4cc128b93218635b",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11037/max-atacadista-anuncia-construcao-nova-loja-em-itapetininga/",
