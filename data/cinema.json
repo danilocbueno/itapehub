@@ -1,127 +1,8 @@
 {
-    "fetched_at": "2026-11-12T21:26:26-03:00",
+    "fetched_at": "2026-11-13T03:51:59-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
-        {
-            "date": "2026-11-12",
-            "films": [
-                {
-                    "title": "A Virada: Ignição da Alma",
-                    "url": "https://www.grupocine.com.br/filme/17102/a-virada-ignicao-da-alma",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17102_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "10",
-                    "genre": "Drama",
-                    "minutes": 123,
-                    "sessions": [
-                        {
-                            "info": "Sala 1 · Nacional · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Como Roubar um Banco",
-                    "url": "https://www.grupocine.com.br/filme/17389/como-roubar-um-banco",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17389_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "16",
-                    "genre": "Crime",
-                    "minutes": 121,
-                    "sessions": [
-                        {
-                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Ebenezer e os Fantasmas do Natal",
-                    "url": "https://www.grupocine.com.br/filme/17159/ebenezer-e-os-fantasmas-do-natal",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17159_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "12",
-                    "genre": "Fantasia",
-                    "minutes": 115,
-                    "sessions": [
-                        {
-                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": [
-                                {
-                                    "time": "21:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lYmVuZXplci1lLW9zLWZhbnRhc21hcy1kby1uYXRhbC1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xMi0xMS8xMWYxZGQzZjg3Yzg2MWNiODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Velozes e Furiosos (25º Aniversário)",
-                    "url": "https://www.grupocine.com.br/filme/359/velozes-e-furiosos-25o-aniversario",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/359_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "14",
-                    "genre": "Ação",
-                    "minutes": 101,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Os Farofeiros 3",
-                    "url": "https://www.grupocine.com.br/filme/16672/os-farofeiros-3",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg",
-                    "tag": "",
-                    "rating": "12",
-                    "genre": "Comédia",
-                    "minutes": 103,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Nacional · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "O Gatola da Cartola",
-                    "url": "https://www.grupocine.com.br/filme/16773/o-gatola-da-cartola",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16773_medio.jpg",
-                    "tag": "",
-                    "rating": "6",
-                    "genre": "Animação",
-                    "minutes": 81,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Godzilla Minus Zero",
-                    "url": "https://www.grupocine.com.br/filme/17569/godzilla-minus-zero",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17569_medio.jpg",
-                    "tag": "",
-                    "rating": "16",
-                    "genre": "Ficção-científica, Drama, Aventura, Ação",
-                    "minutes": 135,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "date": "2026-11-13",
             "films": [
@@ -1263,6 +1144,35 @@
                                 {
                                     "time": "21:15",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9nb2R6aWxsYS1taW51cy16ZXJvLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTE4LTExLzExZjFkZDNmODdjODY3ZDE4MGU2OWFlOWJiYmM1YTEy"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "date": "2026-11-19",
+            "films": [
+                {
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
+                    "tag": "Pré-Venda",
+                    "rating": "16",
+                    "genre": "Aventura",
+                    "minutes": 158,
+                    "sessions": [
+                        {
+                            "info": "Sala 1 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "17:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xOS0xMS8xMWYxYzgwN2RiMzY4M2JkODBlNjlhZTliYmJjNWExMg"
+                                },
+                                {
+                                    "time": "20:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xOS0xMS8xMWYxYzgwN2RiMzY4M2Q3ODBlNjlhZTliYmJjNWExMg"
                                 }
                             ]
                         }
