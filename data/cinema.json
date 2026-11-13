@@ -1,5 +1,5 @@
 {
-    "fetched_at": "2026-11-13T10:05:31-03:00",
+    "fetched_at": "2026-11-13T14:46:05-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
@@ -119,10 +119,6 @@
                         {
                             "info": "Sala 2 · Nacional · 2D",
                             "times": [
-                                {
-                                    "time": "14:45",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTMtMTEvMTFmMWRkM2Y4N2M4NjFkOTgwZTY5YWU5YmJiYzVhMTI"
-                                },
                                 {
                                     "time": "16:50",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTMtMTEvMTFmMWRkM2Y4N2M4NjIxZDgwZTY5YWU5YmJiYzVhMTI"

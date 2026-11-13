@@ -1,5 +1,77 @@
 [
     {
+        "id": "4cc128b93218635b",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11037/max-atacadista-anuncia-construcao-nova-loja-em-itapetininga/",
+        "title": "Max Atacadista anuncia construção nova loja em Itapetininga",
+        "summary": "Itapetininga irá receber uma das unidades do Max Atacadista, bandeira de atacarejo do Grupo Muffato, que combina dois conceitos de compra: varejo e atacado, atendendo aos consumidores finais, comerciantes e transformadores.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/8bdeecac321deb8dd9088e4c5cad2f7c.webp",
+        "published_at": "2026-11-13T14:46:05-03:00",
+        "collected_at": "2026-11-13T14:46:05-03:00",
+        "cluster": "4cc128b93218635b",
+        "hidden": false
+    },
+    {
+        "id": "4b237dedc3882cf2",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11036/pat-de-itapetininga-tem-251-vagas-de-emprego-na-proxima-segunda-feira-16-de-novembro/",
+        "title": "PAT de Itapetininga tem 251 vagas de emprego na próxima segunda-feira, 16 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece na próxima segunda-feira, dia 16 de novembro, 251 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/073b51f2ea77d33b9a713a3bc71b3ed8.webp",
+        "published_at": "2026-11-13T14:46:05-03:00",
+        "collected_at": "2026-11-13T14:46:05-03:00",
+        "cluster": "4b237dedc3882cf2",
+        "hidden": false
+    },
+    {
+        "id": "ef17bca10d38a29f",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11035/roda-de-contacao-de-historias-severina-faz-chover-sera-neste-sabado-dia-14-na-biblioteca-de-itapetininga/",
+        "title": "Roda de Contação de Histórias “Severina faz chover” será neste sábado, dia 14, na Biblioteca de Itapetininga",
+        "summary": "Depois de um tempinho guardando histórias na mala, Gabi Moura do “Viaje com os Livros” volta para as rodas de contação com o coração transbordando de alegria e quer muito dividir isso com as pessoas.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/06d1f4b51258fb59c219e5c3d4610677.webp",
+        "published_at": "2026-11-13T14:46:05-03:00",
+        "collected_at": "2026-11-13T14:46:05-03:00",
+        "cluster": "ef17bca10d38a29f",
+        "hidden": false
+    },
+    {
+        "id": "8c8ecd18f4170b23",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11034/sesi-de-itapetininga-apresenta-show-de-paula-lima-no-proximo-dia-05-de-dezembro/",
+        "title": "SESI de Itapetininga apresenta show de Paula Lima no próximo dia 05 de dezembro",
+        "summary": "Como parte do Projeto: SESI Música - Série Popular, o SESI de Itapetininga apresenta o show da cantora Paula Lima no próximo dia 05 de dezembro, às 18h. De acordo com o SESI, os interessados devem retirar o ingresso no site oficial da…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/ce8383b93bec2f5f2360ac8b4ab5169b.webp",
+        "published_at": "2026-11-13T14:46:05-03:00",
+        "collected_at": "2026-11-13T14:46:05-03:00",
+        "cluster": "8c8ecd18f4170b23",
+        "hidden": false
+    },
+    {
+        "id": "a33b4910953fe964",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/13/na-terra-das-escolas-unidades-serao-fechadas-e-alunos-de-itapetininga-transferidos-a-partir-de-2027-entenda.ghtml",
+        "title": "Na 'terra das escolas', unidades serão fechadas e alunos de Itapetininga transferidos a partir de 2027; entenda",
+        "summary": "Parte dos alunos de Itapetininga (SP), reconhecida nacionalmente como a \"terra das escolas\", será transferida para outras unidades após a desativação de três escolas. A informação foi confirmada à TV TEM pela prefeitura nesta sexta-feira…",
+        "image": "https://s2-g1.glbimg.com/0vEkIaqddFbwXvtIDaExh_EQgwg=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/t/zQR73TRUGyOryIBYnFlA/captura-de-tela-2026-11-13-125735-1-.png",
+        "published_at": "2026-11-13T14:07:58-03:00",
+        "collected_at": "2026-11-13T14:46:05-03:00",
+        "cluster": "a33b4910953fe964",
+        "hidden": false
+    },
+    {
+        "id": "b767a576e72dc766",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80857/inscricoes-para-198-vagas-da-fatec-de-itapetininga-terminam-na-proxima-segunda-feira",
+        "title": "Inscrições para 198 vagas da Fatec de Itapetininga terminam na próxima segunda-feira",
+        "summary": "As inscrições para o Vestibular das Faculdades de Tecnologia do Estado de São Paulo (Fatecs) foram prorrogadas até às 20h da próxima segunda-feira, dia 16 de no...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80857?v=Banner_6b979ce6-1435-474d-ad3c-da3c967aa55b_20261113133745.jpg",
+        "published_at": "2026-11-13T11:00:00-03:00",
+        "collected_at": "2026-11-13T14:46:05-03:00",
+        "cluster": "b767a576e72dc766",
+        "hidden": false
+    },
+    {
         "id": "e0ae8d6abdb0f9eb",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11033/itapetininga-realiza-campanha-casa-em-dia-com-regularizacao-de-pendencias-da-cdhu-e-renegociacao-de-financiamento-sem-entrada-para-mutuarios-nos-dias-16-e-17-de-novembro/",
