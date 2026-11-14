@@ -7,5 +7,5 @@
     "seconds": 5221,
     "found_at": "2026-11-13T14:46:37-03:00",
     "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
 }

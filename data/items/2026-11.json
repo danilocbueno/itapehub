@@ -1,5 +1,17 @@
 [
     {
+        "id": "f511a5f899442fe3",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/gcm-encontra-veiculo-furtado-na-vila-paulo-ayres",
+        "title": "GCM encontra veículo furtado na Vila Paulo Ayres",
+        "summary": "A Guarda Civil Municipal (GCM) encontrou um Chevrolet Onix branco abandonado durante patrulhamento na noite da última sexta-feira (13), na Vila Paulo Ayres, em Itapetininga. Segundo a GCM, a equipe avistou o veículo abandonado em um trecho…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/gcm-recupera-veiculo-furtado-durante-patrulhamento-na-vila-paulo-ayres-4dcdac9655.jpg",
+        "published_at": "2026-11-14T03:32:23-03:00",
+        "collected_at": "2026-11-14T03:33:58-03:00",
+        "cluster": "f511a5f899442fe3",
+        "hidden": false
+    },
+    {
         "id": "b7718bf1656dcce3",
         "source": "jornal",
         "url": "https://www.jornaldeitapetininga.com.br/noticias/caravana-da-coca-cola-passara-por-itapetininga-em-dezembro",

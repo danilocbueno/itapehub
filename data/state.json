@@ -1,15 +1,15 @@
 {
     "sources": {
         "camara": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Fri, 13 Nov 2026 23:35:57 GMT",
+            "last_modified": "Sat, 14 Nov 2026 06:33:52 GMT",
             "errors": 0,
             "last_error": null
         },
         "correio": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 25,
             "etag": null,
             "last_modified": null,
@@ -19,7 +19,7 @@
             "last_error_at": "2026-11-03T09:46:59-03:00"
         },
         "folha": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 3,
             "etag": null,
             "last_modified": null,
@@ -28,7 +28,7 @@
             "last_error_at": "2026-11-09T20:37:21-03:00"
         },
         "g1": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 100,
             "etag": "\"9ccd5196c56401177c68b129d444fe172cf199bc\"",
             "last_modified": null,
@@ -37,17 +37,17 @@
             "last_new_at": "2026-11-13T14:46:05-03:00"
         },
         "jornal": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 50,
             "etag": null,
             "last_modified": null,
             "errors": 0,
             "last_error": null,
-            "last_new_at": "2026-11-13T20:36:02-03:00",
+            "last_new_at": "2026-11-14T03:33:58-03:00",
             "last_error_at": "2026-11-12T21:26:26-03:00"
         },
         "ola": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 50,
             "etag": "W/\"c240c7eaa458c3da3ded734a773ed956\"",
             "last_modified": null,
@@ -56,7 +56,7 @@
             "last_new_at": "2026-11-09T20:37:21-03:00"
         },
         "panoramico": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 10,
             "etag": "W/\"b4642e80f83265f372e8e8312809482c\"",
             "last_modified": "Fri, 13 Nov 2026 23:26:27 GMT",
@@ -65,7 +65,7 @@
             "last_new_at": "2026-11-12T21:26:26-03:00"
         },
         "prefeitura": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 9,
             "etag": null,
             "last_modified": null,
@@ -78,13 +78,13 @@
             "last_count": 10,
             "etag": null,
             "last_modified": "Fri, 13 Nov 2026 17:05:47 GMT",
-            "errors": 1,
-            "last_error": "HTTP 500",
+            "errors": 2,
+            "last_error": "Formato: Feed inválido:  is invalid XML, likely due to invalid characters. XML error: Mismatched tag at line 92, column 8",
             "last_new_at": "2026-11-11T14:54:46-03:00",
-            "last_error_at": "2026-11-13T20:36:02-03:00"
+            "last_error_at": "2026-11-14T03:33:58-03:00"
         },
         "xeh": {
-            "last_success": "2026-11-13T20:36:02-03:00",
+            "last_success": "2026-11-14T03:33:58-03:00",
             "last_count": 10,
             "etag": null,
             "last_modified": "Tue, 03 Nov 2026 20:55:17 GMT",
