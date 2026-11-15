@@ -6,6 +6,95 @@
     "date": "2026-11-13",
     "seconds": 3517,
     "found_at": "2026-11-13T14:46:37-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "Itapetininga tem alteração no trânsito para a 4ª Corrida Super Difusora",
+        "linha_fina": "Evento esportivo ocorre neste domingo e envolve bloqueios em várias vias; programa também destacou o Papai Noel dos Correios e vagas na ETEC.",
+        "lide": "No Jornal do Meio-Dia, da Rádio Super Difusora, transmitido no programa de sexta-feira (13), os apresentadores divulgaram os detalhes da quarta edição da corrida e caminhada da emissora, que acontece neste domingo (15) com alterações no trânsito em Itapetininga. A edição também trouxe informações sobre a campanha Papai Noel dos Correios e as inscrições para vagas remanescentes na ETEC.",
+        "blocos": [
+            {
+                "intertitulo": "Corrida e Trânsito",
+                "paragrafos": [
+                    "A quarta corrida e caminhada da Super Difusora ocorre neste domingo (15), com largada às 7h no Center Park. A retirada dos kits dos participantes acontece nesta sexta-feira até as 18h30 em dois locais: na central de decorados na marginal do Chá para a caminhada de 3 km e corrida de 5 km, e em uma loja de suplementos na Avenida Doutor José Ozi para a corrida de 10 km.",
+                    "A realização do evento provocará interdições e bloqueios em vias como a Avenida Doutor José Ozi, Avenida João Barth e ruas dos arredores, além de sistemas de pare e siga em outras ruas da região. A organização orienta os motoristas a evitarem os locais durante a prova."
+                ]
+            },
+            {
+                "intertitulo": "Correios e ETEC",
+                "paragrafos": [
+                    "A campanha Papai Noel dos Correios está recebendo cartinhas de crianças de até 10 anos e estudantes do ensino fundamental de escolas públicas até o dia 30 de novembro. Os interessados podem adotar as cartas na agência da Rua Barbosa Franco ou pela internet, com entrega dos presentes até 7 de dezembro.",
+                    "Já a ETEC Professor Edson Galvão abrirá inscrições entre os dias 23 e 27 de novembro para vagas remanescentes em sete cursos técnicos integrados ao ensino médio para o ano de 2027. A seleção inclui prova presencial no dia 3 de dezembro e posterior entrevista."
+                ]
+            },
+            {
+                "intertitulo": "Saúde e Rural",
+                "paragrafos": [
+                    "A Prefeitura de Itapetininga ampliou o horário de atendimento nas unidades básicas de saúde e de saúde da família para a campanha Novembro Azul, oferecendo exames, testes rápidos e avaliações médicas em horários especiais nos bairros.",
+                    "O Sindicato Rural de Itapetininga promove no dia 25 de novembro um dia de campo sobre o controle de javalis na Fazenda do Estado. O evento gratuito abordará legislação, armadilhas e cuidados sanitários, com inscrições antecipadas por QR code ou WhatsApp."
+                ]
+            }
+        ],
+        "fechamento": "As inscrições para os cursos gratuitos de panetones e receitas natalinas do Fundo Social de Solidariedade seguem abertas até o dia 17 de novembro, com aulas nos dias 24 e 25 na Praça Gaspar Ricardo.",
+        "participantes": [
+            {
+                "nome": "",
+                "papel": "apresentadora"
+            },
+            {
+                "nome": "",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "",
+                "papel": "repórter"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "02:14",
+                "segundos": 134,
+                "assunto": "Campanha Papai Noel dos Correios"
+            },
+            {
+                "inicio": "09:41",
+                "segundos": 581,
+                "assunto": "Inscrições para vagas remanescentes na ETEC"
+            },
+            {
+                "inicio": "13:12",
+                "segundos": 792,
+                "assunto": "Dia de campo do Sindicato Rural sobre controle de javalis"
+            },
+            {
+                "inicio": "22:44",
+                "segundos": 1364,
+                "assunto": "Retirada de kits e trânsito para a Corrida Super Difusora"
+            },
+            {
+                "inicio": "30:18",
+                "segundos": 1818,
+                "assunto": "Horários especiais nas unidades de saúde para o Novembro Azul"
+            },
+            {
+                "inicio": "32:41",
+                "segundos": 1961,
+                "assunto": "Inscrições para cursos no Fundo Social"
+            },
+            {
+                "inicio": "35:10",
+                "segundos": 2110,
+                "assunto": "Descarte correto de embalagens de agrotóxicos"
+            },
+            {
+                "inicio": "45:40",
+                "segundos": 2740,
+                "assunto": "Prazo para regularização de débitos do pedágio eletrônico Free Flow"
+            }
+        ],
+        "omitidos": [
+            "41:51 - Nota de falecimento de moradora da cidade"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-15T03:41:14-03:00"
 }
