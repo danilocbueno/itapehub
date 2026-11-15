@@ -1,5 +1,29 @@
 [
     {
+        "id": "ff944e2e89424e3a",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/15/sob-chuvas-itapetininga-nao-tem-mapeamento-de-arvores-condema-alerta-para-situacao-critica.ghtml",
+        "title": "Sob chuvas, Itapetininga não tem mapeamento de árvores; Condema alerta para situação crítica",
+        "summary": "Com os temporais, diversas árvores caíram em diferentes pontos da cidade, levantando um alerta: o município não possui um plano de arborização. Conforme apurado pela TV TEM, a cidade não conta com estudos ou ações específicas para avaliar…",
+        "image": "https://s2-g1.glbimg.com/GFJlBsafolnLu8akK_mYAMfcgfc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/O/Vhm96MRSKu3ADMsBCuaw/img-0948-frame-0.jpeg",
+        "published_at": "2026-11-15T08:00:00-03:00",
+        "collected_at": "2026-11-15T09:43:03-03:00",
+        "cluster": "ff944e2e89424e3a",
+        "hidden": false
+    },
+    {
+        "id": "8f77bb55f5c9b3c2",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/sorocaba-jundiai/nosso-campo/noticia/2026/11/15/super-el-nino-prejudica-producao-e-atrasa-plantio-na-regiao-de-itapetininga.ghtml",
+        "title": "Super El Niño prejudica produção e atrasa plantio na região de Itapetininga",
+        "summary": "Na região de Itapetininga (SP), produtores rurais precisam conciliar a recuperação dos prejuízos causados pelo excesso de água, provocado pelas chuvas durante o El Niño, com o planejamento para a próxima safra. Segundo o Sindicato Rural…",
+        "image": "https://s2-g1.glbimg.com/ysXgXWdjdJvhugwArrR0Qs8P2oc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/Y/6/vsT0BHSVykbkLDNHKe6w/nc-el-nino-campo-151126.transfer-frame-3924.jpeg",
+        "published_at": "2026-11-15T07:30:00-03:00",
+        "collected_at": "2026-11-15T09:43:03-03:00",
+        "cluster": "8f77bb55f5c9b3c2",
+        "hidden": false
+    },
+    {
         "id": "8e7562428294c0e7",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/14/prefeitura-de-alambari-divulga-novos-horarios-de-onibus-para-itapetininga-veja-itinerario.ghtml",
