@@ -1,5 +1,29 @@
 [
     {
+        "id": "6d4b130a4813ed43",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/15/maconha-transportada-em-caminhao-e-apreendida-em-itapetininga.ghtml",
+        "title": "Quase uma tonelada de maconha transportada em caminhão é apreendida em Itapetininga",
+        "summary": "Quase uma tonelada de maconha foi apreendida, neste sábado (14), na rodovia Raposo Tavares (SP-270), em Itapetininga (SP). O motorista do caminhão que transportava a droga foi preso em flagrante. A apreensão foi realizada pelos policiais…",
+        "image": "https://s2-g1.glbimg.com/f0fY7kxf-Euaugl9J9GoDI53erc=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/q/v/9ryxwsSPCzZWnwlicQgg/edicao-g1-agenda-2026-11-15t151618.868.png",
+        "published_at": "2026-11-15T17:12:38-03:00",
+        "collected_at": "2026-11-15T18:50:52-03:00",
+        "cluster": "6d4b130a4813ed43",
+        "hidden": false
+    },
+    {
+        "id": "226e7baa5b31182c",
+        "source": "tvsmais",
+        "url": "https://www.tvsmais.com.br/homem-e-preso-com-quase-uma-tonelada-de-maconha-em-itapetininga/",
+        "title": "Homem é preso com quase uma tonelada de maconha em Itapetininga",
+        "summary": "Motorista foi abordado durante fiscalização na rodovia Raposo Tavares e levaria a droga para a região do Brás, na capital paulista",
+        "image": "https://www.tvsmais.com.br/wp-content/uploads/2026/11/PMRodv-e1771783230567.png",
+        "published_at": "2026-11-15T15:44:45-03:00",
+        "collected_at": "2026-11-15T18:50:52-03:00",
+        "cluster": "83a94b669e7f9b86",
+        "hidden": false
+    },
+    {
         "id": "6da0e43a868950dc",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/15/matematica-e-ciencias-da-natureza-candidatos-fazem-a-2a-etapa-do-enem-neste-domingo-em-itapetininga-e-tatui.ghtml",
