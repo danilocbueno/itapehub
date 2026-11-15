@@ -1,5 +1,77 @@
 [
     {
+        "id": "6da0e43a868950dc",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/15/matematica-e-ciencias-da-natureza-candidatos-fazem-a-2a-etapa-do-enem-neste-domingo-em-itapetininga-e-tatui.ghtml",
+        "title": "Matemática e Ciências da Natureza: candidatos fazem a 2ª etapa do Enem neste domingo em Itapetininga e Tatuí",
+        "summary": "Os candidatos fazem neste domingo (15) a segunda e última etapa do Exame Nacional do Ensino Médio (Enem) 2026. Segundo dados do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep), Itapetininga registrou 4.180…",
+        "image": "https://s2-g1.glbimg.com/g8F-o374t1N1yNaxNnWI3sVT1vw=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/A/l/qrRR8VQQKnNou1766qIg/midia-de-distribuicao-g1-34-.jpg",
+        "published_at": "2026-11-15T14:00:00-03:00",
+        "collected_at": "2026-11-15T14:12:35-03:00",
+        "cluster": "6da0e43a868950dc",
+        "hidden": false
+    },
+    {
+        "id": "f848a091f7e4d2e8",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/sesi-de-itapetininga-recebe-show-da-cantora-paula-lima-em-dezembro/",
+        "title": "SESI de Itapetininga recebe show da cantora Paula Lima em dezembro",
+        "summary": "O SESI de Itapetininga recebe, no dia 5 de dezembro, às 18h, o show “Soul Lee”, da cantora Paula Lima. A apresentação faz parte do projeto SESI Música – Série Popular e tem entrada gratuita. Os ingressos devem ser retirados pelo site…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_soul-lee.png",
+        "published_at": "2026-11-15T12:47:15-03:00",
+        "collected_at": "2026-11-15T14:12:35-03:00",
+        "cluster": "8c8ecd18f4170b23",
+        "hidden": false
+    },
+    {
+        "id": "b7b46c18edf13f3e",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/unidades-de-saude-de-itapetininga-terao-horario-estendido-durante-o-novembro-azul/",
+        "title": "Unidades de Saúde de Itapetininga terão horário estendido durante o Novembro Azul",
+        "summary": "A Secretaria Municipal de Saúde de Itapetininga realizará, durante o mês de novembro, ações da campanha Novembro Azul 2026, com atendimento em horário estendido em Unidades Básicas de Saúde (UBSs) e Estratégias Saúde da Família (ESFs) do…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/Sem-nome-Site-18.png",
+        "published_at": "2026-11-15T12:40:11-03:00",
+        "collected_at": "2026-11-15T14:12:35-03:00",
+        "cluster": "b7b46c18edf13f3e",
+        "hidden": false
+    },
+    {
+        "id": "b6fd0e753a0e742b",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/max-atacadista-anuncia-construcao-de-primeira-loja-em-itapetininga/",
+        "title": "Max Atacadista anuncia construção de primeira loja em Itapetininga",
+        "summary": "O Grupo Muffato anunciou a construção de uma unidade do Max Atacadista em Itapetininga. O empreendimento será instalado na Avenida Dr. Cyro Albuquerque, esquina com a Rua Maria do Bom Sucesso Proença de Moraes, no Jardim Marabá. O anúncio…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_WhatsApp-Image-2026-11-13-at-14.28.13.jpeg",
+        "published_at": "2026-11-15T12:32:56-03:00",
+        "collected_at": "2026-11-15T14:12:35-03:00",
+        "cluster": "4cc128b93218635b",
+        "hidden": false
+    },
+    {
+        "id": "83a94b669e7f9b86",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/tor-apreende-quase-uma-tonelada-de-maconha-na-rodovia-raposo-tavares-em-itapetininga/",
+        "title": "TOR apreende quase uma tonelada de maconha na Rodovia Raposo Tavares, em Itapetininga",
+        "summary": "A Polícia Militar Rodoviária apreendeu 995 quilos de maconha na tarde deste sábado, 14 de novembro, durante uma fiscalização na Rodovia Raposo Tavares (SP-270), em Itapetininga (SP). O motorista do caminhão que transportava a droga foi…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/Sem-nome-Site-17.png",
+        "published_at": "2026-11-15T12:22:24-03:00",
+        "collected_at": "2026-11-15T14:12:35-03:00",
+        "cluster": "83a94b669e7f9b86",
+        "hidden": false
+    },
+    {
+        "id": "aa9af9a76f11435e",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/pat-de-itapetininga-oferece-251-vagas-de-emprego-na-segunda-feira/",
+        "title": "PAT de Itapetininga oferece 251 vagas de emprego na segunda-feira",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga disponibiliza 251 vagas de emprego a partir da próxima segunda-feira, 16 de novembro. As oportunidades são destinadas a candidatos com e sem experiência, jovens aprendizes…",
+        "image": "https://assets.mktnaweb.com/accounts/2021/11/12/171464/pictures/7145/original_PAT%2013%20NOV.png?1794591002",
+        "published_at": "2026-11-15T12:02:28-03:00",
+        "collected_at": "2026-11-15T14:12:35-03:00",
+        "cluster": "4b237dedc3882cf2",
+        "hidden": false
+    },
+    {
         "id": "ff944e2e89424e3a",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/15/sob-chuvas-itapetininga-nao-tem-mapeamento-de-arvores-condema-alerta-para-situacao-critica.ghtml",

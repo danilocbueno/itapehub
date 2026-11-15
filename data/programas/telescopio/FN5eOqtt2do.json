@@ -7,5 +7,5 @@
     "seconds": 5230,
     "found_at": "2026-11-12T15:20:51-03:00",
     "attempts": 1,
-    "error": "Dado de contato no texto (perfil de rede social): @contur"
+    "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: sem resposta (cURL error 28: Operation timed out after 240001 milliseconds with 0 bytes recei…)"
 }
