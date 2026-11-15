@@ -6,6 +6,88 @@
     "date": "2026-11-13",
     "seconds": 5221,
     "found_at": "2026-11-13T14:46:37-03:00",
-    "attempts": 0,
-    "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+    "attempts": 1,
+    "article": {
+        "titulo": "Itapetininga realiza renegociação de dívidas da CDHU e eventos no fim de semana",
+        "linha_fina": "Programa da TV Itapê destaca campanha habitacional, festivais culturais e entrevista sobre medicina humanizada, escuta ativa e dança.",
+        "lide": "No programa de sexta-feira (13), o Telescópio, da TV Itapê, apresentou serviços municipais e novidades culturais, além de debater a importância da escuta ativa na medicina e o autocuidado por meio da dança.",
+        "blocos": [
+            {
+                "intertitulo": "Serviços e eventos",
+                "paragrafos": [
+                    "Itapetininga realiza a campanha Casa em Dia nos dias 16 e 17 de novembro, oferecendo regularização de pendências e renegociação sem entrada para mutuários da CDHU, tanto para quem está com prestações atrasadas quanto em dia.",
+                    "A programação cultural e esportiva do fim de semana inclui o segundo festival de artes marciais neste sábado no ginásio Orlando Escoto (Arena Casi), teatro literário na Biblioteca Municipal nesta sexta-feira às 16h, e o festival de bolhas gigantes no domingo, a partir das 14h, na Praça Peixoto Gomide."
+                ]
+            },
+            {
+                "intertitulo": "Medicina humanizada",
+                "paragrafos": [
+                    "Em entrevista ao programa, a médica de família Vanessa Ratucheney e a estudante de medicina Larissa Simonato destacaram que o atendimento em saúde vai além da prescrição de remédios, exigindo vínculo, curiosidade pela história do paciente e escuta ativa.",
+                    "As convidadas também abordaram o processo de pacificação pessoal e o perdão como ferramentas essenciais para o alívio do sofrimento emocional e da dor da alma."
+                ]
+            },
+            {
+                "intertitulo": "Dança e autocuidado",
+                "paragrafos": [
+                    "A professora Renata, representante da Família Flashback, participou do programa para falar sobre o projeto de dança de passinho dos anos 80, que reúne cerca de 100 alunos na academia Movem.",
+                    "Segundo a professora, as aulas funcionam como uma terapia em grupo, promovendo acolhimento, melhoria da saúde mental e integração social."
+                ]
+            }
+        ],
+        "fechamento": "A campanha da CDHU ocorre nos dias 16 e 17. O festival de bolhas gigantes será no domingo (15), às 14h, na Praça Peixoto Gomide. As aulas da Família Flashback acontecem às segundas-feiras, às 19h30, na academia Movem.",
+        "participantes": [
+            {
+                "nome": "Fábio",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Henrique",
+                "papel": "apresentador de notícias"
+            },
+            {
+                "nome": "Vanessa Ratucheney",
+                "papel": "médica de família"
+            },
+            {
+                "nome": "Larissa Simonato",
+                "papel": "estudante de medicina"
+            },
+            {
+                "nome": "Renata",
+                "papel": "professora de dança"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "10:18",
+                "segundos": 618,
+                "assunto": "Campanha Casa em Dia para renegociação de dívidas da CDHU"
+            },
+            {
+                "inicio": "11:05",
+                "segundos": 665,
+                "assunto": "Segundo festival de artes marciais na Arena Casi"
+            },
+            {
+                "inicio": "12:10",
+                "segundos": 730,
+                "assunto": "Festival de bolhas gigantes na Praça Peixoto Gomide"
+            },
+            {
+                "inicio": "13:10",
+                "segundos": 790,
+                "assunto": "Entrevista sobre medicina humanizada e escuta ativa"
+            },
+            {
+                "inicio": "01:07:30",
+                "segundos": 4050,
+                "assunto": "Aulas de dança e passinho com a Família Flashback"
+            }
+        ],
+        "omitidos": [
+            "09:25 - Protesto de pais e alunos contra o fechamento de escola municipal, omitido por envolver manifestação e denúncia administrativa."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-14T22:57:43-03:00"
 }
