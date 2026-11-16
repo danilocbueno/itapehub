@@ -1,5 +1,53 @@
 [
     {
+        "id": "42e5579a907eec1f",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11041/inscricoes-para-o-2-festival-kids-de-atletismo-da-prefeitura-em-parceria-o-sesi-ainda-podem-ser-feitas-nesta-terca-dia-17-e-na-quarta-dia-18/",
+        "title": "Inscrições para o 2º Festival Kids de Atletismo da Prefeitura em parceria o SESI ainda podem ser feitas nesta terça, dia 17 e na quarta, dia 18",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Esporte, Lazer e Juventude, convida crianças, adolescentes, familiares e toda a população para prestigiar o 2º Festival Kids de Atletismo 2026, mais uma ação de incentivo à prática…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/e8f65e1568a3fde3c61be3991091050a.webp",
+        "published_at": "2026-11-16T10:37:30-03:00",
+        "collected_at": "2026-11-16T10:37:30-03:00",
+        "cluster": "42e5579a907eec1f",
+        "hidden": false
+    },
+    {
+        "id": "31894663dbb4982d",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11040/atletas-da-escola-paralimpica-de-itapetininga-conquistam-podios-e-batem-recordes-das-americas-no-campeonato-brasileiro-de-atletismo/",
+        "title": "Atletas da Escola Paralímpica de Itapetininga conquistam pódios e batem recordes das Américas no Campeonato Brasileiro de Atletismo",
+        "summary": "O Estádio Ícaro de Castro Mello, no Ibirapuera, zona sul da capital paulista, recebeu 841 atletas de todo o Brasil que participaram do Campeonato Brasileiro Loterias Caixa de Atletismo Paralímpico de 2026. As competições foram entre os…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/05f98611fb0f72ad8c609622184347dc.webp",
+        "published_at": "2026-11-16T10:37:30-03:00",
+        "collected_at": "2026-11-16T10:37:30-03:00",
+        "cluster": "31894663dbb4982d",
+        "hidden": false
+    },
+    {
+        "id": "4c020d68ebe516f2",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11039/validacao-presencial-do-1-lote-do-correr-e-caminhar-com-saude-da-prefeitura-de-itapetininga-em-parceria-com-o-ifsp-comeca-nesta-terca-dia-17/",
+        "title": "Validação Presencial do 1º Lote do “Correr e Caminhar com Saúde” da Prefeitura de Itapetininga em parceria com o IFSP começa nesta terça, dia 17",
+        "summary": "Começam nesta terça, dia 17, a Validação Presencial para os atletas que fizeram as inscrições no 1º Lote no site oficial da Runner Brasil para o encerramento do Circuito “Correr e Caminhar com Saúde 2026”, organizado pela Prefeitura de…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/9638ef1df2ec11fb954e406bd85c7013.webp",
+        "published_at": "2026-11-16T10:37:30-03:00",
+        "collected_at": "2026-11-16T10:37:30-03:00",
+        "cluster": "4c020d68ebe516f2",
+        "hidden": false
+    },
+    {
+        "id": "585ac9cc202f06bc",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11038/campeonato-varzeano-de-itapetininga-divulga-os-resultados-das-semifinais-da-1-e-2-divisoes-e-municipal-do-ultimo-domingo-dia-15/",
+        "title": "Campeonato Varzeano de Itapetininga divulga os resultados das semifinais da 1ª e 2ª Divisões e Municipal do último domingo, dia 15",
+        "summary": "O Campeonato Municipal Varzeano contou com 6 partidas pelas semifinais no último domingo, dia 15. Confira os resultados.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/2bb2e17552dfeb6988d52b3edb423732.webp",
+        "published_at": "2026-11-16T10:37:30-03:00",
+        "collected_at": "2026-11-16T10:37:30-03:00",
+        "cluster": "585ac9cc202f06bc",
+        "hidden": false
+    },
+    {
         "id": "6d4b130a4813ed43",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/15/maconha-transportada-em-caminhao-e-apreendida-em-itapetininga.ghtml",
