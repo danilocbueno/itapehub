@@ -1,5 +1,77 @@
 [
     {
+        "id": "bd6100a50ee53d1a",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11043/2-festival-municipal-de-artes-marciais-reuniu-180-atletas-no-ginasio-de-esportes-do-casi-de-itapetininga/",
+        "title": "2º Festival Municipal de Artes Marciais reuniu 180 atletas no Ginásio de Esportes do CASI de Itapetininga",
+        "summary": "“Um Festival que se tornou confraternização. Todos juntos, cada um com seu estilo e o público indo ao delírio em cada movimentação, em cada apresentação. Tivemos 180 atletas e mais de 800 pessoas prestigiando o evento. Mestres, professores…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/bd04ca2a028ee716078ece7a5265701c.webp",
+        "published_at": "2026-11-16T17:30:10-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "bd6100a50ee53d1a",
+        "hidden": false
+    },
+    {
+        "id": "4b56e136ec9d8fec",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11042/pat-de-itapetininga-tem-255-vagas-de-emprego-nesta-terca-feira-17-de-novembro/",
+        "title": "PAT de Itapetininga tem 255 vagas de emprego nesta terça-feira, 17 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta terça-feira, dia 17 de novembro, 255 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/5726c85acee1caa1ce813b2a638570dd.webp",
+        "published_at": "2026-11-16T17:30:10-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "4b56e136ec9d8fec",
+        "hidden": false
+    },
+    {
+        "id": "c8beb9d873b4e30d",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/16/pesquisadora-de-itapetininga-listada-como-uma-das-100-pessoas-mais-influentes-do-mundo-e-citada-em-questao-do-enem-felicidade.ghtml",
+        "title": "Pesquisadora de Itapetininga listada como uma das 100 pessoas mais influentes do mundo é citada em questão do Enem: 'Felicidade'",
+        "summary": "A cientista Mariangela Hungria, pesquisadora da Empresa Brasileira de Pesquisa Agropecuária (Embrapa) e que viveu em Itapetininga (SP), foi citada em uma das questões do Exame Nacional do Ensino Médio (Enem) 2026, cujo segundo dia de…",
+        "image": "https://s2-g1.glbimg.com/ABlrGtmUw0pRzx0qBfO2fvG7UdM=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/g/n/52vY09TGKRNTHBIIhncA/whatsapp-image-2026-04-21-at-16.53.37.jpeg",
+        "published_at": "2026-11-16T16:30:20-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "c8beb9d873b4e30d",
+        "hidden": false
+    },
+    {
+        "id": "f27d03d97db3d333",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/16/campanha-da-cdhu-oferece-renegociacao-de-dividas-sem-entrada-em-itapetininga-veja-como-participar.ghtml",
+        "title": "Campanha da CDHU oferece renegociação de dívidas sem entrada em Itapetininga; veja como participar",
+        "summary": "Moradores de Itapetininga (SP) com financiamento habitacional pela Companhia de Desenvolvimento Habitacional e Urbano (CDHU) poderão regularizar parcelas atrasadas e renegociar as condições do contrato durante a campanha Casa em Dia, que…",
+        "image": "https://s2-g1.glbimg.com/LIS05MzUYKIFVZGtos_Bg7rKA30=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/Y/t/hMnIPuRx6SvvpXrX9slQ/cdhu.jpg",
+        "published_at": "2026-11-16T14:11:41-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "f27d03d97db3d333",
+        "hidden": false
+    },
+    {
+        "id": "5a28d27507a2a18c",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80862/paratletas-de-itapetininga-conquistam-podios-e-batem-recordes-das-americas-e-do-brasil-no-atletismo-paralimpico",
+        "title": "Paratletas de Itapetininga conquistam pódios e batem recordes das Américas e do Brasil no atletismo paralímpico",
+        "summary": "Atletas de Itapetininga conquistaram recordes das Américas e do Brasil durante o Campeonato Brasileiro Loterias Caixa de Atletismo Paralímpico de 2026, realizad...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80862?v=Banner_4aeedbab-a03d-48ea-baea-2c639002f0e6_20261116152523.jpg",
+        "published_at": "2026-11-16T12:23:00-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "31894663dbb4982d",
+        "hidden": false
+    },
+    {
+        "id": "7eaf4652ca4d41c2",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80861/ibge-abre-concurso-com-272-mil-vagas",
+        "title": "IBGE abre concurso com 27,2 mil vagas",
+        "summary": "O Instituto Brasileiro de Geografia e Estatística (IBGE) anunciou a abertura de 27.279 vagas para profissionais que vão atuar no 12º Censo Agropecuário, Florest...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80861?v=Banner_2f6825d0-fd71-4d2f-8fd6-c709fd062103_20261116134951.jpg",
+        "published_at": "2026-11-16T10:48:55-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "7eaf4652ca4d41c2",
+        "hidden": false
+    },
+    {
         "id": "42e5579a907eec1f",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11041/inscricoes-para-o-2-festival-kids-de-atletismo-da-prefeitura-em-parceria-o-sesi-ainda-podem-ser-feitas-nesta-terca-dia-17-e-na-quarta-dia-18/",
@@ -45,6 +117,18 @@
         "published_at": "2026-11-16T10:37:30-03:00",
         "collected_at": "2026-11-16T10:37:30-03:00",
         "cluster": "585ac9cc202f06bc",
+        "hidden": false
+    },
+    {
+        "id": "06cbba78f638eed7",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80860/homem-e-preso-com-quase-uma-tonelada-de-maconha-em-itapetininga",
+        "title": "Homem é preso com quase uma tonelada de maconha em Itapetininga",
+        "summary": "Um homem de 25 anos foi preso em flagrante ao transportar quase uma tonelada de maconha em um caminhão pela rodovia Raposo Tavares (SP-270), em Itapetininga. A...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80860?v=Banner_45347bd4-6e31-491c-98c0-d3e2e0aa94d1_20261116131101.jpg",
+        "published_at": "2026-11-16T10:10:00-03:00",
+        "collected_at": "2026-11-16T17:30:10-03:00",
+        "cluster": "6d4b130a4813ed43",
         "hidden": false
     },
     {

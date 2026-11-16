@@ -1,5 +1,5 @@
 {
-    "fetched_at": "2026-11-16T10:37:30-03:00",
+    "fetched_at": "2026-11-16T17:30:10-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
@@ -18,10 +18,6 @@
                         {
                             "info": "Sala 1 · Nacional · 2D",
                             "times": [
-                                {
-                                    "time": "16:10",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWRkM2Y4N2M4NjRmNTgwZTY5YWU5YmJiYzVhMTI"
-                                },
                                 {
                                     "time": "18:45",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWRkM2Y4N2M4NjU0NTgwZTY5YWU5YmJiYzVhMTI"
@@ -45,12 +41,7 @@
                     "sessions": [
                         {
                             "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": [
-                                {
-                                    "time": "16:35",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9jb21vLXJvdWJhci11bS1iYW5jby1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0xNi0xMS8xMWYxZGQzZjg3Yzg2NTFkODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
+                            "times": []
                         },
                         {
                             "info": "Sala 3 · Dublado · 2D",
@@ -120,14 +111,6 @@
                             "info": "Sala 2 · Nacional · 2D",
                             "times": [
                                 {
-                                    "time": "14:45",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWRkM2Y4N2M4NjRkYjgwZTY5YWU5YmJiYzVhMTI"
-                                },
-                                {
-                                    "time": "16:50",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWRkM2Y4N2M4NjUyYjgwZTY5YWU5YmJiYzVhMTI"
-                                },
-                                {
                                     "time": "19:00",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMTYtMTEvMTFmMWRkM2Y4N2M4NjU1ZjgwZTY5YWU5YmJiYzVhMTI"
                                 }
@@ -146,12 +129,7 @@
                     "sessions": [
                         {
                             "info": "Sala 3 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "16:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLWdhdG9sYS1kYS1jYXJ0b2xhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTE2LTExLzExZjFkZDNmODdjODY1MGY4MGU2OWFlOWJiYmM1YTEy"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },
