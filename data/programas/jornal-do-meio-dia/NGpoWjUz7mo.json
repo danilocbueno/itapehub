@@ -6,6 +6,107 @@
     "date": "2026-11-16",
     "seconds": 3473,
     "found_at": "2026-11-16T17:30:28-03:00",
-    "attempts": 0,
-    "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+    "attempts": 1,
+    "article": {
+        "titulo": "Grupo Muffato anuncia construção de unidade do Max Atacadista em Itapetininga",
+        "linha_fina": "Programa destacou também campanha da CDHU, preparativos para festa na Vila Reis e novos cursos da Fatec.",
+        "lide": "No programa Jornal do Meio-Dia, da Rádio Super Difusora, transmitido na segunda-feira (16), os apresentadores destacaram o anúncio da construção da primeira unidade do Max Atacadista em Itapetininga. A edição também divulgou detalhes sobre a campanha de renegociação de dívidas da CDHU e os preparativos para a festa na Vila Reis.",
+        "blocos": [
+            {
+                "intertitulo": "Novos investimentos",
+                "paragrafos": [
+                    "O Grupo Muffato confirmou a instalação da primeira unidade do Max Atacadista em Itapetininga. O empreendimento será construído no Jardim Marabá, na Avenida Doutor Ciro Albuquerque, com mais de 14 mil metros quadrados de área construída e previsão de gerar mais de 250 empregos diretos.",
+                    "A edição também destacou a realização da campanha de renegociação de financiamentos habitacionais promovida pela CDHU. O atendimento ocorre no auditório municipal Alcides Rossi, anexo ao Paço Municipal, com facilidades para quitar parcelas ou renegociar dívidas sem exigência de entrada."
+                ]
+            },
+            {
+                "intertitulo": "Festa e Educação",
+                "paragrafos": [
+                    "De acordo com o padre Cristiano José Benedito Chicuta, a comunidade católica da Vila Reis finaliza os preparativos para a festa em louvor a Nossa Senhora das Graças. A programação religiosa ocorre de 18 a 27 de novembro, contando com missas, quermesse nos dias 20 e 21 e almoço festivo no dia 22.",
+                    "O programa lembrou ainda que encerram nesta segunda-feira as inscrições para o vestibular das FATECs. A unidade de Itapetininga oferece 198 vagas em seis cursos gratuitos, destacando a implantação do novo curso de Engenharia de Produção."
+                ]
+            },
+            {
+                "intertitulo": "Esporte e Polícia",
+                "paragrafos": [
+                    "A rádio celebrou os resultados da quarta Corrida e Caminhada Super Difusora, realizada no fim de semana em comemoração aos 85 anos da emissora, e reforçou o prazo para validação presencial do circuito Correr e Caminhar com saúde na Secretaria Municipal de Esportes.",
+                    "No noticiário policial, foi informada a apreensão de quase uma tonelada de maconha na Rodovia Raposo Tavares, em Itapetininga, realizada pelo Tático Ostensivo Rodoviário. O motorista do caminhão foi preso em flagrante por tráfico de drogas."
+                ]
+            }
+        ],
+        "fechamento": "Mais detalhes sobre a programação e os serviços anunciados podem ser conferidos nos canais oficiais indicados durante a transmissão.",
+        "participantes": [
+            {
+                "nome": "Juliana Fernandes",
+                "papel": "apresentadora"
+            },
+            {
+                "nome": "Antônio Luís",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Antônio Rodrigo",
+                "papel": "apresentador do tempo"
+            },
+            {
+                "nome": "Cristine Abrão Morelli Atuti",
+                "papel": "diretora responsável"
+            },
+            {
+                "nome": "Padre Cristiano José Benedito Chicuta",
+                "papel": "pároco da Paróquia Nossa Senhora das Graças"
+            },
+            {
+                "nome": "Diógenes Paiva",
+                "papel": "comentarista de educação"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "03:30",
+                "segundos": 210,
+                "assunto": "Previsão do tempo e alerta de tempestade"
+            },
+            {
+                "inicio": "07:08",
+                "segundos": 428,
+                "assunto": "Festa em louvor a Nossa Senhora das Graças na Vila Reis"
+            },
+            {
+                "inicio": "19:10",
+                "segundos": 1150,
+                "assunto": "Balanço da Corrida e Caminhada Super Difusora"
+            },
+            {
+                "inicio": "31:30",
+                "segundos": 1890,
+                "assunto": "Campanha de renegociação de financiamentos da CDHU"
+            },
+            {
+                "inicio": "33:09",
+                "segundos": 1989,
+                "assunto": "Anúncio da instalação do Max Atacadista em Itapetininga"
+            },
+            {
+                "inicio": "34:21",
+                "segundos": 2061,
+                "assunto": "Prazo final para inscrições no vestibular da Fatec"
+            },
+            {
+                "inicio": "40:22",
+                "segundos": 2422,
+                "assunto": "Apreensão de quase uma tonelada de maconha na Rodovia Raposo Tavares"
+            },
+            {
+                "inicio": "44:30",
+                "segundos": 2670,
+                "assunto": "Orientações sobre o final do ano letivo com o professor Diógenes Paiva"
+            }
+        ],
+        "omitidos": [
+            "52:10 - Nota de falecimento de Maria Madalena Steiner"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-17T16:12:20-03:00"
 }

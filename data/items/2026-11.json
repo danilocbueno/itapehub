@@ -1,5 +1,53 @@
 [
     {
+        "id": "63c41252b1097ef6",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11045/prefeitura-de-itapetininga-realiza-cursos-profissionalizantes-de-chocolateiro-e-para-preparo-de-doces-de-festa/",
+        "title": "Prefeitura de Itapetininga realiza cursos profissionalizantes de Chocolateiro e para preparo de Doces de Festa",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Estado de Desenvolvimento Econômico, e com o apoio da Secretaria Municipal de Trabalho e Desenvolvimento Econômico e do Ceprom, promove, no dia 1º de dezembro, os Cursos “Chocolateiro…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/8b0263df83690db60dd9b56d184eac70.webp",
+        "published_at": "2026-11-17T16:12:00-03:00",
+        "collected_at": "2026-11-17T16:12:00-03:00",
+        "cluster": "63c41252b1097ef6",
+        "hidden": false
+    },
+    {
+        "id": "df4f4eff587be88e",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11044/pat-de-itapetininga-tem-266-vagas-de-emprego-nesta-quarta-feira-18-de-novembro/",
+        "title": "PAT de Itapetininga tem 266 vagas de emprego nesta quarta-feira, 18 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta quarta-feira, dia 18 de novembro, 266 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/738f3fdc85f894e146b45f248693ca03.webp",
+        "published_at": "2026-11-17T16:12:00-03:00",
+        "collected_at": "2026-11-17T16:12:00-03:00",
+        "cluster": "df4f4eff587be88e",
+        "hidden": false
+    },
+    {
+        "id": "0863239d39258316",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80865/itapetininga-recebe-evento-dedicado-a-producao-artistica-negra-com-danca-musica-literatura-e-artes-visuais",
+        "title": "Itapetininga recebe evento dedicado à produção artística negra com dança, música, literatura e artes visuais",
+        "summary": "No Dia da Consciência Negra, próxima sexta-feira, dia 20, a Identidade Cia de Dança convida artistas e público para a Ocupação Preta, um encontro dedicado à pro...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80865?v=Banner_e72d9509-4957-4d5d-8a59-de0f63b031cf_20261117162551.jpg",
+        "published_at": "2026-11-17T13:25:00-03:00",
+        "collected_at": "2026-11-17T16:12:00-03:00",
+        "cluster": "0863239d39258316",
+        "hidden": false
+    },
+    {
+        "id": "7cd5b60fe5a54c4a",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80864/ame-de-itapetininga-alerta-pacientes-sobre-golpe-com-cobrancas-falsas",
+        "title": "AME de Itapetininga alerta pacientes sobre golpe com cobranças falsas",
+        "summary": "A Fundação para o Desenvolvimento Médico e Hospitalar (Famesp) alerta para uma tentativa de golpe envolvendo pacientes dos Ambulatórios Médicos de Especialidade...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80864?v=Banner_f82df65c-ef78-4dbe-9680-9c189e83dbaa_20261117143227.jpg",
+        "published_at": "2026-11-17T12:00:00-03:00",
+        "collected_at": "2026-11-17T16:12:00-03:00",
+        "cluster": "7cd5b60fe5a54c4a",
+        "hidden": false
+    },
+    {
         "id": "8026bfe176bda16d",
         "source": "correio",
         "url": "https://correiodeitapetininga.com.br/noticia/80863/pesquisadora-mariangela-hungria-e-citada-em-questao-do-enem-2026",
