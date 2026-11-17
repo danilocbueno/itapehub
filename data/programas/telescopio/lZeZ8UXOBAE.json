@@ -6,6 +6,90 @@
     "date": "2026-11-16",
     "seconds": 4582,
     "found_at": "2026-11-16T17:30:28-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "TV Itapê inaugura Ecoponto Têxtil e divulga evento católico em Itapetininga",
+        "linha_fina": "Programa detalha nova rede de coleta de resíduos têxteis na cidade e os preparativos para o pós-encontro diocesano do EJC em dezembro.",
+        "lide": "No programa Telescópio, da TV Itapê, de segunda-feira (16), representantes de projetos ambientais anunciaram a instalação de ecopontos têxteis em Itapetininga. Além disso, organizadores divulgaram os preparativos para o pós-encontro diocesano do EJC, marcado para dezembro.",
+        "blocos": [
+            {
+                "intertitulo": "Ecoponto Têxtil",
+                "paragrafos": [
+                    "A gestora do projeto Moda de Propósito explicou que a iniciativa visa dar destino adequado a resíduos têxteis como roupas usadas, retalhos, panos e cortinas, evitando que sejam descartados no lixo comum e cheguem aos aterros sanitários. Foram instalados ecopontos em locais como a TV Itapê, a Fatec, a escola Peixoto Gomide e a Casa do Viagem.",
+                    "O representante da cooperativa Cooperaza, de Sarapuí, destacou que o material recolhido passa por triagem para reaproveitamento em bazares ou transformação em panos de limpeza. O consultor ambiental e a gestora do projeto Coletinha ressaltaram a importância da educação ambiental e da participação da comunidade."
+                ]
+            },
+            {
+                "intertitulo": "Encontro Diocesano",
+                "paragrafos": [
+                    "O diretor espiritual e o articulador do EJC anunciaram o pós-encontro diocesano, programado para o dia 19 de dezembro, a partir das 17h, na Catedral de Itapetininga. O evento contará com a presença da banda Católica Colo de Deus e Santa Missa celebrada pelo bispo.",
+                    "A entrada será gratuita, mediante a doação de um quilo de alimento não perecível ou um litro de leite em troca de uma pulseira nas paróquias da diocese. Os mantimentos arrecadados serão distribuídos a famílias em situação de vulnerabilidade em cada cidade participante."
+                ]
+            }
+        ],
+        "fechamento": "Os ecopontos têxteis funcionam de segunda a sexta-feira em horários específicos nos locais indicados. A troca de alimentos por pulseiras para o evento do EJC ocorre nas paróquias parceiras da região.",
+        "participantes": [
+            {
+                "nome": "",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "",
+                "papel": "representante do projeto Moda de Propósito"
+            },
+            {
+                "nome": "",
+                "papel": "gestora do projeto Coletinha"
+            },
+            {
+                "nome": "",
+                "papel": "consultor ambiental"
+            },
+            {
+                "nome": "",
+                "papel": "representante da cooperativa Cooperaza"
+            },
+            {
+                "nome": "",
+                "papel": "diretor espiritual do EJC"
+            },
+            {
+                "nome": "",
+                "papel": "articulador do EJC"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "07:15",
+                "segundos": 435,
+                "assunto": "Explicação sobre o projeto Eco.têxtil e pontos de coleta"
+            },
+            {
+                "inicio": "13:20",
+                "segundos": 800,
+                "assunto": "Atuação da cooperativa de reciclagem em Sarapuí"
+            },
+            {
+                "inicio": "22:00",
+                "segundos": 1320,
+                "assunto": "Endereços e horários dos ecopontos têxteis em Itapetininga"
+            },
+            {
+                "inicio": "48:00",
+                "segundos": 2880,
+                "assunto": "Detalhes do pós-encontro diocesano do EJC"
+            },
+            {
+                "inicio": "54:30",
+                "segundos": 3270,
+                "assunto": "Doação de alimentos e retirada de pulseiras nas paróquias"
+            }
+        ],
+        "omitidos": [
+            "72:48 - Crítica e denúncia sobre danificação de piso em praça pública por veículo municipal",
+            "74:23 - Anúncio de falecimento de moradora idosa"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-17T05:00:20-03:00"
 }
