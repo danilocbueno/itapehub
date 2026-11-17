@@ -1,14 +1,4 @@
 {
-    "fetched_at": "2026-11-16T17:30:10-03:00",
-    "alerts": [
-        {
-            "event": "Tempestade",
-            "severity": "Perigo Potencial",
-            "level": 1,
-            "start": "2026-11-16T00:00:00-03:00",
-            "end": "2026-11-16T23:59:00-03:00",
-            "description": "INMET publica aviso iniciando em: 16/11/2026 00:00. Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h), e queda de granizo. Baixo risco de corte de energia elétrica, estragos em plantações, queda de galhos de árvores e de alagamentos.",
-            "link": "https://avisos.inmet.gov.br/56421"
-        }
-    ]
+    "fetched_at": "2026-11-17T00:55:20-03:00",
+    "alerts": []
 }
