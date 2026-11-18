@@ -851,3 +851,33 @@ it('avisa quando não há programação do cinema', function () {
     expect(built('cinema/index.html'))->toContain('Programação indisponível no momento')
         ->and(built('agenda/index.html'))->not->toContain('no cinema</h2>');
 });
+
+it('gera o índice da busca com uma entrada por notícia, da mais nova para a mais antiga', function () {
+    $this->artisan('build')->assertSuccessful();
+    $entries = json_decode(built('busca.json'), true);
+    $titles = array_column($entries, 't');
+
+    expect($entries)->not->toBeEmpty()
+        ->and($titles)->toContain('Chuva passa de 110 mm em Itapetininga e deixa desabrigados')
+        ->and(count($titles))->toBe(count(array_unique(array_column($entries, 'u'))))
+        ->and(array_column($entries, 'd'))->toBe(collect(array_column($entries, 'd'))->sortDesc()->values()->all())
+        ->and(array_keys($entries[0]))->toContain('t', 's', 'f', 'd', 'u')
+        // Acentos sem escape: o arquivo fica menor e legível.
+        ->and(built('busca.json'))->toContain('ç')->not->toContain('\u00');
+});
+
+it('fecha o menu com o link da busca, o modal da busca em todas as páginas e gera a página de busca', function () {
+    $this->artisan('build')->assertSuccessful();
+
+    foreach (['index.html', 'agenda/index.html', 'fontes/index.html'] as $path) {
+        expect(built($path))
+            ->toContain('class="topics-search" href="/busca/"')
+            ->toContain('<dialog id="search-dialog"')
+            ->toContain('<kbd data-search-shortcut>Ctrl K</kbd>');
+    }
+
+    expect(built('busca/index.html'))
+        ->toContain('data-search-page')
+        ->toContain('class="topics-search" href="/busca/" aria-haspopup="dialog" aria-controls="search-dialog" data-search-toggle  aria-current="page">')
+        ->toContain('<link rel="canonical" href="'.config('itape.site.url').'/busca/">');
+});

@@ -67,6 +67,7 @@ Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde
 - **Agenda:** eventos dos próximos 14 dias, extraídos das notícias, com um card por evento. A home também tem o bloco "Próximos eventos". No topo, o bloco **"Hoje no cinema"** mostra as sessões que ainda vão começar (ou as de amanhã, se as de hoje já acabaram).
 - **Cinema** (`/cinema/`): programação do Grupo Cine Itapetininga nos próximos 7 dias, com pôster, classificação, gênero, duração, sala e horários. Cada horário leva à compra no site do cinema, e as sessões que já começaram aparecem riscadas. A programação é lida da página do cinema na coleta, a cada 3 horas, e guardada em `data/cinema.json`. O cinema não tem RSS; o `robots.txt` dele permite uso de referência e proíbe o treino de IA, e o conteúdo não passa por IA.
 - **Resumo do dia** (`/hoje/`): texto pronto para colar no WhatsApp, com as notícias das últimas 24h ordenadas pelo número de veículos.
+- **Busca:** lupa ao lado dos assuntos, que abre um modal (também por Ctrl+K, ⌘K no Mac, ou "/"). Mostra as 7 melhores; as setas navegam e Enter leva à página `/busca/?q=`, com todos os resultados (até 200). O build gera `busca.json` (uma entrada por notícia: título, resumo, fontes, data e link; ~160 KB, ~46 KB compactado em 18/11), baixado só na primeira busca. A procura roda no navegador (`site.js`): ignora acentos e maiúsculas, exige todas as palavras (em qualquer ordem) no título, resumo ou fonte e ordena por título que começa com a busca, título com todas as palavras e o resto, com as mais novas primeiro no empate. Só procura no título e no resumo, porque o texto completo fica no site de cada veículo.
 - **Arquivo por dia**, página **Fontes** (status de cada coleta), **feed RSS** agregado e página 404.
 - **Tempo:** um dia de cada vez (hoje, amanhã e depois), alternando, com ícone, máxima e mínima e chance de chuva. Avisos do INMET reunidos numa faixa no topo.
 - Visual: fontes Newsreader e IBM Plex Sans servidas pelo próprio site, paleta papel/tinta/vermelho e modo escuro. Funciona bem no celular.
@@ -232,7 +233,6 @@ Para uma eventual reserva entre o Gemini e o modelo fixo. Cada pedido nosso tem 
 - Reavaliar os horários da coleta.
 
 **Depois**
-- Busca.
 - Canal no Telegram.
 - Domínio próprio.
 - Seções Obituário, PAT/Empregos e Concursos.

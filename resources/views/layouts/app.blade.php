@@ -47,9 +47,33 @@
         @foreach ($themes as $slug => $theme)
           <a href="{{ $base }}/tema/{{ $slug }}/"@if (($currentTheme ?? null) === $slug) aria-current="page"@endif>{{ $theme['name'] }}</a>
         @endforeach
+        {{-- Fecha o menu em vermelho, como a Agenda abre; no celular, vira uma lupa fixa à direita. Sem JavaScript, leva à página de busca; com ele, abre o modal (site.js). --}}
+        <a class="topics-search" href="{{ $base }}/busca/" aria-haspopup="dialog" aria-controls="search-dialog" data-search-toggle @if (($currentPage ?? null) === 'busca') aria-current="page"@endif>@include('partials.search-icon')<span class="topics-search-label">Busca</span></a>
       </nav>
     </div>
   </header>
+
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-dialog-title" data-search-dialog>
+    <form class="search-panel" action="{{ $base }}/busca/" method="get" role="search" data-search-panel data-empty>
+      <h2 id="search-dialog-title" class="sr-only">Buscar no {{ $site['name'] }}</h2>
+      <div class="search-field">
+        @include('partials.search-icon')
+        <label class="sr-only" for="search-dialog-input">Buscar notícias</label>
+        <input id="search-dialog-input" name="q" type="search" placeholder="Buscar notícias, fontes, assuntos…" autocomplete="off" enterkeyhint="search" data-search-input>
+        <button type="button" class="search-close" aria-label="Fechar a busca" data-search-close>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <p class="search-summary" aria-live="polite" data-search-summary></p>
+      <div class="search-results" data-search-results data-limit="7"></div>
+      <div class="search-foot" aria-hidden="true">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navegar</span>
+        <span><kbd>↵</kbd> abrir</span>
+        <span><kbd data-search-shortcut>Ctrl K</kbd> abrir e fechar</span>
+        <span class="search-foot-all">Enter mostra todos os resultados</span>
+      </div>
+    </form>
+  </dialog>
 
   <main class="wrap">
     @yield('content')
@@ -72,6 +96,7 @@
     </div>
   </footer>
 
+  <script>window.ITAPE_BASE = @json($base);</script>
   <script>{!! $js !!}</script>
 </body>
 </html>

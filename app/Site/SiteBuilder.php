@@ -173,11 +173,17 @@ final class SiteBuilder
             'counts' => array_count_values(array_map(fn ($item) => $item->source, array_filter($items->all(), fn ($item) => ! $item->hidden))),
         ]);
         $this->write($buildPath.'/404.html', 'not-found', $shared);
+        // Busca: a página e o índice que o navegador baixa na primeira busca.
+        $this->write($buildPath.'/busca/index.html', 'search', [...$shared, 'currentPage' => 'busca']);
+        $this->files->put($buildPath.'/busca.json', json_encode(
+            SearchIndex::entries($clusters, $shared['sources'], (string) $shared['site']['url']),
+            JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR,
+        ));
         $this->write($buildPath.'/feed.xml', 'feed', [
             ...$shared,
             'clusters' => array_slice($clusters, 0, (int) config('itape.feed.items')),
         ]);
-        $pages += 4;
+        $pages += 5;
 
         // Fontes servidas pelo próprio site (sem enviar o IP dos visitantes a terceiros).
         $this->files->copyDirectory(resource_path('assets/fonts'), $buildPath.'/assets/fonts');
