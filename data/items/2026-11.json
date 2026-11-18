@@ -1,5 +1,29 @@
 [
     {
+        "id": "b76764354509f971",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11046/abre-e-fecha-do-feriado-da-consciencia-negra-20-de-novembro/",
+        "title": "“Abre e fecha” do feriado da Consciência Negra – 20 de novembro",
+        "summary": "A Prefeitura de Itapetininga informa o que \"Abre e Fecha\" do feriado da Consciência Negra – 20 de novembro.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/80aa67e2f70234600ec6cdd15236992e.webp",
+        "published_at": "2026-11-18T10:55:47-03:00",
+        "collected_at": "2026-11-18T10:55:47-03:00",
+        "cluster": "b76764354509f971",
+        "hidden": false
+    },
+    {
+        "id": "2cacd70d71704c44",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/18/com-emilio-orciollo-e-natalia-lage-peca-sobre-fernando-pessoa-sucesso-nos-anos-90-chega-a-itapetininga-ainda-mais-atual-diz-diretor.ghtml",
+        "title": "Com Emílio Orciollo e Natália Lage, peça sobre Fernando Pessoa sucesso nos anos 90 chega a Itapetininga: 'Ainda mais atual', diz diretor",
+        "summary": "Sua vida, no entanto, também foi marcada por perdas e desafios. Pessoa perdeu o pai ainda na infância, interrompeu os estudos durante a adolescência e morreu aos 47 anos, em decorrência de uma obstrução intestinal. Apesar das dificuldades…",
+        "image": "https://s2-g1.glbimg.com/WzBdrs26_oGHOSjYkxn-GU4Ucng=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/3/q/sghsYBQZW6solevlbY6g/victorsparapane.emilio-orciollo.rogeriobrito-e-heitor-garcia-copia.jpg",
+        "published_at": "2026-11-18T07:27:39-03:00",
+        "collected_at": "2026-11-18T10:55:47-03:00",
+        "cluster": "2cacd70d71704c44",
+        "hidden": false
+    },
+    {
         "id": "f805eae4deb0a3f5",
         "source": "panoramico",
         "url": "https://jornalpanoramico.com.br/itapetininga-oferece-cursos-gratuitos-de-chocolateiro-e-preparo-de-doces-de-festa/",
