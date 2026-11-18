@@ -56,7 +56,15 @@
         @endforeach
       </div>
     </section>
+    {{-- Cinema logo depois do primeiro dia, separando as seções como os "Próximos eventos". --}}
+    @if ($loop->first && $cinemaNext)
+      @include('partials.cinema-strip', ['home' => true])
+    @endif
   @endforeach
+
+  @if (! $days && $cinemaNext)
+    @include('partials.cinema-strip', ['home' => true])
+  @endif
 
   <p class="more"><a href="{{ $site['base'] }}/arquivo/">Ver notícias anteriores</a></p>
 @endsection

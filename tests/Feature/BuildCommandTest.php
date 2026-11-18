@@ -73,7 +73,7 @@ it('põe o link da agenda na linha do título dos próximos eventos', function (
 
     expect($head)->toContain('<h2>Próximos eventos</h2>')
         ->toContain('<a class="upcoming-more" href="/agenda/">Ver agenda completa</a>')
-        ->and(substr_count(built('index.html'), 'class="upcoming-more"'))->toBe(1);
+        ->and(substr_count(built('index.html'), 'Ver agenda completa'))->toBe(1);
 });
 
 it('não põe separador no primeiro dia quando não há próximos eventos', function () {
@@ -839,8 +839,27 @@ it('gera a página do cinema e o bloco "Hoje no cinema" na Agenda', function () 
         ->toContain('/cinema/">Programação completa')
         ->toContain('data-slides')
         ->toContain('https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg')
-        // Sem link no menu: a página do cinema é aberta pelo bloco da Agenda.
-        ->and(built('index.html'))->not->toContain('/cinema/"');
+        // Sem link no menu: a página do cinema é aberta pelos blocos da Agenda e da home.
+        ->and(built('fontes/index.html'))->not->toContain('/cinema/"');
+});
+
+it('mostra o cinema na home logo depois do primeiro dia, com o título no estilo dos próximos eventos', function () {
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-11-09 18:00', 'America/Sao_Paulo'));
+    $this->artisan('collect', ['--force-weather' => true])->assertSuccessful();
+    $this->artisan('build')->assertSuccessful();
+    $home = built('index.html');
+    $cinema = strpos($home, '<section class="cinema-strip day"');
+    // A primeira seção é a capa; a segunda, o primeiro dia da linha do tempo; a terceira, o segundo dia.
+    $firstDay = strpos($home, '<section class="day">', strpos($home, '<section class="day">') + 1);
+    $secondDay = strpos($home, '<section class="day">', $firstDay + 1);
+
+    expect($cinema)->not->toBeFalse()
+        ->and($cinema)->toBeGreaterThan($firstDay)
+        ->and($cinema)->toBeLessThan($secondDay)
+        ->and($home)->toContain('<div class="upcoming-head">')
+        ->toContain('Hoje no cinema</h2>')
+        ->toContain('class="upcoming-more"  href="/cinema/">Programação completa')
+        ->toContain('https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg');
 });
 
 it('avisa quando não há programação do cinema', function () {
@@ -849,7 +868,8 @@ it('avisa quando não há programação do cinema', function () {
     $this->artisan('build')->assertSuccessful();
 
     expect(built('cinema/index.html'))->toContain('Programação indisponível no momento')
-        ->and(built('agenda/index.html'))->not->toContain('no cinema</h2>');
+        ->and(built('agenda/index.html'))->not->toContain('no cinema</h2>')
+        ->and(built('index.html'))->not->toContain('no cinema</h2>');
 });
 
 it('gera o índice da busca com uma entrada por notícia, da mais nova para a mais antiga', function () {

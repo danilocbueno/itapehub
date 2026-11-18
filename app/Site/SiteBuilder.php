@@ -74,6 +74,12 @@ final class SiteBuilder
         $this->files->cleanDirectory($buildPath);
         $pages = 0;
 
+        // Programação do cinema (data/cinema.json, atualizada na coleta).
+        $cinema = JsonFile::read($dataPath.'/cinema.json');
+        $cinemaDays = Showtimes::upcoming($cinema, $now);
+        $cinemaInfo = ['name' => $cinema['name'] ?? (string) config('itape.cinema.name'), 'url' => $cinema['url'] ?? (string) config('itape.cinema.url')];
+        $cinemaNext = Showtimes::next($cinemaDays);
+
         // A capa pega as três notícias mais recentes, mesmo que venham de dias diferentes.
         $front = array_slice($home, 0, 3);
 
@@ -85,6 +91,8 @@ final class SiteBuilder
             'weather' => JsonFile::read($dataPath.'/weather.json'),
             'alerts' => JsonFile::read($dataPath.'/alerts.json')['alerts'] ?? [],
             'events' => array_slice($events, 0, 3),
+            'cinema' => $cinemaInfo,
+            'cinemaNext' => $cinemaNext,
         ]);
         $pages++;
 
@@ -120,16 +128,11 @@ final class SiteBuilder
             $months[substr($day, 0, 7)][$day] = count($dayClusters);
         }
 
-        // Programação do cinema (data/cinema.json, atualizada na coleta).
-        $cinema = JsonFile::read($dataPath.'/cinema.json');
-        $cinemaDays = Showtimes::upcoming($cinema, $now);
-        $cinemaInfo = ['name' => $cinema['name'] ?? (string) config('itape.cinema.name'), 'url' => $cinema['url'] ?? (string) config('itape.cinema.url')];
-
         $this->write($buildPath.'/agenda/index.html', 'agenda', [
             ...$shared,
             'events' => $events,
             'cinema' => $cinemaInfo,
-            'cinemaNext' => Showtimes::next($cinemaDays),
+            'cinemaNext' => $cinemaNext,
         ]);
         $this->write($buildPath.'/cinema/index.html', 'cinema', [...$shared, 'cinema' => $cinemaInfo, 'days' => $cinemaDays]);
         $pages += 2;
