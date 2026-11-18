@@ -1,5 +1,65 @@
 [
     {
+        "id": "7e546a94eec2b248",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11047/pat-de-itapetininga-tem-372-vagas-de-emprego-nesta-quinta-feira-19-de-novembro/",
+        "title": "PAT de Itapetininga tem 372 vagas de emprego nesta quinta-feira, 19 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta quinta-feira, dia 19 de novembro, 372 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/2a39f5dc5ddeecc1bf0bbbe3bdd24954.webp",
+        "published_at": "2026-11-18T15:52:32-03:00",
+        "collected_at": "2026-11-18T15:52:32-03:00",
+        "cluster": "7e546a94eec2b248",
+        "hidden": false
+    },
+    {
+        "id": "359ce0224797af8d",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80869/itapetininga-oferece-cursos-gratuitos-de-chocolateiro-e-doces-de-festa",
+        "title": "Itapetininga oferece cursos gratuitos de chocolateiro e doces de festa",
+        "summary": "A Prefeitura de Itapetininga está com inscrições abertas para dois cursos profissionalizantes gratuitos do Programa Trampolim: “Chocolateiro – Preparo de Bombon...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80869?v=Banner_aa9e2c1f-9499-4ddd-8aba-f7af3f68ab44_20261118161649.jpg",
+        "published_at": "2026-11-18T13:23:00-03:00",
+        "collected_at": "2026-11-18T15:52:32-03:00",
+        "cluster": "63c41252b1097ef6",
+        "hidden": false
+    },
+    {
+        "id": "fbd718110b11b8cc",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80868/novo-pedagio-eletronico-e-instalado-na-raposo-tavares-em-itapetininga",
+        "title": "Novo pedágio eletrônico é instalado na Raposo Tavares em Itapetininga",
+        "summary": "A concessionária Via Raposo iniciou a instalação de um pórtico de pedágio eletrônico no km 189+350 da Rodovia Raposo Tavares (SP-270), próximo ao distrito do Tu...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80868?v=Banner_1e6ea80f-4319-4ec0-ba39-f47a88b03cab_20261118144629.jpg",
+        "published_at": "2026-11-18T12:28:00-03:00",
+        "collected_at": "2026-11-18T15:52:32-03:00",
+        "cluster": "fbd718110b11b8cc",
+        "hidden": false
+    },
+    {
+        "id": "9f3874b30f8f5815",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80866/uso-irregular-de-vagas-exclusivas-para-idosos-e-pcds-gera-reclamacoes-em-itapetininga",
+        "title": "Uso irregular de vagas exclusivas para idosos e PcDs gera reclamações em Itapetininga",
+        "summary": "Idosos e pessoas com deficiência relatam desrespeito às vagas de estacionamento exclusivas em Itapetininga. Segundo os usuários, motoristas sem credencial ocupa...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80866?v=Banner_8cc78137-6f65-40c0-a989-9fb08dbfaec7_20261118142310.jpg",
+        "published_at": "2026-11-18T11:21:00-03:00",
+        "collected_at": "2026-11-18T15:52:32-03:00",
+        "cluster": "9f3874b30f8f5815",
+        "hidden": false
+    },
+    {
+        "id": "cf8986cd034de7cf",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80867/eduardo-dante-o-itapetiningano-que-ajudou-a-construir-a-via-anchieta",
+        "title": "Eduardo Dante, o itapetiningano que ajudou a construir a Via Anchieta",
+        "summary": "No Correio há 20 anos",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80867?v=Banner_93672643-c2b6-4ae2-9143-9ce8b6190148_20261118140632.jpg",
+        "published_at": "2026-11-18T11:05:39-03:00",
+        "collected_at": "2026-11-18T15:52:32-03:00",
+        "cluster": "cf8986cd034de7cf",
+        "hidden": false
+    },
+    {
         "id": "b76764354509f971",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11046/abre-e-fecha-do-feriado-da-consciencia-negra-20-de-novembro/",
