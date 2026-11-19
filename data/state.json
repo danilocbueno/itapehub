@@ -1,25 +1,25 @@
 {
     "sources": {
         "camara": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Thu, 19 Nov 2026 01:13:53 GMT",
+            "last_modified": "Thu, 19 Nov 2026 14:24:49 GMT",
             "errors": 0,
             "last_error": null
         },
         "correio": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 25,
             "etag": null,
             "last_modified": null,
             "errors": 0,
             "last_error": null,
-            "last_new_at": "2026-11-18T15:52:32-03:00",
+            "last_new_at": "2026-11-19T11:24:47-03:00",
             "last_error_at": "2026-11-03T09:46:59-03:00"
         },
         "folha": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 3,
             "etag": null,
             "last_modified": null,
@@ -28,9 +28,9 @@
             "last_error_at": "2026-11-09T20:37:21-03:00"
         },
         "g1": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 100,
-            "etag": "\"44e65f608b75f143ee906c947b469dbb9a82b470\"",
+            "etag": "\"7a445972e343d2006378e2a77211ad883107765e\"",
             "last_modified": null,
             "errors": 0,
             "last_error": null,
@@ -41,22 +41,22 @@
             "last_count": 50,
             "etag": null,
             "last_modified": null,
-            "errors": 0,
-            "last_error": null,
+            "errors": 2,
+            "last_error": "cURL error 28: Connection timed out after 10002 milliseconds (see https://curl.se/libcurl/c/libcurl-errors.html) for https://www.jornaldeitapetininga.com.br/feed",
             "last_new_at": "2026-11-14T13:36:44-03:00",
-            "last_error_at": "2026-11-17T16:12:00-03:00"
+            "last_error_at": "2026-11-19T11:24:47-03:00"
         },
         "ola": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 50,
-            "etag": "W/\"c240c7eaa458c3da3ded734a773ed956\"",
+            "etag": "W/\"0fd7ad1b5cbf4cc7bf22756feb05b3ce\"",
             "last_modified": null,
             "errors": 0,
             "last_error": null,
             "last_new_at": "2026-11-09T20:37:21-03:00"
         },
         "panoramico": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 10,
             "etag": "W/\"639e526dccee1c3f0afac22ed33d1534\"",
             "last_modified": "Wed, 18 Nov 2026 21:17:36 GMT",
@@ -65,7 +65,7 @@
             "last_new_at": "2026-11-18T22:13:56-03:00"
         },
         "prefeitura": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 7,
             "etag": null,
             "last_modified": null,
@@ -74,17 +74,17 @@
             "last_new_at": "2026-11-18T15:52:32-03:00"
         },
         "tvsmais": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Wed, 18 Nov 2026 22:43:16 GMT",
+            "last_modified": "Thu, 19 Nov 2026 14:18:36 GMT",
             "errors": 0,
             "last_error": null,
             "last_new_at": "2026-11-15T18:50:52-03:00",
             "last_error_at": "2026-11-18T11:32:29-03:00"
         },
         "xeh": {
-            "last_success": "2026-11-18T22:13:56-03:00",
+            "last_success": "2026-11-19T11:24:47-03:00",
             "last_count": 10,
             "etag": null,
             "last_modified": "Tue, 03 Nov 2026 20:55:17 GMT",
