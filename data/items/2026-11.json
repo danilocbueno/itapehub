@@ -1,5 +1,65 @@
 [
     {
+        "id": "aff34192f1f9af3f",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11049/agenda-cultural-da-secretaria-de-cultura-e-turismo-de-itapetininga/",
+        "title": "Agenda Cultural da Secretaria de Cultura e Turismo de Itapetininga",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Cultura e Turismo, informa a Agenda Cultural da semana.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/e15f24073955ded1db45ed40895a1309.webp",
+        "published_at": "2026-11-19T15:59:38-03:00",
+        "collected_at": "2026-11-19T15:59:38-03:00",
+        "cluster": "aff34192f1f9af3f",
+        "hidden": false
+    },
+    {
+        "id": "6517fe2c938eed0d",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11048/pat-de-itapetininga-tem-362-vagas-de-emprego-na-proxima-segunda-feira-23-de-novembro/",
+        "title": "PAT de Itapetininga tem 362 vagas de emprego na próxima segunda-feira, 23 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece na próxima segunda-feira, dia 23 de novembro, 362 vagas de emprego. A unidade estará fechada nesta sexta-feira (20), em virtude do feriado da Consciência Negra.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/2f78ca4d690bb895d12810c1cd477b05.webp",
+        "published_at": "2026-11-19T15:59:38-03:00",
+        "collected_at": "2026-11-19T15:59:38-03:00",
+        "cluster": "6517fe2c938eed0d",
+        "hidden": false
+    },
+    {
+        "id": "6dd9ee490ae1587f",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80873/policlinica-de-itapetininga-registra-media-de-520-faltas-de-pacientes-em-consultas-especializadas-por-mes",
+        "title": "Policlínica de Itapetininga registra média de 520 faltas de pacientes em consultas especializadas por mês",
+        "summary": "A Policlínica Municipal de Itapetininga registrou 3.121 faltas de pacientes em consultas médicas especializadas entre abril e setembro deste ano, média de aprox...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80873?v=Banner_7893fb9f-57f3-418e-a47f-79d6c5b382b7_20261119165953.jpg",
+        "published_at": "2026-11-19T14:32:00-03:00",
+        "collected_at": "2026-11-19T15:59:38-03:00",
+        "cluster": "6dd9ee490ae1587f",
+        "hidden": false
+    },
+    {
+        "id": "425e6851a079d48a",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80872/prefeitura-desativa-tres-escolas-municipais-de-itapetininga-pais-e-funcionarios-criticam-decisao",
+        "title": "Prefeitura desativa três escolas municipais de Itapetininga; pais e funcionários criticam decisão",
+        "summary": "A Prefeitura de Itapetininga confirmou a desativação de três escolas de educação infantil da rede municipal. Segundo a Secretaria de Educação, os alunos serão t...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80872?v=Banner_5febbe95-5734-416d-9850-cd70b72d8c2e_20261119142759.jpg",
+        "published_at": "2026-11-19T11:22:00-03:00",
+        "collected_at": "2026-11-19T15:59:38-03:00",
+        "cluster": "425e6851a079d48a",
+        "hidden": false
+    },
+    {
+        "id": "23914d390ebdbef4",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80871/evento-raizes-ancestrais-chega-a-2-edicao-com-programacao-cultural-em-itapetininga",
+        "title": "Evento Raízes Ancestrais chega à 2ª edição com programação cultural em Itapetininga",
+        "summary": "Itapetininga recebe, no domingo, dia 22 de novembro, a 2ª edição do evento Raízes Ancestrais, que propõe uma homenagem às raízes culturais e à ancestralidade ne...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80871?v=Banner_cd4f08aa-9b11-47bd-8889-a47755e5844b_20261119143802.jpg",
+        "published_at": "2026-11-19T10:53:00-03:00",
+        "collected_at": "2026-11-19T15:59:38-03:00",
+        "cluster": "23914d390ebdbef4",
+        "hidden": false
+    },
+    {
         "id": "1da529b1431ddcb6",
         "source": "correio",
         "url": "https://correiodeitapetininga.com.br/noticia/80870/confira-como-fica-o-funcionamento-dos-servicos-municipais-no-feriado-da-consciencia-negra",
