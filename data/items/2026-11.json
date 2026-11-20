@@ -1,5 +1,29 @@
 [
     {
+        "id": "3d575151faa1a83c",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/militares-do-exercito-recebem-titulo-de-cidadao-itapetiningano",
+        "title": "Militares do Exército recebem título de Cidadão Itapetiningano",
+        "summary": "A Câmara Municipal de Itapetininga concedeu, na noite da última quinta-feira (19), o título de Cidadão Itapetiningano aos militares do Exército Brasileiro Kleber Silas Monteiro Ribeiro, conhecido como Subtenente Monteiro, e José Cleidisney…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/militares-do-exercito-recebem-titulo-de-cidadao-itapetiningano-830d189419.jpg",
+        "published_at": "2026-11-20T15:12:17-03:00",
+        "collected_at": "2026-11-20T15:37:36-03:00",
+        "cluster": "3d575151faa1a83c",
+        "hidden": false
+    },
+    {
+        "id": "cb085f4581a9add7",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/20/homem-e-encontrado-morto-e-mulher-e-socorrida-em-estado-grave-apos-discussao-em-itapetininga.ghtml",
+        "title": "Homem é encontrado morto e mulher é socorrida em estado grave após ser esfaqueada em Itapetininga",
+        "summary": "Um homem foi encontrado morto e uma mulher foi socorrida em estado grave após ser esfaqueada no Jardim Leonel, em Itapetininga (SP), na manhã desta sexta-feira (20). Segundo a Polícia Civil, ambos eram um casal e tinham discutido no…",
+        "image": "https://s2-g1.glbimg.com/J3J-43OWR3fvLccpQHcyp0RzS6s=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/F/H/C6h83BT4KZW0jaUvFKEg/whatsapp-image-2026-06-16-at-14.42.45.jpeg",
+        "published_at": "2026-11-20T13:05:07-03:00",
+        "collected_at": "2026-11-20T15:37:36-03:00",
+        "cluster": "cb085f4581a9add7",
+        "hidden": false
+    },
+    {
         "id": "2f4c4994ddf77b25",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/20/companhia-de-bailarinos-negros-busca-ampliar-acesso-a-arte-no-interior-de-sp-dar-oportunidade.ghtml",
