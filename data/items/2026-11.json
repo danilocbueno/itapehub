@@ -1,5 +1,77 @@
 [
     {
+        "id": "40c37cab302c8ba5",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11052/forum-municipal-de-cultura-em-itapetininga-saiba-como-participar/",
+        "title": "Fórum Municipal de Cultura em Itapetininga. Saiba como participar!",
+        "summary": "Durante o credenciamento, cada participante deverá escolher um dos cinco eixos culturais, podendo votar exclusivamente no eixo selecionado.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/f5e64d435539d1f0cba0bc217f299b0a.webp",
+        "published_at": "2026-11-19T22:17:12-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "40c37cab302c8ba5",
+        "hidden": false
+    },
+    {
+        "id": "d40d9311429dbc1b",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11051/arte-cultura-e-respeito-marcam-o-dia-da-consciencia-negra-na-emef-prof-adalberto-christo-das-dores/",
+        "title": "Arte, cultura e respeito marcam o Dia da Consciência Negra na \"EMEF Prof. Adalberto Christo das Dores\"",
+        "summary": "Com a mensagem \"Respeito não tem cor, tem consciência!\" em destaque no pátio, a EMEF \"Prof. Adalberto Christo das Dores\" celebrou nesta quinta-feira (19) o Dia da Consciência Negra. Ao longo das últimas semanas, professoras, monitores do…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/4ca3003e4e8d7e3182e2d72da6d3989e.webp",
+        "published_at": "2026-11-19T22:17:12-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "d40d9311429dbc1b",
+        "hidden": false
+    },
+    {
+        "id": "7cd3598fa4a5662d",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11050/emef-prof-jandyra-vieira-marcondes-realiza-sarau-e-exposicao-em-homenagem-ao-dia-da-consciencia-negra/",
+        "title": "EMEF “Profª Jandyra Vieira Marcondes” realiza Sarau e Exposição em homenagem ao Dia da Consciência Negra",
+        "summary": "No dia 18 de novembro, a EMEF “Prof.ª Jandyra Vieira Marcondes” realizou o 2º Sarau e Exposição do Projeto Antirracismo, em homenagem ao Dia da Consciência Negra, celebrado em 20 de novembro.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/051bd9a56478cb35f27a4fbb7f2603bb.webp",
+        "published_at": "2026-11-19T22:17:12-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "7cd3598fa4a5662d",
+        "hidden": false
+    },
+    {
+        "id": "00595072465203fa",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/itapetininga-implanta-quatro-pontos-de-coleta-para-descarte-de-residuos-texteis/",
+        "title": "Itapetininga implanta quatro pontos de coleta para descarte de resíduos têxteis",
+        "summary": "Projeto recebe roupas, tecidos e retalhos e prevê encaminhamento dos materiais para reutilização ou transformação em produtos de limpeza Itapetininga passou a contar com quatro pontos de coleta para o descarte de resíduos têxteis. A…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/Sem-nome-Site-22.png",
+        "published_at": "2026-11-19T18:40:56-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "00595072465203fa",
+        "hidden": false
+    },
+    {
+        "id": "268893a7e6def765",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/regiao-de-itapetininga-tem-403-vagas-em-concurso-para-professores-do-estado-de-sp/",
+        "title": "Região de Itapetininga tem 403 vagas em concurso para professores do Estado de SP",
+        "summary": "Oportunidades são distribuídas entre oito regiões de ensino, incluindo Itapetininga, Sorocaba e Itapeva; salários iniciais chegam a R$ 5,5 mil. Inscrições começam em 26 de novembro. A região de Itapetininga está entre as contempladas no…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/images-3.jpg",
+        "published_at": "2026-11-19T18:30:48-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "268893a7e6def765",
+        "hidden": false
+    },
+    {
+        "id": "8a441715aa7d2d48",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2026/11/19/edital-professores-interior-sp.ghtml",
+        "title": "Seduc-SP abre concurso com quase 1,7 mil vagas de professor para o interior de SP; veja como concorrer",
+        "summary": "Foi publicado, nesta quinta-feira (19), o edital do novo concurso público da Secretaria da Educação do Estado de São Paulo (Seduc-SP) para a contratação de professores efetivos dos ensinos Fundamental e Médio. São quase 1,7 mil vagas para…",
+        "image": "https://s2-g1.glbimg.com/cWzQv3FpsmnG87kB6kFYrMJp2aM=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/3/4/t74jdnSOe8r6t9JqwVkQ/edicao-g1-agenda-2026-11-19t154253.316.png",
+        "published_at": "2026-11-19T16:14:31-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "8a441715aa7d2d48",
+        "hidden": false
+    },
+    {
         "id": "aff34192f1f9af3f",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11049/agenda-cultural-da-secretaria-de-cultura-e-turismo-de-itapetininga/",
@@ -21,6 +93,18 @@
         "published_at": "2026-11-19T15:59:38-03:00",
         "collected_at": "2026-11-19T15:59:38-03:00",
         "cluster": "6517fe2c938eed0d",
+        "hidden": false
+    },
+    {
+        "id": "6b7d1375c2b7738f",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/19/feriado-da-consciencia-negra-confira-o-que-abre-e-o-que-fecha-nesta-sexta-feira-em-itapetininga-e-tatui.ghtml",
+        "title": "Feriado da Consciência Negra: confira o que abre e o que fecha nesta sexta-feira em Itapetininga e Tatuí",
+        "summary": "As Prefeituras de Itapetininga (SP) e Tatuí divulgaram o funcionamento dos serviços públicos municipais durante o feriado do Dia da Consciência Negra, celebrado nesta sexta-feira (20). Alguns serviços terão atendimento normal, enquanto…",
+        "image": "https://s2-g1.glbimg.com/5xeDOMH8L3aAvQLskS8KG_R13cs=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/f/Y/tBjueQQRKaL2CuiO9UUQ/whatsapp-image-2024-08-27-at-20.17.27.jpeg",
+        "published_at": "2026-11-19T15:58:27-03:00",
+        "collected_at": "2026-11-19T22:17:12-03:00",
+        "cluster": "b76764354509f971",
         "hidden": false
     },
     {
