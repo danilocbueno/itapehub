@@ -1,5 +1,53 @@
 [
     {
+        "id": "8d4ee5010173d424",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/20/pedagio-eletronico-e-instalado-na-raposo-tavares-em-itapetininga-veja-quando-comeca-a-cobranca.ghtml",
+        "title": "Pedágio eletrônico é instalado na Raposo Tavares em Itapetininga; veja quando começa a cobrança",
+        "summary": "Um pórtico de pedágio eletrônico foi instalado no quilômetro 189+350 da Rodovia Raposo Tavares (SP-270), próximo ao Distrito do Tupy, em Itapetininga (SP). O equipamento ainda não está em funcionamento e não realiza a cobrança dos…",
+        "image": "https://s2-g1.glbimg.com/BtmT-xYmmpYW-gh0896Y1NRFz98=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/3/E/nFqvPtRtWuA6re7G6OPQ/whatsapp-image-2024-11-18-at-14.24.55.jpeg",
+        "published_at": "2026-11-20T18:55:03-03:00",
+        "collected_at": "2026-11-20T21:49:01-03:00",
+        "cluster": "8d4ee5010173d424",
+        "hidden": false
+    },
+    {
+        "id": "b4b84da33be43d11",
+        "source": "tvsmais",
+        "url": "https://www.tvsmais.com.br/homem-morre-e-mulher-fica-ferida-apos-desentendimento-em-residencia-de-itapetininga/",
+        "title": "Homem morre e mulher fica ferida após desentendimento em residência de Itapetininga",
+        "summary": "Caso aconteceu no Jardim Leonel. Mulher foi encontrada ferida por arma branca e encaminhada ao Pronto-Socorro Municipal",
+        "image": "https://www.tvsmais.com.br/wp-content/uploads/2025/09/Policia-investiga-pornografia-infantil-feita-por-IA-em-Itapetininga.jpg",
+        "published_at": "2026-11-20T18:20:57-03:00",
+        "collected_at": "2026-11-20T21:49:01-03:00",
+        "cluster": "b4b84da33be43d11",
+        "hidden": false
+    },
+    {
+        "id": "42a602bb58b31394",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/presidente-prudente-e-regiao/noticia/2026/11/20/defesa-civil-alerta-para-chuvas-fortes-no-interior-de-sp-durante-o-feriado-prolongado.ghtml",
+        "title": "Defesa Civil alerta para chuvas fortes no interior de SP durante o feriado prolongado",
+        "summary": "Chuvas fortes durante o feriado prologando podem atingir as regiões de Presidente Prudente, Bauru, Itapetininga, São José do Rio Preto e Sorocaba, a partir desta sexta-feira (20), com atenção maior no domingo (22). Conforme o alerta da…",
+        "image": "https://s2-g1.glbimg.com/Cb36gLT2pXr5-bbB7ySD44NTyWQ=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/X/b/DHHa5aRc2V0QqiBpcR2g/whatsapp-image-2026-02-09-at-17.58.12.jpeg",
+        "published_at": "2026-11-20T18:02:42-03:00",
+        "collected_at": "2026-11-20T21:49:01-03:00",
+        "cluster": "42a602bb58b31394",
+        "hidden": false
+    },
+    {
+        "id": "4d2be0fe24ec9747",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/mcdonalds-faz-nevar-em-sorocaba-e-prepara-programacao-especial-de-natal-em-parceria-com-a-coca-cola-brasil",
+        "title": "McDonald's faz nevar em Sorocaba e prepara programação especial de Natal em parceria com a Coca-Cola Brasil",
+        "summary": "Restaurante do Campolim terá decoração temática, apresentações de coral, personagens natalinos e sessões de neve artificial, com atrações gratuitas a partir de 22 de novembro",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/mcdonalds-faz-nevar-em-sorocaba-e-prepara-programacao-especial-de-natal-em-parceria-com-a-coca-cola-brasil-9150fd5f61.jpg",
+        "published_at": "2026-11-20T16:54:40-03:00",
+        "collected_at": "2026-11-20T21:49:01-03:00",
+        "cluster": "4d2be0fe24ec9747",
+        "hidden": false
+    },
+    {
         "id": "3d575151faa1a83c",
         "source": "jornal",
         "url": "https://www.jornaldeitapetininga.com.br/noticias/militares-do-exercito-recebem-titulo-de-cidadao-itapetiningano",
