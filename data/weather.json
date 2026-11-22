@@ -1,9 +1,9 @@
 {
-    "fetched_at": "2026-11-22T10:19:42-03:00",
+    "fetched_at": "2026-11-22T14:50:16-03:00",
     "current": {
-        "temperature": 28.1,
-        "code": 1,
-        "time": "2026-11-22T10:15"
+        "temperature": 27.1,
+        "code": 51,
+        "time": "2026-11-22T14:45"
     },
     "daily": [
         {
@@ -11,7 +11,7 @@
             "max": 30.1,
             "min": 20.5,
             "rain": 3,
-            "rain_probability": 74,
+            "rain_probability": 80,
             "code": 95
         },
         {
@@ -27,7 +27,7 @@
             "max": 29.7,
             "min": 21.3,
             "rain": 5.4,
-            "rain_probability": 90,
+            "rain_probability": 97,
             "code": 95
         }
     ]
