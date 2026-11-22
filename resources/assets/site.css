@@ -1575,6 +1575,9 @@ td b {
 }
 /* Faixa que rola para o lado, parando em cada pôster */
 .cinema-slides {
+    /* Contém os textos de leitor de tela (position: absolute) dos horários:
+       sem isso, os dos filmes fora da tela alargavam a página no celular. */
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 150px;
