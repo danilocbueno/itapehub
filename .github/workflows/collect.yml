@@ -35,7 +35,7 @@ jobs:
     timeout-minutes: 30
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy-first.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -130,5 +130,16 @@ jobs:
         with:
           path: build
 
+      # O deploy às vezes não acha o artefato recém-enviado ("Found 0 artifact(s)",
+      # 21 e 22/11/2026): uma demora da API do GitHub. Espera um pouco e tenta de novo.
+      - id: deploy-first
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Esperar antes de tentar o deploy de novo
+        if: steps.deploy-first.outcome == 'failure'
+        run: sleep 30
+
       - id: deploy
+        if: steps.deploy-first.outcome == 'failure'
         uses: actions/deploy-pages@v4
