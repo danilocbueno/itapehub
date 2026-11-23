@@ -8,6 +8,7 @@ use App\Cinema\Showtimes;
 use App\Data\Source;
 use App\Programas\Program;
 use App\Programas\ProgramNews;
+use App\Resumo\DaySummaries;
 use App\Storage\ItemRepository;
 use App\Storage\JsonFile;
 use App\Storage\StateRepository;
@@ -50,8 +51,18 @@ final class SiteBuilder
         $programNews = ProgramNews::load($dataPath.'/programas', (string) config('itape.site.url'), $programs);
 
         $clusters = Timeline::clusters([...$items->all(), ...array_column($sessionNews, 'item'), ...array_column($programNews, 'item')]);
-        $days = Timeline::byDay($clusters);
-        $home = $this->homeClusters($clusters, $now);
+        // Resumos do dia: entram na linha do tempo (no fim de cada dia), na busca e no RSS,
+        // mas não na agenda, nos temas nem no resumo de 24 h, que usam só as notícias.
+        $summaries = DaySummaries::load($dataPath.'/resumos', (string) config('itape.site.url'));
+        $timeline = $clusters;
+
+        foreach ($summaries as $summary) {
+            $timeline[] = new Cluster($summary['item']);
+        }
+
+        usort($timeline, fn (Cluster $a, Cluster $b) => $b->date() <=> $a->date());
+        $days = Timeline::byDay($timeline);
+        $home = $this->homeClusters($timeline, $now);
         $events = Events::upcoming($clusters, $now, (int) config('itape.agenda.days'));
 
         $shared = [
@@ -60,6 +71,7 @@ final class SiteBuilder
                 ...$sources,
                 SessionNews::SOURCE => SessionNews::source(),
                 ...array_combine(array_map(fn (Program $p) => $p->sourceKey(), $programs), array_map(fn (Program $p) => $p->source(), $programs)),
+                DaySummaries::SOURCE => DaySummaries::source((string) config('itape.site.url')),
             ],
             'sessionCovers' => $sessionCovers,
             'now' => $now,
@@ -179,13 +191,19 @@ final class SiteBuilder
         // Busca: a página e o índice que o navegador baixa na primeira busca.
         $this->write($buildPath.'/busca/index.html', 'search', [...$shared, 'currentPage' => 'busca']);
         $this->files->put($buildPath.'/busca.json', json_encode(
-            SearchIndex::entries($clusters, $shared['sources'], (string) $shared['site']['url']),
+            SearchIndex::entries($timeline, $shared['sources'], (string) $shared['site']['url']),
             JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR,
         ));
+        // RSS: um item por dia, o resumo (e não cada notícia).
         $this->write($buildPath.'/feed.xml', 'feed', [
             ...$shared,
-            'clusters' => array_slice($clusters, 0, (int) config('itape.feed.items')),
+            'summaries' => array_slice($summaries, 0, (int) config('itape.feed.items')),
         ]);
+
+        foreach ($summaries as $summary) {
+            $this->write($buildPath.'/'.$summary['path'].'index.html', 'day-summary', [...$shared, ...$summary]);
+            $pages++;
+        }
         $pages += 5;
 
         // Fontes servidas pelo próprio site (sem enviar o IP dos visitantes a terceiros).
@@ -200,6 +218,30 @@ final class SiteBuilder
         }
 
         return ['pages' => $pages, 'clusters' => count($clusters), 'home' => count($home)];
+    }
+
+    /**
+     * As notícias como aparecem no site (coletadas, sessões da Câmara e
+     * programas), agrupadas e mais recentes primeiro, sem os resumos do dia.
+     * Usado pelo resumo do dia (php itape resumo).
+     *
+     * @return array{clusters: list<Cluster>, sources: array<string, Source>}
+     */
+    public static function news(string $dataPath, string $siteUrl): array
+    {
+        $programs = Program::all();
+        $items = (new ItemRepository($dataPath.'/items'))->all();
+        $sessionNews = SessionNews::load($dataPath.'/camara/noticias', $siteUrl);
+        $programNews = ProgramNews::load($dataPath.'/programas', $siteUrl, $programs);
+
+        return [
+            'clusters' => Timeline::clusters([...$items, ...array_column($sessionNews, 'item'), ...array_column($programNews, 'item')]),
+            'sources' => [
+                ...Source::all(),
+                SessionNews::SOURCE => SessionNews::source(),
+                ...array_combine(array_map(fn (Program $p) => $p->sourceKey(), $programs), array_map(fn (Program $p) => $p->source(), $programs)),
+            ],
+        ];
     }
 
     /**

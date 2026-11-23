@@ -91,6 +91,17 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      # Resumo de cada dia que terminou (Gemini, ou a lista simples de títulos): o item do RSS.
+      - name: Resumo do dia
+        run: php itape resumo
+        timeout-minutes: 5
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Os links das notícias do próprio site (Câmara, programas) ficam gravados no resumo.
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+
       - name: Salvar estado da coleta
         if: ${{ !cancelled() }}
         uses: actions/cache/save@v4
@@ -104,7 +115,7 @@ jobs:
 
       - name: Commit das notícias novas
         run: |
-          if [ -n "$(git status --porcelain data/items data/camara data/programas)" ]; then
+          if [ -n "$(git status --porcelain data/items data/camara data/programas data/resumos)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add data

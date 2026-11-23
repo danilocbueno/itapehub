@@ -58,7 +58,8 @@ return [
     ],
 
     'feed' => [
-        'items' => 50,
+        // Resumos do dia no RSS (um item por dia).
+        'items' => 30,
     ],
 
     'agenda' => [
@@ -105,6 +106,25 @@ return [
 
     // Notícias dos programas em vídeo (config/programas.php). Usa a mesma chave do Gemini.
     // Se o Gemini falhar, nada é publicado: o episódio é tentado de novo nas próximas execuções.
+    // Resumo de cada dia (data/resumos), que vira o item do RSS: um por dia.
+    'resumo' => [
+        // Primeiro dia resumido (sem resumos de dias anteriores).
+        'since' => '2026-11-22',
+        // Dias para trás em que ainda vale escrever o resumo.
+        'days' => 3,
+        // O dia é resumido a partir desta hora do dia seguinte (a coleta da madrugada já passou).
+        'after_hour' => 3,
+        // Sem texto do Gemini até esta hora do dia seguinte, publica a lista simples.
+        'fallback_hour' => 12,
+        'max_attempts' => 4,
+        // Notícias enviadas ao Gemini e listadas na página (as mais repercutidas primeiro).
+        'max_items' => 40,
+        // Em ordem: se o primeiro estiver sobrecarregado, tenta o seguinte.
+        'models' => ['gemini-3.5-flash-lite', 'gemini-3.8-flash'],
+        'thinking_level' => 'high',
+        'timeout' => 180,
+    ],
+
     'programas' => [
         // Só episódios transmitidos nos últimos N dias viram notícia.
         'days' => 7,

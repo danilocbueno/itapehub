@@ -83,7 +83,7 @@
     <div class="foot-inner">
       <nav>
         <a href="{{ $base }}/">Início</a>
-        <a href="{{ $base }}/hoje/">Resumo do dia</a>
+        <a href="{{ $base }}/hoje/">Resumo para WhatsApp</a>
         <a href="{{ $base }}/agenda/">Agenda</a>
         <a href="{{ $base }}/arquivo/">Arquivo</a>
         <a href="{{ $base }}/fontes/">Fontes</a>

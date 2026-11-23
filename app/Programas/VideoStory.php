@@ -86,10 +86,17 @@ final class VideoStory
             'programa' => $program->name,
             'emissora' => $program->station,
             'titulo' => $title,
-            // "sexta-feira, 6 de novembro de 2026"
-            'data' => self::WEEKDAYS[$date->dayOfWeek].($date->isWeekend() ? '' : '-feira').', '.$date->day.' de '.Timeline::monthName($date).' de '.$date->year,
+            'data' => self::fullDate($date),
             'duracao' => self::clock($seconds),
         ];
+    }
+
+    /**
+     * "sexta-feira, 6 de novembro de 2026" (com o dia da semana pronto: o modelo erra a conta).
+     */
+    public static function fullDate(CarbonImmutable $date): string
+    {
+        return self::WEEKDAYS[$date->dayOfWeek].($date->isWeekend() ? '' : '-feira').', '.$date->day.' de '.Timeline::monthName($date).' de '.$date->year;
     }
 
     /**
@@ -107,7 +114,7 @@ final class VideoStory
     /**
      * @param  array<mixed>  $data
      */
-    private static function text(array $data, string $field, int $max, bool $required = true): string
+    public static function text(array $data, string $field, int $max, bool $required = true): string
     {
         $value = trim((string) (is_string($data[$field] ?? null) ? $data[$field] : ''));
 
@@ -196,7 +203,7 @@ final class VideoStory
      * Telefone, e-mail, @perfil e endereço de site não entram: um erro de
      * transcrição mandaria dinheiro ou mensagens para a pessoa errada.
      */
-    private static function checkContacts(string $body): void
+    public static function checkContacts(string $body): void
     {
         $patterns = [
             'telefone ou chave' => '~\(?\b\d{2}\)?\s?9?\d{4}[-\s.]?\d{4}\b~u',
@@ -215,7 +222,7 @@ final class VideoStory
     /**
      * "sexta-feira (6)" precisa bater com a data do episódio.
      */
-    private static function checkWeekday(string $body, CarbonImmutable $date): void
+    public static function checkWeekday(string $body, CarbonImmutable $date): void
     {
         preg_match_all('~\b(segunda|terça|quarta|quinta|sexta|sábado|domingo)(?:-feira)?\s*\((\d{1,2})\)~iu', $body, $matches, PREG_SET_ORDER);
 

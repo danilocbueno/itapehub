@@ -110,13 +110,13 @@ it('junta a mesma notícia de fontes diferentes em um card', function () {
         ->and(substr_count($html, 'Rio Itapetininga recua'))->toBe(1);
 });
 
-it('gera um feed RSS válido', function () {
+it('gera um feed RSS válido, mesmo sem nenhum resumo do dia ainda', function () {
     $this->artisan('build')->assertSuccessful();
     $feed = simplexml_load_string(built('feed.xml'));
 
     expect($feed)->not->toBeFalse()
-        ->and(count($feed->channel->item))->toBeGreaterThan(10)
-        ->and((string) $feed->channel->item[0]->link)->toStartWith('http');
+        ->and((string) $feed->channel->title)->toContain('Resumo do dia')
+        ->and(count($feed->channel->item))->toBe(0);
 });
 
 it('mostra a situação das fontes', function () {
@@ -493,8 +493,8 @@ it('gera a página do resumo do dia com o texto pronto para o WhatsApp', functio
 it('leva ao resumo do dia pelo rodapé de todas as páginas', function () {
     $this->artisan('build')->assertSuccessful();
 
-    expect(built('index.html'))->toContain('href="/hoje/">Resumo do dia</a>')
-        ->and(built('fontes/index.html'))->toContain('href="/hoje/">Resumo do dia</a>');
+    expect(built('index.html'))->toContain('href="/hoje/">Resumo para WhatsApp</a>')
+        ->and(built('fontes/index.html'))->toContain('href="/hoje/">Resumo para WhatsApp</a>');
 });
 
 it('gera a agenda com um card por evento: data, texto da notícia e link', function () {
@@ -763,7 +763,6 @@ it('põe a notícia da sessão na linha do tempo, no tema Política, abrindo na 
         ->not->toContain('session-cover-stats')
         ->not->toContain('class="official"')
         ->and(built('tema/politica/index.html'))->toContain($link)
-        ->and(built('feed.xml'))->toContain('http://localhost:8000/camara/53a-sessao-ordinaria-de-2026/')
         // Não é uma fonte coletada: não aparece na página de fontes.
         ->and(built('fontes/index.html'))->not->toContain('Sessões da Câmara')
         ->and(config('itape.paths.build').'/assets/camara.avif')->toBeFile();
