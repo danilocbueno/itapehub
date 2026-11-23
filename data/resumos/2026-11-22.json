@@ -1,0 +1,54 @@
+{
+    "date": "2026-11-22",
+    "attempts": 0,
+    "error": "gemini-3.5-flash-lite: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.8-flash: HTTP 503: gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later.",
+    "kind": "lista",
+    "news": [
+        {
+            "id": "n1",
+            "title": "Itapetininga abre inscrições para curso gratuito de confeitaria; veja como participar",
+            "summary": "A Prefeitura de Itapetininga (SP) abriu inscrições para cursos de confeitaria. Os interessados em participar da capacitação, que é gratuita, devem fazer o cadastro por meio deste link. Segundo a gestão, há disponível cursos de…",
+            "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/22/itapetininga-abre-inscricoes-para-curso-gratuito-de-confeitaria-veja-como-participar.ghtml",
+            "image": "https://s2-g1.glbimg.com/o7KK5-lLKNDRKGRUPRdRcZ1IceM=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/i/P/6KSbzxQhaUExA2eafdQw/adobestock-360525896.jpeg",
+            "sources": [
+                "g1"
+            ],
+            "time": "15:15"
+        },
+        {
+            "id": "n2",
+            "title": "PAT de Itapetininga oferece 362 vagas de emprego na segunda-feira",
+            "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece 362 vagas de emprego a partir desta segunda-feira, 23 de novembro. As oportunidades são destinadas a candidatos com e sem experiência profissional, além de vagas para…",
+            "url": "https://jornalpanoramico.com.br/pat-de-itapetininga-oferece-362-vagas-de-emprego-na-segunda-feira/",
+            "image": "https://assets.mktnaweb.com/accounts/2021/11/12/171464/pictures/7174/original_PAT%2019%20NOV.png?1795109221",
+            "sources": [
+                "Panorâmico"
+            ],
+            "time": "11:56"
+        },
+        {
+            "id": "n3",
+            "title": "Dia do Reciclador: essenciais para a reciclagem, catadores ainda enfrentam falta de estrutura",
+            "summary": "Mas apesar da importância dessa atividade, catadores autônomos e trabalhadores de cooperativas ainda enfrentam dificuldades de reconhecimento, valorização e condições adequadas de trabalho. Neste domingo (22), quando é celebrado o Dia do…",
+            "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/22/dia-do-reciclador-essenciais-para-a-reciclagem-catadores-ainda-enfrentam-falta-de-estrutura.ghtml",
+            "image": "https://s2-g1.glbimg.com/reDJXvZKtMJNPvPWTlD-QjcVwCw=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/h/r/3IynfIQcCc54l16R3YJg/whatsapp-image-2025-03-28-at-10.54.09.jpeg",
+            "sources": [
+                "g1"
+            ],
+            "time": "08:00"
+        },
+        {
+            "id": "n4",
+            "title": "Preço do tomate dispara no interior de SP após excesso de chuvas",
+            "summary": "O preço do quilo do tomate subiu nos mercados e feiras do interior de São Paulo nas últimas semanas, impulsionado pelo excesso de chuvas nas lavouras. Em Sorocaba, o fruto já é encontrado por até R$ 26. Em São José do Rio Preto, o valor…",
+            "url": "https://g1.globo.com/sp/sorocaba-jundiai/nosso-campo/noticia/2026/11/22/preco-do-tomate-dispara-no-interior-de-sp-apos-excesso-de-chuvas.ghtml",
+            "image": "https://s2-g1.glbimg.com/padLh5fQuOq25vLgNNC_NsMLins=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/n/Q/KDQNHfTK2i0sDZdEaiBg/nc-tomate-guapiara-221126-frame-4005.jpeg",
+            "sources": [
+                "g1"
+            ],
+            "time": "07:30"
+        }
+    ],
+    "written_by": "lista",
+    "written_at": "2026-11-23T19:38:06-03:00"
+}
