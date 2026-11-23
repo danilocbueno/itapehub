@@ -1,5 +1,29 @@
 [
     {
+        "id": "796ba82206807a8e",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80877/moradores-podem-participar-da-eleicao-do-conselho-municipal-de-politica-cultural",
+        "title": "Moradores podem participar da eleição do Conselho Municipal de Política Cultural",
+        "summary": "A Prefeitura de Itapetininga realizará a eleição dos representantes da sociedade civil que irão compor o Conselho Municipal de Política Cultural (CMPC). A votaç...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80877?v=Banner_530a6a78-8a7f-4d49-ab4e-86407d94137e_20261123142222.jpg",
+        "published_at": "2026-11-23T11:20:20-03:00",
+        "collected_at": "2026-11-23T12:56:39-03:00",
+        "cluster": "796ba82206807a8e",
+        "hidden": false
+    },
+    {
+        "id": "12faea95f2f2a847",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80876/ministerio-da-saude-abre-processo-seletivo-com-759-vagas",
+        "title": "Ministério da Saúde abre processo seletivo com 759 vagas",
+        "summary": "O Ministério da Saúde publicou um edital de processo seletivo simplificado para contratação temporária de 300 profissionais imediatos de nível superior, além de...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80876?v=Banner_25e96501-eaa3-4ae2-bedf-14924674fdbc_20261123133832.jpg",
+        "published_at": "2026-11-23T10:36:50-03:00",
+        "collected_at": "2026-11-23T12:56:39-03:00",
+        "cluster": "12faea95f2f2a847",
+        "hidden": false
+    },
+    {
         "id": "9a92f17818d8a6ce",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/22/itapetininga-abre-inscricoes-para-curso-gratuito-de-confeitaria-veja-como-participar.ghtml",
