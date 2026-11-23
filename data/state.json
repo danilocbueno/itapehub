@@ -1,25 +1,25 @@
 {
     "sources": {
         "camara": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Mon, 23 Nov 2026 15:56:41 GMT",
+            "last_modified": "Mon, 23 Nov 2026 22:03:39 GMT",
             "errors": 0,
             "last_error": null
         },
         "correio": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 25,
             "etag": null,
             "last_modified": null,
             "errors": 0,
             "last_error": null,
-            "last_new_at": "2026-11-23T12:56:39-03:00",
+            "last_new_at": "2026-11-23T19:03:38-03:00",
             "last_error_at": "2026-11-03T09:46:59-03:00"
         },
         "folha": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 3,
             "etag": null,
             "last_modified": null,
@@ -28,26 +28,26 @@
             "last_error_at": "2026-11-23T04:47:18-03:00"
         },
         "g1": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 100,
-            "etag": "\"89daf0ab7acecb410a726d35abec4553c1c606d6\"",
+            "etag": "\"e7907b0e220beba79989b5a1d9c0e12f2352d841\"",
             "last_modified": null,
             "errors": 0,
             "last_error": null,
             "last_new_at": "2026-11-22T17:07:07-03:00"
         },
         "jornal": {
-            "last_success": "2026-11-23T04:47:18-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 50,
             "etag": null,
             "last_modified": null,
-            "errors": 1,
-            "last_error": "cURL error 28: Connection timed out after 10001 milliseconds (see https://curl.se/libcurl/c/libcurl-errors.html) for https://www.jornaldeitapetininga.com.br/feed",
+            "errors": 0,
+            "last_error": null,
             "last_new_at": "2026-11-20T21:49:01-03:00",
             "last_error_at": "2026-11-23T12:56:39-03:00"
         },
         "ola": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 50,
             "etag": "W/\"77fa005de460a3d55bd0bac0e8789b1c\"",
             "last_modified": null,
@@ -56,35 +56,35 @@
             "last_new_at": "2026-11-09T20:37:21-03:00"
         },
         "panoramico": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 10,
-            "etag": "W/\"bf2d65165c461f643c7b1b78b1642fa7\"",
-            "last_modified": "Sun, 22 Nov 2026 15:13:22 GMT",
+            "etag": "W/\"2d68418bedabff27bf3f88439b1bfa07\"",
+            "last_modified": "Mon, 23 Nov 2026 19:50:22 GMT",
             "errors": 0,
             "last_error": null,
-            "last_new_at": "2026-11-22T14:50:16-03:00"
+            "last_new_at": "2026-11-23T19:03:38-03:00"
         },
         "prefeitura": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 7,
             "etag": null,
             "last_modified": null,
             "errors": 0,
             "last_error": null,
-            "last_new_at": "2026-11-19T22:17:12-03:00"
+            "last_new_at": "2026-11-23T19:03:38-03:00"
         },
         "tvsmais": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Mon, 23 Nov 2026 15:50:06 GMT",
+            "last_modified": "Mon, 23 Nov 2026 21:24:01 GMT",
             "errors": 0,
             "last_error": null,
             "last_new_at": "2026-11-20T21:49:01-03:00",
             "last_error_at": "2026-11-20T10:59:16-03:00"
         },
         "xeh": {
-            "last_success": "2026-11-23T12:56:39-03:00",
+            "last_success": "2026-11-23T19:03:38-03:00",
             "last_count": 10,
             "etag": null,
             "last_modified": "Tue, 03 Nov 2026 20:55:17 GMT",
