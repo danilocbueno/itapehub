@@ -1,5 +1,77 @@
 [
     {
+        "id": "462f0fef0cf56ac1",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11057/grande-final-do-campeonato-varzeano-de-itapetininga-vai-ser-realizada-neste-domingo-dia-29/",
+        "title": "Grande Final do Campeonato Varzeano de Itapetininga vai ser realizada neste domingo, dia 29",
+        "summary": "O Campeonato Municipal Varzeano chega a Grande Final, com as partidas das 1ª e 2ª Divisões e da categoria Municipal no próximo domingo, dia 29, no Clube dos Veteranos de Itapetininga que fica à rua Plínio Salgado, 360, na Vila Monteiro…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/37d77ade5d57f5d285b84cf5e33dfa57.webp",
+        "published_at": "2026-11-24T12:51:29-03:00",
+        "collected_at": "2026-11-24T12:51:29-03:00",
+        "cluster": "462f0fef0cf56ac1",
+        "hidden": false
+    },
+    {
+        "id": "2d42b7d390467179",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80885/moradores-de-itapetininga-relatam-falta-de-seguranca-e-mas-condicoes-em-veiculos-da-prefeitura",
+        "title": "Moradores de Itapetininga relatam falta de segurança e más condições em veículos da Prefeitura",
+        "summary": "Moradores de Itapetininga reclamam das condições dos veículos utilizados pela Prefeitura no transporte de pacientes para consultas e tratamentos em outras cidad...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80885?v=Banner_2f866d99-9da7-4b21-97ad-af2555b786e5_20261124140116.jpg",
+        "published_at": "2026-11-24T10:55:58-03:00",
+        "collected_at": "2026-11-24T12:51:29-03:00",
+        "cluster": "2d42b7d390467179",
+        "hidden": false
+    },
+    {
+        "id": "8e8b8af2b516c3a7",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80884/homem-e-preso-suspeito-de-extorsao-e-policia-apreende-mais-de-r-1-milhao-em-cheques-em-itapetininga",
+        "title": "Homem é preso suspeito de extorsão e polícia apreende mais de R$ 1 milhão em cheques em Itapetininga",
+        "summary": "Um homem de 48 anos foi preso preventivamente na manhã de segunda-feira, dia 23, suspeito de extorsão em Itapetininga. Durante o cumprimento de mandados judicia...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80884?v=Banner_ee57a201-ee48-47d7-8abd-f1527f3ea2b5_20261124134751.jpg",
+        "published_at": "2026-11-24T10:47:00-03:00",
+        "collected_at": "2026-11-24T12:51:29-03:00",
+        "cluster": "2036e03d0d212680",
+        "hidden": false
+    },
+    {
+        "id": "37549cbdffb0bc0b",
+        "source": "tvsmais",
+        "url": "https://www.tvsmais.com.br/policia-prende-suspeito-de-extorsao-e-apreende-r-35-mil-e-mais-de-r-1-milhao-em-cheques-em-itapetininga/",
+        "title": "Polícia prende suspeito de extorsão e apreende R$ 35 mil e mais de R$ 1 milhão em cheques em Itapetininga",
+        "summary": "Suspeito ameaçava uma vítima e seus familiares para cobrar uma suposta dívida comercial",
+        "image": "https://www.tvsmais.com.br/wp-content/uploads/2020/06/Banner-Mid-Institucional.jpg",
+        "published_at": "2026-11-24T10:28:21-03:00",
+        "collected_at": "2026-11-24T12:51:29-03:00",
+        "cluster": "2036e03d0d212680",
+        "hidden": false
+    },
+    {
+        "id": "0610e41c2a8d0057",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2026/11/24/pf-cumpre-mandados-contra-lavagem-de-dinheiro-e-criptomoedas-ilegais.ghtml",
+        "title": "Operações da PF contra lavagem de dinheiro e criptomoedas ilegais cumprem mandados nas regiões de Sorocaba, Jundiaí e Itapetininga",
+        "summary": "A Polícia Federal (PF) realizou, na manhã desta terça-feira (24), três operações simultâneas contra esquemas de lavagem de dinheiro, movimentação ilegal de recursos e evasão de divisas, com cumprimento de mandados em cidades da região de…",
+        "image": "https://s2-g1.glbimg.com/OcdPvISxCjfDza3G0ZqL1mzFz0U=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/n/h/QIaaboSJAp16ZLWacwyA/carros-pf.jpg",
+        "published_at": "2026-11-24T09:48:13-03:00",
+        "collected_at": "2026-11-24T12:51:29-03:00",
+        "cluster": "0610e41c2a8d0057",
+        "hidden": false
+    },
+    {
+        "id": "3d781b249f3daff4",
+        "source": "tvsmais",
+        "url": "https://www.tvsmais.com.br/policia-prende-gerente-do-trafico-em-itapetininga/",
+        "title": "Polícia prende gerente do tráfico em Itapetininga",
+        "summary": "Homem apontado como um dos principais gerentes do tráfico na cidade e região",
+        "image": "https://www.tvsmais.com.br/wp-content/uploads/2026/11/TVS-SBT-NOTICIAS-1-6.png",
+        "published_at": "2026-11-24T08:08:09-03:00",
+        "collected_at": "2026-11-24T12:51:29-03:00",
+        "cluster": "3d781b249f3daff4",
+        "hidden": false
+    },
+    {
         "id": "4ac98a48935a59c5",
         "source": "g1",
         "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/23/homem-e-preso-suspeito-de-extorquir-e-ameacar-vitima-em-itapetininga-cheques-de-mais-de-r-1-milhao-sao-apreendidos.ghtml",
