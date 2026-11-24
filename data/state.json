@@ -1,15 +1,15 @@
 {
     "sources": {
         "camara": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Mon, 23 Nov 2026 22:37:43 GMT",
+            "last_modified": "Tue, 24 Nov 2026 06:04:29 GMT",
             "errors": 0,
             "last_error": null
         },
         "correio": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 25,
             "etag": null,
             "last_modified": null,
@@ -19,7 +19,7 @@
             "last_error_at": "2026-11-03T09:46:59-03:00"
         },
         "folha": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 3,
             "etag": null,
             "last_modified": null,
@@ -28,7 +28,7 @@
             "last_error_at": "2026-11-23T04:47:18-03:00"
         },
         "g1": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 100,
             "etag": "\"d5c84ee9abc026e314b8da003468a0053c7c015c\"",
             "last_modified": null,
@@ -37,17 +37,17 @@
             "last_new_at": "2026-11-23T19:37:43-03:00"
         },
         "jornal": {
-            "last_success": "2026-11-23T19:03:38-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 50,
             "etag": null,
             "last_modified": null,
-            "errors": 1,
-            "last_error": "cURL error 28: Connection timed out after 10002 milliseconds (see https://curl.se/libcurl/c/libcurl-errors.html) for https://www.jornaldeitapetininga.com.br/feed",
+            "errors": 0,
+            "last_error": null,
             "last_new_at": "2026-11-20T21:49:01-03:00",
             "last_error_at": "2026-11-23T19:37:43-03:00"
         },
         "ola": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 50,
             "etag": "W/\"77fa005de460a3d55bd0bac0e8789b1c\"",
             "last_modified": null,
@@ -56,7 +56,7 @@
             "last_new_at": "2026-11-09T20:37:21-03:00"
         },
         "panoramico": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 10,
             "etag": "W/\"2d68418bedabff27bf3f88439b1bfa07\"",
             "last_modified": "Mon, 23 Nov 2026 19:50:22 GMT",
@@ -65,7 +65,7 @@
             "last_new_at": "2026-11-23T19:03:38-03:00"
         },
         "prefeitura": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 7,
             "etag": null,
             "last_modified": null,
@@ -74,17 +74,17 @@
             "last_new_at": "2026-11-23T19:03:38-03:00"
         },
         "tvsmais": {
-            "last_success": "2026-11-23T19:03:38-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 10,
             "etag": null,
-            "last_modified": "Mon, 23 Nov 2026 21:24:01 GMT",
-            "errors": 1,
-            "last_error": "cURL error 28: Connection timed out after 10002 milliseconds (see https://curl.se/libcurl/c/libcurl-errors.html) for https://www.tvsmais.com.br/?s=itapetininga&feed=rss2",
+            "last_modified": "Mon, 23 Nov 2026 23:15:21 GMT",
+            "errors": 0,
+            "last_error": null,
             "last_new_at": "2026-11-20T21:49:01-03:00",
             "last_error_at": "2026-11-23T19:37:43-03:00"
         },
         "xeh": {
-            "last_success": "2026-11-23T19:37:43-03:00",
+            "last_success": "2026-11-24T03:04:29-03:00",
             "last_count": 10,
             "etag": null,
             "last_modified": "Tue, 03 Nov 2026 20:55:17 GMT",
