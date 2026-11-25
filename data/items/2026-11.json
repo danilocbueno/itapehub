@@ -1,5 +1,29 @@
 [
     {
+        "id": "dd3fce326cba9878",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11063/ifsp-campus-itapetininga-prorroga-inscricoes-para-40-vagas-em-curso-tecnico-em-mecanica-gratuito/",
+        "title": "IFSP Campus Itapetininga prorroga inscrições para 40 vagas em curso Técnico em Mecânica gratuito",
+        "summary": "O Instituto Federal de São Paulo (IFSP) prorrogou as inscrições para o processo seletivo dos cursos técnicos concomitantes e subsequentes ao Ensino Médio com ingresso no primeiro semestre de 2027. Ao todo, são ofertadas 3.235 vagas…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/96cb848063291c04ef1358c93238be77.webp",
+        "published_at": "2026-11-25T12:35:09-03:00",
+        "collected_at": "2026-11-25T12:35:09-03:00",
+        "cluster": "dd3fce326cba9878",
+        "hidden": false
+    },
+    {
+        "id": "202f5a8114f53ddf",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/25/dia-do-doador-de-sangue-posto-de-itapetininga-ja-coletou-mais-de-105-mil-bolsas-desde-2024-veja-como-doar.ghtml",
+        "title": "Dia do Doador de Sangue: posto de Itapetininga já coletou mais de 10,5 mil bolsas desde 2024; veja como doar",
+        "summary": "No Dia Nacional do Doador de Sangue, celebrado nesta quarta-feira (25), o Posto Municipal de Coleta de Sangue de Itapetininga (SP) reforça a importância das doações para manter os estoques e atender pacientes que precisam de transfusões…",
+        "image": "https://s2-g1.glbimg.com/hJUyORhEcNt-OF4eUwALKN2Qk2E=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/9/r/KGZ9AGTgGnAqlAqbG68Q/whatsapp-image-2024-04-10-at-15-06-28-651x488.jpg",
+        "published_at": "2026-11-25T09:31:53-03:00",
+        "collected_at": "2026-11-25T12:35:09-03:00",
+        "cluster": "202f5a8114f53ddf",
+        "hidden": false
+    },
+    {
         "id": "0a32890c781c52bb",
         "source": "correio",
         "url": "https://correiodeitapetininga.com.br/noticia/80889/unidade-movel-do-cras-leva-servicos-sociais-a-zona-rural-de-itapetininga",
