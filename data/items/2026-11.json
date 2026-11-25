@@ -1,5 +1,89 @@
 [
     {
+        "id": "acc5652b1840e81c",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11065/itapetiningano-alecsandro-campos-recebe-graduacao-em-cerimonia-da-liga-de-judo-paulista/",
+        "title": "Itapetiningano Alecsandro Campos recebe graduação em Cerimônia da Liga de Judô Paulista",
+        "summary": "Era agosto de 2018, quando o jovem Alecsandro Almeida de Campos, hoje com 18 anos, começou a fazer parte do grupo de alunos no Projeto Judô Nossa Senhora das Graças, na Vila Reis, em Itapetininga. Se passaram mais de oito anos e o…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/019ad59f3bb84daa2e7578b8efe5a3d9.webp",
+        "published_at": "2026-11-25T16:57:00-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "acc5652b1840e81c",
+        "hidden": false
+    },
+    {
+        "id": "06e35bbec9d7b8c9",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11064/pat-de-itapetininga-tem-370-vagas-de-emprego-nesta-quinta-feira-26-de-novembro/",
+        "title": "PAT de Itapetininga tem 370 vagas de emprego nesta quinta-feira, 26 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta quinta-feira, dia 26 de novembro, 370 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/886dd000a91227c7b7dc433bd4fbf072.webp",
+        "published_at": "2026-11-25T16:57:00-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "06e35bbec9d7b8c9",
+        "hidden": false
+    },
+    {
+        "id": "7092cfc1bf8c89fc",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/25/rachel-moreno-pioneira-da-luta-feminista-no-brasil-morre-aos-80-anos-em-itapetininga.ghtml",
+        "title": "Rachel Moreno, pioneira da luta feminista no Brasil, morre aos 80 anos em Itapetininga",
+        "summary": "A pioneira na luta feminista no Brasil, Rachel Moreno, morreu nesta terça-feira (24), aos 80 anos, em Itapetininga (SP). A causa da morte não foi divulgada. Rachel era psicóloga, pesquisadora, especialista em sexualidade humana e em meio…",
+        "image": "https://s2-g1.glbimg.com/N3OtBhynL-_n1wNbFeRBSh3Neno=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/y/q/VgmNH1R2yiLKG3lbS8eA/whatsapp-image-2026-11-25-at-16.35.08.jpeg",
+        "published_at": "2026-11-25T16:36:19-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "7092cfc1bf8c89fc",
+        "hidden": false
+    },
+    {
+        "id": "ba6dd0b3f885b299",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/juros-altos-dificultam-a-vida-financeira-dos-brasileiros",
+        "title": "Juros altos dificultam a vida financeira dos brasileiros",
+        "summary": "O brasileiro enfrenta um cenário financeiro desafiador. Com a taxa básica de juros (Selic) em 13,75% ao ano, o acesso ao crédito continua caro, enquanto famílias e empresas enfrentam dificuldades para manter as contas em dia. Um…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/juros-altos-e-dividas-pressionam-o-bolso-dos-brasileiros-e5fa0692b5.jpg",
+        "published_at": "2026-11-25T16:18:10-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "ba6dd0b3f885b299",
+        "hidden": false
+    },
+    {
+        "id": "f5e086e15558abbe",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80896/ceprom-de-itapetininga-tem-vagas-remanescentes-para-cursos-com-uso-de-inteligencia-artificial",
+        "title": "Ceprom de Itapetininga tem vagas remanescentes para cursos com uso de inteligência artificial",
+        "summary": "O Centro Educacional Profissionalizante Municipal (Ceprom) “Prof. Arino Lourenço”, em parceria com o Sebrae, está com inscrições abertas para vagas remanescente...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80896?v=Banner_ea793b76-d210-4881-9d27-adca04f9d85f_20261125180024.jpg",
+        "published_at": "2026-11-25T14:55:00-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "cf0416948165f731",
+        "hidden": false
+    },
+    {
+        "id": "016aa0b93b54ca53",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80894/num-simples-passeio-infinitas-recordacoes-da-cidade",
+        "title": "Num simples passeio, infinitas recordações da cidade",
+        "summary": "No Correio há 20 anos",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80894?v=Banner_394e1a53-3189-4284-a691-8571b8c678fd_20261125173300.jpg",
+        "published_at": "2026-11-25T14:31:47-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "016aa0b93b54ca53",
+        "hidden": false
+    },
+    {
+        "id": "43596b9e1bf7a905",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80893/cantora-paula-lima-interpreta-classicos-de-rita-lee-em-itapetininga",
+        "title": "Cantora Paula Lima interpreta clássicos de Rita Lee em Itapetininga",
+        "summary": "A cantora Paula Lima apresenta o espetáculo “Soul Lee” no Sesi de Itapetininga no dia 6 de dezembro, domingo, às 18h. O show homenageia Rita Lee e reúne versões...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80893?v=Banner_7f207a41-40fc-400e-bf49-f0e15f0b7a8e_20261125160717.jpg",
+        "published_at": "2026-11-25T13:03:00-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "43596b9e1bf7a905",
+        "hidden": false
+    },
+    {
         "id": "dd3fce326cba9878",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11063/ifsp-campus-itapetininga-prorroga-inscricoes-para-40-vagas-em-curso-tecnico-em-mecanica-gratuito/",
@@ -9,6 +93,18 @@
         "published_at": "2026-11-25T12:35:09-03:00",
         "collected_at": "2026-11-25T12:35:09-03:00",
         "cluster": "dd3fce326cba9878",
+        "hidden": false
+    },
+    {
+        "id": "79cad1f442d76e1f",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80892/pioneira-do-movimento-feminista-brasileiro-rachel-moreno-morre-aos-80-anos-em-itapetininga",
+        "title": "Pioneira do movimento feminista brasileiro, Rachel Moreno morre aos 80 anos em Itapetininga",
+        "summary": "A psicóloga, escritora e pesquisadora Rachel Moreno, uma das pioneiras do movimento feminista brasileiro, morreu aos 80 anos na noite de terça-feira, dia 24, em...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80892?v=Banner_e20dc710-a3f4-4ef3-a10a-38fed05e2f8d_20261125145219.jpg",
+        "published_at": "2026-11-25T11:42:00-03:00",
+        "collected_at": "2026-11-25T16:57:00-03:00",
+        "cluster": "7092cfc1bf8c89fc",
         "hidden": false
     },
     {
