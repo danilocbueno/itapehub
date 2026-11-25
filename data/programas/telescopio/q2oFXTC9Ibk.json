@@ -6,6 +6,110 @@
     "date": "2026-11-24",
     "seconds": 3533,
     "found_at": "2026-11-24T17:40:32-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "Sindicato Rural promove dia de campo sobre controle de javalis em Itapetininga",
+        "linha_fina": "Evento gratuito nesta quarta-feira (25) na Fazenda do Estado orientará produtores sobre o uso de armadilhas de rede e legislação.",
+        "lide": "No programa de terça-feira (24), o programa Telescópio, da TV Itapê, destacou a realização de um dia de campo voltado ao controle populacional de javalis. O presidente do Sindicato Rural de Itapetininga, Dr. Roberto Eno, e convidados explicaram que o evento gratuito ocorre nesta quarta-feira (25), na Fazenda do Estado.",
+        "blocos": [
+            {
+                "intertitulo": "Prejuízos no campo",
+                "paragrafos": [
+                    "Segundo o presidente do Sindicato Rural de Itapetininga, Dr. Roberto Eno, a proliferação de javalis e javaporcos tornou-se um problema sério para os produtores rurais da região, causando estragos em plantações e nascentes.",
+                    "O veterinário da Cati, Dr. Nelson Lara, explicou que esses animais foram introduzidos no passado para cruzamento com suínos comerciais, mas, após serem abandonados ou fugirem, adaptaram-se à natureza sem predadores naturais, multiplicando-se rapidamente e ameaçando a produção e o meio ambiente."
+                ]
+            },
+            {
+                "intertitulo": "Armadilha de rede",
+                "paragrafos": [
+                    "Para conter o avanço dos animais de forma mais eficaz do que a caça pontual, o evento apresentará a técnica de armadilha de rede. De acordo com os convidados, o método permite capturar lotes inteiros ou famílias de javalis.",
+                    "A programação do dia de campo contará com quatro estações temáticas abordando legislação, experiências de controle, instalação da armadilha de rede e destinação correta de carcaças com órgãos de defesa sanitária."
+                ]
+            },
+            {
+                "intertitulo": "Participação gratuita",
+                "paragrafos": [
+                    "O coordenador das ações do Senar, Bruno Galvão, destacou que o evento é fruto de uma união de forças entre o Sindicato Rural, Faesp, Senar, Cati, Defesa Agropecuária, Fundação Florestal e Prefeitura Municipal.",
+                    "A iniciativa inédita no estado visa orientar pequenos e médios produtores a agir antes que a população de javalis saia totalmente de controle na região."
+                ]
+            }
+        ],
+        "fechamento": "O evento ocorre nesta quarta-feira (25), das 8h ao meio-dia, na Fazenda do Estado. As inscrições gratuitas podem ser feitas pelo perfil do Sindicato Rural de Itapetininga no Instagram.",
+        "participantes": [
+            {
+                "nome": "Fábio",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Bruno Galvão",
+                "papel": "coordenador das ações do Senar"
+            },
+            {
+                "nome": "Dr. Nelson Lara",
+                "papel": "veterinário da Cati"
+            },
+            {
+                "nome": "Dr. Roberto Eno",
+                "papel": "presidente do Sindicato Rural de Itapetininga"
+            },
+            {
+                "nome": "Henrique Alves",
+                "papel": "apresentador de notícias"
+            },
+            {
+                "nome": "Marcelo Batista da Silva",
+                "papel": "chefe de divisão da CAT de Bragança Paulista"
+            },
+            {
+                "nome": "José Luiz Fontes",
+                "papel": "coordenador de sustentabilidade da Faesp"
+            },
+            {
+                "nome": "Felipe Pedrosa",
+                "papel": "manejador de javali"
+            },
+            {
+                "nome": "Artur Luís de Almeida Felício",
+                "papel": "chefe do departamento de Defesa Animal"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "04:51",
+                "segundos": 291,
+                "assunto": "Abertura do programa e apresentação dos convidados"
+            },
+            {
+                "inicio": "11:49",
+                "segundos": 709,
+                "assunto": "Divulgação do dia de campo sobre controle de javalis"
+            },
+            {
+                "inicio": "12:09",
+                "segundos": 729,
+                "assunto": "Discussão sobre os prejuízos e proliferação de javalis no campo"
+            },
+            {
+                "inicio": "23:19",
+                "segundos": 1399,
+                "assunto": "Explicação sobre o funcionamento da armadilha de rede"
+            },
+            {
+                "inicio": "30:35",
+                "segundos": 1835,
+                "assunto": "Apresentação das estações temáticas e palestrantes do evento"
+            },
+            {
+                "inicio": "36:15",
+                "segundos": 2175,
+                "assunto": "Informações sobre inscrições e participação gratuita"
+            }
+        ],
+        "omitidos": [
+            "09:00 - Menção a denúncias de assédio moral no Bradesco, omitida por envolver denúncias contra instituição identificada.",
+            "09:55 - Leitura de obituários com nomes de pessoas falecidas, omitida por se tratar de morte de pessoas identificadas."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-25T05:43:47-03:00"
 }

@@ -1,0 +1,5 @@
+{
+    "date": "2026-11-24",
+    "attempts": 0,
+    "error": "gemini-3.5-flash-lite: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.8-flash: HTTP 503: gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+}
