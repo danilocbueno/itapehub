@@ -1,5 +1,53 @@
 [
     {
+        "id": "0a32890c781c52bb",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80889/unidade-movel-do-cras-leva-servicos-sociais-a-zona-rural-de-itapetininga",
+        "title": "Unidade móvel do Cras leva serviços sociais à zona rural de Itapetininga",
+        "summary": "O Cras Itinerante leva, no mês de dezembro, orientações e prestações de serviços para os bairros rurais de Itapetininga. A unidade móvel orienta as pessoas sobr...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80889?v=Banner_b0235195-f90a-477d-b4a6-a62088bef26a_20261124184545.jpg",
+        "published_at": "2026-11-25T08:00:00-03:00",
+        "collected_at": "2026-11-25T08:11:16-03:00",
+        "cluster": "0a32890c781c52bb",
+        "hidden": false
+    },
+    {
+        "id": "70c0713d26ce4725",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/bauru-marilia/noticia/2026/11/25/moradores-que-viveram-seus-15-minutos-de-fama-na-area-da-tv-tem.ghtml",
+        "title": "15 anos do g1: relembre histórias de moradores que viveram seus ‘15 minutos (ou mais) de fama’ na área de cobertura da TV TEM",
+        "summary": "Quem não conhece a expressão popular “15 minutos de fama”? A frase usada para explicar casos de pessoas que alcançaram a fama de forma repentina não poderia ser mais atual em tempos de redes sociais e conteúdos virais. E muitas dessas…",
+        "image": "https://s2-g1.glbimg.com/tqx2qPZbW8ClApIOdVoSr5AnZt4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/z/LX9tw4RMucWw6WpI7nBg/novo-projeto-2-.png",
+        "published_at": "2026-11-25T07:41:46-03:00",
+        "collected_at": "2026-11-25T08:11:16-03:00",
+        "cluster": "70c0713d26ce4725",
+        "hidden": false
+    },
+    {
+        "id": "5f61f06cde6f2df1",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/noticia/2026/11/25/do-1o-casal-gay-a-adotar-no-pais-a-reator-nuclear-relembre-15-cidades-do-interior-de-sp-que-ganharam-repercussao-nacional.ghtml",
+        "title": "Do 1º casal gay a adotar no país a reator nuclear: relembre 15 cidades do interior de SP que ganharam repercussão nacional",
+        "summary": "Nesta quarta-feira (25), as páginas nas regiões de Bauru e Marília, Itapetininga e região, São José do Rio Preto e Araçatuba e Sorocaba e Jundiaí debutam e completam 15 anos no ar. O marco inicial da cobertura local foi em 25 de novembro…",
+        "image": "https://s2-g1.glbimg.com/CM6aqzZJceQ4hMXiyE8DHBzACuo=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/4/w/lF9SR6Se6Aequl4gzz3w/g1-95-.jpg",
+        "published_at": "2026-11-25T07:24:12-03:00",
+        "collected_at": "2026-11-25T08:11:16-03:00",
+        "cluster": "5f61f06cde6f2df1",
+        "hidden": false
+    },
+    {
+        "id": "99f0f463ac2c4673",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/nota-de-falecimento-adriana-pereira-da-fonseca",
+        "title": "Nota de falecimento: Adriana Pereira da Fonseca",
+        "summary": "Adriana Pereira da Fonseca, de 42 anos, faleceu na terça-feira (24 de novembro), às 17h03, em Itapetininga (SP). Ela deixa a filha Anna e o companheiro Silvio Donizeti Pirula Júnior. Adriana era filha de Francisco Edvan da Fonseca e Raquel…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/nota-de-falecimento-adriana-pereira-da-fonseca-309b44612b.png",
+        "published_at": "2026-11-25T07:21:30-03:00",
+        "collected_at": "2026-11-25T08:11:16-03:00",
+        "cluster": "99f0f463ac2c4673",
+        "hidden": false
+    },
+    {
         "id": "bb2e0731eaa7640f",
         "source": "jornal",
         "url": "https://www.jornaldeitapetininga.com.br/noticias/preco-do-morango-registra-queda-de-436-em-um-mes",

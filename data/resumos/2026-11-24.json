@@ -1,5 +1,230 @@
 {
     "date": "2026-11-24",
-    "attempts": 0,
-    "error": "gemini-3.5-flash-lite: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.8-flash: HTTP 503: gemini-3.8-flash is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+    "attempts": 1,
+    "kind": "ia",
+    "article": {
+        "titulo": "Polícia prende gerente do tráfico; Prefeitura contrata empresa de limpeza urbana",
+        "linha_fina": "PAT oferta vagas de emprego, bancários protestam e natação de Itapetininga se destaca em competições.",
+        "lide": "Nesta terça-feira (24), a polícia prendeu um gerente do tráfico em Itapetininga. A Prefeitura firmou contrato milionário para limpeza urbana e o PAT abriu centenas de vagas de emprego.",
+        "blocos": [
+            {
+                "intertitulo": "Segurança",
+                "paragrafos": [
+                    "A polícia prendeu um homem apontado como um dos principais gerentes do tráfico na cidade e região. A Polícia Federal também cumpriu mandados em operação contra lavagem de dinheiro na região."
+                ],
+                "noticias": [
+                    "n1",
+                    "n15"
+                ]
+            },
+            {
+                "intertitulo": "Serviços e Gestão",
+                "paragrafos": [
+                    "A Prefeitura firmou contrato de R$ 65,4 milhões com empresa para serviços de limpeza urbana. O PAT oferece 365 vagas de emprego e o Ceprom abriu inscrições para cursos com uso de Inteligência Artificial."
+                ],
+                "noticias": [
+                    "n3",
+                    "n4",
+                    "n8",
+                    "n11"
+                ]
+            },
+            {
+                "intertitulo": "Protestos e Relatos",
+                "paragrafos": [
+                    "Bancários realizaram protesto em frente a uma agência do Bradesco após o sindicato receber mais de 30 denúncias. Moradores também relataram falta de segurança e más condições em veículos municipais usados para o transporte de pacientes."
+                ],
+                "noticias": [
+                    "n13",
+                    "n14"
+                ]
+            },
+            {
+                "intertitulo": "Esportes",
+                "paragrafos": [
+                    "A equipe de natação de Itapetininga conquistou o quarto lugar geral e 15 pódios na Super Copa São Paulo de Verão. O Campeonato Varzeano definiu a grande final para domingo (29), e há inscrições abertas para o circuito de corrida."
+                ],
+                "noticias": [
+                    "n2",
+                    "n7",
+                    "n9",
+                    "n12"
+                ]
+            }
+        ]
+    },
+    "news": [
+        {
+            "id": "n1",
+            "title": "Polícia prende gerente do tráfico em Itapetininga",
+            "summary": "Homem apontado como um dos principais gerentes do tráfico na cidade e região",
+            "url": "https://www.tvsmais.com.br/policia-prende-gerente-do-trafico-em-itapetininga/",
+            "image": "https://www.tvsmais.com.br/wp-content/uploads/2026/11/TVS-SBT-NOTICIAS-1-6.png",
+            "sources": [
+                "TVS+",
+                "g1",
+                "Panorâmico"
+            ],
+            "time": "08:08"
+        },
+        {
+            "id": "n2",
+            "title": "Inscrições para o 2º Lote do “Correr e Caminhar com Saúde” de Itapetininga será neste sábado, dia 28",
+            "summary": "Interessados em participar do 2º Lote do Encerramento do Circuito “Correr e Caminhar com Saúde 2026”, organizado pela Prefeitura de Itapetininga, por meio da Secretaria de Esporte, Lazer e Juventude em parceria com o IFSP (Instituto…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11060/inscricoes-para-o-2-lote-do-correr-e-caminhar-com-saude-de-itapetininga-sera-neste-sabado-dia-28/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/df306a16fe4d5778454eac34da4ba558.webp",
+            "sources": [
+                "Prefeitura",
+                "Panorâmico"
+            ],
+            "time": "17:40"
+        },
+        {
+            "id": "n3",
+            "title": "Ceprom de Itapetininga tem vagas remanescentes para cursos com uso de Inteligência Artificial",
+            "summary": "O Ceprom - Centro Educacional Profissionalizante Municipal “Prof. Arino Lourenço” em parceria com o Sebrae, está com inscrições abertas vagas remanescentes para cursos com uso da Inteligência Artificial. As vagas são limitadas.",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11062/-ceprom-de-itapetininga-tem-vagas-remanescentes-para-cursos-com-uso-de-inteligencia-artificial/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/c3ff90ff77bca71717ebc6bbdb1629e3.webp",
+            "sources": [
+                "Prefeitura",
+                "Panorâmico"
+            ],
+            "time": "17:40"
+        },
+        {
+            "id": "n4",
+            "title": "PAT de Itapetininga oferece 365 vagas de emprego nesta quarta-feira",
+            "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga disponibiliza 365 vagas de emprego nesta quarta-feira, dia 25 de novembro. As oportunidades estão distribuídas entre candidatos sem experiência, profissionais com experiência…",
+            "url": "https://jornalpanoramico.com.br/pat-de-itapetininga-oferece-365-vagas-de-emprego-nesta-quarta-feira/",
+            "image": "https://assets.mktnaweb.com/accounts/2021/11/12/171464/pictures/7183/original_PAT%2024%20NOV.png?1795541507",
+            "sources": [
+                "Panorâmico",
+                "Prefeitura"
+            ],
+            "time": "17:27"
+        },
+        {
+            "id": "n5",
+            "title": "Preço do morango registra queda de 43,6% em um mês",
+            "summary": "O preço do morango registrou queda de 43,6% no período de um mês no atacado da Companhia de Entrepostos e Armazéns Gerais de São Paulo (CEAGESP). Na cotação realizada na segunda-feira (23), o quilo da fruta foi comercializado a R$ 20,22…",
+            "url": "https://www.jornaldeitapetininga.com.br/noticias/preco-do-morango-registra-queda-de-436-em-um-mes",
+            "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/preco-do-morango-registra-queda-de-436-em-um-mes-47aabe82f7.jpg",
+            "sources": [
+                "Jornal"
+            ],
+            "time": "20:36"
+        },
+        {
+            "id": "n6",
+            "title": "EMEF “Prof.ª Evanilde Shirley de Oliveira Majewski” realiza feira do empreendedorismo– PROJETO SEBRAE 2026",
+            "summary": "Nos dias 18 e 19 de novembro, a EMEF “Prof.ª Evanilde Shirley de Oliveira Majewski” realizou a “Feira do Empreendedorismo – Projeto Sebrae 2026”, uma iniciativa que proporcionou aos alunos experiências práticas de aprendizagem…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11061/emef-prof-evanilde-shirley-de-oliveira-majewski-realiza-feira-do-empreendedorismo-projeto-sebrae-2026/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/8d0bcb5beb9b288f4d3fc00dea4c4de2.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "17:40"
+        },
+        {
+            "id": "n7",
+            "title": "Nadadores de Itapetininga conquistam 15 pódios na Super Copa São Paulo de Verão",
+            "summary": "Itapetininga foi representada na modalidade de Natação na Super Copa São Paulo de Verão. A equipe de Natação da S.E.A. Itapetiningana e da Prefeitura de Itapetininga, por meio da Secretaria de Esporte, Lazer e Juventude, sob a coordenação…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11059/nadadores-de-itapetininga-conquistam-15-podios-na-super-copa-sao-paulo-de-verao/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/f362cdae839f55736ef397b2efddfeb9.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "17:40"
+        },
+        {
+            "id": "n8",
+            "title": "Prefeitura de Itapetininga contrata empresa por R$ 65,4 milhões para serviços de limpeza urbana",
+            "summary": "A Prefeitura de Itapetininga firmou um novo contrato com a empresa Guima Conseco Construção, Serviços e Comércio Ltda. para a execução dos serviços de zeladoria...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80888/prefeitura-de-itapetininga-contrata-empresa-por-r-654-milhoes-para-servicos-de-limpeza-urbana",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80888?v=Banner_e672721c-e6b8-47c3-88ef-2a3fd8aa8b10_20261124175725.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "15:48"
+        },
+        {
+            "id": "n9",
+            "title": "Equipe de natação de Itapetininga conquista 4º lugar na Super Copa São Paulo de Verão",
+            "summary": "A equipe da SEA Itapetiningana, sob a coordenação do técnico e professor José Antônio Barreiros (Tó), conquistou o 4º lugar na classificação geral por equipes d...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80887/equipe-de-natacao-de-itapetininga-conquista-4-lugar-na-super-copa-sao-paulo-de-verao",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80887?v=Banner_39b64f10-2d4a-4a23-ac11-a18be406c5b7_20261124172555.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "14:25"
+        },
+        {
+            "id": "n10",
+            "title": "Sindicato Rural promove dia de campo sobre controle de javalis em Itapetininga",
+            "summary": "Evento gratuito nesta quarta-feira (25) na Fazenda do Estado orientará produtores sobre o uso de armadilhas de rede e legislação.",
+            "url": "https://itapehub.com/programas/telescopio/2026-11-24-dia-de-campo-controle-de-javali-com-armadilha-rede/",
+            "image": "https://i.ytimg.com/vi/q2oFXTC9Ibk/hqdefault.jpg",
+            "sources": [
+                "TV Itapê · Telescópio"
+            ],
+            "time": "12:58"
+        },
+        {
+            "id": "n11",
+            "title": "Prefeitura de Itapetininga abre inscrições para monitores de inclusão",
+            "summary": "O programa Jornal do Meio-Dia desta terça-feira (24) também destacou processo seletivo para acolhimento e preparativos para jantar italiano.",
+            "url": "https://itapehub.com/programas/jornal-do-meio-dia/2026-11-24/",
+            "image": "https://i.ytimg.com/vi/LWfJlKrXVPA/hqdefault.jpg",
+            "sources": [
+                "Rádio Super Difusora · Jornal do Meio-Dia"
+            ],
+            "time": "12:58"
+        },
+        {
+            "id": "n12",
+            "title": "Grande Final do Campeonato Varzeano de Itapetininga vai ser realizada neste domingo, dia 29",
+            "summary": "O Campeonato Municipal Varzeano chega a Grande Final, com as partidas das 1ª e 2ª Divisões e da categoria Municipal no próximo domingo, dia 29, no Clube dos Veteranos de Itapetininga que fica à rua Plínio Salgado, 360, na Vila Monteiro…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11057/grande-final-do-campeonato-varzeano-de-itapetininga-vai-ser-realizada-neste-domingo-dia-29/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/37d77ade5d57f5d285b84cf5e33dfa57.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "12:51"
+        },
+        {
+            "id": "n13",
+            "title": "Bancários protestam em agência do Bradesco após sindicato receber mais de 30 denúncias em Itapetininga",
+            "summary": "O Sindicato dos Bancários de Sorocaba e Região (Seeb Sorocaba) realizou, na manhã desta terça-feira, dia 24, uma manifestação em frente à agência do Bradesco, e...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80886/bancarios-protestam-em-agencia-do-bradesco-apos-sindicato-receber-mais-de-30-denuncias-em-itapetininga",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80886?v=Banner_7c681eff-9695-4e0f-94c0-4f2816503aab_20261124151016.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "12:10"
+        },
+        {
+            "id": "n14",
+            "title": "Moradores de Itapetininga relatam falta de segurança e más condições em veículos da Prefeitura",
+            "summary": "Moradores de Itapetininga reclamam das condições dos veículos utilizados pela Prefeitura no transporte de pacientes para consultas e tratamentos em outras cidad...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80885/moradores-de-itapetininga-relatam-falta-de-seguranca-e-mas-condicoes-em-veiculos-da-prefeitura",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80885?v=Banner_2f866d99-9da7-4b21-97ad-af2555b786e5_20261124140116.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "10:55"
+        },
+        {
+            "id": "n15",
+            "title": "Operações da PF contra lavagem de dinheiro e criptomoedas ilegais cumprem mandados nas regiões de Sorocaba, Jundiaí e Itapetininga",
+            "summary": "A Polícia Federal (PF) realizou, na manhã desta terça-feira (24), três operações simultâneas contra esquemas de lavagem de dinheiro, movimentação ilegal de recursos e evasão de divisas, com cumprimento de mandados em cidades da região de…",
+            "url": "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2026/11/24/pf-cumpre-mandados-contra-lavagem-de-dinheiro-e-criptomoedas-ilegais.ghtml",
+            "image": "https://s2-g1.glbimg.com/OcdPvISxCjfDza3G0ZqL1mzFz0U=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/n/h/QIaaboSJAp16ZLWacwyA/carros-pf.jpg",
+            "sources": [
+                "g1"
+            ],
+            "time": "09:48"
+        }
+    ],
+    "written_by": "gemini:gemini-3.5-flash-lite",
+    "written_at": "2026-11-25T08:13:06-03:00"
 }
