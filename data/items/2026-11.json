@@ -1,5 +1,53 @@
 [
     {
+        "id": "bb2e0731eaa7640f",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/preco-do-morango-registra-queda-de-436-em-um-mes",
+        "title": "Preço do morango registra queda de 43,6% em um mês",
+        "summary": "O preço do morango registrou queda de 43,6% no período de um mês no atacado da Companhia de Entrepostos e Armazéns Gerais de São Paulo (CEAGESP). Na cotação realizada na segunda-feira (23), o quilo da fruta foi comercializado a R$ 20,22…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/preco-do-morango-registra-queda-de-436-em-um-mes-47aabe82f7.jpg",
+        "published_at": "2026-11-24T20:36:07-03:00",
+        "collected_at": "2026-11-25T01:12:51-03:00",
+        "cluster": "bb2e0731eaa7640f",
+        "hidden": false
+    },
+    {
+        "id": "29e601e25252587d",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/inscricoes-para-o-2o-lote-do-correr-e-caminhar-com-saude-serao-abertas-neste-sabado-em-itapetininga/",
+        "title": "Inscrições para o 2º lote do “Correr e Caminhar com Saúde” serão abertas neste sábado em Itapetininga",
+        "summary": "As inscrições para o 2º lote do encerramento do Circuito “Correr e Caminhar com Saúde 2026”, em Itapetininga, serão abertas neste sábado, dia 28 de novembro, a partir das 8h. Os interessados poderão se inscrever exclusivamente pelo site…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_iStock-186678866-1.jpg",
+        "published_at": "2026-11-24T18:22:15-03:00",
+        "collected_at": "2026-11-25T01:12:51-03:00",
+        "cluster": "d11d05db196d7106",
+        "hidden": false
+    },
+    {
+        "id": "1e04a97386f1f900",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/ceprom-de-itapetininga-abre-vagas-remanescentes-para-cursos-de-excel-e-power-bi-com-uso-de-inteligencia-artificial/",
+        "title": "Ceprom de Itapetininga abre vagas remanescentes para cursos de Excel e Power BI com uso de inteligência artificial",
+        "summary": "O Centro Educacional Profissionalizante Municipal (Ceprom) de Itapetininga (SP) está com inscrições abertas para vagas remanescentes em dois cursos gratuitos com uso de Inteligência Artificial (IA), oferecidos em parceria com o Serviço…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/original_WhatsApp-Image-2026-11-24-at-16.09.34.jpeg",
+        "published_at": "2026-11-24T18:04:13-03:00",
+        "collected_at": "2026-11-25T01:12:51-03:00",
+        "cluster": "cf0416948165f731",
+        "hidden": false
+    },
+    {
+        "id": "8344f33d08b8b9c1",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/policia-prende-suspeito-de-gerenciar-trafico-de-drogas-e-apreende-entorpecentes-em-itapetininga/",
+        "title": "Polícia prende suspeito de gerenciar tráfico de drogas e apreende entorpecentes em Itapetininga",
+        "summary": "Um homem apontado pela Polícia Civil como um dos principais gerentes do tráfico de drogas em Itapetininga e região foi preso em flagrante nesta segunda-feira, 23 de novembro, durante uma operação no bairro Vila Rio Branco. Na residência…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-23-at-20.31.04.jpeg",
+        "published_at": "2026-11-24T17:47:08-03:00",
+        "collected_at": "2026-11-25T01:12:51-03:00",
+        "cluster": "3d781b249f3daff4",
+        "hidden": false
+    },
+    {
         "id": "cf0416948165f731",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11062/-ceprom-de-itapetininga-tem-vagas-remanescentes-para-cursos-com-uso-de-inteligencia-artificial/",

@@ -1,143 +1,8 @@
 {
-    "fetched_at": "2026-11-24T17:40:16-03:00",
+    "fetched_at": "2026-11-25T01:12:51-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
-        {
-            "date": "2026-11-24",
-            "films": [
-                {
-                    "title": "Jogos Vorazes - Amanhecer na Colheita",
-                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "16",
-                    "genre": "Aventura",
-                    "minutes": 158,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "20:15",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yNC0xMS8xMWYxZTJjNDM2YzJkNWNhODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
-                        },
-                        {
-                            "info": "Sala 1 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "20:45",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yNC0xMS8xMWYxYzgwN2RiMzY4NGJmODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
-                        },
-                        {
-                            "info": "Sala 4 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "19:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yNC0xMS8xMWYxZTgzYTFhMWE0NGY4ODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Eu Sou o Rocky",
-                    "url": "https://www.grupocine.com.br/filme/17326/eu-sou-o-rocky",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17326_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "12",
-                    "genre": "Biografia",
-                    "minutes": 128,
-                    "sessions": [
-                        {
-                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": [
-                                {
-                                    "time": "18:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9ldS1zb3Utby1yb2NreS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yNC0xMS8xMWYxZTJjNDM2YzJkNWFhODBlNjlhZTliYmJjNWExMg"
-                                },
-                                {
-                                    "time": "21:15",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9ldS1zb3Utby1yb2NreS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0yNC0xMS8xMWYxZTJjNDM2YzJkNWU4ODBlNjlhZTliYmJjNWExMg"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Os Farofeiros 3",
-                    "url": "https://www.grupocine.com.br/filme/16672/os-farofeiros-3",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg",
-                    "tag": "",
-                    "rating": "12",
-                    "genre": "Comédia",
-                    "minutes": 103,
-                    "sessions": [
-                        {
-                            "info": "Sala 1 · Nacional · 2D",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 2 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "18:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMjQtMTEvMTFmMWUyYzQzNmMyZDU4YzgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
-                        },
-                        {
-                            "info": "Sala 3 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "21:30",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMjQtMTEvMTFmMWUyYzQzNmMyZDVmODgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "title": "Ebenezer e os Fantasmas do Natal",
-                    "url": "https://www.grupocine.com.br/filme/17159/ebenezer-e-os-fantasmas-do-natal",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17159_medio.jpg",
-                    "tag": "",
-                    "rating": "12",
-                    "genre": "Fantasia",
-                    "minutes": 115,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "A Virada: Ignição da Alma",
-                    "url": "https://www.grupocine.com.br/filme/17102/a-virada-ignicao-da-alma",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17102_medio.jpg",
-                    "tag": "",
-                    "rating": "10",
-                    "genre": "Drama",
-                    "minutes": 123,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "19:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMjQtMTEvMTFmMWUyYzQzNmMyZDViYTgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "date": "2026-11-25",
             "films": [
@@ -415,7 +280,7 @@
                     "title": "Entrando Numa Grande Fria",
                     "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
                     "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
-                    "tag": "Pré-Venda",
+                    "tag": "Pré-Estreia",
                     "rating": "12",
                     "genre": "Comédia",
                     "minutes": 105,
@@ -611,7 +476,7 @@
                     "title": "Entrando Numa Grande Fria",
                     "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
                     "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
-                    "tag": "Pré-Venda",
+                    "tag": "Pré-Estreia",
                     "rating": "12",
                     "genre": "Comédia",
                     "minutes": 105,
@@ -819,7 +684,7 @@
                     "title": "Entrando Numa Grande Fria",
                     "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
                     "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
-                    "tag": "Pré-Venda",
+                    "tag": "Pré-Estreia",
                     "rating": "12",
                     "genre": "Comédia",
                     "minutes": 105,
@@ -1027,7 +892,7 @@
                     "title": "Entrando Numa Grande Fria",
                     "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
                     "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
-                    "tag": "Pré-Venda",
+                    "tag": "Pré-Estreia",
                     "rating": "12",
                     "genre": "Comédia",
                     "minutes": 105,
@@ -1223,7 +1088,7 @@
                     "title": "Entrando Numa Grande Fria",
                     "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
                     "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
-                    "tag": "Pré-Venda",
+                    "tag": "Pré-Estreia",
                     "rating": "12",
                     "genre": "Comédia",
                     "minutes": 105,
@@ -1296,6 +1161,202 @@
                                 {
                                     "time": "14:45",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMzAtMTEvMTFmMWU4NDM3ZjkwOWI2NzgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "date": "2026-12-01",
+            "films": [
+                {
+                    "title": "Jogos Vorazes - Amanhecer na Colheita",
+                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
+                    "tag": "Estreia",
+                    "rating": "16",
+                    "genre": "Aventura",
+                    "minutes": 158,
+                    "sessions": [
+                        {
+                            "info": "Sala 2 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "17:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMS0xMi8xMWYxZTg0MzdmOTA5Y2ZkODBlNjlhZTliYmJjNWExMg"
+                                },
+                                {
+                                    "time": "20:40",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMS0xMi8xMWYxZTg0MzdmOTA5ZDY5ODBlNjlhZTliYmJjNWExMg"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
+                            "times": [
+                                {
+                                    "time": "18:15",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMS0xMi8xMWYxZTg0MzdmOTA5ZDFiODBlNjlhZTliYmJjNWExMg"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 4 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "19:40",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9qb2dvcy12b3JhemVzLWFtYW5oZWNlci1uYS1jb2xoZWl0YS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMS0xMi8xMWYxZTg0MzdmOTA5ZDU5ODBlNjlhZTliYmJjNWExMg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Eu Sou o Rocky",
+                    "url": "https://www.grupocine.com.br/filme/17326/eu-sou-o-rocky",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17326_medio.jpg",
+                    "tag": "Estreia",
+                    "rating": "12",
+                    "genre": "Biografia",
+                    "minutes": 128,
+                    "sessions": [
+                        {
+                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
+                            "times": [
+                                {
+                                    "time": "21:20",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9ldS1zb3Utby1yb2NreS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMS0xMi8xMWYxZTg0MzdmOTA5ZDg3ODBlNjlhZTliYmJjNWExMg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Enfeitiçadas: Bem-vindos a Hexe",
+                    "url": "https://www.grupocine.com.br/filme/16921/enfeiticadas-bem-vindos-a-hexe",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16921_medio.jpg",
+                    "tag": "Pré-Venda",
+                    "rating": "6",
+                    "genre": "Animação",
+                    "minutes": 103,
+                    "sessions": [
+                        {
+                            "info": "Sala 3 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "14:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbmZlaXRpY2FkYXMtYmVtLXZpbmRvcy1hLWhleGUtZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWM5ZjgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
+                            "times": [
+                                {
+                                    "time": "16:00",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbmZlaXRpY2FkYXMtYmVtLXZpbmRvcy1hLWhleGUtZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWNhZjgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 1 · Dublado · 3D",
+                            "times": [
+                                {
+                                    "time": "16:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbmZlaXRpY2FkYXMtYmVtLXZpbmRvcy1hLWhleGUtM2QtZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWNiZjgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 1 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "19:10",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbmZlaXRpY2FkYXMtYmVtLXZpbmRvcy1hLWhleGUtZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWQyYjgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Entrando Numa Grande Fria",
+                    "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
+                    "tag": "Pré-Estreia",
+                    "rating": "12",
+                    "genre": "Comédia",
+                    "minutes": 105,
+                    "sessions": [
+                        {
+                            "info": "Sala 3 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "17:00",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbnRyYW5kby1udW1hLWdyYW5kZS1mcmlhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTAxLTEyLzExZjFlODQzN2Y5MDljZGQ4MGU2OWFlOWJiYmM1YTEy"
+                                },
+                                {
+                                    "time": "19:15",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbnRyYW5kby1udW1hLWdyYW5kZS1mcmlhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTAxLTEyLzExZjFlODQzN2Y5MDlkNDk4MGU2OWFlOWJiYmM1YTEy"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 3 · Legendado · 2D",
+                            "times": [
+                                {
+                                    "time": "21:30",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbnRyYW5kby1udW1hLWdyYW5kZS1mcmlhLWxlZy9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTAxLTEyLzExZjFlODQzN2Y5MDlkOTc4MGU2OWFlOWJiYmM1YTEy"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Os Farofeiros 3",
+                    "url": "https://www.grupocine.com.br/filme/16672/os-farofeiros-3",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg",
+                    "tag": "",
+                    "rating": "12",
+                    "genre": "Comédia",
+                    "minutes": 103,
+                    "sessions": [
+                        {
+                            "info": "Sala 4 · Nacional · 2D",
+                            "times": [
+                                {
+                                    "time": "17:15",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWNlZDgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        },
+                        {
+                            "info": "Sala 1 · Nacional · 2D",
+                            "times": [
+                                {
+                                    "time": "21:35",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vcy1mYXJvZmVpcm9zLTMtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWRhNzgwZTY5YWU5YmJiYzVhMTI"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "A Virada: Ignição da Alma",
+                    "url": "https://www.grupocine.com.br/filme/17102/a-virada-ignicao-da-alma",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17102_medio.jpg",
+                    "tag": "",
+                    "rating": "10",
+                    "genre": "Drama",
+                    "minutes": 123,
+                    "sessions": [
+                        {
+                            "info": "Sala 2 · Nacional · 2D",
+                            "times": [
+                                {
+                                    "time": "14:45",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMDEtMTIvMTFmMWU4NDM3ZjkwOWM4MTgwZTY5YWU5YmJiYzVhMTI"
                                 }
                             ]
                         }

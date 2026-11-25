@@ -5,5 +5,97 @@
     "topic": "",
     "date": "2026-11-24",
     "seconds": 3493,
-    "found_at": "2026-11-24T17:40:32-03:00"
+    "found_at": "2026-11-24T17:40:32-03:00",
+    "attempts": 1,
+    "article": {
+        "titulo": "Prefeitura de Itapetininga abre inscrições para monitores de inclusão",
+        "linha_fina": "O programa Jornal do Meio-Dia desta terça-feira (24) também destacou processo seletivo para acolhimento e preparativos para jantar italiano.",
+        "lide": "No Jornal do Meio-Dia, da Rádio Super Difusora, desta terça-feira (24), a Secretaria Municipal de Educação anunciou inscrições abertas para processo seletivo de monitores de inclusão. O programa também destacou vagas para o serviço de acolhimento Semeia e os preparativos para o jantar italiano da Vila Camargo.",
+        "blocos": [
+            {
+                "intertitulo": "Monitores de inclusão",
+                "paragrafos": [
+                    "A Secretaria Municipal de Educação de Itapetininga abriu inscrições gratuitas para o processo seletivo de monitores de inclusão, voltados para o atendimento de estudantes da rede municipal que necessitam de acompanhamento escolar.",
+                    "Segundo divulgado no programa, a atuação será voluntária no âmbito do programa Itapetininga Mais Educação, sem vínculo empregatício, com previsão para o primeiro semestre letivo de 2027."
+                ]
+            },
+            {
+                "intertitulo": "Vaga no Semeia",
+                "paragrafos": [
+                    "O programa também informou sobre outro processo seletivo aberto em Itapetininga, desta vez para o cargo de monitora no serviço de acolhimento institucional Semeia.",
+                    "As inscrições devem ser feitas presencialmente até quinta-feira (26) na Rua João Evangelista, nº 646, no centro, sendo obrigatória a apresentação de documentos e currículo atualizado."
+                ]
+            },
+            {
+                "intertitulo": "Jantar italiano",
+                "paragrafos": [
+                    "A Paróquia Nossa Senhora Aparecida, localizada na Vila Camargo, realiza no dia 5 de dezembro o Jantar Italiano Festivo da Imaculada Conceição.",
+                    "Segundo o empresário Reinaldo Nalesso e o cantor José Roberto Branco, convidados do programa, o evento contará com cardápio típico, apresentação musical do trio formado por José Roberto, Toninho Albino e Vinícius, além de bingo italiano."
+                ]
+            }
+        ],
+        "fechamento": "As inscrições para monitores de inclusão seguem até sexta-feira (27), das 9h às 17h, presencialmente no Deza, na Rua Quintino Bocaiúva, 822. Para o jantar italiano, as mesas podem ser reservadas pelos contatos divulgados no programa.",
+        "participantes": [
+            {
+                "nome": "Juliana Fernandes",
+                "papel": "apresentadora"
+            },
+            {
+                "nome": "Antônio Luiz",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Antônio Rodrigo",
+                "papel": "repórter de tempo"
+            },
+            {
+                "nome": "Reinaldo Nalesso",
+                "papel": "empresário e organizador"
+            },
+            {
+                "nome": "José Roberto Branco",
+                "papel": "cantor"
+            },
+            {
+                "nome": "Abel Pereira",
+                "papel": "médico cardiologista"
+            },
+            {
+                "nome": "Ivisom Gomes",
+                "papel": "repórter"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "03:45",
+                "segundos": 225,
+                "assunto": "Previsão do tempo e chuvas na região"
+            },
+            {
+                "inicio": "09:18",
+                "segundos": 558,
+                "assunto": "Divulgação do Jantar Italiano Festivo da Imaculada Conceição"
+            },
+            {
+                "inicio": "30:30",
+                "segundos": 1830,
+                "assunto": "Abertura de inscrições para processo seletivo de monitores de inclusão"
+            },
+            {
+                "inicio": "32:11",
+                "segundos": 1931,
+                "assunto": "Inscrições abertas para vaga de monitor no Semeia"
+            },
+            {
+                "inicio": "53:19",
+                "segundos": 3199,
+                "assunto": "Orientações sobre golpes em compras na Black Friday"
+            }
+        ],
+        "omitidos": [
+            "0:36:52 a 0:40:30: Prisões por extorsão e por tráfico de drogas (assuntos sensíveis)"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-25T01:13:01-03:00"
 }
