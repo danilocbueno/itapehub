@@ -16,11 +16,6 @@ beforeEach(function () {
     $this->artisan('collect')->assertSuccessful();
 });
 
-function built(string $path): string
-{
-    return file_get_contents(config('itape.paths.build').'/'.$path);
-}
-
 it('gera home, arquivo, fontes, 404 e feed', function () {
     $this->artisan('build')->assertSuccessful();
 

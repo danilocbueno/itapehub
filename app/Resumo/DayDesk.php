@@ -7,6 +7,7 @@ use App\Programas\RateLimited;
 use App\Site\Cluster;
 use App\Storage\JsonFile;
 use Carbon\CarbonImmutable;
+use Illuminate\Support\Sleep;
 use Throwable;
 
 /**
@@ -17,7 +18,8 @@ use Throwable;
  * se falhar ou o texto não passar na conferência, tenta de novo nas próximas.
  * Sem a chave, ou se não conseguir até fallback_hour do dia seguinte (ou depois
  * de max_attempts), publica a lista simples com os títulos: o RSS não fica sem
- * o resumo do dia. Recusa por cota ou sobrecarga não conta como tentativa.
+ * o resumo do dia. Recusa por cota ou sobrecarga não conta como tentativa: espera
+ * retry_seconds e tenta de novo na mesma execução, até "retries" vezes.
  *
  * Cada arquivo guarda as notícias usadas ("news"), para os links da página não
  * mudarem depois. "kind": "ia" (texto do Gemini), "lista" ou "vazio" (dia sem notícias).
@@ -107,7 +109,7 @@ final class DayDesk
         $summary['attempts'] = $attempts + 1;
 
         try {
-            $answer = $writer->write($day, $news);
+            $answer = $this->writeWithRetries($writer, $day, $news);
             $article = DayStory::check($answer['data'], array_column($news, 'id'), $day);
 
             unset($summary['error']);
@@ -121,6 +123,30 @@ final class DayDesk
         }
 
         return $summary;
+    }
+
+    /**
+     * Com o Gemini sobrecarregado (ou sem cota), espera retry_seconds e tenta de
+     * novo, até "retries" vezes; depois desiste até a próxima execução.
+     *
+     * @param  list<array<string, mixed>>  $news
+     * @return array{model: string, data: array<mixed>}
+     */
+    private function writeWithRetries(DayWriter $writer, CarbonImmutable $day, array $news): array
+    {
+        $retries = (int) config('itape.resumo.retries');
+
+        for ($attempt = 0; ; $attempt++) {
+            try {
+                return $writer->write($day, $news);
+            } catch (RateLimited $e) {
+                if ($attempt >= $retries) {
+                    throw $e;
+                }
+
+                Sleep::for((int) config('itape.resumo.retry_seconds'))->seconds();
+            }
+        }
     }
 
     /**

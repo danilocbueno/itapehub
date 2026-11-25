@@ -117,6 +117,9 @@ return [
         // Sem texto do Gemini até esta hora do dia seguinte, publica a lista simples.
         'fallback_hour' => 12,
         'max_attempts' => 4,
+        // Gemini sobrecarregado: espera e tenta de novo na mesma execução (de madrugada, a próxima demora horas).
+        'retries' => 3,
+        'retry_seconds' => 60,
         // Notícias enviadas ao Gemini e listadas na página (as mais repercutidas primeiro).
         'max_items' => 40,
         // Em ordem: se o primeiro estiver sobrecarregado, tenta o seguinte.

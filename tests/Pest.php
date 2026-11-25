@@ -14,6 +14,14 @@ function fixtureContents(string $name): string
     return file_get_contents(__DIR__.'/Fixtures/'.$name);
 }
 
+/**
+ * Conteúdo de um arquivo do site gerado (build/).
+ */
+function built(string $path): string
+{
+    return file_get_contents(config('itape.paths.build').'/'.$path);
+}
+
 function source(string $key): Source
 {
     return Source::all()[$key];

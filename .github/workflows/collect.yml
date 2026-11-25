@@ -94,7 +94,8 @@ jobs:
       # Resumo de cada dia que terminou (Gemini, ou a lista simples de títulos): o item do RSS.
       - name: Resumo do dia
         run: php itape resumo
-        timeout-minutes: 5
+        # Com o Gemini sobrecarregado, espera e tenta de novo (até ~4 min).
+        timeout-minutes: 10
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

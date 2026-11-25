@@ -4,6 +4,7 @@ use App\Storage\JsonFile;
 use Carbon\CarbonImmutable;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Sleep;
 
 /**
  * Resumo do dia válido para as notícias enviadas (ids n1, n2…).
@@ -40,6 +41,7 @@ function summaryOf(string $day): ?array
 }
 
 beforeEach(function () {
+    Sleep::fake();
     fakeSources();
     $this->artisan('collect')->assertSuccessful();
     // Os dias das fixtures (a coleta é em 25/10/2026, às 17h).
@@ -146,7 +148,25 @@ it('não gasta tentativa quando o Gemini recusa por cota ou sobrecarga', functio
     $this->artisan('resumo')->assertSuccessful();
 
     expect(summaryOf('2026-10-24')['attempts'])->toBe(0)
-        ->and(summaryOf('2026-10-24')['error'])->toContain('HTTP 503');
+        ->and(summaryOf('2026-10-24')['error'])->toContain('HTTP 503')
+        // A primeira vez e mais três, com um minuto entre elas; nos dois modelos.
+        ->and(geminiCalls())->toBe(8);
+    Sleep::assertSleptTimes(3);
+});
+
+it('espera e tenta de novo quando o Gemini está sobrecarregado, e publica o texto', function () {
+    CarbonImmutable::setTestNow(CarbonImmutable::parse('2026-10-25 05:00', 'America/Sao_Paulo'));
+    config(['itape.camara.gemini.key' => 'chave-de-teste', 'itape.resumo.models' => ['gemini-3.5-flash-lite']]);
+    $calls = 0;
+    fakeGemini(function () use (&$calls) {
+        return ++$calls === 1 ? Http::response(['error' => ['message' => 'high demand']], 503) : geminiResponse(dayArticle())();
+    });
+
+    $this->artisan('resumo')->assertSuccessful();
+
+    expect(summaryOf('2026-10-24')['kind'])->toBe('ia')
+        ->and(geminiCalls())->toBe(2);
+    Sleep::assertSequence([Sleep::for(60)->seconds()]);
 });
 
 it('deixa o resumo fora da agenda, dos temas e do resumo de 24 horas', function () {

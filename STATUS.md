@@ -71,7 +71,7 @@ Fontes descartadas: Google News (decisão do projeto), Cruzeiro do Sul (responde
 - **Resumo de cada dia** (`/resumo/AAAA/MM/DD/`, `php itape resumo`, desde 22/11/2026): é o item do **RSS**, que passou a ter um item por dia em vez de uma notícia por item.
   - Escrito pelo Gemini (`gemini-3.5-flash-lite`, depois `gemini-3.8-flash`) só a partir do título e do resumo das notícias do dia (até 40, as publicadas por mais veículos primeiro), seguindo `resources/prompts/resumo-do-dia.md`. Cada bloco diz de quais notícias saiu, e a página mostra os links delas logo abaixo.
   - Antes de publicar, confere tamanhos, se as notícias citadas existem naquele dia, dados de contato e o dia da semana.
-  - O dia é resumido a partir das 3h do dia seguinte (depois da coleta da madrugada), com uma chamada ao Gemini por execução. Falha conta como tentativa; recusa por cota ou sobrecarga não conta.
+  - O dia é resumido a partir das 3h do dia seguinte (depois da coleta da madrugada), com uma chamada ao Gemini por execução. Falha conta como tentativa; recusa por cota ou sobrecarga não conta e é repetida na mesma execução (até 3 vezes, com 1 minuto entre elas), porque de madrugada a próxima coleta demora horas.
   - Sem a chave, ou se não sair texto até o meio-dia do dia seguinte (ou depois de 4 tentativas), publica a **lista simples** de títulos com os links: o RSS não fica sem o resumo do dia.
   - Guardado em `data/resumos/AAAA-MM-DD.json`, com as notícias usadas (os links não mudam depois). Entra na linha do tempo (às 23h59 do dia) e na busca, mas não na agenda, nos temas nem no `/hoje/`.
 - **Arquivo por dia**, página **Fontes** (status de cada coleta), **feed RSS** (resumo do dia) e página 404.
