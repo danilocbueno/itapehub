@@ -1,5 +1,65 @@
 [
     {
+        "id": "4beddfb6bad60aab",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11070/prefeitura-de-itapetininga-oferece-curso-gratuito-de-maquiagem-com-20-vagas/",
+        "title": "Prefeitura de Itapetininga oferece curso gratuito de maquiagem com 20 vagas",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Políticas Públicas para Mulheres, oferece um curso gratuito de maquiagem, com o objetivo de promover a qualificação profissional, incentivar o empreendedorismo e fortalecer a…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/a0b4ccffedaaccc0fb7eb01c67fc8d0b.webp",
+        "published_at": "2026-11-26T16:38:18-03:00",
+        "collected_at": "2026-11-26T16:38:18-03:00",
+        "cluster": "4beddfb6bad60aab",
+        "hidden": false
+    },
+    {
+        "id": "dcb40c84bf4d350f",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11069/pat-de-itapetininga-tem-317-vagas-de-emprego-nesta-sexta-feira-27-de-novembro/",
+        "title": "PAT de Itapetininga tem 317 vagas de emprego nesta sexta-feira, 27 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta sexta-feira, dia 27 de novembro, 317 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/552dbdeb532aca15981b6385603213c3.webp",
+        "published_at": "2026-11-26T16:38:18-03:00",
+        "collected_at": "2026-11-26T16:38:18-03:00",
+        "cluster": "dcb40c84bf4d350f",
+        "hidden": false
+    },
+    {
+        "id": "7e23123d16f2940d",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/ruas-serao-interditadas-neste-sabado-28-durante-a-corrida-em-itapetininga",
+        "title": "Ruas serão interditadas neste sábado (28) durante a corrida em Itapetininga",
+        "summary": "A realização da Corrida e Caminhada Rock in Running vai provocar interdições temporárias e alterações no trânsito em diversas ruas de Itapetininga neste sábado (28). O evento está previsto para começar às 17h, no Condomínio Fechado Jardim…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/ruas-serao-interditadas-neste-sabado-28-durante-corrida-em-itapetininga-76cec31ad1.jpg",
+        "published_at": "2026-11-26T15:42:22-03:00",
+        "collected_at": "2026-11-26T16:38:18-03:00",
+        "cluster": "7e23123d16f2940d",
+        "hidden": false
+    },
+    {
+        "id": "cda00a72049a04cb",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80902/primeira-parcela-do-13-salario-injeta-mais-de-r-55-milhoes-na-economia-de-itapetininga",
+        "title": "Primeira parcela do 13º salário injeta mais de R$ 55 milhões na economia de Itapetininga",
+        "summary": "A primeira parcela do 13º salário deve movimentar pelo menos R$ 55,3 milhões em Itapetininga, segundo estimativa baseada no número de vínculos formais de empreg...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80902?v=Banner_3fd2a0c6-8a43-42b3-8cb1-8c2a85f531f2_20261126180112.jpg",
+        "published_at": "2026-11-26T14:58:00-03:00",
+        "collected_at": "2026-11-26T16:38:18-03:00",
+        "cluster": "cda00a72049a04cb",
+        "hidden": false
+    },
+    {
+        "id": "9d8e852deaee7e54",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80901/caravana-de-natal-da-coca-cola-passa-por-itapetininga-na-proxima-semana",
+        "title": "Caravana de Natal da Coca-Cola passa por Itapetininga na próxima semana",
+        "summary": "A Caravana de Natal da Coca-Cola passará por Itapetininga no dia 3 de dezembro, quinta-feira. A programação está prevista para começar às 19h, com saída em fren...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80901?v=Banner_ed3bb9e9-170d-4a78-8bbb-755692539c7c_20261126140948.jpg",
+        "published_at": "2026-11-26T14:00:00-03:00",
+        "collected_at": "2026-11-26T16:38:18-03:00",
+        "cluster": "9d8e852deaee7e54",
+        "hidden": false
+    },
+    {
         "id": "bf8e1e28b9536ff4",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11068/atividades-esportivas-marcam-o-fim-de-semana-em-itapetininga/",
@@ -33,6 +93,18 @@
         "published_at": "2026-11-26T12:10:56-03:00",
         "collected_at": "2026-11-26T12:10:56-03:00",
         "cluster": "aa85b518c8d6fe8a",
+        "hidden": false
+    },
+    {
+        "id": "6717a753055724cd",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80898/comercio-de-itapetininga-projeta-crescimento-de-ate-8-nas-vendas-na-black-friday",
+        "title": "Comércio de Itapetininga projeta crescimento de até 8% nas vendas na Black Friday",
+        "summary": "O comércio de Itapetininga projeta crescimento de 6% a 8% nas vendas durante a Black Friday deste ano, em comparação com 2025. A estimativa é da Associação Come...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80898?v=Banner_e9af3e09-afa4-4665-8d40-288873909b6e_20261125181629.jpg",
+        "published_at": "2026-11-26T11:30:00-03:00",
+        "collected_at": "2026-11-26T16:38:18-03:00",
+        "cluster": "6717a753055724cd",
         "hidden": false
     },
     {
