@@ -1,5 +1,101 @@
 [
     {
+        "id": "bf8e1e28b9536ff4",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11068/atividades-esportivas-marcam-o-fim-de-semana-em-itapetininga/",
+        "title": "Atividades esportivas marcam o fim de semana em Itapetininga",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Esporte, Lazer e Juventude, informa as atividades que vão ser realizadas neste fim de semana.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/0ee9ef75947e4e2d14cb6411293be71f.webp",
+        "published_at": "2026-11-26T12:10:56-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "bf8e1e28b9536ff4",
+        "hidden": false
+    },
+    {
+        "id": "08ea988c166869a3",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11067/itapetininga-realiza-conferencia-municipal-de-cultura-no-proximo-sabado-dia-28-de-novembro/",
+        "title": "Itapetininga realiza Conferência Municipal de Cultura no próximo sábado, dia 28 de novembro",
+        "summary": "Que cultura você quer para Itapetininga? Mais oficinas culturais? Novos espaços para apresentações artísticas? Mais atividades culturais para as crianças? A Conferência Municipal de Cultura é uma oportunidade para a população apresentar…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/ece41e0a7fb4346de0c4b28e1c195e8a.webp",
+        "published_at": "2026-11-26T12:10:56-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "08ea988c166869a3",
+        "hidden": false
+    },
+    {
+        "id": "aa85b518c8d6fe8a",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11066/novembro-azul-secretarias-de-politicas-publicas-para-mulheres-e-de-saude-promovem-palestra-na-empresa-engeform/",
+        "title": "Novembro Azul: Secretarias de Políticas Públicas para Mulheres e de Saúde promovem palestra na empresa Engeform",
+        "summary": "A Secretaria de Políticas Públicas para Mulheres, em parceria com a Secretaria de Saúde, realizou uma palestra de conscientização na empresa Engeform, em alusão à campanha Novembro Azul, com ênfase na prevenção e no diagnóstico precoce do…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/f0e15e1a2a0c0eaa7b2965ae8a12fca9.webp",
+        "published_at": "2026-11-26T12:10:56-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "aa85b518c8d6fe8a",
+        "hidden": false
+    },
+    {
+        "id": "3211b6b8170eb456",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/governo-deve-renovar-subsidio-ao-diesel-por-mais-30-dias-26-11-2026",
+        "title": "Governo deve renovar subsídio ao diesel por mais 30 dias",
+        "summary": "A equipe econômica deve prorrogar por mais 30 dias a subvenção de R$ 2,12 por litro de diesel comercializado no país. A extensão do benefício pode custar entre R$ 8 bilhões e R$ 10,5 bilhões, elevando para cerca de R$ 85 bilhões o impacto…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/governo-deve-renovar-subsidio-ao-diesel-por-mais-30-dias-e270a75ec2.webp",
+        "published_at": "2026-11-26T11:17:53-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "3211b6b8170eb456",
+        "hidden": false
+    },
+    {
+        "id": "4ccac51f3305bb38",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/itapetininga-realiza-conferencia-municipal-de-cultura-neste-sabado-dia-28/",
+        "title": "Itapetininga realiza Conferência Municipal de Cultura neste sábado",
+        "summary": "A Prefeitura de Itapetininga realiza neste sábado, dia 28 de novembro, a Conferência Municipal de Cultura, com o objetivo de reunir a população para discutir propostas e demandas relacionadas às políticas públicas culturais do município. O…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2025/11/482027802_1019254926927081_7461563003934141941_n-1024x1024.jpg",
+        "published_at": "2026-11-26T10:56:47-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "08ea988c166869a3",
+        "hidden": false
+    },
+    {
+        "id": "479d6bd60c0c5184",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80899/processo-seletivo-do-ifsp-tem-inscricoes-prorrogadas-selecao-sera-por-sorteio",
+        "title": "Processo seletivo do IFSP tem inscrições prorrogadas; seleção será por sorteio",
+        "summary": "O Instituto Federal de São Paulo (IFSP) prorrogou as inscrições para o processo seletivo dos cursos técnicos concomitantes e subsequentes ao Ensino Médio com in...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80899?v=Banner_f1828ded-a211-4940-8b6a-45616b33d152_20261126132410.jpg",
+        "published_at": "2026-11-26T10:19:00-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "479d6bd60c0c5184",
+        "hidden": false
+    },
+    {
+        "id": "263a9d8f920c88da",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80900/suzano-isenta-coparticipacao-em-exames-preventivos-no-novembro-azul-incentivando-o-cuidado-com-a-saude-masculina",
+        "title": "Suzano isenta coparticipação em exames preventivos no Novembro Azul, incentivando o cuidado com a saúde masculina",
+        "summary": "A Suzano, maior produtora mundial de celulose e referência global na fabricação de bioprodutos desenvolvidos a partir do eucalipto, promove a campanha Novembro...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80900?v=Banner_6efef6a9-22ae-41a1-ad42-42ad0795c173_20261126140445.jpg",
+        "published_at": "2026-11-26T09:00:00-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "263a9d8f920c88da",
+        "hidden": false
+    },
+    {
+        "id": "45588becd92a719a",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/26/cineasta-prepara-filme-sobre-julio-prestes-unico-presidente-que-nunca-tomou-posse-visao-transformadora.ghtml",
+        "title": "Cineasta prepara filme sobre Júlio Prestes, único presidente que nunca tomou posse: 'Visão transformadora'",
+        "summary": "José Ricci, morador de Itapetininga desde 2014, é o cineasta à frente do projeto de um longa-metragem sobre Júlio Prestes, presidente eleito em 1930 que não chegou a tomar posse após a Revolução de 1930. Intitulado Júlio Prestes – A…",
+        "image": "https://s2-g1.glbimg.com/1oSCsH_wHA0YL1SMK_8wnrA6Sb8=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/G/Z/9zqjDdTryPRMbUChF8Xg/whatsapp-image-2026-11-16-at-5.42.43-pm-8-.jpg",
+        "published_at": "2026-11-26T07:04:20-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "45588becd92a719a",
+        "hidden": false
+    },
+    {
         "id": "de766a3763f42f72",
         "source": "jornal",
         "url": "https://www.jornaldeitapetininga.com.br/noticias/raposo-tavares-tem-trecho-liberado-apos-obras-em-aracoiaba-da-serra",
@@ -9,6 +105,18 @@
         "published_at": "2026-11-25T18:42:00-03:00",
         "collected_at": "2026-11-26T05:28:37-03:00",
         "cluster": "de766a3763f42f72",
+        "hidden": false
+    },
+    {
+        "id": "fd65677832698061",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80895/projeto-cinematografico-de-itapetininga-sobre-julio-prestes-sera-apresentado-no-uruguai",
+        "title": "Projeto cinematográfico de Itapetininga sobre Júlio Prestes será apresentado no Uruguai",
+        "summary": "Um projeto cinematográfico desenvolvido por profissionais ligados a Itapetininga levará a história de Júlio Prestes ao mercado internacional de cinema. O longa-...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80895?v=Banner_b9a16e07-bc89-4473-8931-5a2f5c6801a6_20261125175501.jpg",
+        "published_at": "2026-11-25T18:00:00-03:00",
+        "collected_at": "2026-11-26T12:10:56-03:00",
+        "cluster": "fd65677832698061",
         "hidden": false
     },
     {
