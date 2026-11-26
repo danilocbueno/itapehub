@@ -1,5 +1,29 @@
 [
     {
+        "id": "de766a3763f42f72",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/raposo-tavares-tem-trecho-liberado-apos-obras-em-aracoiaba-da-serra",
+        "title": "Raposo Tavares tem trecho liberado após obras em Araçoiaba da Serra",
+        "summary": "A concessionária Motiva Sorocabana liberou, na última semana, o tráfego nos dois sentidos do km 111 da Rodovia Raposo Tavares (SP-270), em Araçoiaba da Serra. Com a conclusão das obras de readequação viária, os motoristas não precisam mais…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/raposo-tavares-tem-trecho-liberado-apos-obras-em-aracoiaba-da-serra-45dd7c2fa9.jpg",
+        "published_at": "2026-11-25T18:42:00-03:00",
+        "collected_at": "2026-11-26T05:28:37-03:00",
+        "cluster": "de766a3763f42f72",
+        "hidden": false
+    },
+    {
+        "id": "8fb61415cec4563f",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/familia-procura-jovem-desaparecido-em-campina-do-monte-alegre",
+        "title": "Família procura jovem desaparecido em Campina do Monte Alegre",
+        "summary": "A família de Otávio Bueno dos Santos Miranda, de 26 anos, procura informações sobre seu paradeiro. Morador de Campina do Monte Alegre, ele está desaparecido desde 11 de novembro de 2026, quando saiu de casa e não retornou. Segundo o…",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/familia-procura-homem-de-26-anos-desaparecido-em-campina-do-monte-alegre-ab98f694d0.png",
+        "published_at": "2026-11-25T17:53:33-03:00",
+        "collected_at": "2026-11-26T05:28:37-03:00",
+        "cluster": "8fb61415cec4563f",
+        "hidden": false
+    },
+    {
         "id": "d267c79c7d03fc6c",
         "source": "panoramico",
         "url": "https://jornalpanoramico.com.br/ifsp-de-itapetininga-prorroga-inscricoes-para-40-vagas-no-curso-tecnico-em-mecanica/",

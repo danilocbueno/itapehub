@@ -1,0 +1,218 @@
+{
+    "date": "2026-11-25",
+    "attempts": 1,
+    "kind": "ia",
+    "article": {
+        "titulo": "IFSP prorroga inscrições para cursos técnicos, PAT abre vagas e região registra falecimentos",
+        "linha_fina": "Veja os principais destaques desta quarta-feira (25) em Itapetininga e região, incluindo serviços, cultura, trânsito e falecimentos.",
+        "lide": "Nesta quarta-feira (25), o IFSP prorrogou inscrições para cursos técnicos e o PAT divulgou novas oportunidades de emprego em Itapetininga. A cidade também registrou perdas importantes, além de novidades na cultura, serviços e trânsito da região.",
+        "blocos": [
+            {
+                "intertitulo": "Educação e Serviços",
+                "paragrafos": [
+                    "O Instituto Federal de São Paulo (IFSP) prorrogou as inscrições para o processo seletivo de cursos técnicos para o primeiro semestre de 2027, com vagas disponíveis no campus local. Já o Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece 370 vagas de emprego.",
+                    "Além disso, o Posto Municipal de Coleta de Sangue reforçou a importância das doações no Dia Nacional do Doador de Sangue, registrando mais de 10,5 mil bolsas coletadas desde 2024. A unidade móvel do Cras também anunciou atendimento em bairros rurais no mês de dezembro."
+                ],
+                "noticias": [
+                    "n1",
+                    "n6",
+                    "n10",
+                    "n11"
+                ]
+            },
+            {
+                "intertitulo": "Cultura e Esporte",
+                "paragrafos": [
+                    "O Sesi de Itapetininga receberá a cantora Paula Lima com o espetáculo Soul Lee, em homenagem a Rita Lee, marcado para o dia 6 de dezembro.",
+                    "No esporte, o jovem itapetiningano Alecsandro Campos recebeu graduação em cerimônia da Liga de Judô Paulista, após trajetória iniciada em projeto social na Vila Reis."
+                ],
+                "noticias": [
+                    "n5",
+                    "n9"
+                ]
+            },
+            {
+                "intertitulo": "Trânsito e Região",
+                "paragrafos": [
+                    "A Rodovia Raposo Tavares teve o tráfego liberado nos dois sentidos no km 111, em Araçoiaba da Serra, após a conclusão de obras de readequação viária pela concessionária.",
+                    "Em Campina do Monte Alegre, a família busca informações sobre o paradeiro de Otávio Bueno dos Santos Miranda, de 26 anos, desaparecido desde 11 de novembro."
+                ],
+                "noticias": [
+                    "n3",
+                    "n4"
+                ]
+            },
+            {
+                "intertitulo": "Notas de Falecimento",
+                "paragrafos": [
+                    "Itapetininga registrou a morte da psicóloga, escritora e pesquisadora Rachel Moreno, aos 80 anos, pioneira do movimento feminista brasileiro.",
+                    "Também foi divulgada a nota de falecimento de Adriana Pereira da Fonseca, aos 42 anos, ocorrida na cidade."
+                ],
+                "noticias": [
+                    "n2",
+                    "n14"
+                ]
+            }
+        ]
+    },
+    "news": [
+        {
+            "id": "n1",
+            "title": "IFSP Campus Itapetininga prorroga inscrições para 40 vagas em curso Técnico em Mecânica gratuito",
+            "summary": "O Instituto Federal de São Paulo (IFSP) prorrogou as inscrições para o processo seletivo dos cursos técnicos concomitantes e subsequentes ao Ensino Médio com ingresso no primeiro semestre de 2027. Ao todo, são ofertadas 3.235 vagas…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11063/ifsp-campus-itapetininga-prorroga-inscricoes-para-40-vagas-em-curso-tecnico-em-mecanica-gratuito/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/96cb848063291c04ef1358c93238be77.webp",
+            "sources": [
+                "Prefeitura",
+                "Panorâmico"
+            ],
+            "time": "12:35"
+        },
+        {
+            "id": "n2",
+            "title": "Pioneira do movimento feminista brasileiro, Rachel Moreno morre aos 80 anos em Itapetininga",
+            "summary": "A psicóloga, escritora e pesquisadora Rachel Moreno, uma das pioneiras do movimento feminista brasileiro, morreu aos 80 anos na noite de terça-feira, dia 24, em...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80892/pioneira-do-movimento-feminista-brasileiro-rachel-moreno-morre-aos-80-anos-em-itapetininga",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80892?v=Banner_e20dc710-a3f4-4ef3-a10a-38fed05e2f8d_20261125145219.jpg",
+            "sources": [
+                "Correio",
+                "g1"
+            ],
+            "time": "11:42"
+        },
+        {
+            "id": "n3",
+            "title": "Raposo Tavares tem trecho liberado após obras em Araçoiaba da Serra",
+            "summary": "A concessionária Motiva Sorocabana liberou, na última semana, o tráfego nos dois sentidos do km 111 da Rodovia Raposo Tavares (SP-270), em Araçoiaba da Serra. Com a conclusão das obras de readequação viária, os motoristas não precisam mais…",
+            "url": "https://www.jornaldeitapetininga.com.br/noticias/raposo-tavares-tem-trecho-liberado-apos-obras-em-aracoiaba-da-serra",
+            "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/raposo-tavares-tem-trecho-liberado-apos-obras-em-aracoiaba-da-serra-45dd7c2fa9.jpg",
+            "sources": [
+                "Jornal"
+            ],
+            "time": "18:42"
+        },
+        {
+            "id": "n4",
+            "title": "Família procura jovem desaparecido em Campina do Monte Alegre",
+            "summary": "A família de Otávio Bueno dos Santos Miranda, de 26 anos, procura informações sobre seu paradeiro. Morador de Campina do Monte Alegre, ele está desaparecido desde 11 de novembro de 2026, quando saiu de casa e não retornou. Segundo o…",
+            "url": "https://www.jornaldeitapetininga.com.br/noticias/familia-procura-jovem-desaparecido-em-campina-do-monte-alegre",
+            "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/familia-procura-homem-de-26-anos-desaparecido-em-campina-do-monte-alegre-ab98f694d0.png",
+            "sources": [
+                "Jornal"
+            ],
+            "time": "17:53"
+        },
+        {
+            "id": "n5",
+            "title": "Itapetiningano Alecsandro Campos recebe graduação em Cerimônia da Liga de Judô Paulista",
+            "summary": "Era agosto de 2018, quando o jovem Alecsandro Almeida de Campos, hoje com 18 anos, começou a fazer parte do grupo de alunos no Projeto Judô Nossa Senhora das Graças, na Vila Reis, em Itapetininga. Se passaram mais de oito anos e o…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11065/itapetiningano-alecsandro-campos-recebe-graduacao-em-cerimonia-da-liga-de-judo-paulista/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/019ad59f3bb84daa2e7578b8efe5a3d9.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "16:57"
+        },
+        {
+            "id": "n6",
+            "title": "PAT de Itapetininga tem 370 vagas de emprego nesta quinta-feira, 26 de novembro",
+            "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece nesta quinta-feira, dia 26 de novembro, 370 vagas de emprego.",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11064/pat-de-itapetininga-tem-370-vagas-de-emprego-nesta-quinta-feira-26-de-novembro/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/886dd000a91227c7b7dc433bd4fbf072.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "16:57"
+        },
+        {
+            "id": "n7",
+            "title": "Juros altos dificultam a vida financeira dos brasileiros",
+            "summary": "O brasileiro enfrenta um cenário financeiro desafiador. Com a taxa básica de juros (Selic) em 13,75% ao ano, o acesso ao crédito continua caro, enquanto famílias e empresas enfrentam dificuldades para manter as contas em dia. Um…",
+            "url": "https://www.jornaldeitapetininga.com.br/noticias/juros-altos-dificultam-a-vida-financeira-dos-brasileiros",
+            "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/juros-altos-e-dividas-pressionam-o-bolso-dos-brasileiros-e5fa0692b5.jpg",
+            "sources": [
+                "Jornal"
+            ],
+            "time": "16:18"
+        },
+        {
+            "id": "n8",
+            "title": "Num simples passeio, infinitas recordações da cidade",
+            "summary": "No Correio há 20 anos",
+            "url": "https://correiodeitapetininga.com.br/noticia/80894/num-simples-passeio-infinitas-recordacoes-da-cidade",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80894?v=Banner_394e1a53-3189-4284-a691-8571b8c678fd_20261125173300.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "14:31"
+        },
+        {
+            "id": "n9",
+            "title": "Cantora Paula Lima interpreta clássicos de Rita Lee em Itapetininga",
+            "summary": "A cantora Paula Lima apresenta o espetáculo “Soul Lee” no Sesi de Itapetininga no dia 6 de dezembro, domingo, às 18h. O show homenageia Rita Lee e reúne versões...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80893/cantora-paula-lima-interpreta-classicos-de-rita-lee-em-itapetininga",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80893?v=Banner_7f207a41-40fc-400e-bf49-f0e15f0b7a8e_20261125160717.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "13:03"
+        },
+        {
+            "id": "n10",
+            "title": "Dia do Doador de Sangue: posto de Itapetininga já coletou mais de 10,5 mil bolsas desde 2024; veja como doar",
+            "summary": "No Dia Nacional do Doador de Sangue, celebrado nesta quarta-feira (25), o Posto Municipal de Coleta de Sangue de Itapetininga (SP) reforça a importância das doações para manter os estoques e atender pacientes que precisam de transfusões…",
+            "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/25/dia-do-doador-de-sangue-posto-de-itapetininga-ja-coletou-mais-de-105-mil-bolsas-desde-2024-veja-como-doar.ghtml",
+            "image": "https://s2-g1.glbimg.com/hJUyORhEcNt-OF4eUwALKN2Qk2E=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/9/r/KGZ9AGTgGnAqlAqbG68Q/whatsapp-image-2024-04-10-at-15-06-28-651x488.jpg",
+            "sources": [
+                "g1"
+            ],
+            "time": "09:31"
+        },
+        {
+            "id": "n11",
+            "title": "Unidade móvel do Cras leva serviços sociais à zona rural de Itapetininga",
+            "summary": "O Cras Itinerante leva, no mês de dezembro, orientações e prestações de serviços para os bairros rurais de Itapetininga. A unidade móvel orienta as pessoas sobr...",
+            "url": "https://correiodeitapetininga.com.br/noticia/80889/unidade-movel-do-cras-leva-servicos-sociais-a-zona-rural-de-itapetininga",
+            "image": "https://correiodeitapetininga.com.br/api/share-image/report/80889?v=Banner_b0235195-f90a-477d-b4a6-a62088bef26a_20261124184545.jpg",
+            "sources": [
+                "Correio"
+            ],
+            "time": "08:00"
+        },
+        {
+            "id": "n12",
+            "title": "15 anos do g1: relembre histórias de moradores que viveram seus ‘15 minutos (ou mais) de fama’ na área de cobertura da TV TEM",
+            "summary": "Quem não conhece a expressão popular “15 minutos de fama”? A frase usada para explicar casos de pessoas que alcançaram a fama de forma repentina não poderia ser mais atual em tempos de redes sociais e conteúdos virais. E muitas dessas…",
+            "url": "https://g1.globo.com/sp/bauru-marilia/noticia/2026/11/25/moradores-que-viveram-seus-15-minutos-de-fama-na-area-da-tv-tem.ghtml",
+            "image": "https://s2-g1.glbimg.com/tqx2qPZbW8ClApIOdVoSr5AnZt4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/z/LX9tw4RMucWw6WpI7nBg/novo-projeto-2-.png",
+            "sources": [
+                "g1"
+            ],
+            "time": "07:41"
+        },
+        {
+            "id": "n13",
+            "title": "Do 1º casal gay a adotar no país a reator nuclear: relembre 15 cidades do interior de SP que ganharam repercussão nacional",
+            "summary": "Nesta quarta-feira (25), as páginas nas regiões de Bauru e Marília, Itapetininga e região, São José do Rio Preto e Araçatuba e Sorocaba e Jundiaí debutam e completam 15 anos no ar. O marco inicial da cobertura local foi em 25 de novembro…",
+            "url": "https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/noticia/2026/11/25/do-1o-casal-gay-a-adotar-no-pais-a-reator-nuclear-relembre-15-cidades-do-interior-de-sp-que-ganharam-repercussao-nacional.ghtml",
+            "image": "https://s2-g1.glbimg.com/CM6aqzZJceQ4hMXiyE8DHBzACuo=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/4/w/lF9SR6Se6Aequl4gzz3w/g1-95-.jpg",
+            "sources": [
+                "g1"
+            ],
+            "time": "07:24"
+        },
+        {
+            "id": "n14",
+            "title": "Nota de falecimento: Adriana Pereira da Fonseca",
+            "summary": "Adriana Pereira da Fonseca, de 42 anos, faleceu na terça-feira (24 de novembro), às 17h03, em Itapetininga (SP). Ela deixa a filha Anna e o companheiro Silvio Donizeti Pirula Júnior. Adriana era filha de Francisco Edvan da Fonseca e Raquel…",
+            "url": "https://www.jornaldeitapetininga.com.br/noticias/nota-de-falecimento-adriana-pereira-da-fonseca",
+            "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/nota-de-falecimento-adriana-pereira-da-fonseca-309b44612b.png",
+            "sources": [
+                "Jornal"
+            ],
+            "time": "07:21"
+        }
+    ],
+    "written_by": "gemini:gemini-3.5-flash-lite",
+    "written_at": "2026-11-26T05:30:04-03:00"
+}
