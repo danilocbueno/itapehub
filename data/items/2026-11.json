@@ -1,5 +1,53 @@
 [
     {
+        "id": "ca27b6acaba5d5e2",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11072/itapetiningana-camila-carvalho-conquista-o-1-lugar-na-corrida-de-obstaculos-na-base-naval-no-peru/",
+        "title": "Itapetiningana Camila Carvalho conquista o 1º lugar na Corrida de Obstáculos na Base Naval no Peru",
+        "summary": "Mais uma vitória conquistada pela atleta de Itapetininga, Camila Carvalho. Desta vez ela garantiu o 1º lugar na categoria Elite da competição internacional de Corrida de Obstáculos (OCR) “Amphibious Challenge 6.11”, que conta resistência…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/4c4c7a6a241721fc609cafe6ee63788f.webp",
+        "published_at": "2026-11-27T12:02:34-03:00",
+        "collected_at": "2026-11-27T12:02:34-03:00",
+        "cluster": "ca27b6acaba5d5e2",
+        "hidden": false
+    },
+    {
+        "id": "153e1a45cc72fafd",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80903/prefeitura-de-itapetininga-oferece-curso-gratuito-de-maquiagem-para-mulheres",
+        "title": "Prefeitura de Itapetininga oferece curso gratuito de maquiagem para mulheres",
+        "summary": "A Prefeitura de Itapetininga, por meio da Secretaria de Políticas Públicas para Mulheres, oferece um curso gratuito de maquiagem, com o objetivo de promover a q...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80903?v=Banner_aee83b5a-35d0-4ad0-be68-d06f955b9ab3_20261127141747.jpg",
+        "published_at": "2026-11-27T11:15:42-03:00",
+        "collected_at": "2026-11-27T12:02:34-03:00",
+        "cluster": "4beddfb6bad60aab",
+        "hidden": false
+    },
+    {
+        "id": "3c9d97535830ceb6",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/bauru-marilia/noticia/2026/11/27/arvore-solidaria-2026-pontos-de-arrecadacao-recebem-acao-especial-neste-sabado-confira-as-cidades.ghtml",
+        "title": "Árvore Solidária 2026: pontos de arrecadação recebem ação especial neste sábado; confira as cidades",
+        "summary": "O “esquenta” para o dia D da campanha, que esse ano será no dia 12 de dezembro, será realizado das 11 às 15h, neste sábado, em Bauru, Itapetininga, Mirassol e Sorocaba, nos seguintes locais: Campanha Árvore Solidária da TV TEM está na…",
+        "image": "https://s2-g1.glbimg.com/xDuXphfQwkdU9vN9HW9gp2onDtU=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/t/S/ayDVZZTvaJ3AvXwWwHjA/whatsapp-image-2026-11-10-at-13.11.08-1-.jpeg",
+        "published_at": "2026-11-27T09:48:00-03:00",
+        "collected_at": "2026-11-27T12:02:34-03:00",
+        "cluster": "3c9d97535830ceb6",
+        "hidden": false
+    },
+    {
+        "id": "191ebddafeb79420",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/27/projeto-preve-venda-de-imoveis-publicos-de-sp-com-desconto-de-ate-25percent-e-precatorios-entenda.ghtml",
+        "title": "Projeto prevê venda de imóveis públicos de SP com desconto de até 25% e precatórios; entenda",
+        "summary": "O Governo Estadual enviou à Assembleia Legislativa de São Paulo (Alesp), na terça-feira (24), um projeto de lei que pede a autorização para venda e leilão de imóveis pertencentes ao estado nas regiões de Bauru, Itapetininga,Presidente…",
+        "image": "https://s2-g1.glbimg.com/iUN8CfMHpDKCPpmRFVxE1ff4xg4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/S/4/CgW9OyS7yoPLzU9nxsdA/whatsapp-image-2026-11-26-at-18.48.23.jpg",
+        "published_at": "2026-11-27T07:07:45-03:00",
+        "collected_at": "2026-11-27T12:02:34-03:00",
+        "cluster": "191ebddafeb79420",
+        "hidden": false
+    },
+    {
         "id": "c34e70c6233e2a61",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11071/prefeitura-de-itapetininga-informa-as-ruas-que-serao-interditadas-para-a-corrida-rock-running-no-proximo-sabado-dia-28/",

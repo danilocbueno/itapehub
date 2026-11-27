@@ -6,6 +6,66 @@
     "date": "2026-11-26",
     "seconds": 3480,
     "found_at": "2026-11-26T16:38:29-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "Itapetininga recebe 1ª Feira de Vinil neste sábado com entrada gratuita",
+        "linha_fina": "Evento reúne expositores de discos e CDs no Clube Recreativo Itapetininga. Cidade também realiza Conferência Municipal de Cultura.",
+        "lide": "No Jornal do Meio-Dia desta quinta-feira (26), a Rádio Super Difusora destacou a realização da primeira Feira de Vinil e da Conferência Municipal de Cultura em Itapetininga. O organizador Edison Camargo de Oliveira apresentou os detalhes do evento musical que ocorre neste fim de semana.",
+        "blocos": [
+            {
+                "intertitulo": "Feira de Vinil",
+                "paragrafos": [
+                    "Itapetininga sedia neste sábado (28) a sua primeira Feira de Vinil, evento voltado para colecionadores e entusiastas de discos e CDs.",
+                    "Segundo o organizador Edison Camargo de Oliveira, a feira contará com expositores locais e de cidades da região, oferecendo opções para troca e comercialização de álbuns de diferentes gerações."
+                ]
+            },
+            {
+                "intertitulo": "Cultura e Sociedade",
+                "paragrafos": [
+                    "O município também realiza neste sábado a Conferência Municipal de Cultura, com o tema 'Cultura e Participação da Sociedade'.",
+                    "O encontro ocorre das 14h às 18h no Colégio Peixoto Gomide, reunindo palestras, debates e apresentações artísticas para ampliar o acesso da população à arte."
+                ]
+            },
+            {
+                "intertitulo": "Alerta de Segurança",
+                "paragrafos": [
+                    "O delegado Luiz Henrique Soubhia Nunes alertou durante o programa sobre crimes de extorsão e cobranças abusivas com ameaças graves.",
+                    "Segundo o delegado, vítimas têm relatado pressões indevidas e cobranças vexatórias por dívidas, reforçando que a cobrança com violência ou grave ameaça configura crime."
+                ]
+            }
+        ],
+        "fechamento": "A Feira de Vinil acontece no Clube Recreativo Itapetininga, das 10h às 19h, com entrada gratuita. A Conferência Municipal de Cultura será realizada no Colégio Peixoto Gomide, a partir das 14h.",
+        "participantes": [
+            {
+                "nome": "Edison Camargo de Oliveira",
+                "papel": "organizador da Feira de Vinil"
+            },
+            {
+                "nome": "Luiz Henrique Soubhia Nunes",
+                "papel": "delegado de polícia"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "06:45",
+                "segundos": 405,
+                "assunto": "Abertura da 1ª Feira de Vinil de Itapetininga"
+            },
+            {
+                "inicio": "26:26",
+                "segundos": 1586,
+                "assunto": "Realização da Conferência Municipal de Cultura"
+            },
+            {
+                "inicio": "37:16",
+                "segundos": 2236,
+                "assunto": "Orientações do delegado sobre crimes de extorsão e cobranças abusivas"
+            }
+        ],
+        "omitidos": [
+            "44:34 - Nota de falecimento de Leonor Reigota Soares (assunto sensível / falecimento de pessoa identificada)"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-27T12:02:46-03:00"
 }
