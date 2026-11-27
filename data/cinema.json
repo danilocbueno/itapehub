@@ -1,5 +1,5 @@
 {
-    "fetched_at": "2026-11-27T12:02:34-03:00",
+    "fetched_at": "2026-11-27T16:29:18-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
@@ -17,21 +17,11 @@
                     "sessions": [
                         {
                             "info": "Sala 3 · Dublado · 2D",
-                            "times": [
-                                {
-                                    "time": "14:45",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbmZlaXRpY2FkYXMtYmVtLXZpbmRvcy1hLWhleGUtZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMjctMTEvMTFmMWU4NDM3ZjkwOTg4ZjgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
+                            "times": []
                         },
                         {
                             "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": [
-                                {
-                                    "time": "16:00",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9lbmZlaXRpY2FkYXMtYmVtLXZpbmRvcy1hLWhleGUtZHViL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMjctMTEvMTFmMWU4NDM3ZjkwOTg5ZDgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
+                            "times": []
                         },
                         {
                             "info": "Sala 1 · Dublado · 3D",
@@ -168,12 +158,7 @@
                     "sessions": [
                         {
                             "info": "Sala 2 · Nacional · 2D",
-                            "times": [
-                                {
-                                    "time": "14:45",
-                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9hLXZpcmFkYS1pZ25pY2FvLWRhLWFsbWEtbmFjL2dydXBvLWNpbmUtaXRhcGV0aW5pbmdhLzIwMjYtMjctMTEvMTFmMWU4NDM3ZjkwOTg3NTgwZTY5YWU5YmJiYzVhMTI"
-                                }
-                            ]
+                            "times": []
                         }
                     ]
                 },

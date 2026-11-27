@@ -1,5 +1,53 @@
 [
     {
+        "id": "06b3038ec71ab546",
+        "source": "camara",
+        "url": "http://www.camaraitapetininga.sp.gov.br/noticias/camara-realiza-audiencia-publica-para-debater-alteracoes-no-ppa-ldo-e-loa",
+        "title": "CÂMARA REALIZA AUDIÊNCIA PÚBLICA PARA DEBATER ALTERAÇÕES NO PPA, LDO E LOA.",
+        "summary": "A Câmara Municipal de Itapetininga realizará, no dia 2 de dezembro de 2026 (quarta-feira), às 19 horas, uma Audiência Pública para apresentar e debater propostas de alterações nos anexos do Plano Plurianual (PPA 2026-2029), da Lei de…",
+        "image": "http://www.camaraitapetininga.sp.gov.br/images/Copia%20de%20Camara%20Municipal.jpg",
+        "published_at": "2026-11-27T16:46:10-03:00",
+        "collected_at": "2026-11-27T16:29:18-03:00",
+        "cluster": "06b3038ec71ab546",
+        "hidden": false
+    },
+    {
+        "id": "fa733e07ff12b81f",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11073/pat-de-itapetininga-tem-324-vagas-de-emprego-na-proxima-segunda-feira-30-de-novembro/",
+        "title": "PAT de Itapetininga tem 324 vagas de emprego na próxima segunda-feira, 30 de novembro",
+        "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece na próxima segunda-feira, dia 30 de novembro, 324 vagas de emprego.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/fde43592ed6fb74be6540e0383e2b9ad.webp",
+        "published_at": "2026-11-27T16:29:18-03:00",
+        "collected_at": "2026-11-27T16:29:18-03:00",
+        "cluster": "fa733e07ff12b81f",
+        "hidden": false
+    },
+    {
+        "id": "9be4b633dc6d3a1b",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/27/policia-civil-prende-suspeito-de-matar-homem-que-tentou-defender-enteada-de-agressoes-em-itapetininga.ghtml",
+        "title": "Polícia Civil prende suspeito de matar homem que tentou defender enteada de agressões em Itapetininga",
+        "summary": "A Polícia Civil prendeu, na quinta-feira (26), um homem de 30 anos suspeito de cometer um homicídio em Itapetininga (SP). O crime ocorreu na madrugada de 18 de novembro, no bairro Vila Arruda. Segundo a Polícia Civil, as investigações…",
+        "image": "https://s2-g1.glbimg.com/kGqj91Oi2jMVzi0FLVq0R0i4yrk=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/u/0/UKIBs7S3aI75bYfCVGNA/whatsapp-image-2026-11-27-at-09.15.36.jpeg",
+        "published_at": "2026-11-27T14:29:07-03:00",
+        "collected_at": "2026-11-27T16:29:18-03:00",
+        "cluster": "9be4b633dc6d3a1b",
+        "hidden": false
+    },
+    {
+        "id": "f2112bdadea8eb96",
+        "source": "correio",
+        "url": "https://correiodeitapetininga.com.br/noticia/80904/camila-carvalho-conquista-o-1-lugar-em-corrida-de-obstaculos-no-peru",
+        "title": "Camila Carvalho conquista o 1º lugar em corrida de obstáculos no Peru",
+        "summary": "Camila Carvalho garantiu o 1º lugar na categoria Elite da competição internacional de Corrida de Obstáculos (OCR) “Amphibious Challenge 6.11”, que conta resistê...",
+        "image": "https://correiodeitapetininga.com.br/api/share-image/report/80904?v=Banner_f720cc24-ebbc-4f33-9f4f-b2bd72572de1_20261127160646.jpg",
+        "published_at": "2026-11-27T13:05:18-03:00",
+        "collected_at": "2026-11-27T16:29:18-03:00",
+        "cluster": "ca27b6acaba5d5e2",
+        "hidden": false
+    },
+    {
         "id": "ca27b6acaba5d5e2",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11072/itapetiningana-camila-carvalho-conquista-o-1-lugar-na-corrida-de-obstaculos-na-base-naval-no-peru/",

@@ -6,6 +6,77 @@
     "date": "2026-11-25",
     "seconds": 3487,
     "found_at": "2026-11-25T16:57:13-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "Campanha em Itapetininga arrecada produtos de higiene para idosos",
+        "linha_fina": "Iniciativa solidária busca doações de fraldas geriátricas e itens de cuidado pessoal até o dia 18 de dezembro na cidade.",
+        "lide": "No programa Jornal do Meio-Dia, da Rádio Super Difusora, transmitido na quarta-feira (25), representantes de uma empresa de fisioterapia domiciliar anunciaram o lançamento de uma campanha de Natal solidário. A iniciativa busca arrecadar produtos de higiene e fraldas para idosos carentes do município.",
+        "blocos": [
+            {
+                "intertitulo": "Natal Solidário",
+                "paragrafos": [
+                    "De acordo com as convidadas, a campanha foi criada para atender idosos em situação de vulnerabilidade em Itapetininga. A ação conta com o apoio de uma pastoral de igreja local que atende centenas de famílias carentes.",
+                    "Podem ser doados sabonete, shampoo, fraldas geriátricas, lenço de higiene, roupas e toalhas em boas condições. As entregas podem ser feitas até o dia 18 de dezembro na sede da emissora e em parceiros comerciais."
+                ]
+            },
+            {
+                "intertitulo": "Previsão e Cursos",
+                "paragrafos": [
+                    "O jornal também informou a previsão de chuvas irregulares e alerta de atenção redobrada devido ao nível elevado do rio Itapetininga. A chegada de uma frente fria nos próximos dias deve provocar queda nas temperaturas na região.",
+                    "Além disso, o Instituto Federal de Itapetininga prorrogou as inscrições para o curso técnico gratuito em mecânica, com seleção prevista por sorteio eletrônico para o dia 15 de dezembro."
+                ]
+            }
+        ],
+        "fechamento": "Os interessados em colaborar com as doações podem entrar em contato pelos canais informados pela emissora ou entregar diretamente nos pontos de coleta oficiais até a data limite.",
+        "participantes": [
+            {
+                "nome": "",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "",
+                "papel": "apresentadora"
+            },
+            {
+                "nome": "",
+                "papel": "representante de empresa de fisioterapia"
+            },
+            {
+                "nome": "",
+                "papel": "representante de empresa de fisioterapia"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "02:46",
+                "segundos": 166,
+                "assunto": "Prorrogação de inscrições para curso técnico no IFSP"
+            },
+            {
+                "inicio": "03:50",
+                "segundos": 230,
+                "assunto": "Previsão do tempo e situação do rio Itapetininga"
+            },
+            {
+                "inicio": "07:28",
+                "segundos": 448,
+                "assunto": "Lançamento da campanha Natal Solidário para idosos"
+            },
+            {
+                "inicio": "10:13",
+                "segundos": 613,
+                "assunto": "Detalhes sobre os itens arrecadados e público atendido"
+            },
+            {
+                "inicio": "13:56",
+                "segundos": 836,
+                "assunto": "Prazo e pontos de coleta das doações em Itapetininga"
+            }
+        ],
+        "omitidos": [
+            "042:46 - Notas de falecimento de pessoas identificadas, omitidas por regras de assuntos sensíveis e saúde."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-27T16:29:27-03:00"
 }
