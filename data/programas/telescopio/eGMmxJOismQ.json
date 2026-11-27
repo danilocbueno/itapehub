@@ -6,6 +6,89 @@
     "date": "2026-11-25",
     "seconds": 6021,
     "found_at": "2026-11-25T16:57:13-03:00",
-    "attempts": 0,
-    "error": "gemini-3.5-flash-lite agentic: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later. | gemini-3.5-flash-lite static: HTTP 503: gemini-3.5-flash-lite is currently experiencing high demand, spikes in demand are usually temporary. Please try again later."
+    "attempts": 1,
+    "article": {
+        "titulo": "Especialistas debatem desafios da arborização urbana em Itapetininga",
+        "linha_fina": "No programa Telescópio, convidados discutiram a escolha adequada de espécies, planejamento de novos loteamentos e a pontuação da cidade no programa VerdeAzul.",
+        "lide": "No programa Telescópio, da TV Itapê, de quarta-feira (25), especialistas discutiram os desafios e a importância da arborização urbana em Itapetininga. Participaram da conversa o professor Ademir Diniz Neves, o engenheiro ambiental Guilherme Campos Barbará e o presidente do COMDEMA, Paulo Hungria. O debate abordou a preservação ambiental, o manejo adequado e o planejamento municipal.",
+        "blocos": [
+            {
+                "intertitulo": "Escolha e Manejo",
+                "paragrafos": [
+                    "Segundo o professor Ademir Diniz Neves, o processo de arborização urbana em Itapetininga e região é relativamente recente, datando de 40 a 50 anos, período em que a escolha de mudas era feita muitas vezes de forma estética, sem diretrizes técnicas.",
+                    "O engenheiro ambiental Guilherme Campos Barbará apontou que espécies exóticas inadequadas, como o Ficus, podem causar danos a calçadas, muros e redes subterrâneas devido ao crescimento agressivo das raízes, exigindo análises técnicas para eventuais supressões com compensação ambiental."
+                ]
+            },
+            {
+                "intertitulo": "Planejamento e COMDEMA",
+                "paragrafos": [
+                    "O presidente do COMDEMA, Paulo Hungria, afirmou que o conselho atua em caráter técnico para avaliar projetos de empreendimentos, buscando conciliar o crescimento urbano com a preservação ambiental e a legislação municipal.",
+                    "Hungria explicou que os novos loteamentos devem prever a arborização viária adequada e que a supressão de árvores em áreas privadas passa por vistorias e análises técnicas prévias."
+                ]
+            },
+            {
+                "intertitulo": "Ranking VerdeAzul",
+                "paragrafos": [
+                    "Durante o programa, os convidados também analisaram a posição de Itapetininga no ranking ambiental paulista do Programa VerdeAzul para o ciclo 2024/2025.",
+                    "O município obteve 48,5 pontos, ficando na 40ª posição e na classificação de participante não certificado, atrás de cidades vizinhas como Capão Bonito, Angatuba, Tatuí e Cerquilho."
+                ]
+            }
+        ],
+        "fechamento": "O programa informou ainda a realização da 1ª Feira de Vinil de Itapetininga neste sábado (28), das 10h às 18h, no Clube Recreativo Sede Social, na Rua Monsenhor Soares, e do Jantar Italiano Festivo da Imaculada Conceição em 5 de dezembro na Vila Camargo.",
+        "participantes": [
+            {
+                "nome": "Fábio Miranda",
+                "papel": "apresentador voluntário"
+            },
+            {
+                "nome": "Ademir Diniz Neves",
+                "papel": "professor da Fatec Itapetininga"
+            },
+            {
+                "nome": "Guilherme Campos Barbará",
+                "papel": "engenheiro ambiental"
+            },
+            {
+                "nome": "Paulo Hungria",
+                "papel": "presidente do COMDEMA"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "06:17",
+                "segundos": 377,
+                "assunto": "Abertura do debate sobre arborização urbana em Itapetininga"
+            },
+            {
+                "inicio": "11:05",
+                "segundos": 665,
+                "assunto": "Divulgação da 1ª Feira de Vinil"
+            },
+            {
+                "inicio": "11:55",
+                "segundos": 715,
+                "assunto": "Anúncio do Jantar Italiano Festivo"
+            },
+            {
+                "inicio": "12:12",
+                "segundos": 732,
+                "assunto": "Discussão sobre inventário e supressão de árvores"
+            },
+            {
+                "inicio": "24:40",
+                "segundos": 1480,
+                "assunto": "Apresentação do grupo de estudos em arborização da Fatec"
+            },
+            {
+                "inicio": "49:10",
+                "segundos": 2950,
+                "assunto": "Análise da pontuação e posição de Itapetininga no ranking VerdeAzul"
+            }
+        ],
+        "omitidos": [
+            "13:05 - Anúncios de falecimento (obituários) omitidos por regras de assuntos sensíveis sobre morte de pessoas identificadas."
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite static",
+    "written_at": "2026-11-26T23:51:56-03:00"
 }

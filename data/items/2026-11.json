@@ -1,5 +1,29 @@
 [
     {
+        "id": "c34e70c6233e2a61",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11071/prefeitura-de-itapetininga-informa-as-ruas-que-serao-interditadas-para-a-corrida-rock-running-no-proximo-sabado-dia-28/",
+        "title": "Prefeitura de Itapetininga informa as ruas que serão interditadas para a Corrida Rock Running no próximo sábado, dia 28",
+        "summary": "A Corrida e Caminhada Rock Running, realizada pela Black Running, será realizada no próximo sábado, dia 28 de novembro, com concentração às 16h, na região do Residencial Jardim Botânico.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/02bdfad95f6745f40b91031e250e2d21.webp",
+        "published_at": "2026-11-26T23:51:46-03:00",
+        "collected_at": "2026-11-26T23:51:46-03:00",
+        "cluster": "7e23123d16f2940d",
+        "hidden": false
+    },
+    {
+        "id": "9005e4dd4fc10977",
+        "source": "g1",
+        "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/26/conferencia-reune-moradores-para-discutir-o-futuro-da-cultura-em-itapetininga-neste-sabado.ghtml",
+        "title": "Conferência reúne moradores para discutir o futuro da cultura em Itapetininga neste sábado",
+        "summary": "A população de Itapetininga (SP) poderá participar de uma Conferência Municipal de Cultura no sábado (28). O encontro será realizado no Auditório da Escola Estadual Peixoto Gomide e terá como objetivo reunir sugestões e demandas dos…",
+        "image": "https://s2-g1.glbimg.com/QLJyJbEZXfsnlLkGOOpGldsCv-U=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/U/n/y4PjH0QgWV9KQNiEh7Yg/whatsapp-image-2026-10-25-at-12.24.32.jpeg",
+        "published_at": "2026-11-26T19:05:38-03:00",
+        "collected_at": "2026-11-26T23:51:46-03:00",
+        "cluster": "08ea988c166869a3",
+        "hidden": false
+    },
+    {
         "id": "4beddfb6bad60aab",
         "source": "prefeitura",
         "url": "https://www.itapetininga.sp.gov.br/noticia/11070/prefeitura-de-itapetininga-oferece-curso-gratuito-de-maquiagem-com-20-vagas/",
@@ -21,6 +45,18 @@
         "published_at": "2026-11-26T16:38:18-03:00",
         "collected_at": "2026-11-26T16:38:18-03:00",
         "cluster": "dcb40c84bf4d350f",
+        "hidden": false
+    },
+    {
+        "id": "da2e9b81a1539c59",
+        "source": "jornal",
+        "url": "https://www.jornaldeitapetininga.com.br/noticias/cybelar-anuncia-a-maior-black-friday-de-todos-os-tempos",
+        "title": "Cybelar anuncia a maior Black Friday de todos os tempos",
+        "summary": "Black Friday da rede oferece parcelamento em até 10 vezes sem juros e produtos com preços especiais até 27 de novembro",
+        "image": "https://www.jornaldeitapetininga.com.br/arquivos_personalizados/uploads/noticias/fotos/cybelar-anuncia-a-maior-black-friday-de-todos-os-tempos-fe149d87cc.jpg",
+        "published_at": "2026-11-26T16:34:52-03:00",
+        "collected_at": "2026-11-26T23:51:46-03:00",
+        "cluster": "da2e9b81a1539c59",
         "hidden": false
     },
     {
