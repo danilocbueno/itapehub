@@ -1,131 +1,8 @@
 {
-    "fetched_at": "2026-11-26T23:51:46-03:00",
+    "fetched_at": "2026-11-27T05:42:44-03:00",
     "name": "Grupo Cine Itapetininga",
     "url": "https://www.grupocine.com.br/itapetininga/programacao",
     "days": [
-        {
-            "date": "2026-11-26",
-            "films": [
-                {
-                    "title": "Enfeitiçadas: Bem-vindos a Hexe",
-                    "url": "https://www.grupocine.com.br/filme/16921/enfeiticadas-bem-vindos-a-hexe",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16921_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "6",
-                    "genre": "Animação",
-                    "minutes": 103,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 1 · Dublado · 3D",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 1 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Entrando Numa Grande Fria",
-                    "url": "https://www.grupocine.com.br/filme/16872/entrando-numa-grande-fria",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16872_medio.jpg",
-                    "tag": "Estreia",
-                    "rating": "12",
-                    "genre": "Comédia",
-                    "minutes": 105,
-                    "sessions": [
-                        {
-                            "info": "Sala 3 · Dublado · 2D",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 3 · Legendado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Jogos Vorazes - Amanhecer na Colheita",
-                    "url": "https://www.grupocine.com.br/filme/16097/jogos-vorazes-amanhecer-na-colheita",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16097_medio.jpg",
-                    "tag": "",
-                    "rating": "16",
-                    "genre": "Aventura",
-                    "minutes": 158,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Dublado · 2D",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 4 · Dublado · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Os Farofeiros 3",
-                    "url": "https://www.grupocine.com.br/filme/16672/os-farofeiros-3",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16672_medio.jpg",
-                    "tag": "",
-                    "rating": "12",
-                    "genre": "Comédia",
-                    "minutes": 103,
-                    "sessions": [
-                        {
-                            "info": "Sala 4 · Nacional · 2D",
-                            "times": []
-                        },
-                        {
-                            "info": "Sala 1 · Nacional · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "A Virada: Ignição da Alma",
-                    "url": "https://www.grupocine.com.br/filme/17102/a-virada-ignicao-da-alma",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17102_medio.jpg",
-                    "tag": "",
-                    "rating": "10",
-                    "genre": "Drama",
-                    "minutes": 123,
-                    "sessions": [
-                        {
-                            "info": "Sala 2 · Nacional · 2D",
-                            "times": []
-                        }
-                    ]
-                },
-                {
-                    "title": "Eu Sou o Rocky",
-                    "url": "https://www.grupocine.com.br/filme/17326/eu-sou-o-rocky",
-                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17326_medio.jpg",
-                    "tag": "",
-                    "rating": "12",
-                    "genre": "Biografia",
-                    "minutes": 128,
-                    "sessions": [
-                        {
-                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
-                            "times": []
-                        }
-                    ]
-                }
-            ]
-        },
         {
             "date": "2026-11-27",
             "films": [
@@ -1319,6 +1196,51 @@
                                 {
                                     "time": "21:20",
                                     "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9ldS1zb3Utby1yb2NreS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMi0xMi8xMWYxZTg0MzdmOTA5ZWE5ODBlNjlhZTliYmJjNWExMg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "date": "2026-12-03",
+            "films": [
+                {
+                    "title": "O Nascimento de Cristo: ZERO D.C.",
+                    "url": "https://www.grupocine.com.br/filme/17239/o-nascimento-de-cristo-zero-d-c",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/17239_medio.jpg",
+                    "tag": "Pré-Venda",
+                    "rating": "",
+                    "genre": "Suspense, Drama",
+                    "minutes": null,
+                    "sessions": [
+                        {
+                            "info": "Sala 5 · Dublado · 2D · PREMIUM",
+                            "times": [
+                                {
+                                    "time": "19:10",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9vLW5hc2NpbWVudG8tZGUtY3Jpc3RvLXplcm8tZC1jLS1kdWIvZ3J1cG8tY2luZS1pdGFwZXRpbmluZ2EvMjAyNi0wMy0xMi8xMWYxZTkxM2YyMjRkOWEzODBlNjlhZTliYmJjNWExMg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Homem-Aranha: Um (Novo) Novo Dia (Versão Estendida)",
+                    "url": "https://www.grupocine.com.br/filme/16312/homem-aranha-um-novo-novo-dia-versao-estendida",
+                    "poster": "https://static3.moviehub.com.br/fotos/filmes/poster/16312_medio.jpg",
+                    "tag": "Pré-Venda",
+                    "rating": "12",
+                    "genre": "Ficção-científica, Aventura, Ação",
+                    "minutes": 145,
+                    "sessions": [
+                        {
+                            "info": "Sala 4 · Dublado · 2D",
+                            "times": [
+                                {
+                                    "time": "21:00",
+                                    "url": "https://www.grupocine.com.br/venda/aHR0cHM6Ly93d3cudmVsb3h0aWNrZXRzLmNvbS9QYXJjZWlyby9QLUdSVVBPQ0lORS9pbmdyZXNzb3MvY2luZW1hL2l0YXBldGluaW5nYS9ob21lbS1hcmFuaGEtdW0tbm92by1ub3ZvLWRpYS12ZXJzYW8tZXN0ZW5kaWRhLWR1Yi9ncnVwby1jaW5lLWl0YXBldGluaW5nYS8yMDI2LTAzLTEyLzExZjFlOTEzZjIyNGQ5YjE4MGU2OWFlOWJiYmM1YTEy"
                                 }
                             ]
                         }

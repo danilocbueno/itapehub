@@ -6,6 +6,96 @@
     "date": "2026-11-26",
     "seconds": 6111,
     "found_at": "2026-11-26T16:38:29-03:00",
-    "attempts": 0,
-    "error": "vídeo ainda não disponível para o Gemini: gemini-3.5-flash-lite agentic: HTTP 403: The caller does not have permission | gemini-3.5-flash-lite static: HTTP 403: The caller does not have permission"
+    "attempts": 1,
+    "article": {
+        "titulo": "Itapetininga leva projeto de filme sobre Júlio Prestes ao Uruguai",
+        "linha_fina": "Programa Telescópio destacou projeto audiovisual, lançamento de álbum musical na cidade e debateu história local e Justiça com advogados convidados.",
+        "lide": "No programa Telescópio, da TV Itapê, de quinta-feira (26), o apresentador Fábio Miranda e equipe divulgaram que um projeto de filme sobre Júlio Prestes, produzido por profissionais de Itapetininga, será apresentado no Uruguai. O programa também destacou o lançamento do álbum do músico João Jorge na cidade e reuniu advogados para debater a história e a Justiça.",
+        "blocos": [
+            {
+                "intertitulo": "Filme histórico",
+                "paragrafos": [
+                    "O repórter Henrique Alves anunciou no programa que cineastas de Itapetininga produzem um filme baseado na trajetória política de Júlio Prestes, único presidente não empossado do país.",
+                    "O projeto foi classificado e será apresentado em um evento no Uruguai no próximo dia 30, levando a história e a importância cultural do município para o cenário internacional."
+                ]
+            },
+            {
+                "intertitulo": "Lançamento musical",
+                "paragrafos": [
+                    "O programa divulgou que o músico João Jorge realiza nesta quinta-feira (26), às 20h, o lançamento de seu novo álbum, intitulado Quintal.",
+                    "O evento cultural ocorre no restaurante Árabe, conhecido como Fuad, reunindo o público para apresentação musical e happy hour na cidade."
+                ]
+            },
+            {
+                "intertitulo": "Debate e cultura",
+                "paragrafos": [
+                    "Em mesa redonda com três advogados convidados, o programa debateu o desenvolvimento histórico de Itapetininga, apontando retrocessos culturais e a necessidade de investimentos em cultura e esporte.",
+                    "Os profissionais também discutiram os desafios e a segurança jurídica do sistema de justiça no Brasil, abordando a atuação da advocacia e os critérios institucionais."
+                ]
+            }
+        ],
+        "fechamento": "O lançamento do álbum Quintal com João Jorge ocorre nesta quinta-feira (26), às 20h, no restaurante Árabe (Fuad), em Itapetininga.",
+        "participantes": [
+            {
+                "nome": "Fábio Miranda",
+                "papel": "apresentador"
+            },
+            {
+                "nome": "Henrique Alves",
+                "papel": "repórter"
+            },
+            {
+                "nome": "",
+                "papel": "advogado convidado"
+            },
+            {
+                "nome": "",
+                "papel": "advogado convidado"
+            },
+            {
+                "nome": "",
+                "papel": "advogado convidado"
+            }
+        ],
+        "momentos": [
+            {
+                "inicio": "0:10:48",
+                "segundos": 648,
+                "assunto": "Projeto de filme sobre Júlio Prestes"
+            },
+            {
+                "inicio": "0:11:30",
+                "segundos": 690,
+                "assunto": "Apresentação de projeto no Uruguai"
+            },
+            {
+                "inicio": "0:15:00",
+                "segundos": 900,
+                "assunto": "Lançamento do álbum Quintal de João Jorge"
+            },
+            {
+                "inicio": "0:18:40",
+                "segundos": 1120,
+                "assunto": "Debate sobre história e cultura de Itapetininga"
+            },
+            {
+                "inicio": "0:25:00",
+                "segundos": 1500,
+                "assunto": "Discussão sobre verbas para cultura e esporte"
+            },
+            {
+                "inicio": "0:33:00",
+                "segundos": 1980,
+                "assunto": "Debate sobre segurança jurídica e advocacia"
+            }
+        ],
+        "omitidos": [
+            "0:13:30 - Prisão de jogador de futebol por tentativa de homicídio (acusação contra pessoa identificada)",
+            "0:15:25 - Nota de falecimento de Leonor Rey Gota Soares (morte de pessoa identificada)",
+            "0:15:39 - Nota de falecimento de Terezinha Delgado da Rocha (morte de pessoa identificada)",
+            "0:39:00 - Discussões, denúncias e acusações sobre contratos e condutas de ministros do STF e autoridades identificadas (processos e denúncias contra pessoas identificadas)"
+        ]
+    },
+    "written_by": "gemini:gemini-3.5-flash-lite agentic",
+    "written_at": "2026-11-27T05:43:00-03:00"
 }
