@@ -1,0 +1,148 @@
+{
+    "date": "2026-11-27",
+    "attempts": 1,
+    "kind": "ia",
+    "article": {
+        "titulo": "Trânsito tem alterações para obras e festas; polícia prende suspeito de homicídio",
+        "linha_fina": "PAT oferta 324 vagas de emprego, atleta de Itapetininga vence competição internacional e Câmara agenda audiência pública.",
+        "lide": "Nesta sexta-feira (27), Itapetininga registra interdições no trânsito para obras da SPVias e preparativos do Natal Encantado. A Polícia Civil também prendeu um homem suspeito de homicídio ocorrido em novembro na Vila Arruda. Além disso, o PAT divulgou 324 vagas de emprego para a próxima segunda-feira.",
+        "blocos": [
+            {
+                "intertitulo": "Trânsito e Obras",
+                "paragrafos": [
+                    "Nesta sexta-feira (27), motoristas devem ficar atentos a alterações no tráfego em Itapetininga.",
+                    "A SPVias realiza obras noturnas de recuperação de pavimento nas alças da Rodovia Raposo Tavares. Já a Avenida Peixoto Gomide será parcialmente interditada para a montagem da estrutura do tradicional Natal Encantado."
+                ],
+                "noticias": [
+                    "n2",
+                    "n3"
+                ]
+            },
+            {
+                "intertitulo": "Segurança Pública",
+                "paragrafos": [
+                    "A Polícia Civil prendeu, na quinta-feira (26), um homem de 30 anos suspeito de cometer um homicídio em Itapetininga.",
+                    "O crime ocorreu na madrugada do dia 18 de novembro, no bairro Vila Arruda, quando a vítima tentou defender a enteada de agressões."
+                ],
+                "noticias": [
+                    "n6"
+                ]
+            },
+            {
+                "intertitulo": "Serviços e Gestão",
+                "paragrafos": [
+                    "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece 324 vagas de emprego na próxima segunda-feira, 30 de novembro.",
+                    "A Câmara Municipal também agendou para o dia 2 de dezembro uma audiência pública para debater alterações no PPA, na LDO e na LOA."
+                ],
+                "noticias": [
+                    "n5",
+                    "n4"
+                ]
+            },
+            {
+                "intertitulo": "Esporte e Solidariedade",
+                "paragrafos": [
+                    "A atleta itapetiningana Camila Carvalho conquistou o 1º lugar na categoria Elite da competição internacional de Corrida de Obstáculos realizada no Peru.",
+                    "Neste sábado, pontos de arrecadação em Itapetininga recebem uma ação especial da campanha Árvore Solidária."
+                ],
+                "noticias": [
+                    "n1",
+                    "n7"
+                ]
+            }
+        ]
+    },
+    "news": [
+        {
+            "id": "n1",
+            "title": "Itapetiningana Camila Carvalho conquista o 1º lugar na Corrida de Obstáculos na Base Naval no Peru",
+            "summary": "Mais uma vitória conquistada pela atleta de Itapetininga, Camila Carvalho. Desta vez ela garantiu o 1º lugar na categoria Elite da competição internacional de Corrida de Obstáculos (OCR) “Amphibious Challenge 6.11”, que conta resistência…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11072/itapetiningana-camila-carvalho-conquista-o-1-lugar-na-corrida-de-obstaculos-na-base-naval-no-peru/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/4c4c7a6a241721fc609cafe6ee63788f.webp",
+            "sources": [
+                "Prefeitura",
+                "Correio"
+            ],
+            "time": "12:02"
+        },
+        {
+            "id": "n2",
+            "title": "Avenida Peixoto Gomide será parcialmente interditada para preparativos do “Natal Encantado”",
+            "summary": "A Avenida Peixoto Gomide, na área central de Itapetininga, estará parcialmente interditada para a montagem da estrutura e preparativos de mais uma edição do tradicional “Natal Encantado”.",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11075/avenida-peixoto-gomide-sera-parcialmente-interditada-para-preparativos-do-natal-encantado/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/5f777ae3c7badff9695896f239b37ac3.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "23:41"
+        },
+        {
+            "id": "n3",
+            "title": "Obras noturnas de pavimentação da SPVias alteram o tráfego na Rodovia Raposo Tavares (SP-270), em Itapetininga, nesta sexta-feira (27)",
+            "summary": "Nesta sexta-feira (27), a SPVias, uma empresa Motiva, executa obras noturnas de recuperação do pavimento nas alças do dispositivo localizado no km 168+800 da Rodovia Raposo Tavares (SP-270), em Itapetininga. Os trabalhos terão início às…",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11074/obras-noturnas-de-pavimentacao-da-spvias-alteram-o-trafego-na-rodovia-raposo-tavares-sp-270-em-itapetininga-nesta-sexta-feira-27/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/7929e94cd58d136e69559c117ee54512.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "23:41"
+        },
+        {
+            "id": "n4",
+            "title": "CÂMARA REALIZA AUDIÊNCIA PÚBLICA PARA DEBATER ALTERAÇÕES NO PPA, LDO E LOA.",
+            "summary": "A Câmara Municipal de Itapetininga realizará, no dia 2 de dezembro de 2026 (quarta-feira), às 19 horas, uma Audiência Pública para apresentar e debater propostas de alterações nos anexos do Plano Plurianual (PPA 2026-2029), da Lei de…",
+            "url": "http://www.camaraitapetininga.sp.gov.br/noticias/camara-realiza-audiencia-publica-para-debater-alteracoes-no-ppa-ldo-e-loa",
+            "image": "http://www.camaraitapetininga.sp.gov.br/images/Copia%20de%20Camara%20Municipal.jpg",
+            "sources": [
+                "Câmara"
+            ],
+            "time": "16:46"
+        },
+        {
+            "id": "n5",
+            "title": "PAT de Itapetininga tem 324 vagas de emprego na próxima segunda-feira, 30 de novembro",
+            "summary": "O Posto de Atendimento ao Trabalhador (PAT) de Itapetininga oferece na próxima segunda-feira, dia 30 de novembro, 324 vagas de emprego.",
+            "url": "https://www.itapetininga.sp.gov.br/noticia/11073/pat-de-itapetininga-tem-324-vagas-de-emprego-na-proxima-segunda-feira-30-de-novembro/",
+            "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/fde43592ed6fb74be6540e0383e2b9ad.webp",
+            "sources": [
+                "Prefeitura"
+            ],
+            "time": "16:29"
+        },
+        {
+            "id": "n6",
+            "title": "Polícia Civil prende suspeito de matar homem que tentou defender enteada de agressões em Itapetininga",
+            "summary": "A Polícia Civil prendeu, na quinta-feira (26), um homem de 30 anos suspeito de cometer um homicídio em Itapetininga (SP). O crime ocorreu na madrugada de 18 de novembro, no bairro Vila Arruda. Segundo a Polícia Civil, as investigações…",
+            "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/27/policia-civil-prende-suspeito-de-matar-homem-que-tentou-defender-enteada-de-agressoes-em-itapetininga.ghtml",
+            "image": "https://s2-g1.glbimg.com/kGqj91Oi2jMVzi0FLVq0R0i4yrk=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/u/0/UKIBs7S3aI75bYfCVGNA/whatsapp-image-2026-11-27-at-09.15.36.jpeg",
+            "sources": [
+                "g1"
+            ],
+            "time": "14:29"
+        },
+        {
+            "id": "n7",
+            "title": "Árvore Solidária 2026: pontos de arrecadação recebem ação especial neste sábado; confira as cidades",
+            "summary": "O “esquenta” para o dia D da campanha, que esse ano será no dia 12 de dezembro, será realizado das 11 às 15h, neste sábado, em Bauru, Itapetininga, Mirassol e Sorocaba, nos seguintes locais: Campanha Árvore Solidária da TV TEM está na…",
+            "url": "https://g1.globo.com/sp/bauru-marilia/noticia/2026/11/27/arvore-solidaria-2026-pontos-de-arrecadacao-recebem-acao-especial-neste-sabado-confira-as-cidades.ghtml",
+            "image": "https://s2-g1.glbimg.com/xDuXphfQwkdU9vN9HW9gp2onDtU=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/t/S/ayDVZZTvaJ3AvXwWwHjA/whatsapp-image-2026-11-10-at-13.11.08-1-.jpeg",
+            "sources": [
+                "g1"
+            ],
+            "time": "09:48"
+        },
+        {
+            "id": "n8",
+            "title": "Projeto prevê venda de imóveis públicos de SP com desconto de até 25% e precatórios; entenda",
+            "summary": "O Governo Estadual enviou à Assembleia Legislativa de São Paulo (Alesp), na terça-feira (24), um projeto de lei que pede a autorização para venda e leilão de imóveis pertencentes ao estado nas regiões de Bauru, Itapetininga,Presidente…",
+            "url": "https://g1.globo.com/sp/itapetininga-regiao/noticia/2026/11/27/projeto-preve-venda-de-imoveis-publicos-de-sp-com-desconto-de-ate-25percent-e-precatorios-entenda.ghtml",
+            "image": "https://s2-g1.glbimg.com/iUN8CfMHpDKCPpmRFVxE1ff4xg4=/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/S/4/CgW9OyS7yoPLzU9nxsdA/whatsapp-image-2026-11-26-at-18.48.23.jpg",
+            "sources": [
+                "g1"
+            ],
+            "time": "07:07"
+        }
+    ],
+    "written_by": "gemini:gemini-3.5-flash-lite",
+    "written_at": "2026-11-28T04:57:46-03:00"
+}
