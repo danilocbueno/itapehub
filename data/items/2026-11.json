@@ -1,5 +1,41 @@
 [
     {
+        "id": "06593ad3a668f8d3",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11075/avenida-peixoto-gomide-sera-parcialmente-interditada-para-preparativos-do-natal-encantado/",
+        "title": "Avenida Peixoto Gomide será parcialmente interditada para preparativos do “Natal Encantado”",
+        "summary": "A Avenida Peixoto Gomide, na área central de Itapetininga, estará parcialmente interditada para a montagem da estrutura e preparativos de mais uma edição do tradicional “Natal Encantado”.",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/5f777ae3c7badff9695896f239b37ac3.webp",
+        "published_at": "2026-11-27T23:41:52-03:00",
+        "collected_at": "2026-11-27T23:41:52-03:00",
+        "cluster": "06593ad3a668f8d3",
+        "hidden": false
+    },
+    {
+        "id": "e108e419f9653282",
+        "source": "prefeitura",
+        "url": "https://www.itapetininga.sp.gov.br/noticia/11074/obras-noturnas-de-pavimentacao-da-spvias-alteram-o-trafego-na-rodovia-raposo-tavares-sp-270-em-itapetininga-nesta-sexta-feira-27/",
+        "title": "Obras noturnas de pavimentação da SPVias alteram o tráfego na Rodovia Raposo Tavares (SP-270), em Itapetininga, nesta sexta-feira (27)",
+        "summary": "Nesta sexta-feira (27), a SPVias, uma empresa Motiva, executa obras noturnas de recuperação do pavimento nas alças do dispositivo localizado no km 168+800 da Rodovia Raposo Tavares (SP-270), em Itapetininga. Os trabalhos terão início às…",
+        "image": "https://www.itapetininga.sp.gov.br/admin/globalarq/noticia/noticia/651_366/7929e94cd58d136e69559c117ee54512.webp",
+        "published_at": "2026-11-27T23:41:52-03:00",
+        "collected_at": "2026-11-27T23:41:52-03:00",
+        "cluster": "e108e419f9653282",
+        "hidden": false
+    },
+    {
+        "id": "a5622b71f026164c",
+        "source": "panoramico",
+        "url": "https://jornalpanoramico.com.br/ruas-de-itapetininga-serao-interditadas-neste-sabado-para-corrida-rock-running/",
+        "title": "Ruas de Itapetininga serão interditadas neste sábado para corrida Rock Running",
+        "summary": "Interdições começam às 15h e têm previsão de liberação às 19h; evento será realizado na região do Residencial Jardim Botânico. A Prefeitura de Itapetininga informou que ruas da região do Residencial Jardim Botânico serão interditadas neste…",
+        "image": "https://jornalpanoramico.com.br/wp-content/uploads/2026/01/original_WhatsApp-Image-2026-01-06-at-17.42.13.jpeg",
+        "published_at": "2026-11-27T17:06:29-03:00",
+        "collected_at": "2026-11-27T23:41:52-03:00",
+        "cluster": "7e23123d16f2940d",
+        "hidden": false
+    },
+    {
         "id": "06b3038ec71ab546",
         "source": "camara",
         "url": "http://www.camaraitapetininga.sp.gov.br/noticias/camara-realiza-audiencia-publica-para-debater-alteracoes-no-ppa-ldo-e-loa",
